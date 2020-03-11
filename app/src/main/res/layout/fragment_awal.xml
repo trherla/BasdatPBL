@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.awal.AwalFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_header"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:elevation="12dp"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Heloo User"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Welcome to Basdat-PBL"
+                    android:textColor="#fff"
+                    android:layout_marginTop="24dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="24dp"
+                android:background="@drawable/ic_device_hub_black_24dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/cardvie_sub"
+        android:layout_below="@+id/cardview_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="How to Use"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="21sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="See"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

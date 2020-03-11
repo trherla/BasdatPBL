@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BasdatPBL</string>
+    <string name="apk_nm">PBL - Basis Data</string>
+    <string name="universitas">Universitas Negeri Malang</string>
+
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="awal">Home</string>
+    <string name="materi">Materi</string>
+    <string name="kasus">Kasus</string>
+    <string name="kuis">Kuis</string>
+
+</resources>

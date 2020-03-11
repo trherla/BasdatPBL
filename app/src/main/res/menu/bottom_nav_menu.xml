@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/awal"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/awal" />
+
+    <item
+        android:id="@+id/materi"
+        android:icon="@drawable/materi24dp"
+        android:title="@string/materi" />
+
+    <item
+        android:id="@+id/kasus"
+        android:icon="@drawable/kasus24dp"
+        android:title="@string/kasus" />
+
+    <item
+        android:id="@+id/kuis"
+        android:icon="@drawable/kuis24dp"
+        android:title="@string/kuis" />
+
+</menu>

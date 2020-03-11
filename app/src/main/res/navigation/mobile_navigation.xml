@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/awal">
+
+    <fragment
+        android:id="@+id/awal"
+        android:name="com.example.basdatpbl.ui.awal.AwalFragment"
+        android:label="@string/awal"
+        tools:layout="@layout/fragment_awal" />
+
+    <fragment
+        android:id="@+id/materi"
+        android:name="com.example.basdatpbl.ui.materi.MateriFragment"
+        android:label="@string/materi"
+        tools:layout="@layout/fragment_materi" />
+
+    <fragment
+        android:id="@+id/kuis"
+        android:name="com.example.basdatpbl.ui.kuis.KuisFragment"
+        android:label="@string/kuis"
+        tools:layout="@layout/fragment_kuis" />
+
+    <fragment
+        android:id="@+id/kasus"
+        android:name="com.example.basdatpbl.ui.kasus.KasusFragment"
+        android:label="@string/kasus"
+        tools:layout="@layout/fragment_kasus" />
+</navigation>

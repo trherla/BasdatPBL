@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.basdatpbl">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.materi.hirarki.Tabs1Hirarki"></activity>
+        <activity android:name=".ui.kasus.satu.KasusSatu" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppIntroActivity"
+            android:theme="@style/Theme.Intro" />
+        <activity
+            android:name=".BottomActivity"
+            android:label="@string/title_activity_bottom" />
+        <activity android:name=".MainActivity" />
+
+        <activity
+            android:name=".ui.materi.TabsHirarki"
+            android:label="Hirarki"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ui.materi.TabsHirarki">
+        </activity>
+        <activity
+            android:name=".ui.materi.TabsErd"
+            android:label="Entity Relationship Diagram"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ui.materi.TabsErd">
+        </activity>
+        <activity
+            android:name=".ui.materi.TabsKetergantungan"
+            android:label="Ketergantungan Fungsional"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ui.materi.TabsKetergantungan">
+        </activity>
+        <activity
+            android:name=".ui.materi.TabsNormalisasi"
+            android:label="Normalisasi"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".ui.materi.TabsNormalisasi">
+        </activity>
+    </application>
+
+</manifest>
