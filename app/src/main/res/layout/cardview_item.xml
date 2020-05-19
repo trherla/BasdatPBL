@@ -7,18 +7,19 @@
     android:layout_width="match_parent"
     android:layout_height="190dp"
     android:layout_margin="10dp"
+    android:background="@color/background"
     app:cardCornerRadius="4dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/cv_img"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:background="@color/colorDark"
             android:scaleType="centerCrop" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -27,7 +28,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Judul Materi"
-            android:textColor="@color/colorDark"
+            android:textColor="@color/color_darkprime"
             android:textSize="13sp" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

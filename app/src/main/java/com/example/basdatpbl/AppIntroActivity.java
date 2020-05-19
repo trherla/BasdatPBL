@@ -36,8 +36,8 @@ public class AppIntroActivity extends IntroActivity {
                 .title("Problem Based Learning")
                 .description("Dapat melatih kemampuan pemecahan masalah")
                 .image(R.drawable.ic_sync_problem_black_24dp)
-                .background(R.color.bg_screen1)
-                .backgroundDark(R.color.colorDark)
+                .background(R.color.color_lightprime)
+                .backgroundDark(R.color.white)
                 .canGoBackward(false)
                 .build());
 
@@ -45,16 +45,16 @@ public class AppIntroActivity extends IntroActivity {
                 .title("Basis Data")
                 .description("Materi yang dipelajari merupakan materi basis data")
                 .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.bg_screen2)
-                .backgroundDark(R.color.colorDark)
+                .background(R.color.color_lightprime)
+                .backgroundDark(R.color.white)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
                 .title("Kuis")
                 .description("Terdapat kuis sebagai latihan")
                 .image(R.drawable.ic_assignment_turned_in_black_24dp)
-                .background(R.color.bg_screen3)
-                .backgroundDark(R.color.colorDark)
+                .background(R.color.color_lightprime)
+                .backgroundDark(R.color.white)
                 .build());
 
         autoplay(2500, INFINITE);

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ui.awal.AwalFragment">
 
     <androidx.cardview.widget.CardView
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:elevation="12dp"
-        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardBackgroundColor="@color/color_light"
         app:cardCornerRadius="16dp"
         app:cardElevation="8dp"
         app:cardUseCompatPadding="false">
@@ -32,14 +33,14 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="Heloo User"
-                    android:textColor="#fff"
+                    android:textColor="@color/white"
                     android:textSize="16sp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="Welcome to Basdat-PBL"
-                    android:textColor="#fff"
+                    android:textColor="@color/white"
                     android:layout_marginTop="24dp"
                     android:textSize="14sp"/>
 
@@ -66,7 +67,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
             android:text="How to Use"
-            android:textColor="@color/cardview_dark_background"
+            android:textColor="@color/color_darkprime"
             android:textSize="21sp"
             />
         <TextView
@@ -75,10 +76,54 @@
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             android:text="See"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/color_lightprime"
             android:textSize="14sp"
             />
-
     </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/cardvie_sub"
+        android:layout_margin="16dp"
+        android:elevation="12dp"
+        app:cardBackgroundColor="@color/color_lightprime"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Tujuan"
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Tujuan dari Aplikasi ini adalah"
+                    android:textColor="@color/color_darkprime"
+                    android:layout_marginTop="24dp"
+                    android:textSize="14sp"/>
 
+            </LinearLayout>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="48dp"
+                android:background="@drawable/ic_assignment_turned_in_black_24dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>

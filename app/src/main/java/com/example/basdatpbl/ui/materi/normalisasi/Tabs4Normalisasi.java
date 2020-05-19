@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.basdatpbl.R;
 
-public class Tabs2Normalisasi extends Fragment {
+public class Tabs4Normalisasi extends Fragment {
 
-    public Tabs2Normalisasi() {
+    public Tabs4Normalisasi() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class Tabs2Normalisasi extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.normalisasi_tabs2, container, false);
+        return inflater.inflate(R.layout.normalisasi_tabs4, container, false);
     }
 
 }

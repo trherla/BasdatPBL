@@ -14,7 +14,7 @@ import com.example.basdatpbl.ui.kasus.satu.KasusSatu;
 
 public class KasusViewModel extends RecyclerView.ViewHolder {
 
-    public TextView materi, kasus_title;
+    public TextView materi, kasus_title, kasus_desc;
     public ImageView img_thumbnail;
     public CardView cardView;
     Context context;
@@ -23,9 +23,10 @@ public class KasusViewModel extends RecyclerView.ViewHolder {
         super(itemView);
         context = itemView.getContext();
 
-        kasus_title = (TextView) itemView.findViewById(R.id.cv_title);
-        img_thumbnail = (ImageView) itemView.findViewById(R.id.cv_img);
-        cardView = (CardView) itemView.findViewById(R.id.cv_click);
+        kasus_title = (TextView) itemView.findViewById(R.id.kasus_title);
+        kasus_desc = (TextView) itemView.findViewById(R.id.kasus_desc);
+        img_thumbnail = (ImageView) itemView.findViewById(R.id.kasus_img);
+        cardView = (CardView) itemView.findViewById(R.id.kasus_click);
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override

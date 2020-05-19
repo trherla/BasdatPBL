@@ -13,6 +13,8 @@ import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.materi.erd.Tabs1ERD;
 import com.example.basdatpbl.ui.materi.erd.Tabs2ERD;
 import com.example.basdatpbl.ui.materi.erd.Tabs3ERD;
+import com.example.basdatpbl.ui.materi.erd.Tabs4ERD;
+import com.example.basdatpbl.ui.materi.erd.Tabs5ERD;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs1Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs2Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
@@ -43,9 +45,11 @@ public class TabsErd extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsErd.ViewPagerAdapter adapter = new TabsErd.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new Tabs1ERD(), "ONE");
-        adapter.addFrag(new Tabs2ERD(), "TWO");
-        adapter.addFrag(new Tabs3ERD(), "THREE");
+        adapter.addFrag(new Tabs1ERD(), "Definisi");
+        adapter.addFrag(new Tabs2ERD(), "Entitas");
+        adapter.addFrag(new Tabs3ERD(), "Atribut");
+        adapter.addFrag(new Tabs4ERD(), "Relasi");
+        adapter.addFrag(new Tabs5ERD(), "Batasan");
         viewPager.setAdapter(adapter);
     }
 

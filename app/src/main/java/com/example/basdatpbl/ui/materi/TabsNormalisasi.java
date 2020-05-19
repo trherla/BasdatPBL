@@ -16,6 +16,8 @@ import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
 import com.example.basdatpbl.ui.materi.normalisasi.Tabs1Normalisasi;
 import com.example.basdatpbl.ui.materi.normalisasi.Tabs2Normalisasi;
 import com.example.basdatpbl.ui.materi.normalisasi.Tabs3Normalisasi;
+import com.example.basdatpbl.ui.materi.normalisasi.Tabs4Normalisasi;
+import com.example.basdatpbl.ui.materi.normalisasi.Tabs5Normalisasi;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -43,9 +45,11 @@ public class TabsNormalisasi extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsNormalisasi.ViewPagerAdapter adapter = new TabsNormalisasi.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new Tabs1Normalisasi(), "ONE");
-        adapter.addFrag(new Tabs2Normalisasi(), "TWO");
-        adapter.addFrag(new Tabs3Normalisasi(), "THREE");
+        adapter.addFrag(new Tabs1Normalisasi(), "Definisi");
+        adapter.addFrag(new Tabs2Normalisasi(), "Syarat");
+        adapter.addFrag(new Tabs3Normalisasi(), "1NF");
+        adapter.addFrag(new Tabs4Normalisasi(), "2NF");
+        adapter.addFrag(new Tabs5Normalisasi(), "3NF");
         viewPager.setAdapter(adapter);
     }
 

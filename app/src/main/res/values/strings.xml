@@ -9,4 +9,102 @@
     <string name="kasus">Kasus</string>
     <string name="kuis">Kuis</string>
 
+    <!--Materi Hirarki Basis Data-->
+    <string name="h1">Arsitektur basis data merupakan serangkaian pengetahuan tentang pemodelan data. Pengetahuan tentang File, table, field, record indeks, abstraksi data dan serangkaian konsep yang digunakan untuk membuat diskripsi struktur basis data. Melalui diskripsi Struktur basis data dapat ditentukan jenis data, hubungan dan konstrain (keterbatasan) data yang ditangani. Dalam basis data, data diorganisasikan kedalam bentuk elemen data (field), rekaman (record), dan berkas (file). Definisi dari ketiganya adalah sebagai berikut: </string>
+    <string name="h2">• Elemen (kolom atau field) data adalah satuan data terkecil yang tidak dapat dipecah lagi menjadi unit lain yang bermakna. Misalnya data siswa terdiri dari NIS, Nama, Alamat, Telepon atau Jenis Kelamin.</string>
+    <string name="h3">• Rekaman (record) merupakan gabungan sejumlah elemen data yang saling terkait. Istilah lain dari record adalah baris atau tupel.</string>
+    <string name="h4">• Berkas(file) adalah himpunan seluruh record yang bertipe sama </string>
+
+    <string name="hd1">While a database is a repository of data, a database management system, or simply DBMS, is a set of software tools that control access, organize, store, manage, retrieve and maintain data in a database. In practical use, the terms database, database server, database system, data server, and database management systems are often used interchangeably. Why do we need database software or a DBMS? Can we not just store data in simple text files for example? The answer lies in the way users access the data and the handle of corresponding challenges. First, we need the ability to have multiple users insert, update and delete data to the same data file without "stepping on each other's toes". This means that different users will not cause the data to become inconsistent, and no data should be inadvertently lost through these operations. We also need to have a standard interface for data access, tools for data backup, data restore and recovery, and a way to handle other challenges such as the capability to work with huge volumes of data and users. Database software has been designed to handle all of these challenges. The most mature database systems in production are relational database management systems (RDBMSs). RDBMSs serve as the backbone of applications in many industries including banking, transportation, health, and so on. The advent of Web-based interfaces has only increased the volume and breadth of use of RDBMS, which serve as the data repositories behind essentially most online commerce.</string>
+    <string name="hd2">Materi</string>
+    <string name="hd3">Kasus</string>
+    <string name="hd4">Kuis</string>
+
+    <string name="hm1">An information model is an abstract, formal representation of entities that includes their properties, relationships and the operations that can be performed on them. The entities being modeled may be from the real world, such as devices on a network, or they may themselves be abstract, such as the entities used in a billing system. The primary motivation behind the concept is to formalize the description of a problem domain without constraining how that description will be mapped to an actual implementation in software. There may be many mappings of the Information Model. Such mappings are called data models, irrespective of whether they are object models (for example, using unified modeling language - UML), entity relationship models, or XML schemas. Modeling is important as it considers the flexibility required for possible future changes without significantly affecting usage. Modeling allows for compatibility with its predecessor models and has provisions for future extensions. Information Models and Data Models are different because they serve different purposes. The main purpose of an Information Model is to model managed objects at a conceptual level, independent of any specific implementations or protocols used to transport the data. The degree of detail of the abstractions defined in the Information Model depends on the modeling needs of its designers. In order to make the overall design as clear as possible, an Information Model should hide all protocol and implementation details. Another important characteristic of an Information Model is that it defines relationships between managed objects. Data Models, on the other hand, are defined at a more concrete level and include many details. They are intended for software developers and include protocol-specific constructs. A data model is the blueprint of any database system. Figure 1.1 illustrates the relationship between an Information Model and a Data Model</string>
+    <string name="hm2">Materi</string>
+    <string name="hm3">Kasus</string>
+    <string name="hm4">Kuis</string>
+    <string name="hm5">a</string>
+
+    <string name="hp1">Like any other work profile, the database domain has several of roles and career paths associated with it. The following is a description of some of these roles. </string>
+    <string name="hp2">1.5.1 Data Architect </string>
+    <string name="hp3">1.5.2 Database Architect </string>
+    <string name="hp4">1.5.3 Database Administrator (DBA) </string>
+    <string name="hp5">1.5.4 Application Developer  </string>
+
+    <!--Materi Hirarki Basis Data-->
+    <string name="ed1">Diagram relasi entitas atau entity-relationship diagram (ERD) adalah suatu diagram dalam bentuk gambar atau simbol yang mengidentifikasi tipe dari entitas di dalam suatu sistem yang diuraikan dalam data dengan atributnya, dan menjelaskan hubungan atau relasi diantara entitas tersebut. ERD merupakan model jaringan yang menggunakan susunan data yang disimpan dalam sistem secara abstrak. </string>
+    <string name="ed2">ERD berupa model data konseptual, yang merepresentasikan data dalam suatu organisasi.ERD menekankan pada struktur dan relationship data.</string>
+    <string name="ed3">Untuk menggambarkan ER diagaram setidaknya ada tiga langkah yang harus dilakukan oleh perancang basis data yaitu: 1. Menemukan atau mendefinisikan Entitas 2. Menemukan atau mendefinisikan atribute 3. Menemukan atau mendefinisikan Relasi 4. Menggambarkan ERD menggunakan notasi-notasi standar.</string>
+    <string name="ed4">Materi</string>
+
+    <string name="ee1">entitas adalah obyek yang mewakili sesuatu dalam dunia nyata dan dapat dibedakan antara satu dengan lainnya (unique).Setiap entitas memiliki beberapa atribut yang mendeskripsikan karakteristik dari objek tersebut. </string>
+    <string name="ee2">Materi</string>
+    <string name="ee3">Materi</string>
+    <string name="ee4">Materi</string>
+
+    <string name="ea1">, atribut adalah merupakan sifat-sifat atau karakteristik pada suatu entitas. Nama atribut ini identik dengan nama kolom atau field pada suatu tabel dalam basis data. </string>
+    <string name="ea2">Materi</string>
+    <string name="ea3">Materi</string>
+    <string name="ea4">Materi</string>
+
+    <string name="er1">Relasi menyatakan hubungan antara dua atau beberapa entitas. Setiap relasi mempunyai batasan (constraint) terhadap kemungkinan kombinasi entitas yang berpartisipasi. Batasan tersebut ditentukan dari situasi yang diwakili relasi tersebut. Ragam atau jenis relasi dibedakan menjadi beberapa macam antara lain adalah : </string>
+    <string name="er2">Materi</string>
+    <string name="er3">Materi</string>
+    <string name="er4">Materi</string>
+
+    <string name="eb1">Batasan partisipasi atau batasan hubungan entitas menjelaskan bagaimana data itu berelasi, batasan ini menentukan bagaimana (harus ataukah tidak) berpartisipasi suatu entitas dengan relasinya pada entitas lain. </string>
+    <string name="eb2">Materi</string>
+    <string name="eb3">Materi</string>
+    <string name="eb4">Materi</string>
+
+    <!--ketergantungan Fungsional-->
+    <string name="kde1">Konsep penting yang menjadi dasar melakukan normalisasi relasi-relasi dalam perancangan sistem database adalah functional dependency atau ketergantungan fungsional. Tanpa memahami konsep functional dependency atau ketergantungan fungsional kita tidak bisa melakukan proses normalisasi dengan baik dan benar. Functional dependency atau ketergantungan fungsional adalah suatu konsep yang menjelaskan tentang relationship/asosiasi/hubungan antara atribut-atribut dalam suatu relasi. </string>
+    <string name="kde2">Kasus</string>
+    <string name="kde3">Kuis</string>
+    <string name="kde4">a</string>
+
+    <string name="kp1">Ketergantungan penuh. Full dependency menunjukkan atribut A dan B dalam satu relasi, dimana B bergantung penuh terhadap A, maksudnya penuh disini adalah B hanya ditentukan oleh A dan hanya A saja yang menentukan B bukan subset dari A seperti contoh sebelumnya.</string>
+    <string name="kp2">a</string>
+    <string name="kp3">Kuis</string>
+    <string name="kp4">a</string>
+
+    <string name="ks1">Ketergantungan parsial atau sebagian. Partionally dependency ini memiliki 2 atribut dari A untuk menentukan B, namun untuk menentukan B tidak harus 2 atribut artinya jika salah satu atribut A yang menentukan B dapat dihilangkan namun tidak merubah arti relasi dan masih tetap berelasi ketergantungan.</string>
+    <string name="ks2">a</string>
+    <string name="ks3">Kuis</string>
+    <string name="ks4">a</string>
+
+    <string name="kt1">Transitive dependency biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A,B,C. Kondisinya adalah A ⇒ B dan B ⇒ C. Maka C dikatakan sebagai transitive dependency terhadap A melalui B.</string>
+    <string name="kt2">a</string>
+    <string name="kt3">Kuis</string>
+    <string name="kt4">a</string>
+
+    <!--Normalisasi Data    -->
+    <string name="nd1">B.</string>
+    <string name="nd2">a</string>
+    <string name="nd3">Kuis</string>
+    <string name="nd4">a</string>
+
+    <string name="ns1">jh</string>
+    <string name="ns2">a</string>
+    <string name="ns3">Kuis</string>
+    <string name="ns4">a</string>
+
+    <string name="np1">fgd</string>
+    <string name="np2">a</string>
+    <string name="np3">Kuis</string>
+    <string name="np4">a</string>
+
+    <string name="nk1">.</string>
+    <string name="nk2">a</string>
+    <string name="nk3">Kuis</string>
+    <string name="nk4">a</string>
+
+    <string name="nt1">as</string>
+    <string name="nt2">a</string>
+    <string name="nt3">Kuis</string>
+    <string name="nt4">a</string>
+
+
+
 </resources>

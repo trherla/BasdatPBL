@@ -1,4 +1,4 @@
-package com.example.basdatpbl.ui.materi.normalisasi;
+package com.example.basdatpbl.ui.materi.erd;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,9 +9,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.basdatpbl.R;
 
-public class Tabs2Normalisasi extends Fragment {
+public class Tabs5ERD extends Fragment {
 
-    public Tabs2Normalisasi() {
+    public Tabs5ERD() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class Tabs2Normalisasi extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.normalisasi_tabs2, container, false);
+        return inflater.inflate(R.layout.erd_tabs5, container, false);
     }
 
 }

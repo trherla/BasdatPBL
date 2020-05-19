@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+    <color name="colorPrimary">#4760FF</color>
+
+    <!--    <color name="colorPrimaryDark">#3700B3</color>-->
+    <color name="colorPrimaryDark">#587277</color>
+    <color name="white">#fff</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorDark">#2d2d2d</color>
+
+    <!--Color Scheme 1-->
+<!--    <color name="background">#F2FCFF</color>-->
+<!--    <color name="color_darkprime">#444444</color>-->
+<!--    <color name="color_lightprime">#93B7BE</color>-->
+<!--    <color name="color_light">#BCD1D6</color>-->
+<!--    <color name="color_dark">#587277</color>-->
+
+    <!--Color Scheme 2-->
+    <color name="background">#F2FCFF</color>
+    <color name="color_darkprime">#020202</color>
+    <color name="color_lightprime">#0DCCFF</color>
+    <color name="color_light">#4760FF</color>
+    <color name="color_dark">#011627</color>
+
+    <!--Color Scheme 2-->
+<!--    <color name="background">#FFFFFF</color>-->
+<!--    <color name="color_darkprime">#0D1B1E</color>-->
+<!--    <color name="color_lightprime">#B0413E</color>-->
+<!--    <color name="color_light">#7798AB</color>-->
+<!--    <color name="color_dark">#648381</color>-->
 
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>

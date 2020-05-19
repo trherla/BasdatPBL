@@ -56,10 +56,10 @@ public class MateriFragment extends Fragment {
         MateriAdapter adapter = new MateriAdapter(this, lstMateri);
 
         rv.setAdapter(adapter);
-        lstMateri.add(new Materi("Hirarki Basis Data", "Categories 1", "Description", R.drawable.kasus24dp));
-        lstMateri.add(new Materi("Entity Relationship Diagram", "Categories 2", "Description", R.drawable.ic_home_black_24dp));
-        lstMateri.add(new Materi("Normalisasi Data", "Categories 3", "Description", R.drawable.ic_notifications_black_24dp));
-        lstMateri.add(new Materi("Ketergantungan Fungsional", "Categories 4", "Description", R.drawable.mi_ic_skip));
+        lstMateri.add(new Materi("Hirarki Basis Data", "Categories 1", "Description", R.drawable.hirarki));
+        lstMateri.add(new Materi("Entity Relationship Diagram", "Categories 2", "Description", R.drawable.relation));
+        lstMateri.add(new Materi("Normalisasi Data", "Categories 3", "Description", R.drawable.normalisasi));
+        lstMateri.add(new Materi("Ketergantungan Fungsional", "Categories 4", "Description", R.drawable.ketergantungan));
 
 
 //        RecyclerView myrv =(RecyclerView) root.findViewById(R.id.rv_idmateri);

@@ -13,6 +13,7 @@ import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs1Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs2Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
+import com.example.basdatpbl.ui.materi.hirarki.Tabs4Hirarki;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -40,9 +41,10 @@ public class TabsHirarki extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsHirarki.ViewPagerAdapter adapter = new TabsHirarki.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new Tabs1Hirarki(), "ONE");
-        adapter.addFrag(new Tabs2Hirarki(), "TWO");
-        adapter.addFrag(new Tabs3Hirarki(), "THREE");
+        adapter.addFrag(new Tabs1Hirarki(), "Pengenalan");
+        adapter.addFrag(new Tabs2Hirarki(), "DBMS");
+        adapter.addFrag(new Tabs3Hirarki(), "Model");
+        adapter.addFrag(new Tabs4Hirarki(), "Pengguna");
         viewPager.setAdapter(adapter);
     }
 

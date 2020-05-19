@@ -16,6 +16,7 @@ import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
 import com.example.basdatpbl.ui.materi.ketergantungan.Tabs1Ketergantungan;
 import com.example.basdatpbl.ui.materi.ketergantungan.Tabs2Ketergantungan;
 import com.example.basdatpbl.ui.materi.ketergantungan.Tabs3Ketergantungan;
+import com.example.basdatpbl.ui.materi.ketergantungan.Tabs4Ketergantungan;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -43,9 +44,11 @@ public class TabsKetergantungan extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsKetergantungan.ViewPagerAdapter adapter = new TabsKetergantungan.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new Tabs1Ketergantungan(), "ONE");
-        adapter.addFrag(new Tabs2Ketergantungan(), "TWO");
-        adapter.addFrag(new Tabs3Ketergantungan(), "THREE");
+        adapter.addFrag(new Tabs1Ketergantungan(), "Definisi");
+        adapter.addFrag(new Tabs2Ketergantungan(), "Penuh");
+        adapter.addFrag(new Tabs3Ketergantungan(), "Sebagian");
+        adapter.addFrag(new Tabs4Ketergantungan(), "Transitif");
+
         viewPager.setAdapter(adapter);
     }
 
