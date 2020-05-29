@@ -40,10 +40,10 @@ public class MateriViewModel extends RecyclerView.ViewHolder {
                         intent = new Intent(context, TabsErd.class);
                         break;
                     case 2 :
-                        intent = new Intent(context, TabsNormalisasi.class);
+                        intent = new Intent(context, TabsKetergantungan.class);
                         break;
                     case 3 :
-                        intent = new Intent(context, TabsKetergantungan.class);
+                        intent = new Intent(context, TabsNormalisasi.class);
                         break;
                 }
                 context.startActivity(intent);

@@ -42,7 +42,8 @@ public class TabsHirarki extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         TabsHirarki.ViewPagerAdapter adapter = new TabsHirarki.ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new Tabs1Hirarki(), "Pengenalan");
-        adapter.addFrag(new Tabs2Hirarki(), "DBMS");
+        adapter.addFrag(new Tabs2Hirarki(), "Arsitektur");
+//        adapter.addFrag(new Tabs2Hirarki(), "DBMS");
         adapter.addFrag(new Tabs3Hirarki(), "Model");
         adapter.addFrag(new Tabs4Hirarki(), "Pengguna");
         viewPager.setAdapter(adapter);
