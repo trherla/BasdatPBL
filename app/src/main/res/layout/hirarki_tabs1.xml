@@ -25,9 +25,9 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="24dp"
+                    android:textSize="24sp"
                     android:textColor="@color/color_darkprime"
-                    android:text="Apa Itu Arsitektur Basis Data?"/>
+                    android:text="@string/apa_itu_arsitektur_basis_data"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/h1"/>
 
@@ -49,7 +49,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/h2"/>
 
@@ -61,7 +61,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/h21"/>
                 <TextView
@@ -72,7 +72,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/h22"/>
                 <TextView
@@ -83,7 +83,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/h23"/>
 
@@ -102,7 +102,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="32dp"
+                    android:textSize="32sp"
                     android:textColor="@color/color_darkprime"
                     android:text=" "/>
 

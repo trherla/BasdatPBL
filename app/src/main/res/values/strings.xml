@@ -49,13 +49,27 @@
     <string name="ee2">Entitas dapat berupa :</string>
     <string name="ee21">1. Entity yang bersifat fisik yaitu entitas yang secara fisik dapat dilihat (misal: rumah, kendaraan, guru, murid, dan lain-lain)</string>
     <string name="ee22">2. Entity yang bersifat konsep/logic yaitu entitas yang tidak dapat dilihat secara fisik (misal: pekerjaan, mata pelajaran, rencana, dan lain-lain)</string>
-    <string name="ee3">Simbol yang digunakan untuk entitas adalah persegi panjang</string>
+    <string name="ee3">Dalam suatu tabel basis data, entitas identik dengan baris</string>
+    <string name="ee4">Sekelompok entitas yang sejenis dan berada dalam lingkup yang sama disebut sebagai Entity Sets (Himpunan Entitas)</string>
+
 
     <string name="ea1">Atribut merupakan sifat-sifat atau karakteristik pada suatu entitas.</string>
     <string name="ea2">Nama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.</string>
-    <string name="ea3">Atribut diklasifikasikan dalam dua kelompok:</string>
-    <string name="ea31">1. Simple Atribute yaitu atribut yang tidak bisa dibagi menjadi atribut yang lebih mendasar. Contoh: atribut harga dari entitas barang</string>
-    <string name="ea32">2. Composite Atribute yaitu atribut yang terdiri dari beberapa atribut. Contoh: atribut nama (memiliki detail nama depan dan nama belakang) dari entitas siswa</string>
+    <string name="ea3">Macam-macam atribut dalam ERD:</string>
+    <string name="ea31">1.Atribut Kunci yaitu pengidentifikasi entitas yang paling unik untuk semua entitas dalam himpunan entitas. Atribut kunci dibedakan menjadi tiga, yaitu:</string>
+    <string name="ea311">Super Key adalah satu atau lebih atribut yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas</string>
+    <string name="ea312">Candidate Key adalah kumpulan atribut minimal yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas</string>
+    <string name="ea313">Primmary Key adalah salah satu candidate key yang digunakan sebagai pengidentifikasi suatu atribut dalam himpunan entitas. Dasar pemilihan primary key adalah key sering digunakan sebagai acuan, key lebih ringkas, key harus unik</string>
+    <string name="ea32">2. Atribut Deskriptif yaitu atribut lain selain atribut kunci yang berfungsi sebagai penjelasan terhadap entitas dalam himpunan entitas</string>
+    <string name="ea33">3. Atribut Sederhana (Simple Attribute) yaitu atribut yang tidak bisa dibagi menjadi atribut yang lebih mendasar. Contoh: atribut NIS dari entitas siswa</string>
+    <string name="ea34">4. Atribut Komposit (Composite Attribute) yaitu atribut yang terdiri dari beberapa atribut. Contoh: atribut nama (memiliki detail nama depan dan nama belakang) dari entitas siswa</string>
+    <string name="ea35">5. Atribut Bernilai Banyak (Multi Valued Attribute) yaitu atribut yang dapat bernilai lebih dari satu nilai sejenis. Contoh: Hobi</string>
+    <string name="ea36">6. Atribut Bernilai Tunggal (Single Valued Attribute) yaitu atribut yang hanya memiliki satu nilai. Contoh: NIS</string>
+    <string name="ea37">7. Atribut Turunan (Derived Attribute) yaitu atribut yang nilainya diperoleh dari pengolahan atau dirurunkan dari atribut atau tabel lain. Contoh: atribut rata-rata yang didapat dari perhitungan nilai siswa</string>
+    <string name="ea38">8. Atribut Bernilai (Mandatory Attribute) yaitu atribut yang harus memiliki nilai</string>
+    <string name="ea39">8. Atribut Tidak Harus Bernilai (Non-Mandatory Attribute) yaitu atribut yang nilainya boleh kosong (null)</string>
+
+
     <string name="ea4">Simbol yang digunakan untuk atribut adalah oval/elipse</string>
 
     <string name="er1">Relasi menyatakan hubungan antara dua atau beberapa entitas. Setiap relasi mempunyai batasan (constraint) terhadap kemungkinan kombinasi entitas yang berpartisipasi. Batasan tersebut ditentukan dari situasi yang diwakili relasi tersebut.</string>
@@ -79,53 +93,80 @@
     <string name="eb3">Materi</string>
     <string name="eb4">Materi</string>
 
-    <!--ketergantungan Fungsional-->
-    <string name="kde1">Konsep penting yang menjadi dasar melakukan normalisasi relasi-relasi dalam perancangan sistem database adalah functional dependency atau ketergantungan fungsional. Tanpa memahami konsep functional dependency atau ketergantungan fungsional kita tidak bisa melakukan proses normalisasi dengan baik dan benar. Functional dependency atau ketergantungan fungsional adalah suatu konsep yang menjelaskan tentang relationship/asosiasi/hubungan antara atribut-atribut dalam suatu relasi. </string>
-    <string name="kde2">Kasus</string>
-    <string name="kde3">Kuis</string>
-    <string name="kde4">a</string>
+    <!--Definisi ketergantungan-->
+    <string name="kde1">Dependensi merupakan ketergantungan setiap atribut dengan atribut lainnya</string>
+    <string name="kde2">Analisis dependensi merupakan konsep penting yang menjadi dasar melakukan normalisasi sehingga diperoleh relasi yang berstruktur baik.</string>
+    <string name="kde3">Ada beberapa jenis dependensi</string>
+    <string name="kde31">1. Dependensi Fungsional</string>
+    <string name="kde32">2. Dependensi Sepenuhnya</string>
+    <string name="kde33">3. Dependensi Sebagian</string>
+    <string name="kde34">4. Dependensi Penuh</string>
+    <string name="kde35">5. Dependensi Transitif</string>
 
-    <string name="kp1">Ketergantungan penuh. Full dependency menunjukkan atribut A dan B dalam satu relasi, dimana B bergantung penuh terhadap A, maksudnya penuh disini adalah B hanya ditentukan oleh A dan hanya A saja yang menentukan B bukan subset dari A seperti contoh sebelumnya.</string>
-    <string name="kp2">a</string>
-    <string name="kp3">Kuis</string>
-    <string name="kp4">a</string>
+    <string name="kde4">Konsep penting yang menjadi dasar melakukan normalisasi relasi-relasi dalam perancangan sistem database adalah functional dependency atau ketergantungan fungsional. Tanpa memahami konsep functional dependency atau ketergantungan fungsional kita tidak bisa melakukan proses normalisasi dengan baik dan benar. Functional dependency atau ketergantungan fungsional adalah suatu konsep yang menjelaskan tentang relationship/asosiasi/hubungan antara atribut-atribut dalam suatu relasi. </string>
 
-    <string name="ks1">Ketergantungan parsial atau sebagian. Partionally dependency ini memiliki 2 atribut dari A untuk menentukan B, namun untuk menentukan B tidak harus 2 atribut artinya jika salah satu atribut A yang menentukan B dapat dihilangkan namun tidak merubah arti relasi dan masih tetap berelasi ketergantungan.</string>
-    <string name="ks2">a</string>
-    <string name="ks3">Kuis</string>
+    <!--    Ketergantungan fungsional-->
+    <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut </string>
+    <string name="kf2">Analogi: terdapat sebuah relasi yang bernama R dengan dua buah atributnya berupa A dan B, sehingga Notasinya R(A,B)</string>
+    <string name="kf3">Pada keadaan tersebut, atribut B dikatakan mempunyai dependensi fungsional terhadap A apabila setiap nilai A berhubungan dengan satu nilai yang sama pada B</string>
+    <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut</string>
+    <string name="kf5"><![CDATA[Notasi : {A,B,…} -> Z]]></string>
+    <string name="kf6">Atribut Z mempunyai dependensi terhadap pasangan A dan B</string>
+
+
+
+    <!--    Ketergantungan sepenuhnya-->
+    <string name="ksp1">Suatu atribut B dikatakan memiliki dependensi sepenuhnya terhadap A apabila </string>
+    <string name="ksp2">1. Atribut B mempunyai dependensi fungsional terhadap atribut A</string>
+    <string name="ksp3">2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A</string>
+
+
+    <!--Ketergantungan sebagian -->
+    <string name="ks1">Suatu atribut B dikatakan memiliki dependensi partial terhadap A apabila</string>
+    <string name="ks2">1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key</string>
+    <string name="ks3">2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
     <string name="ks4">a</string>
 
-    <string name="kt1">Transitive dependency biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A,B,C. Kondisinya adalah A ⇒ B dan B ⇒ C. Maka C dikatakan sebagai transitive dependency terhadap A melalui B.</string>
-    <string name="kt2">a</string>
+    <!--    Ketergantungan penuh-->
+    <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh terhadap A apabila </string>
+    <string name="kpe2">1. Atribut B mempunyai dependensi fungsional terhadap atribut A</string>
+    <string name="kpe3">2. Atribut A mempunyai dependansi fungsional terhadap atribut B</string>
+
+    <!--Ketergantungan Transitif    -->
+    <string name="kt1">Transitive dependency biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A,B,C. </string>
+    <string name="kt2">Kondisinya adalah A ⇒ B dan B ⇒ C. Maka C dikatakan sebagai transitive dependency terhadap A melalui B.</string>
     <string name="kt3">Kuis</string>
     <string name="kt4">a</string>
 
     <!--Normalisasi Data    -->
-    <string name="nd1">B.</string>
-    <string name="nd2">a</string>
-    <string name="nd3">Kuis</string>
-    <string name="nd4">a</string>
+    <string name="nd1">Normalisasi adalah suatu proses yang digunakan untuk menentukan pengelompokan atribut dalam sebuah relasi sehingga diperoleh relasi berstruktur baik</string>
+    <string name="nd2">Syarat relasi berstruktur baik</string>
+    <string name="nd3">1. Mengandung redundansi yang sedikit mungkin</string>
+    <string name="nd4">2. Memungkinkan baris-baris dalam relasi disisipkan, dimodifikasi, dan dihapus tanpa menimbulkan kesalahan atau ketidakkonsistenan</string>
+    <string name="nd5">Normalisasi dilakukan melalui setiap bentuk form (1NF sampai dengan 5NF)</string>
 
     <string name="ns1">jh</string>
     <string name="ns2">a</string>
     <string name="ns3">Kuis</string>
     <string name="ns4">a</string>
 
-    <string name="np1">fgd</string>
-    <string name="np2">a</string>
+    <string name="np1">Suatu relasi disebut memenuhi bentuk normal pertama (1NF) jika dan hanya jika setiap atribut dari relasi tersebut hanya memiliki nilai tunggal dan tidak ada pengulangan grup atribut dalam baris</string>
+    <string name="np2">Bentuk 1NF tidak boleh mengandung grup atribut yang berulang</string>
     <string name="np3">Kuis</string>
     <string name="np4">a</string>
 
-    <string name="nk1">.</string>
-    <string name="nk2">a</string>
-    <string name="nk3">Kuis</string>
-    <string name="nk4">a</string>
+    <string name="nk1">Suatu relasi disebut memenuhi bentuk normal kedua (2NF) jika dan hanya jika</string>
+    <string name="nk2">1. Memenuhi bentuk normal pertama (1NF)</string>
+    <string name="nk3">2. Setiap atribut yang bukan primary key tergantung secara fungsional terhadap semua atribut key dan bukan hanya sebagian atribut key (fully functonally dependent)</string>
+    <string name="nk4">Untuk normalisasi ke bentuk 2NF, maka tabel 1NF didekomposisi menjadi beberapa tabel yang masing-masing memenuhi 2NF</string>
+    <string name="nk5">Bila terdapat ketergantungan parsial maka: eliminate</string>
 
-    <string name="nt1">as</string>
-    <string name="nt2">a</string>
-    <string name="nt3">Kuis</string>
+    <string name="nt1">Suatu relasi disebut memenuhi bentuk normal ketiga (3NF) jika dan hanya jika</string>
+    <string name="nt2">1. Memenuhi bentuk normal kedua (2NF)</string>
+    <string name="nt3">2. Setiap atribut yang bukan kunci tidak tergantung secara fungsional terdahap atribut non-key yang lain dalam relasi tersebut (tidak terdapat ketergantungan transitif pada atribut non-key)</string>
     <string name="nt4">a</string>
 
+    <string name="apa_itu_arsitektur_basis_data">Apa Itu Arsitektur Basis Data?</string>
 
 
 </resources>

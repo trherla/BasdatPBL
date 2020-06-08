@@ -54,10 +54,10 @@
                     android:text="@string/er51"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:paddingTop="10dp"
-                    android:src="@drawable/erd"
+                    android:src="@drawable/unary"
                     android:contentDescription="TODO" />
                 <TextView
                     android:layout_width="match_parent"
@@ -72,10 +72,10 @@
                     android:text="@string/er52"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:paddingTop="10dp"
-                    android:src="@drawable/erd"
+                    android:src="@drawable/binary"
                     android:contentDescription="TODO" />
                 <TextView
                     android:layout_width="match_parent"
@@ -90,10 +90,10 @@
                     android:text="@string/er53"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:paddingTop="10dp"
-                    android:src="@drawable/erd"
+                    android:src="@drawable/ternary"
                     android:contentDescription="TODO" />
 
                 <TextView
@@ -131,10 +131,10 @@
                     android:text="@string/er21"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:paddingTop="10dp"
-                    android:src="@drawable/erd"
+                    android:src="@drawable/ono"
                     android:contentDescription="TODO" />
                 <TextView
                     android:layout_width="match_parent"
@@ -160,10 +160,10 @@
                     android:text="@string/er31"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:paddingTop="10dp"
-                    android:src="@drawable/erd"
+                    android:src="@drawable/onm"
                     android:contentDescription="TODO" />
                 <TextView
                     android:layout_width="match_parent"
@@ -189,10 +189,10 @@
                     android:text="@string/er41"/>
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:paddingTop="10dp"
-                    android:src="@drawable/erd"/>
+                    android:src="@drawable/mnm"/>
 
 
 

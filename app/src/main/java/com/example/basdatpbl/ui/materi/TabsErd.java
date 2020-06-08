@@ -49,7 +49,7 @@ public class TabsErd extends AppCompatActivity {
         adapter.addFrag(new Tabs2ERD(), "Entitas");
         adapter.addFrag(new Tabs3ERD(), "Atribut");
         adapter.addFrag(new Tabs4ERD(), "Relasi");
-        adapter.addFrag(new Tabs5ERD(), "Batasan");
+//        adapter.addFrag(new Tabs5ERD(), "Batasan");
         viewPager.setAdapter(adapter);
     }
 

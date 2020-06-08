@@ -25,7 +25,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ea1"/>
 
@@ -37,7 +37,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ea2"/>
                 <TextView
@@ -48,7 +48,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ea3"/>
                 <TextView
@@ -59,7 +59,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ea31"/>
                 <TextView
@@ -70,7 +70,49 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea311"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea312"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea313"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/atribut_key"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ea32"/>
                 <TextView
@@ -81,7 +123,87 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea33"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea34"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea35"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea36"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea37"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea38"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/ea39"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ea4"/>
 
@@ -94,7 +216,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
-                    android:textSize="32dp"
+                    android:textSize="32sp"
                     android:textColor="@color/color_darkprime"
                     android:text=" "/>
 
