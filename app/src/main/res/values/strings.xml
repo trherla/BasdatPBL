@@ -16,7 +16,7 @@
     <string name="h22">• Rekaman (record) merupakan gabungan sejumlah elemen data yang saling terkait. Istilah lain dari record adalah baris atau tupel.</string>
     <string name="h23">• Berkas(file) adalah himpunan seluruh record yang bertipe sama </string>
 
-<!--    <string name="hd1">While a database is a repository of data, a database management system, or simply DBMS, is a set of software tools that control access, organize, store, manage, retrieve and maintain data in a database. In practical use, the terms database, database server, database system, data server, and database management systems are often used interchangeably. Why do we need database software or a DBMS? Can we not just store data in simple text files for example? The answer lies in the way users access the data and the handle of corresponding challenges. First, we need the ability to have multiple users insert, update and delete data to the same data file without "stepping on each other's toes". This means that different users will not cause the data to become inconsistent, and no data should be inadvertently lost through these operations. We also need to have a standard interface for data access, tools for data backup, data restore and recovery, and a way to handle other challenges such as the capability to work with huge volumes of data and users. Database software has been designed to handle all of these challenges. The most mature database systems in production are relational database management systems (RDBMSs). RDBMSs serve as the backbone of applications in many industries including banking, transportation, health, and so on. The advent of Web-based interfaces has only increased the volume and breadth of use of RDBMS, which serve as the data repositories behind essentially most online commerce.</string>-->
+    <!--    <string name="hd1">While a database is a repository of data, a database management system, or simply DBMS, is a set of software tools that control access, organize, store, manage, retrieve and maintain data in a database. In practical use, the terms database, database server, database system, data server, and database management systems are often used interchangeably. Why do we need database software or a DBMS? Can we not just store data in simple text files for example? The answer lies in the way users access the data and the handle of corresponding challenges. First, we need the ability to have multiple users insert, update and delete data to the same data file without "stepping on each other's toes". This means that different users will not cause the data to become inconsistent, and no data should be inadvertently lost through these operations. We also need to have a standard interface for data access, tools for data backup, data restore and recovery, and a way to handle other challenges such as the capability to work with huge volumes of data and users. Database software has been designed to handle all of these challenges. The most mature database systems in production are relational database management systems (RDBMSs). RDBMSs serve as the backbone of applications in many industries including banking, transportation, health, and so on. The advent of Web-based interfaces has only increased the volume and breadth of use of RDBMS, which serve as the data repositories behind essentially most online commerce.</string>-->
     <string name="hd1">Data merupakan suatu pendekatan yang ditujukan untuk kepentingan abstraksi data. Metode umum yang digunakakn untuk menjelaskan arsitektur dari sistem basis data diformulasikan pada 1978 yang di kenal dengan sebutan ANSI/SPARC (American National Standards Institute/ Standard Planning and Requirements Committee) yakni terdapat tiga level yaitu: </string>
     <string name="hd11">1. Internal/ Physical Level: berhubungan dengan bagaimana data disimpan secara fisik (physical storage). Internal level adalah level terendah untuk merepresentasikan basis data. Record disimpan dalam media penyimpanan dalam format byte. Didefinisikan sebagai sebuah skema internal.</string>
     <string name="hd12">2. External / View Level: berhubungan dengan bagaimana data direpresentasikan dari sisi setiap user. View level adalah level user, yang dimaksud dengan user adalah programmer, end user atau Database Administrator (DBA). (programmer : bahasa yang digunakan adalah bahasa pemrograman seperti C, COBOL, atau PL/I), (end user : bahasa yang digunakan adalah bahasa query atau menggunakan fasilitas yang tersedia pada program aplikasi pada level eksternal ini, user dibatasi pada kemampuan perangkat keras dan perangkat lunak yang digunakan aplikasi basis data yang didefinisikan sebagai sebuah skema eksternal.)</string>
@@ -43,7 +43,7 @@
     <string name="ed31">1. Entitas</string>
     <string name="ed32">2. Atribut</string>
     <string name="ed33">3. Relasi</string>
-<!--    <string name="ed4">Materi</string>-->
+    <!--    <string name="ed4">Materi</string>-->
 
     <string name="ee1">Entitas merupakan objek yang mewakili sesuatu yang nyata dan dapat dibedakan dari sesuatu yang lain. Setiap entitas memiliki beberapa atribut yang mendeskripsikan karakteristik dari objek tersebut. </string>
     <string name="ee2">Entitas dapat berupa :</string>
@@ -86,8 +86,6 @@
     <string name="er53">Ternary Degree - Relasi yang melibatkan tiga entitas</string>
 
 
-
-
     <string name="eb1">Batasan partisipasi atau batasan hubungan entitas menjelaskan bagaimana data itu berelasi, batasan ini menentukan bagaimana (harus ataukah tidak) berpartisipasi suatu entitas dengan relasinya pada entitas lain. </string>
     <string name="eb2">Materi</string>
     <string name="eb3">Materi</string>
@@ -112,7 +110,6 @@
     <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut</string>
     <string name="kf5"><![CDATA[Notasi : {A,B,…} -> Z]]></string>
     <string name="kf6">Atribut Z mempunyai dependensi terhadap pasangan A dan B</string>
-
 
 
     <!--    Ketergantungan sepenuhnya-->

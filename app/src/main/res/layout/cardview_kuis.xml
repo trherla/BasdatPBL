@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/kasus_click"
+    android:id="@+id/kuis_click"
     android:clickable="true"
     android:foreground="?android:selectableItemBackground"
     android:layout_width="match_parent"
-    android:layout_height="190dp"
+    android:layout_height="200dp"
     android:layout_marginTop="16dp"
     android:layout_marginBottom="8dp"
     android:layout_marginStart="16dp"
@@ -18,37 +18,38 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <ImageView
-            android:id="@+id/kasus_img"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
-            android:layout_alignParentLeft="true"
-            android:layout_centerInParent="true"
-            android:scaleType="centerCrop" />
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="false"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/kasus_title"
+                android:id="@+id/kuis_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Judul Materi"
+                android:text="Judul Kuis"
                 android:textColor="@color/color_darkprime"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
             <TextView
-                android:id="@+id/kasus_desc"
+                android:id="@+id/kuis_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deskripsi Kasus"
-                android:textColor="@color/color_darkprime"
-                android:layout_marginTop="8dp"
-                android:textSize="12sp" />
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:text="desc"
+                />
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/kuis_img"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            
+
+            />
 
     </RelativeLayout>
 

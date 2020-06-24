@@ -1,4 +1,4 @@
-package com.example.basdatpbl.ui.kasus;
+package com.example.basdatpbl.ui.kuis;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,29 +8,32 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.kuis.Kuis;
+import com.example.basdatpbl.ui.kuis.KuisFragment;
+import com.example.basdatpbl.ui.kuis.KuisViewModel;
 
 import java.util.List;
 
 
-public class KasusAdapter extends RecyclerView.Adapter<KasusViewModel> {
-    KasusFragment context;
-    private List<Kasus> mData;
+public class KuisAdapter extends RecyclerView.Adapter<KuisViewModel> {
+    KuisFragment context;
+    private List<Kuis> mData;
 
-    public KasusAdapter(KasusFragment context, List<Kasus> mData) {
+    public KuisAdapter(KuisFragment context, List<Kuis> mData) {
         this.context =  context;
         this.mData = mData;
     }
     @NonNull
     @Override
-    public KasusViewModel onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_kasus, parent, false);
-        return new KasusViewModel(v);
+    public KuisViewModel onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_kuis, parent, false);
+        return new KuisViewModel(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull KasusViewModel holder, int position) {
-        holder.kasus_title.setText(mData.get(position).getTitle());
-        holder.kasus_desc.setText(mData.get(position).getDescription());
+    public void onBindViewHolder(@NonNull KuisViewModel holder, int position) {
+        holder.kuis_title.setText(mData.get(position).getTitle());
+        holder.kuis_desc.setText(mData.get(position).getDescription());
         holder.img_thumbnail.setImageResource(mData.get(position).getThumbnail());
     }
 

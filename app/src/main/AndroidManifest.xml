@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.basdatpbl">
 
     <application
@@ -9,8 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.materi.hirarki.Tabs1Hirarki"></activity>
-        <activity android:name=".ui.kasus.satu.KasusSatu" />
+        <activity android:name=".ui.kuis.HasilKuis"></activity>
+        <activity android:name=".ui.kuis.kuis_hirarki.KuisHirarki" />
+        <activity android:name=".ui.kuis.kuis_erd.KuisErd" />
+        <activity android:name=".ui.materi.hirarki.Tabs1Hirarki" />
+        <activity android:name=".ui.kasus.satu.KasusSatu"
+            tools:ignore="Instantiatable" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,37 +24,35 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.kasus.satu.TahapSatu"
+            android:theme="@style/Theme.Intro" />
+        <activity
             android:name=".AppIntroActivity"
             android:theme="@style/Theme.Intro" />
         <activity
             android:name=".BottomActivity"
             android:label="@string/title_activity_bottom" />
         <activity android:name=".MainActivity" />
-
         <activity
             android:name=".ui.materi.TabsHirarki"
             android:label="Hirarki"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.materi.TabsHirarki">
-        </activity>
+            android:parentActivityName=".ui.materi.TabsHirarki"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.materi.TabsErd"
             android:label="Entity Relationship Diagram"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.materi.TabsErd">
-        </activity>
+            android:parentActivityName=".ui.materi.TabsErd"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.materi.TabsKetergantungan"
             android:label="Ketergantungan Fungsional"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.materi.TabsKetergantungan">
-        </activity>
+            android:parentActivityName=".ui.materi.TabsKetergantungan"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.materi.TabsNormalisasi"
             android:label="Normalisasi"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".ui.materi.TabsNormalisasi">
-        </activity>
+            android:parentActivityName=".ui.materi.TabsNormalisasi"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

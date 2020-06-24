@@ -48,44 +48,199 @@
                     android:paddingTop="10dp"
                     android:src="@drawable/ansisparc"/>
 
-                <TextView
+                <LinearLayout
+                    android:id="@+id/lay1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/hd11"/>
-                <TextView
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/color_darkprime"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Internal Level"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+                <RelativeLayout
+
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/hd12"/>
-                <TextView
+                    android:layout_height="wrap_content">
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expen1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:ael_expanded="false"
+                        app:ael_duration="500"
+                        app:ael_interpolator="accelerateDecelerate"
+                        app:ael_orientation="vertical"
+                        tools:ignore="NotSibling">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginEnd="18dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_darkprime"
+                                android:text="@string/hd11"/>
+
+                        </LinearLayout>
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/hd13"/>
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/colorAccent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="View Level"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_dark"
+                        android:textSize="16sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expen2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:ael_expanded="false"
+                        app:ael_duration="500"
+                        app:ael_interpolator="accelerateDecelerate"
+                        app:ael_orientation="vertical"
+                        tools:ignore="NotSibling">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginEnd="18dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_darkprime"
+                                android:text="@string/hd12"/>
+
+                        </LinearLayout>
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/color_light">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Conceptual Level"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_dark"
+                        android:textSize="16sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expen3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:ael_expanded="false"
+                        app:ael_duration="500"
+                        app:ael_interpolator="accelerateDecelerate"
+                        app:ael_orientation="vertical"
+                        tools:ignore="NotSibling">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="8dp"
+
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginEnd="18dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_darkprime"
+                                android:text="@string/hd13"/>
+
+                        </LinearLayout>
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                </RelativeLayout>
+
+
 
                 <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
                     android:id="@+id/tabs2_hirarki"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
                     app:videoId="kOHB85vDuow"
 
                     app:showFullScreenButton="true"
