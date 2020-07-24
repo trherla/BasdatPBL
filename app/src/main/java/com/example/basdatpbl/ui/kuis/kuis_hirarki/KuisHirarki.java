@@ -3,22 +3,28 @@ package com.example.basdatpbl.ui.kuis.kuis_hirarki;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kuis.HasilKuis;
 
 public class KuisHirarki extends AppCompatActivity {
 
     TextView pertanyaan;
     RadioGroup rg;
     RadioButton PilA, PilB, PilC, PilD;
+    ImageView imgKuis;
     int nomor = 0;
+
+    private long backPressedTime;
+    private Toast backToast;
 
     public static int hasil, benar, salah;
 
@@ -31,19 +37,27 @@ public class KuisHirarki extends AppCompatActivity {
     };
 
     String[] pilihan_jawaban = new String[]{
-            "1","2","3","4",
+            "Ada","Adi","Ado","Ade",
+            "Lawang","Singosari","Malang","Surabaya",
             "2","3","4","5",
-            "9","8","7","6",
-            "10","12","13","14",
-            "11","13","17","12"
+            "Masa sih","Ribet bet dah","ebuset","gapapa",
+            "Tri Rizki Jerlambang","Tri Rizki Herlambang","Try Risky Herlambang","Tri Risky Jerlambang"
     };
 
     String[] jawaban_benar = new String[]{
-            "4",
-            "2",
-            "7",
-            "12",
-            "17"
+            "Ado",
+            "Lawang",
+            "5",
+            "gapapa",
+            "Tri Rizki Herlambang"
+    };
+
+    private static final Integer[] img ={
+            R.drawable.simbol_erd,
+            R.drawable.ketergantungan,
+            R.drawable.rb_a_unchecked,
+            R.drawable.ternary,
+            R.drawable.rb_a_checked
     };
 
     @Override
@@ -51,12 +65,13 @@ public class KuisHirarki extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kuis_hirarki);
 
-        pertanyaan = (TextView) findViewById(R.id.pertanyaan);
-        rg = (RadioGroup) findViewById(R.id.radio_group);
-        PilA = (RadioButton) findViewById(R.id.pilihanA);
-        PilB = (RadioButton) findViewById(R.id.pilihanB);
-        PilC = (RadioButton) findViewById(R.id.pilihanC);
-        PilD = (RadioButton) findViewById(R.id.pilihanD);
+        pertanyaan = findViewById(R.id.pertanyaan);
+        rg = findViewById(R.id.radio_group);
+        PilA = findViewById(R.id.pilihanA);
+        PilB = findViewById(R.id.pilihanB);
+        PilC = findViewById(R.id.pilihanC);
+        PilD = findViewById(R.id.pilihanD);
+        imgKuis = findViewById(R.id.imageView2);
 
         pertanyaan.setText(pertanyaan_kuis[nomor]);
         PilA.setText(pilihan_jawaban[0]);
@@ -64,34 +79,87 @@ public class KuisHirarki extends AppCompatActivity {
         PilC.setText(pilihan_jawaban[2]);
         PilD.setText(pilihan_jawaban[3]);
 
+
         rg.check(0);
         benar = 0;
         salah = 0;
 
     }
 
+    public void onRBClicked (View view){
+        boolean isSelected = ((RadioButton)view).isChecked();
+        switch (view.getId()){
+            case R.id.pilihanA:
+//                if(isSelected){
+//                    PilA.setTextColor(Color.WHITE);
+//                    PilB.setTextColor(Color.BLACK);
+//                    PilC.setTextColor(Color.BLACK);
+//                    PilD.setTextColor(Color.BLACK);
+//                }
+                break;
+            case R.id.pilihanB:
+//                if(isSelected){
+//                    PilA.setTextColor(Color.BLACK);
+//                    PilB.setTextColor(Color.WHITE);
+//                    PilC.setTextColor(Color.BLACK);
+//                    PilD.setTextColor(Color.BLACK);
+//                }
+                break;
+            case R.id.pilihanC:
+//                if(isSelected){
+//                    PilA.setTextColor(Color.BLACK);
+//                    PilB.setTextColor(Color.BLACK);
+//                    PilC.setTextColor(Color.WHITE);
+//                    PilD.setTextColor(Color.BLACK);
+//                }
+                break;
+            case R.id.pilihanD:
+//                if(isSelected){
+//                    PilA.setTextColor(Color.BLACK);
+//                    PilB.setTextColor(Color.BLACK);
+//                    PilC.setTextColor(Color.BLACK);
+//                    PilD.setTextColor(Color.WHITE);
+//                }
+                break;
+        }
+    }
+//    public void onBackPressed() {
+//        if(backPressedTime +2000 > System.currentTimeMillis()){
+//            finish();
+//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+//            startActivity(backhome);
+//        }else {
+//            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+//            backToast.show();
+//        }
+//        backPressedTime =System.currentTimeMillis();
+//
+//    }
+
     public void next(View view){
 
         if (PilA.isChecked() || PilB.isChecked() || PilC.isChecked() || PilD.isChecked()) {
-            RadioButton jawaban_user = (RadioButton) findViewById(rg.getCheckedRadioButtonId());
+            RadioButton jawaban_user = findViewById(rg.getCheckedRadioButtonId());
             String ambil_jawaban_user = jawaban_user.getText().toString();
             rg.check(0);
+
             if (ambil_jawaban_user.equalsIgnoreCase(jawaban_benar[nomor])) benar++;
             else salah++;
             nomor++;
+
             if (nomor < pertanyaan_kuis.length) {
                 pertanyaan.setText(pertanyaan_kuis[nomor]);
-                PilA.setText(pilihan_jawaban[(nomor * 4) + 0]);
+                imgKuis.setImageResource(img[nomor]);
+                PilA.setText(pilihan_jawaban[nomor * 4]);
                 PilB.setText(pilihan_jawaban[(nomor * 4) + 1]);
                 PilC.setText(pilihan_jawaban[(nomor * 4) + 2]);
                 PilD.setText(pilihan_jawaban[(nomor * 4) + 3]);
-
-
             } else {
                 hasil = benar * 20;
                 Intent selesai = new Intent(getApplicationContext(), HasilKuis.class);
                 startActivity(selesai);
             }
+
         }
         else {
                 Toast.makeText(this, "Pilih Terlebih dahulu", Toast.LENGTH_SHORT).show();

@@ -24,11 +24,6 @@
     <color name="color_dark">#011627</color>
 
 
-    <color name="color_soft1">#93B7BE</color>
-    <color name="color_soft2">#B0413E</color>
-    <color name="color_soft3">#0DCCFF</color>
-
-
     <!--Color Scheme 2-->
 <!--    <color name="background">#FFFFFF</color>-->
 <!--    <color name="color_darkprime">#0D1B1E</color>-->
@@ -37,8 +32,6 @@
 <!--    <color name="color_dark">#648381</color>-->
 
     <!-- Screens background color-->
-    <color name="bg_screen1">#f64c73</color>
-    <color name="bg_screen2">#20d2bb</color>
     <color name="bg_screen3">#3395ff</color>
 
     <!-- dots inactive colors -->

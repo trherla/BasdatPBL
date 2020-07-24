@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cv_click"
     android:clickable="true"
     android:foreground="?android:selectableItemBackground"
@@ -8,22 +9,24 @@
     android:layout_height="220dp"
     android:layout_margin="8dp"
     android:background="@color/background"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="4dp"
+    android:focusable="true">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/cardview_light_background"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="PrivateResource">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/cv_img"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
             android:scaleType="fitCenter"/>
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -32,7 +35,6 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:gravity="center"
-            android:text="Judul Materi"
             android:textColor="@color/color_darkprime"
             android:textSize="14sp" />
 

@@ -1,14 +1,16 @@
-package com.example.basdatpbl;
+package com.example.basdatpbl.ui.kasus.satu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.basdatpbl.R;
+
+public class OneTahapLima extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_one_tahap_lima);
     }
 }

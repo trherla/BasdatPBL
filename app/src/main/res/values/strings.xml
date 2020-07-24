@@ -28,7 +28,6 @@
     <string name="hm31">Dalam pemodelan ini struktur atau hirarki basis data diilustrasikan berdasarkan object. Model ini meliputi: 1) Entity Relationalship Model. 2) Object-Oriented Model. 3) Semantic Data Model. 4) Function Data Model.</string>
     <string name="hm4">2. Record-based Logical Model</string>
     <string name="hm41">Dalam model ini struktur basis data diilustrasikan berdasarkan record. Model ini meliputi: 1) Relational Model. 2) Hierarchical Model 3) Network Model.</string>
-    <string name="hm5">a</string>
 
     <string name="hp1">Like any other work profile, the database domain has several of roles and career paths associated with it. The following is a description of some of these roles. </string>
     <string name="hp2">1.5.1 Data Architect </string>
@@ -87,9 +86,6 @@
 
 
     <string name="eb1">Batasan partisipasi atau batasan hubungan entitas menjelaskan bagaimana data itu berelasi, batasan ini menentukan bagaimana (harus ataukah tidak) berpartisipasi suatu entitas dengan relasinya pada entitas lain. </string>
-    <string name="eb2">Materi</string>
-    <string name="eb3">Materi</string>
-    <string name="eb4">Materi</string>
 
     <!--Definisi ketergantungan-->
     <string name="kde1">Dependensi merupakan ketergantungan setiap atribut dengan atribut lainnya</string>
@@ -100,8 +96,6 @@
     <string name="kde33">3. Dependensi Sebagian</string>
     <string name="kde34">4. Dependensi Penuh</string>
     <string name="kde35">5. Dependensi Transitif</string>
-
-    <string name="kde4">Konsep penting yang menjadi dasar melakukan normalisasi relasi-relasi dalam perancangan sistem database adalah functional dependency atau ketergantungan fungsional. Tanpa memahami konsep functional dependency atau ketergantungan fungsional kita tidak bisa melakukan proses normalisasi dengan baik dan benar. Functional dependency atau ketergantungan fungsional adalah suatu konsep yang menjelaskan tentang relationship/asosiasi/hubungan antara atribut-atribut dalam suatu relasi. </string>
 
     <!--    Ketergantungan fungsional-->
     <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut </string>
@@ -122,7 +116,6 @@
     <string name="ks1">Suatu atribut B dikatakan memiliki dependensi partial terhadap A apabila</string>
     <string name="ks2">1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key</string>
     <string name="ks3">2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
-    <string name="ks4">a</string>
 
     <!--    Ketergantungan penuh-->
     <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh terhadap A apabila </string>
@@ -132,8 +125,6 @@
     <!--Ketergantungan Transitif    -->
     <string name="kt1">Transitive dependency biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A,B,C. </string>
     <string name="kt2">Kondisinya adalah A ⇒ B dan B ⇒ C. Maka C dikatakan sebagai transitive dependency terhadap A melalui B.</string>
-    <string name="kt3">Kuis</string>
-    <string name="kt4">a</string>
 
     <!--Normalisasi Data    -->
     <string name="nd1">Normalisasi adalah suatu proses yang digunakan untuk menentukan pengelompokan atribut dalam sebuah relasi sehingga diperoleh relasi berstruktur baik</string>
@@ -142,15 +133,8 @@
     <string name="nd4">2. Memungkinkan baris-baris dalam relasi disisipkan, dimodifikasi, dan dihapus tanpa menimbulkan kesalahan atau ketidakkonsistenan</string>
     <string name="nd5">Normalisasi dilakukan melalui setiap bentuk form (1NF sampai dengan 5NF)</string>
 
-    <string name="ns1">jh</string>
-    <string name="ns2">a</string>
-    <string name="ns3">Kuis</string>
-    <string name="ns4">a</string>
-
     <string name="np1">Suatu relasi disebut memenuhi bentuk normal pertama (1NF) jika dan hanya jika setiap atribut dari relasi tersebut hanya memiliki nilai tunggal dan tidak ada pengulangan grup atribut dalam baris</string>
     <string name="np2">Bentuk 1NF tidak boleh mengandung grup atribut yang berulang</string>
-    <string name="np3">Kuis</string>
-    <string name="np4">a</string>
 
     <string name="nk1">Suatu relasi disebut memenuhi bentuk normal kedua (2NF) jika dan hanya jika</string>
     <string name="nk2">1. Memenuhi bentuk normal pertama (1NF)</string>
@@ -161,9 +145,24 @@
     <string name="nt1">Suatu relasi disebut memenuhi bentuk normal ketiga (3NF) jika dan hanya jika</string>
     <string name="nt2">1. Memenuhi bentuk normal kedua (2NF)</string>
     <string name="nt3">2. Setiap atribut yang bukan kunci tidak tergantung secara fungsional terdahap atribut non-key yang lain dalam relasi tersebut (tidak terdapat ketergantungan transitif pada atribut non-key)</string>
-    <string name="nt4">a</string>
 
     <string name="apa_itu_arsitektur_basis_data">Apa Itu Arsitektur Basis Data?</string>
 
+    <string name="tahap2pbl">Penentuan Masalah Pokok</string>
+    <string name="tahap3pbl">Perencanaan Penyelesaian</string>
+    <string name="tahap4pbl">Pelaksanaan Rencana</string>
+    <string name="tahap5pbl">Evaluasi</string>
+
+    <string name="pertanyaan_perpus">Pilihlah beberapa permasalahan yang sesuai dengan kasus yang telah dijelaskan di awal</string>
+    <string name="masalah1_perpus">Kesalahan Atribut</string>
+    <string name="masalah2_perpus">Terdapat Entitas yang tidak sesuai dengan database perpustakaan</string>
+    <string name="masalah3_perpus">Penggunaan Notasi E-R Diagram yang salah</string>
+    <string name="masalah4_perpus">Ketidakcocokan Relasi antar Entitas</string>
+
+    <string name="solusi_perpus">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
+    <string name="solusi1_perpus">Mengganti beberapa Atribut</string>
+    <string name="solusi2_perpus">Menghapus Entitas yang tidak relevan dengan database perpustakaan</string>
+    <string name="solusi3_perpus">Mengubah beberapa simbol ERD</string>
+    <string name="solusi4_perpus">Mencocokkan kembali relasi dan kardinalitas</string>
 
 </resources>

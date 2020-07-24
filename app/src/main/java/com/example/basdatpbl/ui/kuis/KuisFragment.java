@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +28,7 @@ public class KuisFragment extends Fragment {
 //        kuisViewModel =
 //                ViewModelProviders.of(this).get(KuisViewModel.class);
         View root = inflater.inflate(R.layout.fragment_kuis, container, false);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 //        final TextView textView = root.findViewById(R.id.kuis);
 //        kuisViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
 //            @Override
@@ -34,6 +36,8 @@ public class KuisFragment extends Fragment {
 //                textView.setText(s);
 //            }
 //        });
+
+
 
         lstKuis = new ArrayList<>();
         adapter = new KuisAdapter(this, lstKuis);
@@ -44,10 +48,10 @@ public class KuisFragment extends Fragment {
         KuisAdapter adapter = new KuisAdapter(this, lstKuis);
 
         rv.setAdapter(adapter);
-        lstKuis.add(new Kuis("Kuis", "Categories 1", "Hirarki Basis Data", R.drawable.sekolah));
-        lstKuis.add(new Kuis("Kuis", "Categories 2", "ERD", R.drawable.perpustakaan));
-        lstKuis.add(new Kuis("Kuis", "Categories 3", "Ketergantungan Fungsional", R.drawable.rumahsakit));
-        lstKuis.add(new Kuis("Kuis", "Categories 4", "Normalisasi", R.drawable.toko));
+        lstKuis.add(new Kuis("Kuis", "Categories 1", "Hirarki Basis Data", R.drawable.hirarki));
+        lstKuis.add(new Kuis("Kuis", "Categories 2", "ERD", R.drawable.entitas1));
+        lstKuis.add(new Kuis("Kuis", "Categories 3", "Ketergantungan Fungsional", R.drawable.ketergantungan));
+        lstKuis.add(new Kuis("Kuis", "Categories 4", "Normalisasi", R.drawable.normalisasi));
 
         return root;
     }

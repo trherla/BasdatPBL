@@ -37,7 +37,7 @@ public class BottomActivity extends AppCompatActivity {
                 .getBoolean(PREF_KEY_FIRST_START, true);
 
         //set for first start
-        if (!firstStart) {
+        if (firstStart) {
             Intent intent = new Intent(this, AppIntroActivity.class);
             startActivityForResult(intent, REQUEST_CODE_INTRO);
         }

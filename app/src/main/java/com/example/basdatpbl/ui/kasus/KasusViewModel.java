@@ -9,16 +9,12 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.basdatpbl.AppIntroActivity;
-import com.example.basdatpbl.AppIntroFragment;
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kasus.satu.KasusSatu;
-import com.example.basdatpbl.ui.kasus.satu.TahapSatu;
-import com.example.basdatpbl.ui.kuis.kuis_erd.KuisErd;
-import com.example.basdatpbl.ui.kuis.kuis_hirarki.KuisHirarki;
+import com.example.basdatpbl.ui.kasus.dua.TwoTahapSatu;
+import com.example.basdatpbl.ui.kasus.satu.OneTahapSatu;
+import com.example.basdatpbl.ui.kasus.satu.OneIntro;
 import com.example.basdatpbl.ui.materi.TabsHirarki;
 import com.example.basdatpbl.ui.materi.TabsNormalisasi;
-import com.example.basdatpbl.ui.materi.hirarki.Tabs2Hirarki;
 
 public class KasusViewModel extends RecyclerView.ViewHolder {
 
@@ -36,26 +32,23 @@ public class KasusViewModel extends RecyclerView.ViewHolder {
         img_thumbnail = (ImageView) itemView.findViewById(R.id.kasus_img);
         cardView = (CardView) itemView.findViewById(R.id.kasus_click);
 
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                switch (getAdapterPosition()){
-                    case 0 :
-                        intent = new Intent(context, AppIntroActivity.class);
-                        break;
-                    case 1 :
-                        intent = new Intent(context, TahapSatu.class);
-                        break;
-                    case 2 :
-                        intent = new Intent(context, KasusSatu.class);
-                        break;
-                    case 3 :
-                        intent = new Intent(context, TabsNormalisasi.class);
-                        break;
-                }
-                context.startActivity(intent);
+        cardView.setOnClickListener(view -> {
+            Intent intent = new Intent();
+            switch (getAdapterPosition()){
+                case 0 :
+                    intent = new Intent(context, OneTahapSatu.class);
+                    break;
+                case 1 :
+                    intent = new Intent(context, TwoTahapSatu.class);
+                    break;
+                case 2 :
+                    intent = new Intent(context, OneIntro.class);
+                    break;
+                case 3 :
+                    intent = new Intent(context, TabsNormalisasi.class);
+                    break;
             }
+            context.startActivity(intent);
         });
     }
 

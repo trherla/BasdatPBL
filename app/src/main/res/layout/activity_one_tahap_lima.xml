@@ -4,17 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".ui.kuis.KuisFragment"
-    android:tag="kuis_tag"
-    >
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_idkuis"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+    tools:context=".ui.kasus.satu.OneTahapLima">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

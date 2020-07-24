@@ -1,21 +1,17 @@
-package com.example.basdatpbl.ui.kasus.satu;
+package com.example.basdatpbl.ui.kasus.dua;
 
 import android.os.Build;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
 
 import com.example.basdatpbl.R;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
 
-public class TahapSatu extends IntroActivity {
+public class TwoIntro extends IntroActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +38,7 @@ public class TahapSatu extends IntroActivity {
                 .title("Problem Based Learning")
                 .description("Dapat melatih kemampuan pemecahan masalah")
 //                .image(R.drawable.ic_sync_problem_black_24dp)
-                .background(R.color.color_darkprime)
+                .background(R.color.color_light)
                 .backgroundDark(R.color.white)
                 .canGoBackward(false)
                 .build());
@@ -51,7 +47,7 @@ public class TahapSatu extends IntroActivity {
                 .title("Basis Data")
                 .description("Materi yang dipelajari merupakan materi basis data")
 //                .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.color_darkprime)
+                .background(R.color.color_light)
                 .backgroundDark(R.color.white)
                 .build());
 
@@ -59,7 +55,7 @@ public class TahapSatu extends IntroActivity {
                 .title("Kuis")
                 .description("Terdapat kuis sebagai latihan")
 //                .image(R.drawable.ic_assignment_turned_in_black_24dp)
-                .background(R.color.color_darkprime)
+                .background(R.color.color_light)
                 .backgroundDark(R.color.white)
                 .build());
 
@@ -68,3 +64,4 @@ public class TahapSatu extends IntroActivity {
     }
 
 }
+

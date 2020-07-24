@@ -10,11 +10,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.kuis.HasilKuis"></activity>
-        <activity android:name=".ui.kuis.kuis_hirarki.KuisHirarki" />
+        <activity
+            android:name=".ui.kasus.dua.TwoTahapEmpat"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.kasus.dua.TwoTahapTiga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.dua.TwoTahapDua"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.dua.TwoTahapSatu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.satu.OneIntro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.dua.TwoIntro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.satu.OneTahapSatu"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ui.kasus.satu.OneTahapDua"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.satu.OneTahapTiga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.satu.OneTahapEmpat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.satu.OneTahapLima"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.kuis.kuis_hirarki.HasilKuis" />
+        <activity
+            android:name=".ui.kuis.kuis_hirarki.KuisHirarki"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.kuis.kuis_erd.KuisErd" />
-        <activity android:name=".ui.materi.hirarki.Tabs1Hirarki" />
-        <activity android:name=".ui.kasus.satu.KasusSatu"
+        <activity
+            android:name=".ui.materi.hirarki.Tabs1Hirarki"
             tools:ignore="Instantiatable" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -24,15 +61,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.kasus.satu.TahapSatu"
-            android:theme="@style/Theme.Intro" />
-        <activity
             android:name=".AppIntroActivity"
             android:theme="@style/Theme.Intro" />
         <activity
             android:name=".BottomActivity"
             android:label="@string/title_activity_bottom" />
-        <activity android:name=".MainActivity" />
         <activity
             android:name=".ui.materi.TabsHirarki"
             android:label="Hirarki"
