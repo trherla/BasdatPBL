@@ -5,12 +5,13 @@
     android:clickable="true"
     android:foreground="?android:selectableItemBackground"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="160dp"
     android:layout_marginTop="16dp"
     android:layout_marginBottom="8dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginEnd="16dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
     android:background="@color/background"
+    app:cardElevation="4dp"
     app:cardCornerRadius="4dp">
 
     <RelativeLayout
@@ -19,37 +20,40 @@
         android:padding="16dp">
 
         <LinearLayout
+            android:id="@+id/linearheaderkuis"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:layout_centerInParent="false"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:layout_toStartOf="@+id/kuis_img"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/kuis_title"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Judul Kuis"
                 android:textColor="@color/color_darkprime"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/kuis_desc"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:textSize="12sp"
                 android:text="desc"
-                />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/kuis_img"
             android:layout_width="180dp"
-            android:layout_height="160dp"
+            android:layout_height="120dp"
             android:layout_alignParentRight="true"
-            android:layout_centerInParent="true"
-            
-
-            />
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:padding="8dp" />
 
     </RelativeLayout>
 

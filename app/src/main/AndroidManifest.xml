@@ -11,9 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ui.materi.hirarki.VideoPlayer"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
             android:name=".ui.kasus.dua.TwoTahapEmpat"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ui.kasus.dua.TwoTahapTiga"
             android:theme="@style/AppTheme.NoActionBar" />

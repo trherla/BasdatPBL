@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:background="@drawable/bg_slider1"
     tools:context=".ui.materi.hirarki.Tabs3Hirarki">
     <ScrollView
         android:layout_width="match_parent"
@@ -15,54 +16,60 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:padding="16dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
+                    android:layout_marginStart="2dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
+                    android:background="@drawable/bg_white"
+                    android:elevation="2dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="8dp"
+                    android:text="@string/hm1"
                     android:textColor="@color/color_darkprime"
-                    android:text="@string/hm1"/>
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
+                    android:layout_marginStart="2dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
+                    android:background="@drawable/bg_white"
+                    android:elevation="2dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="8dp"
+                    android:text="@string/hm2"
                     android:textColor="@color/color_darkprime"
-                    android:text="@string/hm2"/>
+                    android:textSize="16sp" />
 
                 <LinearLayout
                     android:id="@+id/lay1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:background="@color/color_lightprime">
+                    android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Object-based"
+                        android:text="@string/hm3"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
                         android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                       />
                 </LinearLayout>
                 <RelativeLayout
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                     <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -78,37 +85,25 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
-
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
                             android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="18dp"
-                                android:layout_marginEnd="18dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.25"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/hm3"/>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="18dp"
-                                android:layout_marginEnd="18dp"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="2dp"
                                 android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.25"
-                                android:textSize="16sp"
+                                android:background="@drawable/bg_white"
+                                android:elevation="2dp"
+                                android:lineSpacingMultiplier="1.5"
+                                android:padding="8dp"
+                                android:text="@string/hm31"
                                 android:textColor="@color/color_darkprime"
-                                android:text="@string/hm31"/>
+                                android:textSize="16sp" />
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
@@ -119,13 +114,14 @@
                     android:id="@+id/lay2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
-                    android:background="@color/color_lightprime">
+                    android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Record-based"
+                        android:text="@string/hm4"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
@@ -151,37 +147,26 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
 
                             android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="18dp"
-                                android:layout_marginEnd="18dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.25"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/hm4"/>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="18dp"
-                                android:layout_marginEnd="18dp"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="2dp"
                                 android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.25"
-                                android:textSize="16sp"
+                                android:background="@drawable/bg_white"
+                                android:elevation="2dp"
+                                android:lineSpacingMultiplier="1.5"
+                                android:padding="8dp"
+                                android:text="@string/hm41"
                                 android:textColor="@color/color_darkprime"
-                                android:text="@string/hm41"/>
+                                android:textSize="16sp" />
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>

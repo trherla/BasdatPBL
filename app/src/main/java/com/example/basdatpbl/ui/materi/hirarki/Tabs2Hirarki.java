@@ -1,5 +1,6 @@
 package com.example.basdatpbl.ui.materi.hirarki;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.kasus.dua.TwoTahapDua;
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
@@ -43,8 +45,8 @@ public class Tabs2Hirarki extends Fragment  implements View.OnClickListener {
 
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.hirarki_tabs2, container, false);
-        YouTubePlayerView youTubePlayerView = root.findViewById(R.id.tabs2_hirarki);
-        getLifecycle().addObserver(youTubePlayerView);
+//        YouTubePlayerView youTubePlayerView = root.findViewById(R.id.tabs2_hirarki);
+//        getLifecycle().addObserver(youTubePlayerView);
 
         mExpandLayout1 = (ExpandableRelativeLayout) root.findViewById(R.id.expen1);
         mExpandLayout2 = (ExpandableRelativeLayout) root.findViewById(R.id.expen2);
@@ -62,6 +64,8 @@ public class Tabs2Hirarki extends Fragment  implements View.OnClickListener {
 
 
     }
+
+
 
     @Override
     public void onClick(View v) {

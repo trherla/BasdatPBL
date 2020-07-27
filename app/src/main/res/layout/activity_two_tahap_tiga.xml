@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,6 +24,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_pertanyaan"
                 android:padding="12dp"
+                android:textSize="16sp"
                 android:text="@string/tahap4pbl"
                 android:textColor="@color/mi_icon_color_dark"
                 app:layout_constraintStart_toStartOf="parent"
@@ -31,19 +32,23 @@
                 tools:ignore="MissingConstraints" />
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scaleType="fitCenter"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
                 android:contentDescription="@string/tahap4pbl"
                 android:src="@drawable/atribut_key"
                 app:layout_constraintTop_toBottomOf="@+id/jud_kasus" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
+                android:background="@drawable/bg_white"
+                android:layout_marginTop="16dp"
+                android:padding="12dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -54,15 +59,17 @@
                     />
                 <Spinner
                     android:id="@+id/spinnerA"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:spinnerMode="dialog" />
             </LinearLayout>
            <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:layout_marginTop="16dp">
+               android:background="@drawable/bg_white"
+               android:layout_marginTop="16dp"
+              android:padding="12dp">
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
@@ -73,15 +80,17 @@
 
                <Spinner
                    android:id="@+id/spinnerB"
-                   android:layout_width="wrap_content"
+                   android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:layout_marginStart="8dp"
+                   android:layout_marginStart="16dp"
                    android:spinnerMode="dialog" />
            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
+                android:background="@drawable/bg_white"
+                android:layout_marginTop="16dp"
+               android:padding="12dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -92,15 +101,17 @@
 
                 <Spinner
                     android:id="@+id/spinnerC"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:spinnerMode="dialog" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
+                android:background="@drawable/bg_white"
+                android:layout_marginTop="16dp"
+                android:padding="12dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -111,15 +122,17 @@
 
                 <Spinner
                     android:id="@+id/spinnerD"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:spinnerMode="dialog" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
+                android:background="@drawable/bg_white"
+                android:layout_marginTop="16dp"
+                android:padding="12dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -130,9 +143,9 @@
 
                 <Spinner
                     android:id="@+id/spinnerE"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:spinnerMode="dialog" />
             </LinearLayout>
             <ImageButton
@@ -143,9 +156,10 @@
                 android:layout_marginTop="52dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="52dp"
+                android:elevation="4dp"
                 android:background="@drawable/bg_next"
                 android:src="@drawable/next"
                 android:textColor="@color/color_darkprime" />
         </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

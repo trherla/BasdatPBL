@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -21,6 +23,7 @@ public class KuisHirarki extends AppCompatActivity {
     RadioGroup rg;
     RadioButton PilA, PilB, PilC, PilD;
     ImageView imgKuis;
+    ImageButton nxt;
     int nomor = 0;
 
     private long backPressedTime;
@@ -55,7 +58,7 @@ public class KuisHirarki extends AppCompatActivity {
     private static final Integer[] img ={
             R.drawable.simbol_erd,
             R.drawable.ketergantungan,
-            R.drawable.rb_a_unchecked,
+            R.drawable.atribut_key,
             R.drawable.ternary,
             R.drawable.rb_a_checked
     };
@@ -66,6 +69,8 @@ public class KuisHirarki extends AppCompatActivity {
         setContentView(R.layout.activity_kuis_hirarki);
 
         pertanyaan = findViewById(R.id.pertanyaan);
+        nxt = findViewById(R.id.nxtbutton);
+        nxt.setVisibility(View.GONE);
         rg = findViewById(R.id.radio_group);
         PilA = findViewById(R.id.pilihanA);
         PilB = findViewById(R.id.pilihanB);
@@ -83,6 +88,10 @@ public class KuisHirarki extends AppCompatActivity {
         rg.check(0);
         benar = 0;
         salah = 0;
+        nxt.setVisibility(View.GONE);
+        nxt.animate().translationY(nxt.getHeight());
+
+
 
     }
 
@@ -90,36 +99,16 @@ public class KuisHirarki extends AppCompatActivity {
         boolean isSelected = ((RadioButton)view).isChecked();
         switch (view.getId()){
             case R.id.pilihanA:
-//                if(isSelected){
-//                    PilA.setTextColor(Color.WHITE);
-//                    PilB.setTextColor(Color.BLACK);
-//                    PilC.setTextColor(Color.BLACK);
-//                    PilD.setTextColor(Color.BLACK);
-//                }
-                break;
-            case R.id.pilihanB:
-//                if(isSelected){
-//                    PilA.setTextColor(Color.BLACK);
-//                    PilB.setTextColor(Color.WHITE);
-//                    PilC.setTextColor(Color.BLACK);
-//                    PilD.setTextColor(Color.BLACK);
-//                }
-                break;
-            case R.id.pilihanC:
-//                if(isSelected){
-//                    PilA.setTextColor(Color.BLACK);
-//                    PilB.setTextColor(Color.BLACK);
-//                    PilC.setTextColor(Color.WHITE);
-//                    PilD.setTextColor(Color.BLACK);
-//                }
-                break;
             case R.id.pilihanD:
-//                if(isSelected){
-//                    PilA.setTextColor(Color.BLACK);
-//                    PilB.setTextColor(Color.BLACK);
-//                    PilC.setTextColor(Color.BLACK);
-//                    PilD.setTextColor(Color.WHITE);
-//                }
+            case R.id.pilihanB:
+            case R.id.pilihanC:
+                if (isSelected) {
+                    nxt.setVisibility(View.VISIBLE);
+                    nxt.animate().translationY(0);
+                }else{
+                    nxt.setVisibility(View.GONE);
+                    nxt.animate().translationY(nxt.getHeight());
+                }
                 break;
         }
     }
@@ -142,7 +131,8 @@ public class KuisHirarki extends AppCompatActivity {
             RadioButton jawaban_user = findViewById(rg.getCheckedRadioButtonId());
             String ambil_jawaban_user = jawaban_user.getText().toString();
             rg.check(0);
-
+            nxt.setVisibility(View.GONE);
+            nxt.animate().translationY(nxt.getHeight());
             if (ambil_jawaban_user.equalsIgnoreCase(jawaban_benar[nomor])) benar++;
             else salah++;
             nomor++;

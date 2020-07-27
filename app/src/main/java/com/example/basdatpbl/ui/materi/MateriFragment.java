@@ -24,8 +24,7 @@ public class MateriFragment extends Fragment {
     private List<Materi> lstMateri;
 
     public MateriFragment newInstance(){
-        MateriFragment fragment = new MateriFragment();
-        return fragment;
+        return new MateriFragment();
     }
     @Override
     public void onCreate(Bundle savedInstanceState){super.onCreate(savedInstanceState);}
@@ -37,6 +36,7 @@ public class MateriFragment extends Fragment {
 //        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
         View root = inflater.inflate(R.layout.fragment_materi, container, false);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
 //        final TextView textView = root.findViewById(R.id.materi);
 //        materiViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

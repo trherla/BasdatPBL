@@ -28,26 +28,23 @@ public class MateriViewModel extends RecyclerView.ViewHolder {
         img_thumbnail = (ImageView) itemView.findViewById(R.id.cv_img);
         cardView = (CardView) itemView.findViewById(R.id.cv_click);
 
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent();
-                switch (getAdapterPosition()){
-                    case 0 :
-                        intent = new Intent(context, TabsHirarki.class);
-                        break;
-                    case 1 :
-                        intent = new Intent(context, TabsErd.class);
-                        break;
-                    case 2 :
-                        intent = new Intent(context, TabsKetergantungan.class);
-                        break;
-                    case 3 :
-                        intent = new Intent(context, TabsNormalisasi.class);
-                        break;
-                }
-                context.startActivity(intent);
+        cardView.setOnClickListener(view -> {
+            Intent intent = new Intent();
+            switch (getAdapterPosition()){
+                case 0 :
+                    intent = new Intent(context, TabsHirarki.class);
+                    break;
+                case 1 :
+                    intent = new Intent(context, TabsErd.class);
+                    break;
+                case 2 :
+                    intent = new Intent(context, TabsKetergantungan.class);
+                    break;
+                case 3 :
+                    intent = new Intent(context, TabsNormalisasi.class);
+                    break;
             }
+            context.startActivity(intent);
         });
     }
 

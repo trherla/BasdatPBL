@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,6 +28,7 @@ public class KasusFragment extends Fragment {
 //        kasusViewModel =
 //                ViewModelProviders.of(this).get(KasusViewModel.class);
         View root = inflater.inflate(R.layout.fragment_kasus, container, false);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 //        final TextView textView = root.findViewById(R.id.kasus);
 //        kasusViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
 //            @Override

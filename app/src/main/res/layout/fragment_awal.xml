@@ -4,136 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".ui.awal.AwalFragment">
+    android:background="@drawable/bg_slider1"
+    tools:context=".ui.awal.AwalFragment"
+    android:focusableInTouchMode="true">
 
     <ScrollView
+        android:id="@+id/scroll_awal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardview_header"
-                android:layout_margin="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="220dp"
-                android:elevation="12dp"
-                app:cardBackgroundColor="@color/color_light"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp"
-                app:cardUseCompatPadding="false">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginRight="24dp"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:text="Heloo User"
-                            android:textColor="@color/white"
-                            android:textSize="16sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:text="Welcome to Basdat-PBL"
-                            android:textColor="@color/white"
-                            android:layout_marginTop="24dp"
-                            android:textSize="14sp"/>
-
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="24dp"
-                        android:background="@drawable/ic_device_hub_black_24dp"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-            <RelativeLayout
-                android:id="@+id/cardvie_sub"
-                android:layout_below="@+id/cardview_header"
+                android:id="@+id/card_awal1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp">
+                android:layout_margin="32dp"
+                app:cardCornerRadius="8dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/hero_awal"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/database2"/>
+
+                    <TextView
+                        android:id="@+id/judul_awal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hero_awal"
+                        android:gravity="center"
+                        android:textFontWeight="2"
+                        android:text="Database"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="32dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/judul_awal"
+                        android:layout_marginBottom="32dp"
+                        android:paddingStart="32dp"
+                        android:paddingEnd="32dp"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="@string/definisi_database"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/card_awal2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_awal1"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerInParent="true"
-                    android:text="How to Use"
-                    android:textColor="@color/color_darkprime"
-                    android:textSize="21sp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:text="See"
-                    android:textColor="@color/color_lightprime"
-                    android:textSize="14sp"
-                    />
+                    android:text="Tujuan Penggunaan Basis Data"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
             </RelativeLayout>
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_below="@+id/cardvie_sub"
-                android:layout_margin="16dp"
-                android:elevation="12dp"
-                app:cardBackgroundColor="@color/color_lightprime"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp"
-                app:cardUseCompatPadding="false">
-                <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_below="@id/card_awal2">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_idawal"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginRight="24dp"
-                        android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:text="Tujuan"
-                            android:textColor="@color/color_darkprime"
-                            android:textSize="16sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:text="Tujuan dari Aplikasi ini adalah"
-                            android:textColor="@color/color_darkprime"
-                            android:layout_marginTop="24dp"
-                            android:textSize="14sp"/>
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
 
-                    </LinearLayout>
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_alignParentLeft="true"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="48dp"
-                        android:background="@drawable/ic_assignment_turned_in_black_24dp"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+
         </RelativeLayout>
-
     </ScrollView>
 
 </RelativeLayout>

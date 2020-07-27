@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,58 +8,50 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical"
-                tools:ignore="UselessParent">
                 <TextView
                     android:id="@+id/jud"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pertanyaan"
                     android:padding="8dp"
                     android:text="Quiz Hirarki Basis Data"
-                    android:textSize="16sp"
-                    android:background="@drawable/bg_pertanyaan"
                     android:textColor="@color/mi_icon_color_dark"
-                    />
+                    android:textSize="18sp" />
+
                 <TextView
                     android:id="@+id/pertanyaan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/jud"
                     android:layout_marginTop="16dp"
-                    android:paddingTop="16dp"
+                    android:background="@drawable/bg_pertanyaan"
                     android:paddingStart="24dp"
+                    android:paddingTop="16dp"
                     android:paddingEnd="24dp"
                     android:paddingBottom="40dp"
                     android:textColor="@color/mi_icon_color_dark"
-                    android:background="@drawable/bg_pertanyaan"
-                    android:text="Pertanyaan"
-                    android:textSize="24sp" />
+                    android:textSize="18sp" />
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_below="@+id/pertanyaan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"/>
+                    android:layout_marginTop="16dp" />
+
                 <RadioGroup
                     android:id="@+id/radio_group"
-                    android:layout_below="@+id/imageView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp">
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp">
 
                     <RadioButton
                         android:id="@+id/pilihanA"
@@ -71,60 +63,67 @@
                         android:checked="false"
                         android:onClick="onRBClicked"
                         android:padding="16dp"
-                        android:text="Pilihan A" />
+                        android:textSize="16sp" />
+
                     <RadioButton
                         android:id="@+id/pilihanB"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
-                        android:padding="16dp"
+                        android:background="@drawable/rb_b_selector"
                         android:button="@android:color/transparent"
                         android:checked="false"
-                        android:background="@drawable/rb_b_selector"
                         android:onClick="onRBClicked"
-                        android:text="Pilihan B"/>
+                        android:padding="16dp"
+                        android:textSize="16sp" />
+
                     <RadioButton
                         android:id="@+id/pilihanC"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
-                        android:padding="16dp"
+                        android:background="@drawable/rb_c_selector"
                         android:button="@android:color/transparent"
                         android:checked="false"
-                        android:background="@drawable/rb_c_selector"
                         android:onClick="onRBClicked"
-                        android:text="Pilihan C"/>
+                        android:padding="16dp"
+                        android:textSize="16sp" />
+
                     <RadioButton
                         android:id="@+id/pilihanD"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:padding="16dp"
+                        android:layout_marginBottom="80dp"
+                        android:background="@drawable/rb_d_selector"
                         android:button="@android:color/transparent"
                         android:checked="false"
-                        android:background="@drawable/rb_d_selector"
                         android:onClick="onRBClicked"
-                        android:text="Pilihan D"/>
+                        android:padding="16dp"
+                        android:textSize="16sp" />
                 </RadioGroup>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="60dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginBottom="32dp"
-                        android:src="@drawable/next"
-                        android:textColor="@color/color_darkprime"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentBottom="true"
-                        android:onClick="next"
-                        android:background="@drawable/bg_next"/>
-                </RelativeLayout>
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageButton
+            android:id="@+id/nxtbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_next"
+            android:elevation="4dp"
+            android:onClick="next"
+            android:src="@drawable/next"
+            android:textColor="@color/color_darkprime" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

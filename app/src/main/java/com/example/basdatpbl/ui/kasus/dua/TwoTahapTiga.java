@@ -1,11 +1,14 @@
 package com.example.basdatpbl.ui.kasus.dua;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -32,36 +35,17 @@ public class TwoTahapTiga extends AppCompatActivity implements AdapterView.OnIte
 
 //        Spinner 1 
         final Spinner spinnerA = findViewById(R.id.spinnerA);
-        spinnerA.setOnItemSelectedListener(this);
+        final Spinner spinnerB = findViewById(R.id.spinnerB);
+        final Spinner spinnerC = findViewById(R.id.spinnerC);
+        final Spinner spinnerD = findViewById(R.id.spinnerD);
+        final Spinner spinnerE = findViewById(R.id.spinnerE);
+        ImageButton next = findViewById(R.id.button);
 
         List<String> categories = new ArrayList<>();
         categories.add("TK");
         categories.add("SD");
         categories.add("SMP");
         categories.add("SMA");
-
-
-        ArrayAdapter<String> spinAdapterA = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, categories);
-        spinAdapterA.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerA.setAdapter(spinAdapterA);
-
-//        Spinner 2
-        final Spinner spinnerB = findViewById(R.id.spinnerB);
-        spinnerB.setOnItemSelectedListener(this);
-
-        ArrayAdapter<String> arrayAdapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, alamat);
-        arrayAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerB.setAdapter(arrayAdapter1);
-
-        final Spinner spinnerC = findViewById(R.id.spinnerC);
-        spinnerC.setOnItemSelectedListener(this);
-
-        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, pendidikan);
-        arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerC.setAdapter(arrayAdapter2);
-
-        final Spinner spinnerD = findViewById(R.id.spinnerD);
-        spinnerD.setOnItemSelectedListener(this);
 
         List<String> spd = new ArrayList<>();
         spd.add("Shogun");
@@ -71,28 +55,42 @@ public class TwoTahapTiga extends AppCompatActivity implements AdapterView.OnIte
         spd.add("Jupiter");
         spd.add("Spin");
 
-        ArrayAdapter<String> arrayAdapter3 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spd);
-        arrayAdapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerD.setAdapter(arrayAdapter3);
-
-        final Spinner spinnerE = findViewById(R.id.spinnerE);
-        spinnerE.setOnItemSelectedListener(this);
-
         List<String> mbl = new ArrayList<>();
         mbl.add("Yaris");
         mbl.add("Jazz");
         mbl.add("Brio");
 
+        spinnerA.setOnItemSelectedListener(this);
+        ArrayAdapter<String> spinAdapterA = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, categories);
+        spinAdapterA.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerA.setAdapter(spinAdapterA);
+
+//        Spinner 2
+        spinnerB.setOnItemSelectedListener(this);
+        ArrayAdapter<String> arrayAdapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, alamat);
+        arrayAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerB.setAdapter(arrayAdapter1);
+
+//        SPinner 3
+        spinnerC.setOnItemSelectedListener(this);
+        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, pendidikan);
+        arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerC.setAdapter(arrayAdapter2);
+
+//      Spinner 4
+        spinnerD.setOnItemSelectedListener(this);
+        ArrayAdapter<String> arrayAdapter3 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spd);
+        arrayAdapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerD.setAdapter(arrayAdapter3);
+
+//        Spinner 5
+        spinnerE.setOnItemSelectedListener(this);
         ArrayAdapter<String> arrayAdapter4 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, mbl);
         arrayAdapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerE.setAdapter(arrayAdapter4);
 
 
-//        TextView textView1 = (TextView) findViewById(R.id.textView3);
-//        TextView textView2 = (TextView) findViewById(R.id.textView4);
 
-
-        ImageButton next = findViewById(R.id.button);
         next.setOnClickListener(v -> {
             Intent selesai = new Intent(getApplicationContext(), TwoTahapEmpat.class);
 //receive value from activity one and two
@@ -155,20 +153,4 @@ public class TwoTahapTiga extends AppCompatActivity implements AdapterView.OnIte
 //
 //    }
 
-
-//    public void next(View view) {
-//        Intent selesai = new Intent(getApplicationContext(), TwoTahapEmpat.class);
-////receive value from activity one and two
-//
-//        Intent i = getIntent();
-//        String r_satu = i.getStringExtra("Satu");
-//        String r_dua = i.getStringExtra("resultDua");
-//        String u_dua = i.getStringExtra("unDua");
-//
-//        selesai.putExtra("Satu", r_satu);
-//        selesai.putExtra("resultDua", r_dua);
-//        selesai.putExtra("unDua", u_dua);
-//        selesai.putExtra("spinA", String.valueOf(spinnerA.getSelecterItem()));
-//        startActivity(selesai);
-//    }
 }

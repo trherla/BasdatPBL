@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +28,7 @@ public class TwoTahapSatu extends AppCompatActivity {
 
     TextView Pertanyaan;
     CheckBox CbSatu, CbDua, CbTiga, CbEmpat;
+    ImageButton nxt;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -38,6 +41,9 @@ public class TwoTahapSatu extends AppCompatActivity {
         CbDua = findViewById(R.id.cb_dua);
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
+        nxt = findViewById(R.id.button_perpus1);
+
+        nxt.setVisibility(View.GONE);
 
         Pertanyaan.setText(R.string.pertanyaan_perpus);
         CbSatu.setText(R.string.masalah1_perpus);
@@ -46,6 +52,45 @@ public class TwoTahapSatu extends AppCompatActivity {
         CbEmpat.setText(R.string.masalah4_perpus);
 
 
+
+        CbSatu.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()) {
+                nxt.setVisibility(View.VISIBLE);
+                nxt.animate().translationY(0);
+            }else{
+                nxt.setVisibility(View.GONE);
+                nxt.animate().translationY(nxt.getHeight());
+            }
+        });
+        CbDua.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()) {
+                nxt.setVisibility(View.VISIBLE);
+                nxt.animate().translationY(0);
+            }else{
+                nxt.setVisibility(View.GONE);
+                nxt.animate().translationY(nxt.getHeight());
+            }
+        });
+        CbTiga.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()) {
+                nxt.setVisibility(View.VISIBLE);
+                nxt.animate().translationY(0);
+            }else{
+                nxt.setVisibility(View.GONE);
+                nxt.animate().translationY(nxt.getHeight());
+            }
+        });
+        CbEmpat.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()) {
+                nxt.setVisibility(View.VISIBLE);
+//                nxt.animate().alpha(1.0f);
+                nxt.animate().translationY(0);
+            }else{
+                nxt.setVisibility(View.GONE);
+//                nxt.animate().alpha(0.0f);
+                nxt.animate().translationY(nxt.getHeight());
+            }
+        });
 
         //Call Petunjuk penggunaan on first run
         boolean firstStart = PreferenceManager.getDefaultSharedPreferences(this)
