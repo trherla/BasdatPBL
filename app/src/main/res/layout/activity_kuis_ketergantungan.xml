@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_slider3"
+    android:background="@drawable/bg_slider2"
     tools:context=".ui.kuis.kuis_hirarki.KuisHirarki">
 
     <ScrollView

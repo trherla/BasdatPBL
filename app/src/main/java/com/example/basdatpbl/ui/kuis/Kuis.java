@@ -6,10 +6,8 @@ public class Kuis {
     private String Description;
     private int Thumbnail;
 
-    public Kuis(String title, String category, String description, int thumbnail) {
+    public Kuis(String title, int thumbnail) {
         Title = title;
-        Category = category;
-        Description = description;
         Thumbnail = thumbnail;
     }
 
@@ -19,22 +17,6 @@ public class Kuis {
 
     public void setTitle(String title) {
         Title = title;
-    }
-
-    public String getCategory() {
-        return Category;
-    }
-
-    public void setCategory(String category) {
-        Category = category;
-    }
-
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String description) {
-        Description = description;
     }
 
     public int getThumbnail() {

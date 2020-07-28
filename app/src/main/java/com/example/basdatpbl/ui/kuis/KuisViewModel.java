@@ -13,11 +13,13 @@ import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.kasus.satu.OneTahapSatu;
 import com.example.basdatpbl.ui.kuis.kuis_erd.KuisErd;
 import com.example.basdatpbl.ui.kuis.kuis_hirarki.KuisHirarki;
+import com.example.basdatpbl.ui.kuis.kuis_ketergantungan.KuisKetergantungan;
+import com.example.basdatpbl.ui.kuis.kuis_normalisasi.KuisNormalisasi;
 import com.example.basdatpbl.ui.materi.TabsNormalisasi;
 
 public class KuisViewModel extends RecyclerView.ViewHolder {
 
-    public TextView kuis_title, kuis_desc;
+    public TextView kuis_title;
     public ImageView img_thumbnail;
     public CardView cardView;
     Context context;
@@ -27,7 +29,6 @@ public class KuisViewModel extends RecyclerView.ViewHolder {
         context = itemView.getContext();
 
         kuis_title = (TextView) itemView.findViewById(R.id.kuis_title);
-        kuis_desc = (TextView) itemView.findViewById(R.id.kuis_desc);
         img_thumbnail = (ImageView) itemView.findViewById(R.id.kuis_img);
         cardView = (CardView) itemView.findViewById(R.id.kuis_click);
 
@@ -41,10 +42,10 @@ public class KuisViewModel extends RecyclerView.ViewHolder {
                     intent = new Intent(context, KuisErd.class);
                     break;
                 case 2 :
-                    intent = new Intent(context, OneTahapSatu.class);
+                    intent = new Intent(context, KuisKetergantungan.class);
                     break;
                 case 3 :
-                    intent = new Intent(context, TabsNormalisasi.class);
+                    intent = new Intent(context, KuisNormalisasi.class);
                     break;
             }
             context.startActivity(intent);

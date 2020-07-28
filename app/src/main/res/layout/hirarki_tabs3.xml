@@ -50,7 +50,6 @@
                     android:textSize="16sp" />
 
                 <LinearLayout
-                    android:id="@+id/lay1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
@@ -58,7 +57,7 @@
                     android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="@string/hm3"
                         android:gravity="center_vertical"
@@ -69,49 +68,39 @@
                         android:layout_marginStart="8dp"
                        />
                 </LinearLayout>
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginEnd="2dp"
-                                android:layout_marginBottom="8dp"
-                                android:background="@drawable/bg_white"
-                                android:elevation="2dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:padding="8dp"
-                                android:text="@string/hm31"
-                                android:textColor="@color/color_darkprime"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
-
-                </RelativeLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:padding="8dp"
+                        android:text="@string/hm31"
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:elevation="4dp"
+                        android:src="@drawable/tabs3hirarki" />
+                </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/lay2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
@@ -119,7 +108,7 @@
                     android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:text="@string/hm4"
                         android:gravity="center_vertical"
@@ -130,49 +119,187 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginBottom="4dp"/>
                 </LinearLayout>
-                <RelativeLayout
-
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
                         android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:padding="8dp"
+                        android:text="@string/hm41"
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:elevation="4dp"
+                        android:src="@drawable/tabs3relational" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_expand">
+                    <TextView
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:text="@string/hm5"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_dark"
+                        android:textSize="16sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:padding="8dp"
+                        android:text="@string/hm51"
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:elevation="4dp"
+                        android:src="@drawable/tabs3hnetwork" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_expand">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hm6"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_dark"
+                        android:textSize="16sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
 
-                            android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:padding="8dp"
+                        android:text="@string/hm61"
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:elevation="4dp"
+                        android:src="@drawable/tabs3object" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_expand">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/hm7"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_dark"
+                        android:textSize="16sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="2dp"
-                                android:layout_marginEnd="2dp"
-                                android:layout_marginBottom="8dp"
-                                android:background="@drawable/bg_white"
-                                android:elevation="2dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:padding="8dp"
-                                android:text="@string/hm41"
-                                android:textColor="@color/color_darkprime"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
-
-                </RelativeLayout>
-
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:padding="8dp"
+                        android:text="@string/hm71"
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="16sp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:elevation="4dp"
+                        android:src="@drawable/tabs3entity" />
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -183,7 +310,6 @@
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="32sp"
-                    android:textColor="@color/color_darkprime"
                     android:text=" "/>
 
             </LinearLayout>

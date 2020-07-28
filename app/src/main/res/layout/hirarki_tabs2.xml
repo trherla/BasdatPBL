@@ -108,6 +108,14 @@
                                 android:text="@string/hd11"
                                 android:textColor="@color/color_darkprime"
                                 android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginEnd="32dp"
+                                android:elevation="4dp"
+                                android:src="@drawable/internallevel"/>
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
@@ -125,7 +133,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="2. View Level"
+                        android:text="2. Conceptual Level"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
@@ -170,6 +178,14 @@
                                 android:textColor="@color/color_darkprime"
                                 android:textSize="16sp" />
 
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:layout_marginStart="32dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="32dp"
+                                android:elevation="4dp"
+                                android:src="@drawable/conceptuallevel" />
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -184,9 +200,9 @@
                     android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="3. Conceptual Level"
+                        android:text="3. View Level"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
@@ -230,6 +246,15 @@
                                 android:text="@string/hd13"
                                 android:textColor="@color/color_darkprime"
                                 android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginEnd="16dp"
+                                android:elevation="4dp"
+                                android:src="@drawable/externallevel" />
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>

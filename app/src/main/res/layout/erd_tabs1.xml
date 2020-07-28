@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_slider3"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.materi.erd.Tabs1ERD">
     <ScrollView
@@ -21,22 +22,28 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/bg_white"
+                    android:padding="8dp"
+                    android:elevation="4dp"
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ed1"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/bg_white"
+                    android:padding="8dp"
+                    android:elevation="4dp"
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ed2"/>
@@ -44,54 +51,29 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:layout_margin="10dp"
-                    android:paddingTop="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/bg_white"
+                    android:elevation="4dp"
                     android:src="@drawable/simbol_erd"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/bg_white"
+                    android:padding="8dp"
+                    android:elevation="4dp"
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ed3"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/ed31"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/ed32"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/ed33"/>
+
 
                 <TextView
                     android:layout_width="match_parent"

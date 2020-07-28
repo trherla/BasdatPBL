@@ -33,7 +33,6 @@ public class KuisAdapter extends RecyclerView.Adapter<KuisViewModel> {
     @Override
     public void onBindViewHolder(@NonNull KuisViewModel holder, int position) {
         holder.kuis_title.setText(mData.get(position).getTitle());
-        holder.kuis_desc.setText(mData.get(position).getDescription());
         holder.img_thumbnail.setImageResource(mData.get(position).getThumbnail());
     }
 
@@ -42,18 +41,5 @@ public class KuisAdapter extends RecyclerView.Adapter<KuisViewModel> {
         return mData.size();
     }
 
-/*
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView kasus_title;
-        ImageView img_thumbnail;
-
-        public MyViewHolder(View itemView){
-            super(itemView);
-
-            kasus_title = (TextView) itemView.findViewById(R.id.cv_title);
-            img_thumbnail = (ImageView) itemView.findViewById(R.id.cv_img);
-        }
-    }
-*/
 }

@@ -1,4 +1,4 @@
-package com.example.basdatpbl.ui.kuis.kuis_erd;
+package com.example.basdatpbl.ui.kuis.kuis_normalisasi;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.kuis.kuis_hirarki.HasilKuisHirarki;
 
-public class KuisErd extends AppCompatActivity {
+public class KuisNormalisasi extends AppCompatActivity {
 
     TextView pertanyaan, judul;
     RadioGroup rg;
@@ -89,7 +89,7 @@ public class KuisErd extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kuis_erd);
+        setContentView(R.layout.activity_kuis_normalisasi);
 
         judul = findViewById(R.id.jud);
         pertanyaan = findViewById(R.id.pertanyaan);
@@ -172,7 +172,7 @@ public class KuisErd extends AppCompatActivity {
                 PilD.setText(pilihan_jawaban[(nomor * 4) + 3]);
             } else {
                 hasil = benar * 10;
-                Intent selesai = new Intent(getApplicationContext(), HasilKuisErd.class);
+                Intent selesai = new Intent(getApplicationContext(), HasilKuisNormalisasi.class);
                 startActivity(selesai);
             }
 

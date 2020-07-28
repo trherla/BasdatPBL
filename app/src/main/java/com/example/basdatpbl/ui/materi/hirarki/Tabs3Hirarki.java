@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import com.example.basdatpbl.R;
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 
-public class Tabs3Hirarki extends Fragment implements View.OnClickListener{
+public class Tabs3Hirarki extends Fragment{
 
     public Tabs3Hirarki() {
         // Required empty public constructor
@@ -24,42 +24,14 @@ public class Tabs3Hirarki extends Fragment implements View.OnClickListener{
     }
 
 
-    public ExpandableRelativeLayout mExpandLayout1;
-    public ExpandableRelativeLayout mExpandLayout2;
-
-    public LinearLayout linearLayout1;
-    public LinearLayout linearLayout2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.hirarki_tabs3, container, false);
-
-        mExpandLayout1 = (ExpandableRelativeLayout) root.findViewById(R.id.expen1);
-        mExpandLayout2 = (ExpandableRelativeLayout) root.findViewById(R.id.expen2);
-
-
-        linearLayout1 = (LinearLayout) root.findViewById(R.id.lay1);
-        linearLayout2 = (LinearLayout) root.findViewById(R.id.lay2);
-
-
-        linearLayout1.setOnClickListener(this);
-        linearLayout2.setOnClickListener(this);
-
         return root;
 
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.lay1:
-                mExpandLayout1.toggle();
-                break;
-            case R.id.lay2:
-                mExpandLayout2.toggle();
-                break;
-        }
-    }
 }

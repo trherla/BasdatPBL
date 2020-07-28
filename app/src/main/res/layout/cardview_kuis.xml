@@ -33,17 +33,11 @@
                 android:id="@+id/kuis_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Judul Kuis"
-                android:textColor="@color/color_darkprime"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/kuis_desc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="desc"
+                android:gravity="center"
+                android:textColor="@color/color_darkprime"
                 android:textSize="12sp" />
+
         </LinearLayout>
 
         <ImageView

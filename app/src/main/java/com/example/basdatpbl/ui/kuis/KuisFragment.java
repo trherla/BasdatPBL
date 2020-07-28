@@ -25,17 +25,10 @@ public class KuisFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-//        kuisViewModel =
-//                ViewModelProviders.of(this).get(KuisViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_kuis, container, false);
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
-//        final TextView textView = root.findViewById(R.id.kuis);
-//        kuisViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
+
 
 
 
@@ -47,10 +40,10 @@ public class KuisFragment extends Fragment {
         KuisAdapter adapter = new KuisAdapter(this, lstKuis);
 
         rv.setAdapter(adapter);
-        lstKuis.add(new Kuis("Kuis", "Categories 1", "Hirarki Basis Data", R.drawable.hirarki));
-        lstKuis.add(new Kuis("Kuis", "Categories 2", "ERD", R.drawable.entitas1));
-        lstKuis.add(new Kuis("Kuis", "Categories 3", "Ketergantungan Fungsional", R.drawable.ketergantungan));
-        lstKuis.add(new Kuis("Kuis", "Categories 4", "Normalisasi", R.drawable.normalisasi));
+        lstKuis.add(new Kuis("Kuis\nHirarki Basis Data", R.drawable.hirarki));
+        lstKuis.add(new Kuis("Kuis\nEntity Relationship Diagram", R.drawable.accuracy));
+        lstKuis.add(new Kuis("Kuis\nKetergantungan Fungsional", R.drawable.ketergantungan));
+        lstKuis.add(new Kuis("Kuis\nNormalisasi", R.drawable.normalisasi));
 
         return root;
     }

@@ -48,11 +48,22 @@
         <activity
             android:name=".ui.kasus.satu.OneTahapLima"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.kuis.kuis_hirarki.HasilKuis" />
+        <activity android:name=".ui.kuis.kuis_hirarki.HasilKuisHirarki" />
+        <activity android:name=".ui.kuis.kuis_erd.HasilKuisErd" />
+        <activity android:name=".ui.kuis.kuis_normalisasi.HasilKuisNormalisasi" />
+        <activity android:name=".ui.kuis.kuis_ketergantungan.HasilKuisKetergantungan" />
         <activity
             android:name=".ui.kuis.kuis_hirarki.KuisHirarki"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.kuis.kuis_erd.KuisErd" />
+        <activity
+            android:name=".ui.kuis.kuis_ketergantungan.KuisKetergantungan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kuis.kuis_normalisasi.KuisNormalisasi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kuis.kuis_erd.KuisErd"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.materi.hirarki.Tabs1Hirarki"
             tools:ignore="Instantiatable" />
