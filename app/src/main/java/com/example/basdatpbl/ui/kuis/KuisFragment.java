@@ -34,7 +34,7 @@ public class KuisFragment extends Fragment {
 
         lstKuis = new ArrayList<>();
         adapter = new KuisAdapter(this, lstKuis);
-        rv = (RecyclerView) root.findViewById(R.id.rv_idkuis);
+        rv = root.findViewById(R.id.rv_idkuis);
         rv.setLayoutManager(new GridLayoutManager(getContext(),1));
 
         KuisAdapter adapter = new KuisAdapter(this, lstKuis);

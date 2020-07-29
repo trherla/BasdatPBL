@@ -8,9 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kuis.Kuis;
-import com.example.basdatpbl.ui.kuis.KuisFragment;
-import com.example.basdatpbl.ui.kuis.KuisViewModel;
 
 import java.util.List;
 

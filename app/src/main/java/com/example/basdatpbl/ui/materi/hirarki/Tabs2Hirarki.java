@@ -1,23 +1,15 @@
 package com.example.basdatpbl.ui.materi.hirarki;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kasus.dua.TwoTahapDua;
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils.YouTubePlayerUtils;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class Tabs2Hirarki extends Fragment  implements View.OnClickListener {
 
@@ -48,13 +40,13 @@ public class Tabs2Hirarki extends Fragment  implements View.OnClickListener {
 //        YouTubePlayerView youTubePlayerView = root.findViewById(R.id.tabs2_hirarki);
 //        getLifecycle().addObserver(youTubePlayerView);
 
-        mExpandLayout1 = (ExpandableRelativeLayout) root.findViewById(R.id.expen1);
-        mExpandLayout2 = (ExpandableRelativeLayout) root.findViewById(R.id.expen2);
-        mExpandLayout3 = (ExpandableRelativeLayout) root.findViewById(R.id.expen3);
+        mExpandLayout1 = root.findViewById(R.id.expen1);
+        mExpandLayout2 = root.findViewById(R.id.expen2);
+        mExpandLayout3 = root.findViewById(R.id.expen3);
 
-        linearLayout1 = (LinearLayout) root.findViewById(R.id.lay1);
-        linearLayout2 = (LinearLayout) root.findViewById(R.id.lay2);
-        linearLayout3 = (LinearLayout) root.findViewById(R.id.lay3);
+        linearLayout1 = root.findViewById(R.id.lay1);
+        linearLayout2 = root.findViewById(R.id.lay2);
+        linearLayout3 = root.findViewById(R.id.lay3);
 
         linearLayout1.setOnClickListener(this);
         linearLayout2.setOnClickListener(this);

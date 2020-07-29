@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_slider3"
+    android:background="@drawable/bg_slider4"
     tools:context=".ui.kuis.kuis_hirarki.KuisHirarki">
 
     <ScrollView
@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_pertanyaan"
                 android:padding="8dp"
-                android:text="Quiz Hirarki Basis Data"
+                android:text="@string/quiz_hirarki_basis_data"
                 android:textColor="@color/mi_icon_color_dark"
                 android:textSize="18sp" />
 
@@ -44,7 +44,8 @@
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp" />
+                android:layout_marginTop="16dp"
+                tools:ignore="ContentDescription" />
 
             <RadioGroup
                 android:id="@+id/radio_group"
@@ -113,13 +114,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingEnd="16dp"
-        android:paddingBottom="16dp">
+        android:paddingBottom="16dp"
+        tools:ignore="RtlSymmetry">
 
         <ImageButton
             android:id="@+id/nxtbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
@@ -129,7 +131,8 @@
             android:elevation="4dp"
             android:onClick="next"
             android:src="@drawable/next"
-            android:textColor="@color/color_darkprime" />
+            android:textColor="@color/color_darkprime"
+            tools:ignore="ContentDescription" />
     </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

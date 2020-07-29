@@ -10,12 +10,10 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kasus.satu.OneTahapSatu;
 import com.example.basdatpbl.ui.kuis.kuis_erd.KuisErd;
 import com.example.basdatpbl.ui.kuis.kuis_hirarki.KuisHirarki;
 import com.example.basdatpbl.ui.kuis.kuis_ketergantungan.KuisKetergantungan;
 import com.example.basdatpbl.ui.kuis.kuis_normalisasi.KuisNormalisasi;
-import com.example.basdatpbl.ui.materi.TabsNormalisasi;
 
 public class KuisViewModel extends RecyclerView.ViewHolder {
 
@@ -28,9 +26,9 @@ public class KuisViewModel extends RecyclerView.ViewHolder {
         super(itemView);
         context = itemView.getContext();
 
-        kuis_title = (TextView) itemView.findViewById(R.id.kuis_title);
-        img_thumbnail = (ImageView) itemView.findViewById(R.id.kuis_img);
-        cardView = (CardView) itemView.findViewById(R.id.kuis_click);
+        kuis_title = itemView.findViewById(R.id.kuis_title);
+        img_thumbnail = itemView.findViewById(R.id.kuis_img);
+        cardView = itemView.findViewById(R.id.kuis_click);
 
         cardView.setOnClickListener(view -> {
             Intent intent = new Intent();

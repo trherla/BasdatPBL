@@ -11,7 +11,8 @@
     <ScrollView
         android:id="@+id/scroll_awal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -20,7 +21,10 @@
                 android:id="@+id/card_awal1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
                 app:cardCornerRadius="8dp">
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -31,7 +35,9 @@
                         android:layout_height="240dp"
                         android:padding="8dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/database2"/>
+                        android:src="@drawable/database2"
+                        android:contentDescription="@string/image"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/judul_awal"
@@ -39,53 +45,91 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/hero_awal"
                         android:gravity="center"
-                        android:textFontWeight="2"
-                        android:text="Database"
+                        android:textStyle="bold"
+                        android:text="@string/judul_hero"
                         android:textSize="24sp"
-                        android:layout_marginBottom="32dp"/>
+                        android:layout_marginBottom="16dp"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/judul_awal"
-                        android:layout_marginBottom="32dp"
+                        android:layout_marginBottom="16dp"
                         android:paddingStart="32dp"
                         android:paddingEnd="32dp"
                         android:gravity="center"
                         android:textSize="16sp"
-                        android:text="@string/definisi_database"
+                        android:text="@string/des_hero"
                         />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/card_awal2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/card_awal1"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerInParent="true"
-                    android:text="Tujuan Penggunaan Basis Data"
+                    android:textStyle="bold"
+                    android:text="@string/tujuan_hero"
                     android:textColor="@color/white"
                     android:textSize="16sp" />
-            </RelativeLayout>
+            </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/rv_lay1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="32dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
                 android:layout_below="@id/card_awal2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@drawable/bg_white"
+                    android:text="@string/des_tujuan_hero"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rv_lay2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_below="@id/rv_lay1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/materi_hero"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rv_lay3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@id/rv_lay2">
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_idawal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
             </LinearLayout>
+
 
 
         </RelativeLayout>

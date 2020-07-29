@@ -16,8 +16,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical">
+                android:padding="24dp"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -35,9 +36,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="2dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="2dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/bg_white"
                     android:elevation="2dp"
@@ -49,30 +48,31 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:layout_margin="16dp"
+                    android:padding="8dp"
+                    android:background="@drawable/bg_white"
                     android:elevation="4dp"
-                    android:src="@drawable/ansisparc"/>
+                    android:src="@drawable/ansisparc"
+                    tools:ignore="ContentDescription" />
 
                 <LinearLayout
                     android:id="@+id/lay1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand"
                     >
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="1. Internal Level"
+                        android:text="@string/_1_internal_level"
                         android:gravity="center_vertical"
                         android:textColor="@color/color_darkprime"
                         android:textStyle="bold"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -93,13 +93,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="2dp"
                                 android:background="@drawable/bg_white"
                                 android:elevation="2dp"
@@ -112,10 +111,11 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="120dp"
                                 android:layout_marginTop="8dp"
-                                android:layout_marginStart="32dp"
-                                android:layout_marginEnd="32dp"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_white"
                                 android:elevation="4dp"
-                                android:src="@drawable/internallevel"/>
+                                android:src="@drawable/internallevel"
+                                tools:ignore="ContentDescription" />
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
@@ -127,20 +127,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="2. Conceptual Level"
+                        android:text="@string/_2_conceptual_level"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -162,13 +161,12 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
 
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="2dp"
                                 android:background="@drawable/bg_white"
                                 android:elevation="2dp"
@@ -181,11 +179,12 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="160dp"
-                                android:layout_marginStart="32dp"
                                 android:layout_marginTop="8dp"
-                                android:layout_marginEnd="32dp"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_white"
                                 android:elevation="4dp"
-                                android:src="@drawable/conceptuallevel" />
+                                android:src="@drawable/conceptuallevel"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -196,20 +195,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="3. View Level"
+                        android:text="@string/_3_view_level"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -231,13 +229,12 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
 
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="2dp"
                                 android:background="@drawable/bg_white"
                                 android:elevation="2dp"
@@ -250,11 +247,12 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="120dp"
-                                android:layout_marginStart="16dp"
                                 android:layout_marginTop="8dp"
-                                android:layout_marginEnd="16dp"
+                                android:background="@drawable/bg_white"
+                                android:padding="8dp"
                                 android:elevation="4dp"
-                                android:src="@drawable/externallevel" />
+                                android:src="@drawable/externallevel"
+                                tools:ignore="ContentDescription" />
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
@@ -264,14 +262,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="32sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text=" "/>
+                    android:textColor="@color/color_darkprime" />
 
 
 

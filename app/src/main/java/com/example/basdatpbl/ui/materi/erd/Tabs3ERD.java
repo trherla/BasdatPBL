@@ -46,27 +46,28 @@ public class Tabs3ERD extends Fragment implements View.OnClickListener{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.erd_tabs3, container, false);
+        View root;
+        root = inflater.inflate(R.layout.erd_tabs3, container, false);
 
-        mExpandLayout1 = (ExpandableRelativeLayout) root.findViewById(R.id.expen1);
-        mExpandLayout2 = (ExpandableRelativeLayout) root.findViewById(R.id.expen2);
-        mExpandLayout3 = (ExpandableRelativeLayout) root.findViewById(R.id.expen3);
-        mExpandLayout4 = (ExpandableRelativeLayout) root.findViewById(R.id.expen4);
-        mExpandLayout5 = (ExpandableRelativeLayout) root.findViewById(R.id.expen5);
-        mExpandLayout6 = (ExpandableRelativeLayout) root.findViewById(R.id.expen6);
-        mExpandLayout7 = (ExpandableRelativeLayout) root.findViewById(R.id.expen7);
-        mExpandLayout8 = (ExpandableRelativeLayout) root.findViewById(R.id.expen8);
-        mExpandLayout9 = (ExpandableRelativeLayout) root.findViewById(R.id.expen9);
+        mExpandLayout1 = root.findViewById(R.id.expen1);
+        mExpandLayout2 = root.findViewById(R.id.expen2);
+        mExpandLayout3 = root.findViewById(R.id.expen3);
+        mExpandLayout4 = root.findViewById(R.id.expen4);
+        mExpandLayout5 = root.findViewById(R.id.expen5);
+        mExpandLayout6 = root.findViewById(R.id.expen6);
+        mExpandLayout7 = root.findViewById(R.id.expen7);
+        mExpandLayout8 = root.findViewById(R.id.expen8);
+        mExpandLayout9 = root.findViewById(R.id.expen9);
 
-        linearLayout1 = (LinearLayout) root.findViewById(R.id.lay1);
-        linearLayout2 = (LinearLayout) root.findViewById(R.id.lay2);
-        linearLayout3 = (LinearLayout) root.findViewById(R.id.lay3);
-        linearLayout4 = (LinearLayout) root.findViewById(R.id.lay4);
-        linearLayout5 = (LinearLayout) root.findViewById(R.id.lay5);
-        linearLayout6 = (LinearLayout) root.findViewById(R.id.lay6);
-        linearLayout7 = (LinearLayout) root.findViewById(R.id.lay7);
-        linearLayout8 = (LinearLayout) root.findViewById(R.id.lay8);
-        linearLayout9 = (LinearLayout) root.findViewById(R.id.lay9);
+        linearLayout1 = root.findViewById(R.id.lay1);
+        linearLayout2 = root.findViewById(R.id.lay2);
+        linearLayout3 = root.findViewById(R.id.lay3);
+        linearLayout4 = root.findViewById(R.id.lay4);
+        linearLayout5 = root.findViewById(R.id.lay5);
+        linearLayout6 = root.findViewById(R.id.lay6);
+        linearLayout7 = root.findViewById(R.id.lay7);
+        linearLayout8 = root.findViewById(R.id.lay8);
+        linearLayout9 = root.findViewById(R.id.lay9);
 
         linearLayout1.setOnClickListener(this);
         linearLayout2.setOnClickListener(this);

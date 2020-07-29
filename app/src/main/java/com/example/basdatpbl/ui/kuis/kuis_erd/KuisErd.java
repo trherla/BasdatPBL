@@ -34,53 +34,53 @@ public class KuisErd extends AppCompatActivity {
 
     };
     String[] pertanyaan_kuis = new String[]{
-            "Kumpulan data yang tersimpan secara sistematik untuk dapat dilihat oleh user merupakan definisi dari ",
-            "Kumpulan record sejenis yang mempunyai panjang atribut/field sama, namun berbeda isi merupakan ",
-            "Perhatikan gambar berikut!\nDalam gambar berikut, nomor 1 disebut sebagai ",
-            "Terdapat tiga level dalam arsitektur basis data, kecuali",
-            "Karakteristik dari External level adalah",
-            "Perhatikan gambar berikut!\nContoh gambar berikut terdapat pada level",
-            "Karakteristik dari Conceptual level adalah",
-            "Model basis data dalam gambar berikut disebut",
-            "Model basis data yang memiliki karakteristik tabel dapat dinormalisasi yang membuat basis data fleksibel, mudah beradaptasi, dan dapat diskalakan merupakan model",
-            "Berdasarkan pilihan jawaban berikut, yang bukan pemakai (User) dari basis data adalah"
+            "Yang tidak termasuk dalam komponen dasar dalam sebuah ER-Diagram adalah ",
+            "Atribut adalah ",
+            "Dalam ER-Diagram, Atribut yang didapatkan dari pengolahan nilai atau atribut lain disebut ",
+            "Atribut key dapat dibedakan menjadi tiga, yaitu",
+            "Primary key dalam tabel berikut adalah",
+            "Relasi adalah",
+            "Gambar berikut merupakan derajat relasi ",
+            "Berdasarkan gambar berikut, pilihlah pernyataan yang paling tepat",
+            "Dalam kegiatan pembelajaran disekolah, bagaimanakah bentuk kardinalitas dari relasi antara entitas Siswa dengan entitas Mapel",
+            "Setiap anggota entitas X dapat berhubungan dengan lebih dari satu anggota entitas Y namun tidak sebaliknya merupakan definisi dari"
 
     };
 
     String[] pilihan_jawaban = new String[]{
-            "Arsitektur Basis Data","Conceptual Mapping","Pemodelan Data","Analisa Data",
-            "Record","Field","Record","File",
-            "Field","Tuple","Record","Entitas",
-            "Physical Level","Logical Level","View Level","Planning Level",
-            "Menghubungkan physical level dengan view level","Menampilkan data yang ingin user lihat , namun tidak semua ditampilkan","Hanya developer yang dapat melihat data","Data disimpan dalam media penyimpanan berformat byte",
-            "Physical Level","Logical Level","View Level","Planning Level",
-            "Menghubungkan physical level dengan view level","Menampilkan data yang ingin user lihat , namun tidak semua ditampilkan","Hanya developer yang dapat melihat data","Data disimpan dalam media penyimpanan berformat byte",
-            "Relational Model","Hierarchical Model","Network Model","Entitry Relationship Model",
-            "Relational Model","Hierarchical Model","Network Model","Entitry Relationship Model",
-            "Programmer","Database Administrator","End User","Network Guy"
+            "Atribut","Entitas","File","Relasi",
+            "Object yang mewakili sesuatu yang nyata","Batasan kombinasi suatu entitas","Hubungan antara dua atau beberapa entitas","Karakteristik khusus yang dimiliki suatu entitas",
+            "Single Valued Attribute","Derived Attribute","Mandatory Attribute","Composite Attribute",
+            "Primary key, Super key, Candidate key","Foreign key, Primary key, Super key","Super key, Candidate key, Foreign key","Primary key, Candidate key, Foreign key",
+            "NIS","Nama","Kelas","Alamat",
+            "Object yang mewakili sesuatu yang nyata","Batasan kombinasi suatu entitas","Hubungan antara dua atau beberapa entitas","Karakteristik khusus yang dimiliki suatu entitas",
+            "Unary Degree","Binary Degree","Ternary Degree","Multi Degree",
+            "Atribut","Atribut2","Atribut3","Atribut4",
+            "One to One","One to Many","Many to One","Many to Many",
+            "One to One","One to Many","Many to One","Many to Many"
     };
 
     String[] jawaban_benar = new String[]{
-            "Arsitektur Basis Data",
             "File",
-            "Field",
-            "Planning Level",
-            "Menampilkan data yang ingin user lihat , namun tidak semua ditampilkan",
-            "Physical Level",
-            "Menghubungkan physical level dengan view level",
-            "Network Model",
-            "Relational Model",
-            "Database Administrator",
+            "Karakteristik khusus yang dimiliki suatu entitas",
+            "Derived Attribute",
+            "Primary key, Super key, Candidate key",
+            "NIS",
+            "Hubungan antara dua atau beberapa entitas",
+            "Binary Degree",
+            "Atribut",
+            "Many to Many",
+            "One to Many"
     };
 
     private static final Integer[] img ={
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked,
-            R.drawable.record,
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked,
-            R.drawable.internallevel,
+            R.drawable.atribut_key,
             R.drawable.rb_a_checked,
+            R.drawable.atribut_key,
             R.drawable.atribut_key,
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked

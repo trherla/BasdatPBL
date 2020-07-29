@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="120dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="8dp"
+    android:layout_margin="3dp"
     app:cardCornerRadius="4dp"
     app:cardElevation="4dp"
+    tools:ignore="ContentDescription"
     android:focusable="true">
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,19 +16,18 @@
         <ImageView
             android:id="@+id/awal_img"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:padding="8dp"
+            android:layout_height="60dp"
+            android:padding="4dp"
             android:scaleType="fitCenter"/>
         <TextView
             android:id="@+id/awal_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:paddingStart="8dp"
-            android:paddingEnd="8dp"
+            android:textSize="10sp"
+            android:padding="2dp"
             android:layout_marginBottom="8dp"
             android:gravity="center"
-            />
+            tools:ignore="SmallSp" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

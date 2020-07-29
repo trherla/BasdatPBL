@@ -9,7 +9,13 @@
     <string name="kasus">Kasus</string>
     <string name="kuis">Kuis</string>
 
-    <string name="definisi_database">Database merupakan kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik dari suatu sistem komputer.</string>
+    <string name="judul_hero">PBL-Basdat</string>
+    <string name="des_hero">Media pembelajaran Basis Data bermuatan Problem Based Learning untuk siswa SMK Kelas XI Kompetensi Keahlian Rekayasa Perangkat Lunak.</string>
+    <string name="materi_hero">Materi yang dapat dipelajari dalam aplikasi ini</string>
+    <string name="tujuan_hero">Tujuan dari pembelajaran melalui aplikasi ini</string>
+    <string name="des_tujuan_hero">1. Mempermudah proses pembelajaran\n2. Meningkatkan efisiensi proses pembelajaran\n3. Menarik</string>
+
+
     <!--Materi Hirarki Basis Data-->
     <string name="h1">Arsitektur basis data merupakan suatu kumpulan data yang tersimpan secara sistematik dimana user dapat melihat data dan bagaimana cara user melihat data tersebut</string>
     <string name="h2">Dalam basis data, data diorganisasikan kedalam bentuk sebagai berikut:</string>
@@ -44,43 +50,38 @@
     <!--Materi ERD-->
     <string name="ed1">Entity Relationship Diagram (ERD) merupakan salah satu bentuk pemodelan basis data yang sering digunakan dalam pengembangan sistem informasi.</string>
     <string name="ed2">Diagram hubungan entitas (ERD) menunjukkan hubungan dari entitas set disimpan dalam database. Entitas dalam konteks ini adalah komponen data.Dengan kata lain, diagram ER menggambarkan struktur logis dari database.</string>
-    <string name="ed3">Pada dasarnya ada tiga komponen yang digunakan di ERD, yaitu:\n\n1. Entitas\n2. Atribut\n3. Relasi</string>
+    <string name="ed3">Pada dasarnya ada tiga komponen yang digunakan di ERD, yaitu:\n1. Entitas\n2. Atribut\n3. Relasi</string>
     <!--    <string name="ed4">Materi</string>-->
 
     <string name="ee1">Entitas merupakan objek yang mewakili sesuatu yang nyata dan dapat dibedakan dari sesuatu yang lain. Setiap entitas memiliki beberapa atribut yang mendeskripsikan karakteristik dari objek tersebut. </string>
-    <string name="ee2">Entitas dapat berupa :</string>
-    <string name="ee21">1. Entity yang bersifat fisik yaitu entitas yang secara fisik dapat dilihat (misal: rumah, kendaraan, guru, murid, dan lain-lain)</string>
-    <string name="ee22">2. Entity yang bersifat konsep/logic yaitu entitas yang tidak dapat dilihat secara fisik (misal: pekerjaan, mata pelajaran, rencana, dan lain-lain)</string>
+    <string name="ee2">Entitas dapat berupa :\n\n1. Entity yang bersifat fisik yaitu entitas yang secara fisik dapat dilihat (misal: rumah, kendaraan, guru, murid, dan lain-lain)\n\n2. Entity yang bersifat konsep/logic yaitu entitas yang tidak dapat dilihat secara fisik (misal: pekerjaan, mata pelajaran, rencana, dan lain-lain)</string>
     <string name="ee3">Dalam suatu tabel basis data, entitas identik dengan baris</string>
     <string name="ee4">Sekelompok entitas yang sejenis dan berada dalam lingkup yang sama disebut sebagai Entity Sets (Himpunan Entitas)</string>
 
 
-    <string name="ea1">Atribut merupakan sifat-sifat atau karakteristik pada suatu entitas.\n\nNama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.</string>
+    <string name="ea1">Atribut merupakan sifat-sifat atau karakteristik pada suatu entitas.\n\nNama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.\n\nSimbol yang digunakan untuk atribut adalah oval/elipse\n\nMacam-macam atribut dalam ERD:</string>
 <!--    <string name="ea2">Nama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.</string>-->
-    <string name="ea3">Macam-macam atribut dalam ERD:</string>
-    <string name="ea31">1.Atribut Kunci yaitu pengidentifikasi entitas yang paling unik untuk semua entitas dalam himpunan entitas. Atribut kunci dibedakan menjadi tiga, yaitu:</string>
-    <string name="ea311">Super Key adalah satu atau lebih atribut yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas</string>
-    <string name="ea312">Candidate Key adalah kumpulan atribut minimal yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas</string>
-    <string name="ea313">Primmary Key adalah salah satu candidate key yang digunakan sebagai pengidentifikasi suatu atribut dalam himpunan entitas. Dasar pemilihan primary key adalah key sering digunakan sebagai acuan, key lebih ringkas, key harus unik</string>
+<!--    <string name="ea3">Macam-macam atribut dalam ERD:</string>-->
+    <string name="ea31">1.Atribut Kunci yaitu pengidentifikasi entitas yang paling unik untuk semua entitas dalam himpunan entitas.</string>
+    <string name="ea311">Atribut kunci dibedakan menjadi tiga, yaitu:\n\na. Super Key adalah satu atau lebih atribut yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas\n\nb. Candidate Key adalah kumpulan atribut minimal yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas.\n\nc. Primmary Key adalah salah satu candidate key yang digunakan sebagai pengidentifikasi suatu atribut dalam himpunan entitas. Dasar pemilihan primary key adalah key sering digunakan sebagai acuan, key lebih ringkas, key harus unik</string>
     <string name="ea32">2. Atribut Deskriptif yaitu atribut lain selain atribut kunci yang berfungsi sebagai penjelasan terhadap entitas dalam himpunan entitas</string>
-    <string name="ea33">3. Atribut Sederhana (Simple Attribute) yaitu atribut yang tidak bisa dibagi menjadi atribut yang lebih mendasar. Contoh: atribut NIS dari entitas siswa</string>
-    <string name="ea34">4. Atribut Komposit (Composite Attribute) yaitu atribut yang terdiri dari beberapa atribut. Contoh: atribut nama (memiliki detail nama depan dan nama belakang) dari entitas siswa</string>
-    <string name="ea35">5. Atribut Bernilai Banyak (Multi Valued Attribute) yaitu atribut yang dapat bernilai lebih dari satu nilai sejenis. Contoh: Hobi</string>
-    <string name="ea36">6. Atribut Bernilai Tunggal (Single Valued Attribute) yaitu atribut yang hanya memiliki satu nilai. Contoh: NIS</string>
-    <string name="ea37">7. Atribut Turunan (Derived Attribute) yaitu atribut yang nilainya diperoleh dari pengolahan atau dirurunkan dari atribut atau tabel lain. Contoh: atribut rata-rata yang didapat dari perhitungan nilai siswa</string>
+    <string name="ea33">3. Atribut Sederhana (Simple Attribute) yaitu atribut yang tidak bisa dibagi menjadi atribut yang lebih mendasar.\nContoh: atribut NIS dari entitas siswa</string>
+    <string name="ea34">4. Atribut Komposit (Composite Attribute) yaitu atribut yang terdiri dari beberapa atribut.\nContoh: atribut nama (memiliki detail nama depan dan nama belakang) dari entitas siswa</string>
+    <string name="ea35">5. Atribut Bernilai Banyak (Multi Valued Attribute) yaitu atribut yang dapat bernilai lebih dari satu nilai sejenis.\nContoh: Hobi</string>
+    <string name="ea36">6. Atribut Bernilai Tunggal (Single Valued Attribute) yaitu atribut yang hanya memiliki satu nilai.\nContoh: NIS</string>
+    <string name="ea37">7. Atribut Turunan (Derived Attribute) yaitu atribut yang nilainya diperoleh dari pengolahan atau dirurunkan dari atribut atau tabel lain.\nContoh: atribut rata-rata yang didapat dari perhitungan nilai siswa</string>
     <string name="ea38">8. Atribut Bernilai (Mandatory Attribute) yaitu atribut yang harus memiliki nilai</string>
     <string name="ea39">9. Atribut Tidak Harus Bernilai (Non-Mandatory Attribute) yaitu atribut yang nilainya boleh kosong (null)</string>
-    <string name="ea4">Simbol yang digunakan untuk atribut adalah oval/elipse</string>
 
     <string name="er1">Relasi menyatakan hubungan antara dua atau beberapa entitas. Setiap relasi mempunyai batasan (constraint) terhadap kemungkinan kombinasi entitas yang berpartisipasi. Batasan tersebut ditentukan dari situasi yang diwakili relasi tersebut.</string>
     <string name="er11">Cardinality Ratio Constraint menjelaskan batasan jumlah keterhubungan satu entitas dengan entitas lainnya. Berikut macam-macamnya:</string>
     <string name="er2">One to One (1:1)\nSetiap anggota entitas A hanya boleh berhubungan dengan satu anggota entitas B, begitu pula sebaliknya.</string>
     <string name="er3">One to Many (1:N)\nSetiap anggota entitas A dapat berhubungan dengan lebih dari satu anggota entitas B tetapi tidak sebaliknya.</string>
     <string name="er4">Many to Many (N:N)\nSetiap entitas A dapat berhubungan dengan banyak entitas himpunan entitas B dan demikian pula sebaliknya</string>
-    <string name="er5">Klasifikasi relasi berdasarkan derajatnya: </string>
-    <string name="er51">Unary Degree - Relasi yang hanya melibatkan satu entitas</string>
-    <string name="er52">Binary Degree - Relasi yang melibatkan dua entitas</string>
-    <string name="er53">Ternary Degree - Relasi yang melibatkan tiga entitas</string>
+    <string name="er5">Klasifikasi relasi berdasarkan derajatnya:\n\n1. Unary Degree\n- Relasi yang hanya melibatkan satu entitas </string>
+<!--    <string name="er51"></string>-->
+    <string name="er52">2. Binary Degree\n- Relasi yang melibatkan dua entitas</string>
+    <string name="er53">3. Ternary Degree\n- Relasi yang melibatkan tiga entitas</string>
 
 
     <string name="eb1">Batasan partisipasi atau batasan hubungan entitas menjelaskan bagaimana data itu berelasi, batasan ini menentukan bagaimana (harus ataukah tidak) berpartisipasi suatu entitas dengan relasinya pada entitas lain. </string>
@@ -88,41 +89,31 @@
     <!--Definisi ketergantungan-->
     <string name="kde1">Dependensi merupakan ketergantungan setiap atribut dengan atribut lainnya</string>
     <string name="kde2">Analisis dependensi merupakan konsep penting yang menjadi dasar melakukan normalisasi sehingga diperoleh relasi yang berstruktur baik.</string>
-    <string name="kde3">Ada beberapa jenis dependensi</string>
-    <string name="kde31">1. Dependensi Fungsional</string>
-    <string name="kde32">2. Dependensi Sepenuhnya</string>
-    <string name="kde33">3. Dependensi Sebagian</string>
-    <string name="kde34">4. Dependensi Penuh</string>
-    <string name="kde35">5. Dependensi Transitif</string>
+    <string name="kde3">Ada beberapa jenis dependensi:\n\n1. Dependensi Fungsional\n2. Dependensi Sepenuhnya\n3. Dependensi Sebagian\n4. Dependensi Penuh\n5. Dependensi Transitif</string>
 
     <!--    Ketergantungan fungsional-->
     <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut </string>
     <string name="kf2">Analogi: terdapat sebuah relasi yang bernama R dengan dua buah atributnya berupa A dan B, sehingga Notasinya R(A,B)</string>
     <string name="kf3">Pada keadaan tersebut, atribut B dikatakan mempunyai dependensi fungsional terhadap A apabila setiap nilai A berhubungan dengan satu nilai yang sama pada B</string>
-    <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut</string>
-    <string name="kf5"><![CDATA[Notasi : {A,B,…} -> Z]]></string>
-    <string name="kf6">Atribut Z mempunyai dependensi terhadap pasangan A dan B</string>
+    <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut\n\n<![CDATA[Notasi : {A,B,…} -> Z]]>\n\nAtribut Z mempunyai dependensi terhadap pasangan A dan B</string>
 
 
     <!--    Ketergantungan sepenuhnya-->
-    <string name="ksp1">Suatu atribut B dikatakan memiliki dependensi sepenuhnya terhadap A apabila </string>
-    <string name="ksp2">1. Atribut B mempunyai dependensi fungsional terhadap atribut A</string>
-    <string name="ksp3">2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A</string>
+    <string name="ksp1">Suatu atribut B dikatakan memiliki dependensi sepenuhnya terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A </string>
+<!--    <string name="ksp2">1. Atribut B mempunyai dependensi fungsional terhadap atribut A</string>-->
+<!--    <string name="ksp3">2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A</string>-->
 
 
     <!--Ketergantungan sebagian -->
-    <string name="ks1">Suatu atribut B dikatakan memiliki dependensi partial terhadap A apabila</string>
-    <string name="ks2">1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key</string>
-    <string name="ks3">2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
+    <string name="ks1">Suatu atribut B dikatakan memiliki dependensi partial terhadap A apabila:\n\n1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key\n2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
+
 
     <!--    Ketergantungan penuh-->
-    <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh terhadap A apabila </string>
-    <string name="kpe2">1. Atribut B mempunyai dependensi fungsional terhadap atribut A</string>
-    <string name="kpe3">2. Atribut A mempunyai dependansi fungsional terhadap atribut B</string>
+    <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut A mempunyai dependansi fungsional terhadap atribut B</string>
+
 
     <!--Ketergantungan Transitif    -->
-    <string name="kt1">Transitive dependency biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A,B,C. </string>
-    <string name="kt2">Kondisinya adalah A ⇒ B dan B ⇒ C. Maka C dikatakan sebagai transitive dependency terhadap A melalui B.</string>
+    <string name="kt1">Transitive dependency biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A,B,C.\n\nKondisinya adalah A ⇒ B dan B ⇒ C. Maka C dikatakan sebagai transitive dependency terhadap A melalui B.</string>
 
     <!--Normalisasi Data    -->
     <string name="nd1">Normalisasi adalah suatu proses yang digunakan untuk menentukan pengelompokan atribut dalam sebuah relasi sehingga diperoleh relasi berstruktur baik</string>
@@ -162,5 +153,24 @@
     <string name="solusi2_perpus">Menghapus Entitas yang tidak relevan dengan database perpustakaan</string>
     <string name="solusi3_perpus">Mengubah beberapa simbol ERD</string>
     <string name="solusi4_perpus">Mencocokkan kembali relasi dan kardinalitas</string>
+    <string name="image">image</string>
+    <string name="file">File</string>
+    <string name="record">Record</string>
+    <string name="field">Field</string>
+    <string name="_1_internal_level">1. Internal Level</string>
+    <string name="_2_conceptual_level">2. Conceptual Level</string>
+    <string name="_3_view_level">3. View Level</string>
+    <string name="atribut_tidak_harus_bernilai">Atribut Tidak Harus bernilai</string>
+    <string name="atribut_bernilai">Atribut Bernilai</string>
+    <string name="atribut_turunan">Atribut Turunan</string>
+    <string name="atribut_bernilai_tunggal">Atribut Bernilai Tunggal</string>
+    <string name="atribut_bernilai_banyak">Atribut Bernilai Banyak</string>
+    <string name="atribut_komposit">Atribut Komposit</string>
+    <string name="atribut_sederhana">Atribut Sederhana</string>
+    <string name="atribut_deskriptif">Atribut Deskriptif</string>
+    <string name="atribut_kunci">Atribut Kunci</string>
+    <string name="relasi_berdasarkan_derajatnya">Relasi Berdasarkan Derajatnya</string>
+    <string name="kardinalitas">Kardinalitas</string>
+    <string name="quiz_hirarki_basis_data">Quiz Hirarki Basis Data</string>
 
 </resources>

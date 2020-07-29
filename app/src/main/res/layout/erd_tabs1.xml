@@ -15,15 +15,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:padding="24dp"
                 android:orientation="vertical"
                 tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.5"
@@ -36,8 +34,6 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.5"
@@ -53,17 +49,15 @@
                     android:layout_height="200dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginEnd="24dp"
+                    android:padding="8dp"
                     android:background="@drawable/bg_white"
                     android:elevation="4dp"
-                    android:src="@drawable/simbol_erd"/>
+                    android:src="@drawable/simbol_erd"
+                    tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.5"
@@ -84,8 +78,7 @@
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="32sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text=" "/>
+                    android:textColor="@color/color_darkprime" />
 
             </LinearLayout>
         </LinearLayout>

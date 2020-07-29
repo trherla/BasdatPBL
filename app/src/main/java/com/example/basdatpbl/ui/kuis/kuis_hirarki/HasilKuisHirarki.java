@@ -19,8 +19,8 @@ public class HasilKuisHirarki extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil_kuis_hirarki);
 
-        TextView hasil = (TextView) findViewById(R.id.hasil);
-        TextView nilai = (TextView) findViewById(R.id.nilai);
+        TextView hasil = findViewById(R.id.hasil);
+        TextView nilai = findViewById(R.id.nilai);
 
 
         hasil.setText("Jawaban Benar : "+ KuisHirarki.benar+"\n Jawaban Salah : " +KuisHirarki.salah);

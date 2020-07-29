@@ -2,8 +2,6 @@ package com.example.basdatpbl.ui.kuis;
 
 public class Kuis {
     private String Title;
-    private String Category;
-    private String Description;
     private int Thumbnail;
 
     public Kuis(String title, int thumbnail) {
@@ -21,10 +19,6 @@ public class Kuis {
 
     public int getThumbnail() {
         return Thumbnail;
-    }
-
-    public void setThumbnail(int thumbnail) {
-        Thumbnail = thumbnail;
     }
 
 

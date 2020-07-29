@@ -34,17 +34,15 @@ public class AwalFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_awal, container, false);
 
         lstAwal = new ArrayList<>();
-        rv = (RecyclerView) root.findViewById(R.id.rv_idawal);
-        rv.setLayoutManager(new GridLayoutManager(getContext(),3));
+        rv = root.findViewById(R.id.rv_idawal);
+        rv.setLayoutManager(new GridLayoutManager(getContext(),4));
         AwalAdapter adapter = new AwalAdapter(this, lstAwal);
 
         rv.setAdapter(adapter);
-        lstAwal.add(new Awal("Kecepatan",  "Hirarki Basis Data", R.drawable.fast));
-        lstAwal.add(new Awal("Efisiensi",  "ERD", R.drawable.save));
-        lstAwal.add(new Awal("Keakuratan",  "Ketergantungan Fungsional", R.drawable.accuracy));
-        lstAwal.add(new Awal("Ketersediaan",  "Normalisasi", R.drawable.hand));
-        lstAwal.add(new Awal("Keamanan",  "Normalisasi", R.drawable.padlock));
-        lstAwal.add(new Awal("Kebersamaan",  "Normalisasi", R.drawable.share));
+        lstAwal.add(new Awal("Hirarki Basis Data",  "Hirarki Basis Data", R.drawable.fast));
+        lstAwal.add(new Awal("Entity Relationship Diagram",  "ERD", R.drawable.save));
+        lstAwal.add(new Awal("Ketergantungan Fungsional",  "Ketergantungan Fungsional", R.drawable.accuracy));
+        lstAwal.add(new Awal("Normalisasi",  "Normalisasi", R.drawable.hand));
 
 
 

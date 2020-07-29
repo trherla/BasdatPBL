@@ -16,14 +16,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:orientation="vertical">
+                android:padding="24dp"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.5"
@@ -35,40 +34,24 @@
                     android:text="@string/ea1"/>
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:background="@drawable/bg_white"
-                    android:padding="8dp"
-                    android:elevation="4dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/ea3"/>
-
                 <LinearLayout
                     android:id="@+id/lay1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Kunci"
+                        android:text="@string/atribut_kunci"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -87,19 +70,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -112,8 +89,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -123,42 +98,14 @@
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/ea311"/>
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea312"/>
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea313"/>
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="240dp"
-                                android:layout_marginStart="24dp"
-                                android:layout_marginEnd="24dp"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_white"
                                 android:src="@drawable/atribut_key"
-                                android:contentDescription="TODO" />
+                                tools:ignore="ContentDescription" />
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
@@ -170,20 +117,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Deskriptif"
+                        android:text="@string/atribut_deskriptif"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -202,19 +148,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -234,20 +174,19 @@
                     android:id="@+id/lay3"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Sederhana"
+                        android:text="@string/atribut_sederhana"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -266,19 +205,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -298,20 +231,19 @@
                     android:id="@+id/lay4"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Komposit"
+                        android:text="@string/atribut_komposit"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -330,19 +262,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -362,20 +288,19 @@
                     android:id="@+id/lay5"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Bernilai Banyak"
+                        android:text="@string/atribut_bernilai_banyak"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -394,19 +319,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -426,20 +345,19 @@
                     android:id="@+id/lay6"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Bernilai Banyak"
+                        android:text="@string/atribut_bernilai_tunggal"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -458,19 +376,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -490,20 +402,19 @@
                     android:id="@+id/lay7"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Turunan"
+                        android:text="@string/atribut_turunan"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -522,19 +433,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -554,20 +459,19 @@
                     android:id="@+id/lay8"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Bernilai"
+                        android:text="@string/atribut_bernilai"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -586,19 +490,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -618,20 +516,19 @@
                     android:id="@+id/lay9"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Atribut Tidak Harus bernilai"
+                        android:text="@string/atribut_tidak_harus_bernilai"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_dark"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -650,19 +547,13 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginLeft="8dp"
                             android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginRight="8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
@@ -678,35 +569,14 @@
 
                 </RelativeLayout>
 
-
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:background="@drawable/bg_white"
-                    android:padding="8dp"
-                    android:elevation="4dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/ea4"/>
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="32sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text=" "/>
+                    android:textColor="@color/color_darkprime" />
 
             </LinearLayout>
         </LinearLayout>

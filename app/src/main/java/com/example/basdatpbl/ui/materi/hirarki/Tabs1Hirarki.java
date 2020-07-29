@@ -39,13 +39,13 @@ public class Tabs1Hirarki extends Fragment implements View.OnClickListener{
         View root = inflater.inflate(R.layout.hirarki_tabs1, container, false);
 
 
-        mExpandLayout1 = (ExpandableRelativeLayout) root.findViewById(R.id.expen1);
-        mExpandLayout2 = (ExpandableRelativeLayout) root.findViewById(R.id.expen2);
-        mExpandLayout3 = (ExpandableRelativeLayout) root.findViewById(R.id.expen3);
+        mExpandLayout1 = root.findViewById(R.id.expen1);
+        mExpandLayout2 = root.findViewById(R.id.expen2);
+        mExpandLayout3 = root.findViewById(R.id.expen3);
 
-        linearLayout1 = (LinearLayout) root.findViewById(R.id.lay1);
-        linearLayout2 = (LinearLayout) root.findViewById(R.id.lay2);
-        linearLayout3 = (LinearLayout) root.findViewById(R.id.lay3);
+        linearLayout1 = root.findViewById(R.id.lay1);
+        linearLayout2 = root.findViewById(R.id.lay2);
+        linearLayout3 = root.findViewById(R.id.lay3);
 
         linearLayout1.setOnClickListener(this);
         linearLayout2.setOnClickListener(this);

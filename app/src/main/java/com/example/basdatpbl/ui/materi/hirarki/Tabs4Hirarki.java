@@ -29,7 +29,7 @@ public class Tabs4Hirarki extends Fragment {
 
         View rootView = inflater.inflate(R.layout.hirarki_tabs4, container, false);
 
-        Button button = (Button) rootView.findViewById(R.id.button_vid);
+        Button button = rootView.findViewById(R.id.button_vid);
         button.setOnClickListener(v -> video());
         return rootView;
 

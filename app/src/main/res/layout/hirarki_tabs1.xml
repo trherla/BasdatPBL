@@ -12,12 +12,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="24dp"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -37,8 +38,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginEnd="4dp"
                     android:padding="8dp"
                     android:lineSpacingMultiplier="1.5"
                     android:textSize="16sp"
@@ -52,8 +51,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginEnd="4dp"
                     android:lineSpacingMultiplier="1.5"
                     android:padding="8dp"
                     android:textSize="16sp"
@@ -64,30 +61,31 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
-                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_white"
+                    android:padding="8dp"
                     android:elevation="4dp"
-                    android:src="@drawable/data"/>
+                    android:src="@drawable/data"
+                    tools:ignore="ContentDescription" />
                 
                 <LinearLayout
                     android:id="@+id/lay1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="File"
+                        android:text="@string/file"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_darkprime"
                         android:textSize="16sp"
                         android:elevation="4dp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -112,8 +110,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="2dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:padding="8dp"
@@ -133,20 +129,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Record"
+                        android:text="@string/record"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_darkprime"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -172,8 +167,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="2dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:padding="8dp"
@@ -193,20 +186,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Field"
+                        android:text="@string/field"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_darkprime"
                         android:textSize="16sp"
                         android:layout_weight="0.5"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginBottom="4dp"/>
+                        android:paddingStart="16dp"
+                        android:layout_marginBottom="4dp"
+                        tools:ignore="RtlSymmetry" />
                 </LinearLayout>
                 <RelativeLayout
 
@@ -228,12 +220,11 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
 
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="16dp"
-                                android:layout_marginEnd="16dp"
                                 android:layout_marginBottom="2dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:padding="8dp"
@@ -245,10 +236,11 @@
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="120dp"
-                                android:layout_marginStart="32dp"
-                                android:layout_marginEnd="32dp"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_white"
                                 android:elevation="4dp"
-                                android:src="@drawable/record"/>
+                                android:src="@drawable/record"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -258,14 +250,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="16dp"
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="32sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text=" "/>
+                    android:textColor="@color/color_darkprime"/>
 
             </LinearLayout>
         </LinearLayout>
