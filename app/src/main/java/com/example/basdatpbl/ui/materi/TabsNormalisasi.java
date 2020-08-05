@@ -22,6 +22,7 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class TabsNormalisasi extends AppCompatActivity {
     private TabLayout tabLayout;
@@ -34,7 +35,7 @@ public class TabsNormalisasi extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -46,7 +47,7 @@ public class TabsNormalisasi extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         TabsNormalisasi.ViewPagerAdapter adapter = new TabsNormalisasi.ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new Tabs1Normalisasi(), "Definisi");
-        adapter.addFrag(new Tabs2Normalisasi(), "Syarat");
+//        adapter.addFrag(new Tabs2Normalisasi(), "Syarat");
         adapter.addFrag(new Tabs3Normalisasi(), "1NF");
         adapter.addFrag(new Tabs4Normalisasi(), "2NF");
         adapter.addFrag(new Tabs5Normalisasi(), "3NF");

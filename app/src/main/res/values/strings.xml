@@ -15,8 +15,13 @@
     <string name="tujuan_hero">Tujuan dari pembelajaran melalui aplikasi ini</string>
     <string name="des_tujuan_hero">1. Mempermudah proses pembelajaran\n2. Meningkatkan efisiensi proses pembelajaran\n3. Menarik</string>
 
+    <string name="judul_kuis">Kuis</string>
+    <string name="des_kuis"> </string>
+    <string name="judul_kasus">Kasus</string>
+    <string name="des_kasus"> </string>
 
     <!--Materi Hirarki Basis Data-->
+    <string name="definisiBasisData">Basis Data atau Database merupakan kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik daru suatu sistem komputer.</string>
     <string name="h1">Arsitektur basis data merupakan suatu kumpulan data yang tersimpan secara sistematik dimana user dapat melihat data dan bagaimana cara user melihat data tersebut</string>
     <string name="h2">Dalam basis data, data diorganisasikan kedalam bentuk sebagai berikut:</string>
     <string name="h21">Elemen (kolom atau field) data adalah satuan data terkecil yang tidak dapat dipecah lagi menjadi unit lain yang bermakna.\n\nMisalnya data barang terdiri dari KodeBarang, NamaBarang, StokBarang.</string>
@@ -28,8 +33,7 @@
     <string name="hd12">Conceptual / Logical Level: Yang menghubungkan antara internal dan external level. \n\nConceptual level adalah sebuah representasi seluruh muatan informasi yang dikandung oleh basis data. \n\nTingkatan level ini dilihat dari cara user dalam memahami atau mengetahui data.</string>
     <string name="hd13">External / View Level: berhubungan dengan bagaimana data direpresentasikan dari sisi setiap user. \n\nView level ini menunjukkan data apa yang ingin user lihat tetapi tidak semuanya ditampilkan. misalnya seorang mahasiswa ingin melihat datanya, tetapi ia tidak dapat melihat data dosen, ataupun mahasiswa lainnya.\n\nKegunaan level ini adalah untuk menyederhanakan interaksi antara pemakai (user) dengan sistem.</string>
 
-    <string name="hm1">Pemodelan data merupakan sekumpulan konsep-konsep untuk mendeskripsikan/menggambarkan struktur data</string>
-    <string name="hm2">Terdapat sejumlah cara dalam merepresentasikan model dalam perancangan basis data. Secara umum pemodelan data dapat dikelompokkan menjadi dua yaitu :</string>
+    <string name="hm1">Pemodelan data merupakan sekumpulan konsep-konsep untuk mendeskripsikan/menggambarkan struktur data.\n\nTerdapat sejumlah cara dalam merepresentasikan model dalam perancangan basis data. Berikut jenis model data, beberapa yang paling umum yaitu:</string>
     <string name="hm3">1. Hierarchical database model</string>
     <string name="hm31">Model hierarkis mengatur data ke dalam struktur mirip pohon, di mana setiap catatan memiliki induk tunggal atau root.\n\nModel ini bagus untuk menggambarkan banyak hubungan dunia nyata. </string>
     <string name="hm4">2. Relational model</string>
@@ -39,13 +43,7 @@
     <string name="hm6">4. Object-oriented database model</string>
     <string name="hm61">Model ini mendefinisikan database sebagai kumpulan objek, atau elemen perangkat lunak yang dapat digunakan kembali, dengan fitur dan metode terkait.\n\nModel database object-oriented adalah model database pasca-relasional yang paling dikenal, karena menggabungkan tabel, tetapi tidak terbatas pada tabel. \n\n Model semacam itu juga dikenal sebagai model basis data hybrid.</string>
     <string name="hm7">5. Entity-relationship model</string>
-    <string name="hm71">Model ini menangkap hubungan antara entitas dunia nyata seperti model jaringan, namun tidak terkait langsung dengan struktur fisik database.\n\nSering digunakan untuk merancang database secara konseptual.\n\nDi sini, orang-orang, tempat, dan hal-hal tentang titik-titik data yang disimpan disebut sebagai entitas, yang masingmasing memiliki atribut tertentu yang bersama-sama membentuk domain mereka. </string>
-
-    <string name="hp1">Like any other work profile, the database domain has several of roles and career paths associated with it. The following is a description of some of these roles. </string>
-    <string name="hp2">1.5.1 Data Architect </string>
-    <string name="hp3">1.5.2 Database Architect </string>
-    <string name="hp4">1.5.3 Database Administrator (DBA) </string>
-    <string name="hp5">1.5.4 Application Developer  </string>
+    <string name="hm71">Model ini menangkap hubungan antara entitas dunia nyata seperti model jaringan, namun tidak terkait langsung dengan struktur fisik database.\n\nSering digunakan untuk merancang database secara konseptual.\n\nDi sini, orang-orang, tempat, dan hal-hal tentang titik-titik data yang disimpan disebut sebagai entitas, yang masing-masing memiliki atribut tertentu yang bersama-sama membentuk domain mereka. </string>
 
     <!--Materi ERD-->
     <string name="ed1">Entity Relationship Diagram (ERD) merupakan salah satu bentuk pemodelan basis data yang sering digunakan dalam pengembangan sistem informasi.</string>
@@ -54,7 +52,7 @@
     <!--    <string name="ed4">Materi</string>-->
 
     <string name="ee1">Entitas merupakan objek yang mewakili sesuatu yang nyata dan dapat dibedakan dari sesuatu yang lain. Setiap entitas memiliki beberapa atribut yang mendeskripsikan karakteristik dari objek tersebut. </string>
-    <string name="ee2">Entitas dapat berupa :\n\n1. Entity yang bersifat fisik yaitu entitas yang secara fisik dapat dilihat (misal: rumah, kendaraan, guru, murid, dan lain-lain)\n\n2. Entity yang bersifat konsep/logic yaitu entitas yang tidak dapat dilihat secara fisik (misal: pekerjaan, mata pelajaran, rencana, dan lain-lain)</string>
+    <string name="ee2">Entitas dapat berupa :\n\n1. Entity yang bersifat fisik yaitu entitas yang secara fisik dapat dilihat.\nContoh: rumah, kendaraan, guru, murid, dan lain-lain.\n\n2. Entity yang bersifat konsep/logic yaitu entitas yang tidak dapat dilihat secara fisik.\nContoh: pekerjaan, mata pelajaran, rencana, dan lain-lain.</string>
     <string name="ee3">Dalam suatu tabel basis data, entitas identik dengan baris</string>
     <string name="ee4">Sekelompok entitas yang sejenis dan berada dalam lingkup yang sama disebut sebagai Entity Sets (Himpunan Entitas)</string>
 
@@ -62,78 +60,90 @@
     <string name="ea1">Atribut merupakan sifat-sifat atau karakteristik pada suatu entitas.\n\nNama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.\n\nSimbol yang digunakan untuk atribut adalah oval/elipse\n\nMacam-macam atribut dalam ERD:</string>
 <!--    <string name="ea2">Nama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.</string>-->
 <!--    <string name="ea3">Macam-macam atribut dalam ERD:</string>-->
-    <string name="ea31">1.Atribut Kunci yaitu pengidentifikasi entitas yang paling unik untuk semua entitas dalam himpunan entitas.</string>
+    <string name="ea31">Atribut Kunci yaitu pengidentifikasi entitas yang paling unik untuk semua entitas dalam himpunan entitas.</string>
     <string name="ea311">Atribut kunci dibedakan menjadi tiga, yaitu:\n\na. Super Key adalah satu atau lebih atribut yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas\n\nb. Candidate Key adalah kumpulan atribut minimal yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas.\n\nc. Primmary Key adalah salah satu candidate key yang digunakan sebagai pengidentifikasi suatu atribut dalam himpunan entitas. Dasar pemilihan primary key adalah key sering digunakan sebagai acuan, key lebih ringkas, key harus unik</string>
-    <string name="ea32">2. Atribut Deskriptif yaitu atribut lain selain atribut kunci yang berfungsi sebagai penjelasan terhadap entitas dalam himpunan entitas</string>
-    <string name="ea33">3. Atribut Sederhana (Simple Attribute) yaitu atribut yang tidak bisa dibagi menjadi atribut yang lebih mendasar.\nContoh: atribut NIS dari entitas siswa</string>
-    <string name="ea34">4. Atribut Komposit (Composite Attribute) yaitu atribut yang terdiri dari beberapa atribut.\nContoh: atribut nama (memiliki detail nama depan dan nama belakang) dari entitas siswa</string>
-    <string name="ea35">5. Atribut Bernilai Banyak (Multi Valued Attribute) yaitu atribut yang dapat bernilai lebih dari satu nilai sejenis.\nContoh: Hobi</string>
-    <string name="ea36">6. Atribut Bernilai Tunggal (Single Valued Attribute) yaitu atribut yang hanya memiliki satu nilai.\nContoh: NIS</string>
-    <string name="ea37">7. Atribut Turunan (Derived Attribute) yaitu atribut yang nilainya diperoleh dari pengolahan atau dirurunkan dari atribut atau tabel lain.\nContoh: atribut rata-rata yang didapat dari perhitungan nilai siswa</string>
-    <string name="ea38">8. Atribut Bernilai (Mandatory Attribute) yaitu atribut yang harus memiliki nilai</string>
-    <string name="ea39">9. Atribut Tidak Harus Bernilai (Non-Mandatory Attribute) yaitu atribut yang nilainya boleh kosong (null)</string>
+    <string name="ea32">Atribut Deskriptif yaitu atribut lain selain atribut kunci yang berfungsi sebagai penjelasan terhadap entitas dalam himpunan entitas</string>
+    <string name="ea33">Atribut Sederhana (Simple Attribute) merupakan atribut yang tidak bisa dibagi menjadi atribut yang lebih mendasar.\nContoh: atribut NIS dari entitas siswa</string>
+    <string name="ea34">Atribut Komposit (Composite Attribute) merupakan atribut yang terdiri dari beberapa atribut.\nContoh: atribut nama (memiliki detail nama depan dan nama belakang) dari entitas siswa</string>
+    <string name="ea35">Atribut Bernilai Banyak (Multi Valued Attribute) merupakan atribut yang dapat bernilai lebih dari satu nilai sejenis.\nContoh: Hobi</string>
+    <string name="ea36">Atribut Bernilai Tunggal (Single Valued Attribute) merupakan atribut yang hanya memiliki satu nilai.\nContoh: NIS</string>
+    <string name="ea37">Atribut Turunan (Derived Attribute) merupakan atribut yang nilainya diperoleh dari pengolahan atau dirurunkan dari atribut atau tabel lain.\nContoh: atribut rata-rata yang didapat dari perhitungan nilai siswa</string>
+    <string name="ea38">Atribut Bernilai (Mandatory Attribute) merupakan atribut yang harus memiliki nilai.</string>
+    <string name="ea39">Atribut Tidak Harus Bernilai (Non-Mandatory Attribute) merupakan atribut yang nilainya boleh kosong (null).</string>
 
     <string name="er1">Relasi menyatakan hubungan antara dua atau beberapa entitas. Setiap relasi mempunyai batasan (constraint) terhadap kemungkinan kombinasi entitas yang berpartisipasi. Batasan tersebut ditentukan dari situasi yang diwakili relasi tersebut.</string>
     <string name="er11">Cardinality Ratio Constraint menjelaskan batasan jumlah keterhubungan satu entitas dengan entitas lainnya. Berikut macam-macamnya:</string>
-    <string name="er2">One to One (1:1)\nSetiap anggota entitas A hanya boleh berhubungan dengan satu anggota entitas B, begitu pula sebaliknya.</string>
-    <string name="er3">One to Many (1:N)\nSetiap anggota entitas A dapat berhubungan dengan lebih dari satu anggota entitas B tetapi tidak sebaliknya.</string>
-    <string name="er4">Many to Many (N:N)\nSetiap entitas A dapat berhubungan dengan banyak entitas himpunan entitas B dan demikian pula sebaliknya</string>
-    <string name="er5">Klasifikasi relasi berdasarkan derajatnya:\n\n1. Unary Degree\n- Relasi yang hanya melibatkan satu entitas </string>
+    <string name="er2"><b>One to One (1:1)</b>\nSetiap anggota entitas A hanya boleh berhubungan dengan satu anggota entitas B, begitu pula sebaliknya.</string>
+    <string name="er3"><b>One to Many (1:N)</b>\nSetiap anggota entitas A dapat berhubungan dengan lebih dari satu anggota entitas B tetapi tidak sebaliknya.</string>
+    <string name="er4"><b>Many to Many (N:N)</b>\nSetiap entitas A dapat berhubungan dengan banyak entitas himpunan entitas B dan demikian pula sebaliknya</string>
+    <string name="er5">Klasifikasi relasi berdasarkan derajatnya:\n\n<b>1. Unary Degree</b>\n- Relasi yang hanya melibatkan satu entitas </string>
 <!--    <string name="er51"></string>-->
-    <string name="er52">2. Binary Degree\n- Relasi yang melibatkan dua entitas</string>
-    <string name="er53">3. Ternary Degree\n- Relasi yang melibatkan tiga entitas</string>
+    <string name="er52"><b>2. Binary Degree</b>\n- Relasi yang melibatkan dua entitas</string>
+    <string name="er53"><b>3. Ternary Degree</b>\n- Relasi yang melibatkan tiga entitas</string>
 
 
     <string name="eb1">Batasan partisipasi atau batasan hubungan entitas menjelaskan bagaimana data itu berelasi, batasan ini menentukan bagaimana (harus ataukah tidak) berpartisipasi suatu entitas dengan relasinya pada entitas lain. </string>
 
     <!--Definisi ketergantungan-->
     <string name="kde1">Dependensi merupakan ketergantungan setiap atribut dengan atribut lainnya</string>
-    <string name="kde2">Analisis dependensi merupakan konsep penting yang menjadi dasar melakukan normalisasi sehingga diperoleh relasi yang berstruktur baik.</string>
-    <string name="kde3">Ada beberapa jenis dependensi:\n\n1. Dependensi Fungsional\n2. Dependensi Sepenuhnya\n3. Dependensi Sebagian\n4. Dependensi Penuh\n5. Dependensi Transitif</string>
+    <string name="kde2">Analisis dependensi merupakan konsep penting yang menjadi dasar melakukan normalisasi sehingga diperoleh relasi yang berstruktur baik.\n\nAda beberapa jenis dependensi:\n1. Dependensi Fungsional\n2. Dependensi Sepenuhnya\n3. Dependensi Sebagian\n4. Dependensi Penuh\n5. Dependensi Transitif</string>
 
     <!--    Ketergantungan fungsional-->
-    <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut </string>
-    <string name="kf2">Analogi: terdapat sebuah relasi yang bernama R dengan dua buah atributnya berupa A dan B, sehingga Notasinya R(A,B)</string>
+    <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut.\n\nAnalogi: terdapat sebuah relasi yang bernama R dengan dua buah atributnya berupa A dan B, sehingga Notasinya R(A,B) </string>
     <string name="kf3">Pada keadaan tersebut, atribut B dikatakan mempunyai dependensi fungsional terhadap A apabila setiap nilai A berhubungan dengan satu nilai yang sama pada B</string>
+    <string name="kf31">Dari Tabel Barang diatas ini dapat dinotasikan seperti berikut\n1. KodeBarang -> NamaBarang\n2. KodeBarang -> HargaBarang\n3. KodeBarang -> KodePemasok\n4. KodeBarang -> NamaPemasok\n5. NamaBarang -> KodeBarang\n6. KodePemasok -> NamaPemasok\n7. NamaPemasok -> KodePemasok </string>
+    <string name="kf32">Tanda "->" dibaca memiliki ketergantungan fungsional\n\nPada Notasi KodeBarang -> NamaBarang\nSetiap KodeBarang pasti akan berhubungan dengan hanya sebuah NamaBarang.\n\nContoh: KodeBarang B-001 hanya akan cocok dengan satu NamaBarang Mirrorless ABV</string>
+    <string name="kf33">Notasi singkat:\nKodeBarang -> {NamaBarang, HargaBarang, KodePemasok, NamaPemasok} </string>
+
     <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut\n\n<![CDATA[Notasi : {A,B,…} -> Z]]>\n\nAtribut Z mempunyai dependensi terhadap pasangan A dan B</string>
+    <string name="kf41">Pada tabel Guru diatas, memiliki notasi\n\n{NIP, Pendidikan} -> TahunLulus\n\nJadi atribut NIP dan atribut Pendidikan mempengaruhi TahunLulus dari seorang guru </string>
 
 
     <!--    Ketergantungan sepenuhnya-->
     <string name="ksp1">Suatu atribut B dikatakan memiliki dependensi sepenuhnya terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A </string>
-<!--    <string name="ksp2">1. Atribut B mempunyai dependensi fungsional terhadap atribut A</string>-->
+    <string name="ksp2">Contoh:\n{NIP, Pendidikan}-> TahunLulus\n\nNotasi berikut merupakan salah satu contoh ketergantungan sepenuhnya, karena TahunLulus bergantung dari dua atribut yaitu NIP dan Pendidikan</string>
 <!--    <string name="ksp3">2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A</string>-->
 
 
     <!--Ketergantungan sebagian -->
-    <string name="ks1">Suatu atribut B dikatakan memiliki dependensi partial terhadap A apabila:\n\n1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key\n2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
+    <string name="ks1">Suatu atribut B dikatakan memiliki dependensi sebagian/parsial terhadap A apabila:\n\n1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key\n2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
+    <string name="ks2">Contoh:\nTabel Guru dikatakan memiliki kunci primer berupa (NIP dan Pendidikan)\n\nJadi ketergantungan parsial yang terdapat pada tabel Guru berupa JenisKelamin karena memiliki ketergantungan terhadap atribut NIP saja (bagian dari kunci primer). Begitu pula dengan atribut NamaGuru.</string>
 
 
     <!--    Ketergantungan penuh-->
-    <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut A mempunyai dependansi fungsional terhadap atribut B</string>
+    <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh/total terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut A mempunyai dependansi fungsional terhadap atribut B</string>
+    <string name="kpe2">Dependensi Total memiliki notasi <![CDATA[A<->B]]>\n\nContoh:\n1. KodePemasok -> NamaPemasok\n2. NamaPemasok -> KodePemasok\n\nDengan demikian :\nKodePemasok <![CDATA[<->]]> NamaPemasok\nDengan asumsi: tidak ada nama pemasok yang sama\n\nContoh lain:\nHargaBarang tidak dapat dikatakan dependensi total terhadap kode barang dikarenakan terdapat kemungkinan harga yang sama untuk kode barang yang berbeda.\nBegitu juga dengan atribut NamaPemasok tidak dapat dependensi total terhadap KodeBarang, karena pemasok bisa saja menaruh banyak barang ke toko </string>
 
 
     <!--Ketergantungan Transitif    -->
-    <string name="kt1">Transitive dependency biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A,B,C.\n\nKondisinya adalah A ⇒ B dan B ⇒ C. Maka C dikatakan sebagai transitive dependency terhadap A melalui B.</string>
+    <string name="kt1">Dependensi Transitif biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A, B, C.\n\nNotasinya adalah A -> B dan B -> C.\nMaka C dikatakan sebagai dependensi transitif terhadap A melalui B.</string>
+    <string name="kt2">Contoh: Tabel Barang\nKodeBarang -> NamaPemasok\n\nKarena, KodeBarang -> KodePemasok dan Kode Pemasok -> NamaPemasok\n\nJadi:\n KodeBarang -> KodePemasok -> NamaPemasok</string>
 
     <!--Normalisasi Data    -->
     <string name="nd1">Normalisasi adalah suatu proses yang digunakan untuk menentukan pengelompokan atribut dalam sebuah relasi sehingga diperoleh relasi berstruktur baik</string>
-    <string name="nd2">Syarat relasi berstruktur baik</string>
-    <string name="nd3">1. Mengandung redundansi yang sedikit mungkin</string>
-    <string name="nd4">2. Memungkinkan baris-baris dalam relasi disisipkan, dimodifikasi, dan dihapus tanpa menimbulkan kesalahan atau ketidakkonsistenan</string>
-    <string name="nd5">Normalisasi dilakukan melalui setiap bentuk form (1NF sampai dengan 5NF)</string>
+    <string name="nd2">Syarat relasi berstruktur baik:\n1. Mengandung redundansi yang sedikit mungkin.\n2. Memungkinkan baris-baris dalam relasi disisipkan, dimodifikasi, dan dihapus tanpa menimbulkan kesalahan atau ketidakkonsistenan.</string>
+    <string name="nd3">Normalisasi dilakukan melalui setiap bentuk form (1NF sampai dengan 5NF)</string>
 
-    <string name="np1">Suatu relasi disebut memenuhi bentuk normal pertama (1NF) jika dan hanya jika setiap atribut dari relasi tersebut hanya memiliki nilai tunggal dan tidak ada pengulangan grup atribut dalam baris</string>
-    <string name="np2">Bentuk 1NF tidak boleh mengandung grup atribut yang berulang</string>
+    <string name="nd4">Normalisasi tidak selalu dimulai dari Bentuk tidak ternormalisasi (UNF), namun bisa saja dimulai dari tahap 1NF maupun 2NF tergantung dari tabel yang anda buat terlebih dahulu.</string>
 
-    <string name="nk1">Suatu relasi disebut memenuhi bentuk normal kedua (2NF) jika dan hanya jika</string>
-    <string name="nk2">1. Memenuhi bentuk normal pertama (1NF)</string>
-    <string name="nk3">2. Setiap atribut yang bukan primary key tergantung secara fungsional terhadap semua atribut key dan bukan hanya sebagian atribut key (fully functonally dependent)</string>
-    <string name="nk4">Untuk normalisasi ke bentuk 2NF, maka tabel 1NF didekomposisi menjadi beberapa tabel yang masing-masing memenuhi 2NF</string>
-    <string name="nk5">Bila terdapat ketergantungan parsial maka: eliminate</string>
+    <string name="np1">Suatu relasi disebut memenuhi bentuk normal pertama (1NF) jika dan hanya jika setiap atribut dari relasi tersebut hanya memiliki <b>nilai tunggal</b> dan <b>tidak ada pengulangan grup atribut dalam baris</b>.\n\nBentuk 1NF tidak boleh mengandung grup atribut yang berulang</string>
+    <string name="np2">Contoh:\nTerdapat Tabel Siswa yang memiliki atribut NIS, Nama, dan Hobi. Kalau diperhatikan, atribut Hobi memiliki nilai banyak dan seharusnya tidak diperbolehkan didalam tabel.</string>
+    <string name="np3">Maka perlu dilakukan normalisasi bentuk pertama pada atribut hobi sehingga setiap atribut hanya memiliki satu nilai, seperti tabel dibawah ini:</string>
+    <string name="np4">Contoh Lain:\nTerdapat Tabel Buku yang memiliki atribut ISBN, TahunTerbit, IdPengarang, NamaPengarang. Namun dalam contoh kali ini terdapat pengulangan grup atribut yaitu di IdPengarang dan NamaPengarang</string>
+    <string name="np5">Maka yang perlu dilakukan adalah menghapus atribut IdPengarang dan NamaPengarang dan membuat record baru.</string>
 
-    <string name="nt1">Suatu relasi disebut memenuhi bentuk normal ketiga (3NF) jika dan hanya jika</string>
-    <string name="nt2">1. Memenuhi bentuk normal kedua (2NF)</string>
-    <string name="nt3">2. Setiap atribut yang bukan kunci tidak tergantung secara fungsional terdahap atribut non-key yang lain dalam relasi tersebut (tidak terdapat ketergantungan transitif pada atribut non-key)</string>
+    <string name="nk1">Suatu relasi disebut memenuhi bentuk normal kedua (2NF) jika dan hanya jika\n1. Memenuhi bentuk normal pertama (1NF)\n2. Setiap atribut yang bukan primary key tergantung secara fungsional terhadap semua atribut key dan bukan hanya sebagian atribut key (<i>fully functonally dependent</i>)</string>
+    <string name="nk2">Untuk normalisasi ke bentuk 2NF, maka tabel 1NF didekomposisi menjadi beberapa tabel yang masing-masing memenuhi 2NF\n\nBila terdapat ketergantungan parsial maka: <b>eliminate</b></string>
+    <string name="nk3">Contoh:\nTerdapat Tabel Workshop dengan atribut NIM, Modul, Biaya, Grade\n\nMemiliki:\nKey\t: NIM + Modul\nFD\t\t: Modul -> Biaya</string>
+    <string name="nk4">Tabel diatas sudah normal bentuk pertama (1NF), namun <b>belum dalam bentuk normal bentuk kedua (2NF)</b>, karena dalam tabel ini, Biaya tidak bergantung penuh pada atribut kunci (NIM, Modul).\n\nJadi untuk mendapatkan bentuk normal kedua(2NF) perlu memisahkan tabel seperti gambar dibawah ini. Dengan pemisahan tabel, record bisa menjadi lebih efektif. </string>
+
+
+    <string name="nt1">Suatu relasi disebut memenuhi bentuk normal ketiga (3NF) jika dan hanya jika\n1. Memenuhi bentuk normal kedua (2NF)\n2. Setiap atribut yang bukan kunci tidak tergantung secara fungsional terdahap atribut non-key yang lain dalam relasi tersebut (tidak terdapat ketergantungan transitif pada atribut non-key)</string>
+    <string name="nt2">Contoh:\nTerdapat Tabel TPS yang memiliki atribut S, Status, City, P, Qty.\n\nMemiliki:\nKey\t: S + P\nFD\t\t: S -> Status\n\t\t\t\t\tS -> City\n\t\t\t\t\tCity -> Status</string>
+    <string name="nt3">Untuk membuat normal bentuk ketiga (3NF) Tabel TPS diatas, maka perlu dilakukan normalisasi tahap pertama (1NF) dengan hasil berikut:</string>
+    <string name="nt4">Tabel TPS sudah dalam tahap 1NF, namun masih terdapat masalah berupa:\n1. Redundansi\n2. Anomaly, berupa penambahan record pada atribut <b>S, Status, City</b> yang harus menyertakan atribut P dan Q. Menghapus satu baris data juga akan merusak keutuhan informasi.\n\nMaka Solusi yang harus diambil adalah dekomposisi tabel menjadi TPS 1–1 dan TPS 1–2.</string>
+    <string name="nt5"><![CDATA[Tabel TPS 1–1 dan TPS 1–2 sudah dalam bentuk 2NF, penambahan data kepada atribut S, Status, dan City bisa dilakukan dengan aman.\n\nTetapi masih ada anomaly: karena City –> Status, maka kita tidak bisa input data City baru sebelum Status punya nilai. Selain itu masih terdapat redundansi pada Status dan City.\n\nPada Tabel TPS 1–2 bisa dikatakan sudah dalam 3NF meskipun memiliki redundansi partial namun tidak memiliki potensi anomaly dan tabel TPS 1–2 lebih baik daripada bentuk tabel sebelumnya karena redundansi dapat diminimalisir.]]></string>
+    <string name="nt6"><![CDATA[Pada Tabel TPS 1–1 masih dalam bentuk 2NF karena atribut City mempengaruhi Status (City –> Status) bukan S mempengaruhi Status, maka Tabel TPS 1–1 perlu didekomposisi kembali. Menghasilkan Tabel seperti dibawah ini.]]></string>
 
     <string name="apa_itu_arsitektur_basis_data">Apa Itu Arsitektur Basis Data?</string>
 
@@ -160,17 +170,30 @@
     <string name="_1_internal_level">1. Internal Level</string>
     <string name="_2_conceptual_level">2. Conceptual Level</string>
     <string name="_3_view_level">3. View Level</string>
-    <string name="atribut_tidak_harus_bernilai">Atribut Tidak Harus bernilai</string>
-    <string name="atribut_bernilai">Atribut Bernilai</string>
-    <string name="atribut_turunan">Atribut Turunan</string>
-    <string name="atribut_bernilai_tunggal">Atribut Bernilai Tunggal</string>
-    <string name="atribut_bernilai_banyak">Atribut Bernilai Banyak</string>
-    <string name="atribut_komposit">Atribut Komposit</string>
-    <string name="atribut_sederhana">Atribut Sederhana</string>
-    <string name="atribut_deskriptif">Atribut Deskriptif</string>
-    <string name="atribut_kunci">Atribut Kunci</string>
+    <string name="atribut_tidak_harus_bernilai">9. Atribut Tidak Harus bernilai</string>
+    <string name="atribut_bernilai">8. Atribut Bernilai</string>
+    <string name="atribut_turunan">7. Atribut Turunan</string>
+    <string name="atribut_bernilai_tunggal">6. Atribut Bernilai Tunggal</string>
+    <string name="atribut_bernilai_banyak">5. Atribut Bernilai Banyak</string>
+    <string name="atribut_komposit">4. Atribut Komposit</string>
+    <string name="atribut_sederhana">3. Atribut Sederhana</string>
+    <string name="atribut_deskriptif">2. Atribut Deskriptif</string>
+    <string name="atribut_kunci">1. Atribut Kunci</string>
     <string name="relasi_berdasarkan_derajatnya">Relasi Berdasarkan Derajatnya</string>
     <string name="kardinalitas">Kardinalitas</string>
     <string name="quiz_hirarki_basis_data">Quiz Hirarki Basis Data</string>
+
+    <string name="videoHirarki">ioNng23DkIM</string>
+    <string name="videoErd">1kKNJr_5tY8</string>
+    <string name="videoKetergantungan">2S24-y0Ij3Y</string>
+    <string name="videoNormalisasi">IHNzOHi8sJs</string>
+    <string name="kecepatan">Kecepatan</string>
+    <string name="efisiensi">Efisiensi</string>
+    <string name="ketersediaan">Ketersediaan</string>
+    <string name="keamanan">Keamanan</string>
+    <string name="kebersamaan">Kebersamaan</string>
+    <string name="tujuan_penggunaan_basis_data">Tujuan Penggunaan Basis Data</string>
+    <string name="keakuratan">Keakuratan</string>
+    <string name="apa_itu_basis_data">Apa itu Basis Data?</string>
 
 </resources>

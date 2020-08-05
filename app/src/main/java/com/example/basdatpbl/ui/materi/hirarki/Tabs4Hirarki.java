@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
@@ -29,13 +30,13 @@ public class Tabs4Hirarki extends Fragment {
 
         View rootView = inflater.inflate(R.layout.hirarki_tabs4, container, false);
 
-        Button button = rootView.findViewById(R.id.button_vid);
+        ImageButton button = rootView.findViewById(R.id.button_vid);
         button.setOnClickListener(v -> video());
         return rootView;
 
     }
     public void video(){
-        Intent selesai = new Intent(getActivity(), VideoPlayer.class);
+        Intent selesai = new Intent(getActivity(), VideoPlayerHirarki.class);
         startActivity(selesai);
     }
 }

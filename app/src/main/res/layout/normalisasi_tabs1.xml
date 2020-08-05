@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_slider3"
     tools:context=".ui.materi.normalisasi.Tabs1Normalisasi">
 
     <ScrollView
@@ -15,17 +16,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:orientation="vertical">
+                android:padding="24dp"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/bg_white"
+                    android:elevation="4dp"
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/nd1"/>
@@ -33,56 +38,58 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/bg_white"
+                    android:elevation="4dp"
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/nd2"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/bg_white"
+                    android:elevation="4dp"
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/nd3"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/nd4"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text="@string/nd5"/>
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:layout_margin="10dp"
-                    android:paddingTop="10dp"
-                    android:src="@drawable/data"/>
-
-
+                    android:layout_height="280dp"
+                    android:background="@drawable/bg_white"
+                    android:elevation="4dp"
+                    android:padding="8dp"
+                    android:src="@drawable/tahapnormalisasi"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/bg_white"
+                    android:elevation="4dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:text="@string/nd4"/>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/button_vid_normalisasi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/video2"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bg_slider2"
+                    />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -92,8 +99,7 @@
                     android:layout_marginBottom="8dp"
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="32sp"
-                    android:textColor="@color/color_darkprime"
-                    android:text=" "/>
+                    android:textColor="@color/color_darkprime" />
 
             </LinearLayout>
         </LinearLayout>

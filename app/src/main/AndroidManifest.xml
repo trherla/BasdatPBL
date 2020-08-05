@@ -11,7 +11,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.materi.hirarki.VideoPlayer"
+            android:name=".ui.materi.hirarki.VideoPlayerHirarki"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.materi.erd.VideoPlayerErd"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.materi.ketergantungan.VideoPlayerKetergantungan"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.materi.normalisasi.VideoPlayerNormalisasi"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity

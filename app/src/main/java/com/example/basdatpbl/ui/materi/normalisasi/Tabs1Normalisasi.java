@@ -1,13 +1,17 @@
 package com.example.basdatpbl.ui.materi.normalisasi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.materi.hirarki.VideoPlayerHirarki;
 
 public class Tabs1Normalisasi extends Fragment {
 
@@ -24,7 +28,14 @@ public class Tabs1Normalisasi extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.normalisasi_tabs1, container, false);
-    }
+        View rootView = inflater.inflate(R.layout.normalisasi_tabs1, container, false);
 
+        ImageButton button = rootView.findViewById(R.id.button_vid_normalisasi);
+        button.setOnClickListener(v -> video());
+        return rootView;
+    }
+    public void video(){
+        Intent selesai = new Intent(getActivity(), VideoPlayerNormalisasi.class);
+        startActivity(selesai);
+    }
 }

@@ -18,7 +18,6 @@
                 android:padding="24dp"
                 android:orientation="vertical"
                 tools:ignore="UselessParent">
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -67,7 +66,16 @@
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ed3"/>
-
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/button_vid_erd"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="16dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/video2"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bg_slider2"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"

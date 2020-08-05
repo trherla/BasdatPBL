@@ -39,10 +39,10 @@ public class AwalFragment extends Fragment {
         AwalAdapter adapter = new AwalAdapter(this, lstAwal);
 
         rv.setAdapter(adapter);
-        lstAwal.add(new Awal("Hirarki Basis Data",  "Hirarki Basis Data", R.drawable.fast));
-        lstAwal.add(new Awal("Entity Relationship Diagram",  "ERD", R.drawable.save));
-        lstAwal.add(new Awal("Ketergantungan Fungsional",  "Ketergantungan Fungsional", R.drawable.accuracy));
-        lstAwal.add(new Awal("Normalisasi",  "Normalisasi", R.drawable.hand));
+        lstAwal.add(new Awal("Hirarki Basis Data",  "Hirarki Basis Data", R.drawable.hirarki));
+        lstAwal.add(new Awal("Entity Relationship Diagram",  "ERD", R.drawable.relation));
+        lstAwal.add(new Awal("Ketergantungan Fungsional",  "Ketergantungan Fungsional", R.drawable.ketergantungan));
+        lstAwal.add(new Awal("Normalisasi",  "Normalisasi", R.drawable.normalisasi));
 
 
 

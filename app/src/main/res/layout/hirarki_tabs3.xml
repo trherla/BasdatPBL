@@ -31,20 +31,6 @@
                     android:text="@string/hm1"
                     android:textColor="@color/color_darkprime"
                     android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/bg_white"
-                    android:elevation="2dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:padding="8dp"
-                    android:text="@string/hm2"
-                    android:textColor="@color/color_darkprime"
-                    android:textSize="16sp" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
@@ -83,7 +69,7 @@
                         android:textSize="16sp" />
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="240dp"
                         android:layout_marginTop="8dp"
                         android:padding="8dp"
                         android:background="@drawable/bg_white"
@@ -131,7 +117,7 @@
                         android:textSize="16sp" />
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="240dp"
                         android:layout_marginTop="8dp"
                         android:padding="8dp"
                         android:background="@drawable/bg_white"
@@ -176,13 +162,14 @@
                         android:text="@string/hm51"
                         android:textColor="@color/color_darkprime"
                         android:textSize="16sp" />
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="240dp"
                         android:layout_marginTop="8dp"
-                        android:padding="8dp"
                         android:background="@drawable/bg_white"
                         android:elevation="4dp"
+                        android:padding="8dp"
                         android:src="@drawable/tabs3hnetwork"
                         tools:ignore="ContentDescription" />
                 </LinearLayout>
@@ -223,13 +210,14 @@
                         android:text="@string/hm61"
                         android:textColor="@color/color_darkprime"
                         android:textSize="16sp" />
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="240dp"
                         android:layout_marginTop="8dp"
-                        android:padding="8dp"
                         android:background="@drawable/bg_white"
                         android:elevation="4dp"
+                        android:padding="8dp"
                         android:src="@drawable/tabs3object"
                         tools:ignore="ContentDescription" />
                 </LinearLayout>
@@ -270,13 +258,14 @@
                         android:text="@string/hm71"
                         android:textColor="@color/color_darkprime"
                         android:textSize="16sp" />
+
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="240dp"
                         android:layout_marginTop="8dp"
-                        android:padding="8dp"
                         android:background="@drawable/bg_white"
                         android:elevation="4dp"
+                        android:padding="8dp"
                         android:src="@drawable/tabs3entity"
                         tools:ignore="ContentDescription" />
                 </LinearLayout>

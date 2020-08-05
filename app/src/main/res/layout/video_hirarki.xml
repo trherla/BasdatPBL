@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.materi.hirarki.VideoPlayer"
+    tools:context=".ui.materi.hirarki.VideoPlayerHirarki"
     android:orientation="horizontal">
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-        android:id="@+id/tabs2_hirarki"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:videoId="kOHB85vDuow"
+        app:videoId="@string/videoHirarki"
         app:autoPlay="false"
         app:showFullScreenButton="false"
         />

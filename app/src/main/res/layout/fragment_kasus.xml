@@ -35,11 +35,32 @@
                 <ImageView
                     android:id="@+id/hero_awal"
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
-                    android:padding="8dp"
+                    android:layout_height="200dp"
+                    android:padding="16dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/database3"
                     tools:ignore="ContentDescription"/>
+                <TextView
+                    android:id="@+id/judul_awal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hero_awal"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/judul_kasus"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="16dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/judul_awal"
+                    android:layout_marginBottom="16dp"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="@string/des_kasus"
+                    />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
