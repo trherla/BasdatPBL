@@ -21,33 +21,49 @@
     <string name="des_kasus"> </string>
 
     <!--Materi Hirarki Basis Data-->
-    <string name="definisiBasisData">Basis Data atau Database merupakan kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik daru suatu sistem komputer.</string>
-    <string name="h1">Arsitektur basis data merupakan suatu kumpulan data yang tersimpan secara sistematik dimana user dapat melihat data dan bagaimana cara user melihat data tersebut</string>
-    <string name="h2">Dalam basis data, data diorganisasikan kedalam bentuk sebagai berikut:</string>
+    <string name="definisiBasisData">Basis Data atau Database merupakan kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik dari suatu sistem komputer.</string>
+    <string name="komponen">Basis Data dibangun oleh enam komponen pokok, antara lain:\n\n
+        1. <b><i>Hardware</i></b>\nDalam sistem pengolahan basis data digital, perangkat utama sebagai pengolah data adalah komputer.\n\n
+        2. <b><i>Software</i></b>\nPerangkat lunak digunakan untuk mendukung proses pengelolaan basis data dan bersifat opsional. Misal: bahasa pemrograman C, Pascal.\n\n
+        3. <b><i>Operating System</i></b>\nMerupakan perangkat lunak yang digunakan untuk mengelola aplikasi basis data dan penggunaan sumberdaya komputer.\n\n
+        4. <b><i>Database Management System</i></b> (DBMS)\nMerupakan program aplikasi untuk pengelolaan basis data, seperti <i>Microsoft acces, Oracle</i> dan lian-lain.\n\n
+        5. <b>Basis Data Lain</b>\nData lain yang mempunyai keterkaitan dan hubungan dengan basis data itu sendiri.\n\n
+        6. <b><i>User</i></b>\nPengguna yang terlibat dalam pengelolaan dan penggunaan basis data </string>
+    <string name="dbms">DBMS adalah program aplikasi yang dibuat dan bekerja dalam satu system.\nDBMS didesain untuk membantu dalam hal pemeliharaan dan utilitas kumpulan data dalam jumlah besar.\nDBMS dapat menjadi alternatif penggunaan secara khusus untuk aplikasi, misalnya penyimpanan data dalam field dan menulis kode aplikasi yang spesifik untuk pengaturannya.\n\nKumpulan file (table) yang saling berhubungan dalam di sebuah komputer dan sekumpulan program yang memungkinkan beberapa pemakai dan atau program lain untuk mengakses dan memanipulasi file-file atau table-tabel tersebut. </string>
+    <string name="user">Basis Data dibangun oleh enam komponen pokok, antara lain:\n\n
+        1. <b><i>Database Administrator</i></b>\nSeseorang yang mengorganisasi seluruh sistem basis data. Database administrator imemiliki tanggung jawab penuh dalam manajemen database meliputi: pengaturan hak akses, koordinasi dan monitoring serta bertanggung jawab terhadap kebutuhan hardware dan software. Dalam pekerjaannya biasanya dibantu oleh staf Admin.\n\n
+        2. <b><i>Database Designer</i></b>\nSeseorang yang bertugas merancang dan mengembangkan database. database designer bertanggung jawab dalam identifikasi data yang tersimpan dalam database, menentukan struktur data yang tepat untuk disimpan dalam database. Database designer memerlukan koordinasi akan kebutuhan user database.\n\n
+        3. <b><i>Application Programmer</i></b>\nPenggunaa yang berinteraksi dengan basis data melalui Data Manipulation Language (DML). DML meliputi program yang ditulis dalam bahasa pemrograman induk yang dipakai.\n\n
+        4. <b><i>End user</i></b> (DBMS)\nPengguna yang memanfaatkan atau membutuhkan akses ke database melalui query, manambah, merubah menghapus maupun membuat report database. \n\n
+        5. <b><i>System Analyst</i></b>\nPengguna yang merencanakan dan menentukan kebutuhan sistem.\n\n
+        6. <b><i>Application Programmers (Software Engineering)</i></b>\nPengguna tanggung jawabnya berhubungan dengan kebutuhan koneksi database.\n\n
+        7. <b><i> Worker Behind The Scene</i></b>\nIalah pengguna yang tidak tertarik pada database, tetapi lebih cenderung pada membangun data base atau kebutuhannya menggunakan alat bantu.</string>
+
+    <string name="h1">Arsitektur basis data merupakan suatu kumpulan data yang tersimpan secara sistematik dimana user dapat melihat data dan bagaimana cara user melihat data tersebut.\n\nDalam basis data, data diorganisasikan kedalam bentuk sebagai berikut:</string>
     <string name="h21">Elemen (kolom atau field) data adalah satuan data terkecil yang tidak dapat dipecah lagi menjadi unit lain yang bermakna.\n\nMisalnya data barang terdiri dari KodeBarang, NamaBarang, StokBarang.</string>
     <string name="h22">Rekaman (record) merupakan gabungan sejumlah elemen data yang saling terkait. Istilah lain dari record adalah baris atau tupel.</string>
     <string name="h23">Berkas (file) adalah himpunan seluruh record yang bertipe sama </string>
 
-    <string name="hd1">Abstraksi data adalah gambaran umum untuk melihat data dalam sebuah sistem basis data.\n\nMetode umum yang digunakakn untuk menjelaskan abstraksi dari sistem basis data diformulasikan pada 1978 yang di kenal dengan sebutan ANSI/SPARC (American National Standards Institute/ Standard Planning and Requirements Committee) yakni terdapat tiga level yaitu: </string>
-    <string name="hd11">Internal / Physical Level: berhubungan dengan bagaimana data disimpan secara fisik (physical storage).\n\Data disimpan dalam media penyimpanan dalam format byte. Didefinisikan sebagai sebuah skema internal.\n\nPada lapis inilah struktur data dijabarkan secara rinci dan dalam level ini hanya developer yang bisa melihatnya.</string>
-    <string name="hd12">Conceptual / Logical Level: Yang menghubungkan antara internal dan external level. \n\nConceptual level adalah sebuah representasi seluruh muatan informasi yang dikandung oleh basis data. \n\nTingkatan level ini dilihat dari cara user dalam memahami atau mengetahui data.</string>
-    <string name="hd13">External / View Level: berhubungan dengan bagaimana data direpresentasikan dari sisi setiap user. \n\nView level ini menunjukkan data apa yang ingin user lihat tetapi tidak semuanya ditampilkan. misalnya seorang mahasiswa ingin melihat datanya, tetapi ia tidak dapat melihat data dosen, ataupun mahasiswa lainnya.\n\nKegunaan level ini adalah untuk menyederhanakan interaksi antara pemakai (user) dengan sistem.</string>
+    <string name="hd1">Abstraksi data adalah gambaran umum untuk melihat data dalam sebuah sistem basis data.\n\nMetode umum yang digunakakn untuk menjelaskan abstraksi dari sistem basis data diformulasikan pada 1978 yang di kenal dengan sebutan <b>ANSI/SPARC</b> (<i>American National Standards Institute/Standard Planning and Requirements Committee</i>) yakni terdapat tiga level yaitu: </string>
+    <string name="hd11"><i>Internal / Physical Level</i> Merupakan suatu konsep bagaimana diskripsi detail data disimpan dalam sebuah komputer. Physical data merupakan level rendah (low level) yang mendekati ke data sebenarnya.\n\Dalam physical data menjelaskan definisi data yang meliputi nama atribut, type data (misalnya varchar, integer dll), size atau ukurannya data. \n\nData yang diimplementasikan berupa table yang terdiri dari barisan data dalam kolom (field) dan baris (record).\n\nSetiap DBMS mempunyai aturan-aturan tersendiri dalam membuat definisi, struktur basis data dan tipe data yang digunakan.\n\nContoh Deskripsi struktur tabel Mahasiswa: </string>
+    <string name="jenis_jenis_tipe_data_dalam_dbms_oracle">Jenis-jenis tipe data dalam DBMS Oracle</string>
+    <string name="hd12"><i>Conceptual / Logical Level</i>: Yang menghubungkan antara internal dan external level. \n\n<i>Conceptual level</i> adalah sebuah representasi seluruh muatan informasi yang dikandung oleh basis data. \n\nTingkatan level ini dilihat dari cara user dalam memahami atau mengetahui data.</string>
+    <string name="hd13"><i>External / View Level</i>: Berhubungan dengan bagaimana data direpresentasikan dari sisi setiap user. \n\nView level ini menunjukkan data apa yang ingin user lihat tetapi tidak semuanya ditampilkan. misalnya seorang mahasiswa ingin melihat datanya, tetapi ia tidak dapat melihat data dosen, ataupun mahasiswa lainnya.\n\nKegunaan level ini adalah untuk menyederhanakan interaksi antara pemakai (user) dengan sistem.</string>
 
     <string name="hm1">Pemodelan data merupakan sekumpulan konsep-konsep untuk mendeskripsikan/menggambarkan struktur data.\n\nTerdapat sejumlah cara dalam merepresentasikan model dalam perancangan basis data. Berikut jenis model data, beberapa yang paling umum yaitu:</string>
-    <string name="hm3">1. Hierarchical database model</string>
+    <string name="hm3"><i>1. Hierarchical database model</i></string>
     <string name="hm31">Model hierarkis mengatur data ke dalam struktur mirip pohon, di mana setiap catatan memiliki induk tunggal atau root.\n\nModel ini bagus untuk menggambarkan banyak hubungan dunia nyata. </string>
-    <string name="hm4">2. Relational model</string>
+    <string name="hm4"><i>2. Relational model</i></string>
     <string name="hm41">Model relasional mengurutkan data ke dalam tabel, juga dikenal sebagai relasi, yang masing-masing terdiri dari kolom dan baris.\n\nDi dalam database, tabel dapat dinormalisasi, atau dibawa untuk mematuhi aturan normalisasi yang membuat database fleksibel, mudah beradaptasi, dan dapat diskalakan.\n\nDatabase relasional biasanya ditulis dalam Structured Query Language (SQL).</string>
-    <string name="hm5">3. Network model</string>
+    <string name="hm5"><i>3. Network model</i></string>
     <string name="hm51">Model jaringan dibangun berdasarkan model hierarkis dengan memungkinkan banyak hubungan antara catatan terkait, yang menyiratkan banyak catatan orang tua (parent records).\n\nSetiap set terdiri dari satu pemilik atau catatan induk dan satu atau lebih anggota atau catatan anak (child records).\n\nRecord dapat menjadi anggota atau anak dalam beberapa set, memungkinkan model ini untuk menyampaikan hubungan yang kompleks. </string>
-    <string name="hm6">4. Object-oriented database model</string>
+    <string name="hm6"><i>4. Object-oriented database model</i></string>
     <string name="hm61">Model ini mendefinisikan database sebagai kumpulan objek, atau elemen perangkat lunak yang dapat digunakan kembali, dengan fitur dan metode terkait.\n\nModel database object-oriented adalah model database pasca-relasional yang paling dikenal, karena menggabungkan tabel, tetapi tidak terbatas pada tabel. \n\n Model semacam itu juga dikenal sebagai model basis data hybrid.</string>
-    <string name="hm7">5. Entity-relationship model</string>
+    <string name="hm7"><i>5. Entity-relationship model</i></string>
     <string name="hm71">Model ini menangkap hubungan antara entitas dunia nyata seperti model jaringan, namun tidak terkait langsung dengan struktur fisik database.\n\nSering digunakan untuk merancang database secara konseptual.\n\nDi sini, orang-orang, tempat, dan hal-hal tentang titik-titik data yang disimpan disebut sebagai entitas, yang masing-masing memiliki atribut tertentu yang bersama-sama membentuk domain mereka. </string>
 
     <!--Materi ERD-->
-    <string name="ed1">Entity Relationship Diagram (ERD) merupakan salah satu bentuk pemodelan basis data yang sering digunakan dalam pengembangan sistem informasi.</string>
-    <string name="ed2">Diagram hubungan entitas (ERD) menunjukkan hubungan dari entitas set disimpan dalam database. Entitas dalam konteks ini adalah komponen data.Dengan kata lain, diagram ER menggambarkan struktur logis dari database.</string>
+    <string name="ed1">Entity Relationship Diagram (ERD) merupakan salah satu bentuk pemodelan basis data yang sering digunakan dalam pengembangan sistem informasi.\n\nDiagram hubungan entitas (ERD) menunjukkan hubungan dari entitas set disimpan dalam database.\n\nEntitas dalam konteks ini adalah komponen data. Dengan kata lain, diagram ER menggambarkan struktur logis dari database.</string>
     <string name="ed3">Pada dasarnya ada tiga komponen yang digunakan di ERD, yaitu:\n1. Entitas\n2. Atribut\n3. Relasi</string>
     <!--    <string name="ed4">Materi</string>-->
 
@@ -58,10 +74,9 @@
 
 
     <string name="ea1">Atribut merupakan sifat-sifat atau karakteristik pada suatu entitas.\n\nNama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.\n\nSimbol yang digunakan untuk atribut adalah oval/elipse\n\nMacam-macam atribut dalam ERD:</string>
-<!--    <string name="ea2">Nama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.</string>-->
-<!--    <string name="ea3">Macam-macam atribut dalam ERD:</string>-->
-    <string name="ea31">Atribut Kunci yaitu pengidentifikasi entitas yang paling unik untuk semua entitas dalam himpunan entitas.</string>
-    <string name="ea311">Atribut kunci dibedakan menjadi tiga, yaitu:\n\na. Super Key adalah satu atau lebih atribut yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas\n\nb. Candidate Key adalah kumpulan atribut minimal yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas.\n\nc. Primmary Key adalah salah satu candidate key yang digunakan sebagai pengidentifikasi suatu atribut dalam himpunan entitas. Dasar pemilihan primary key adalah key sering digunakan sebagai acuan, key lebih ringkas, key harus unik</string>
+    <!--    <string name="ea2">Nama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.</string>-->
+    <!--    <string name="ea3">Macam-macam atribut dalam ERD:</string>-->
+    <string name="ea31">Atribut Kunci yaitu pengidentifikasi entitas yang paling unik untuk semua entitas dalam himpunan entitas.\n\nAtribut kunci dibedakan menjadi tiga, yaitu:\na. <b><i>Super Key</i></b> adalah satu atau lebih atribut yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas\n\nb. <b><i>Candidate Key</i></b> adalah kumpulan atribut minimal yang dapat membedakan entitas satu dengan lainnya dalam himpunan entitas.\n\nc. <b><i>Primmary Key</i></b> adalah salah satu candidate key yang digunakan sebagai pengidentifikasi suatu atribut dalam himpunan entitas. Dasar pemilihan primary key adalah key sering digunakan sebagai acuan, key lebih ringkas, key harus unik</string>
     <string name="ea32">Atribut Deskriptif yaitu atribut lain selain atribut kunci yang berfungsi sebagai penjelasan terhadap entitas dalam himpunan entitas</string>
     <string name="ea33">Atribut Sederhana (Simple Attribute) merupakan atribut yang tidak bisa dibagi menjadi atribut yang lebih mendasar.\nContoh: atribut NIS dari entitas siswa</string>
     <string name="ea34">Atribut Komposit (Composite Attribute) merupakan atribut yang terdiri dari beberapa atribut.\nContoh: atribut nama (memiliki detail nama depan dan nama belakang) dari entitas siswa</string>
@@ -77,7 +92,7 @@
     <string name="er3"><b>One to Many (1:N)</b>\nSetiap anggota entitas A dapat berhubungan dengan lebih dari satu anggota entitas B tetapi tidak sebaliknya.</string>
     <string name="er4"><b>Many to Many (N:N)</b>\nSetiap entitas A dapat berhubungan dengan banyak entitas himpunan entitas B dan demikian pula sebaliknya</string>
     <string name="er5">Klasifikasi relasi berdasarkan derajatnya:\n\n<b>1. Unary Degree</b>\n- Relasi yang hanya melibatkan satu entitas </string>
-<!--    <string name="er51"></string>-->
+    <!--    <string name="er51"></string>-->
     <string name="er52"><b>2. Binary Degree</b>\n- Relasi yang melibatkan dua entitas</string>
     <string name="er53"><b>3. Ternary Degree</b>\n- Relasi yang melibatkan tiga entitas</string>
 
@@ -92,7 +107,7 @@
     <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut.\n\nAnalogi: terdapat sebuah relasi yang bernama R dengan dua buah atributnya berupa A dan B, sehingga Notasinya R(A,B) </string>
     <string name="kf3">Pada keadaan tersebut, atribut B dikatakan mempunyai dependensi fungsional terhadap A apabila setiap nilai A berhubungan dengan satu nilai yang sama pada B</string>
     <string name="kf31">Dari Tabel Barang diatas ini dapat dinotasikan seperti berikut\n1. KodeBarang -> NamaBarang\n2. KodeBarang -> HargaBarang\n3. KodeBarang -> KodePemasok\n4. KodeBarang -> NamaPemasok\n5. NamaBarang -> KodeBarang\n6. KodePemasok -> NamaPemasok\n7. NamaPemasok -> KodePemasok </string>
-    <string name="kf32">Tanda "->" dibaca memiliki ketergantungan fungsional\n\nPada Notasi KodeBarang -> NamaBarang\nSetiap KodeBarang pasti akan berhubungan dengan hanya sebuah NamaBarang.\n\nContoh: KodeBarang B-001 hanya akan cocok dengan satu NamaBarang Mirrorless ABV</string>
+    <string name="kf32"><![CDATA[Ketergantungan Fungsional diwakili dengan tanda panah seperti ini "->" \n\nPada Notasi KodeBarang -> NamaBarang\nSetiap KodeBarang pasti akan berhubungan dengan hanya sebuah NamaBarang.\n\nContoh: KodeBarang B-001 hanya akan cocok dengan satu NamaBarang Mirrorless ABV]]></string>
     <string name="kf33">Notasi singkat:\nKodeBarang -> {NamaBarang, HargaBarang, KodePemasok, NamaPemasok} </string>
 
     <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut\n\n<![CDATA[Notasi : {A,B,…} -> Z]]>\n\nAtribut Z mempunyai dependensi terhadap pasangan A dan B</string>
@@ -102,7 +117,7 @@
     <!--    Ketergantungan sepenuhnya-->
     <string name="ksp1">Suatu atribut B dikatakan memiliki dependensi sepenuhnya terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A </string>
     <string name="ksp2">Contoh:\n{NIP, Pendidikan}-> TahunLulus\n\nNotasi berikut merupakan salah satu contoh ketergantungan sepenuhnya, karena TahunLulus bergantung dari dua atribut yaitu NIP dan Pendidikan</string>
-<!--    <string name="ksp3">2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A</string>-->
+    <!--    <string name="ksp3">2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A</string>-->
 
 
     <!--Ketergantungan sebagian -->
@@ -158,18 +173,25 @@
     <string name="masalah3_perpus">Penggunaan Notasi E-R Diagram yang salah</string>
     <string name="masalah4_perpus">Ketidakcocokan Relasi antar Entitas</string>
 
+    <string name="pertanyaan_sekolah">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
+    <string name="masalah1_sekolah">Sekolah Baru memiliki sistem manajemen yang kurang optimal </string>
+    <string name="masalah2_sekolah">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
+    <string name="masalah3_sekolah">Tidak ada siswa yang mendaftar di SMP Harapan Bangsa</string>
+    <string name="masalah4_sekolah">SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik</string>
+
     <string name="solusi_perpus">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
-    <string name="solusi1_perpus">Mengganti beberapa Atribut</string>
-    <string name="solusi2_perpus">Menghapus Entitas yang tidak relevan dengan database perpustakaan</string>
-    <string name="solusi3_perpus">Mengubah beberapa simbol ERD</string>
-    <string name="solusi4_perpus">Mencocokkan kembali relasi dan kardinalitas</string>
+    <string name="solusi1_perpus">Membuat database sekolah dengan entitas siswa, guru, pegawai</string>
+    <string name="solusi2_perpus">Ini Solusi 3</string>
+    <string name="solusi3_perpus">Solusi 4 mah</string>
+    <string name="solusi4_perpus">Yang ini 5 deh</string>
+
     <string name="image">image</string>
-    <string name="file">File</string>
-    <string name="record">Record</string>
-    <string name="field">Field</string>
-    <string name="_1_internal_level">1. Internal Level</string>
-    <string name="_2_conceptual_level">2. Conceptual Level</string>
-    <string name="_3_view_level">3. View Level</string>
+    <string name="file"><b><i>File</i></b></string>
+    <string name="record"><b><i>Record</i></b></string>
+    <string name="field"><b><i>Field</i></b></string>
+    <string name="_1_internal_level">1. <i>Internal Level</i></string>
+    <string name="_2_conceptual_level">2. <i>Conceptual Level</i></string>
+    <string name="_3_view_level">3. <i>View Level</i></string>
     <string name="atribut_tidak_harus_bernilai">9. Atribut Tidak Harus bernilai</string>
     <string name="atribut_bernilai">8. Atribut Bernilai</string>
     <string name="atribut_turunan">7. Atribut Turunan</string>
@@ -187,13 +209,17 @@
     <string name="videoErd">1kKNJr_5tY8</string>
     <string name="videoKetergantungan">2S24-y0Ij3Y</string>
     <string name="videoNormalisasi">IHNzOHi8sJs</string>
-    <string name="kecepatan">Kecepatan</string>
-    <string name="efisiensi">Efisiensi</string>
-    <string name="ketersediaan">Ketersediaan</string>
-    <string name="keamanan">Keamanan</string>
-    <string name="kebersamaan">Kebersamaan</string>
+
+    <string name="kecepatan"><b>Kecepatan</b>\n\nMudah dan cepat dalam melakukan penyimpanan, perubahan dan menampilkan kembali.</string>
+    <string name="efisiensi"><b>Efisiensi</b>\n\nMampu mengurangi pengulangan atau redundansi data.</string>
+    <string name="ketersediaan"><b>Ketersediaan</b>\n\nData selalu siap dipakai.</string>
+    <string name="keamanan"><b>Keamanan\n\nData</b> lebih aman dengan perbedaan hak akses pengguna.</string>
+    <string name="kebersamaan"><b>Kebersamaan</b>\n\nData yang dikelola oleh sistem mendukung lingkungan banyak pemakai</string>
+    <string name="keakuratan"><b>Keakuratan</b>\n\nData lebih terjaga dan akurat dengan menerapkan aturan dan batasan tertentu</string>
+
     <string name="tujuan_penggunaan_basis_data">Tujuan Penggunaan Basis Data</string>
-    <string name="keakuratan">Keakuratan</string>
     <string name="apa_itu_basis_data">Apa itu Basis Data?</string>
+    <string name="komponen_basis_data">Komponen Basis Data</string>
+    <string name="pengguna_basis_data">Pengguna Basis Data</string>
 
 </resources>

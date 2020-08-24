@@ -73,7 +73,8 @@
                             android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
 
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            tools:ignore="UseCompoundDrawables">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -86,18 +87,6 @@
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/ea31"/>
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea311"/>
 
                             <ImageView
                                 android:layout_width="match_parent"

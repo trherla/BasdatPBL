@@ -34,11 +34,11 @@
                     android:textSize="16sp" />
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="400dp"
                     android:padding="8dp"
                     android:background="@drawable/bg_white"
                     android:elevation="4dp"
-                    android:src="@drawable/ansisparc"
+                    android:src="@drawable/ansi"
                     tools:ignore="ContentDescription" />
 
                 <LinearLayout
@@ -103,7 +103,44 @@
                                 android:elevation="4dp"
                                 android:src="@drawable/internallevel"
                                 tools:ignore="ContentDescription" />
-
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/bg_white"
+                                android:elevation="2dp"
+                                android:lineSpacingMultiplier="1.5"
+                                android:padding="8dp"
+                                android:text="@string/jenis_jenis_tipe_data_dalam_dbms_oracle"
+                                android:textColor="@color/color_darkprime"
+                                android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_white"
+                                android:elevation="4dp"
+                                android:src="@drawable/td1"
+                                tools:ignore="ContentDescription" />
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_white"
+                                android:elevation="4dp"
+                                android:src="@drawable/td2"
+                                tools:ignore="ContentDescription" />
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:padding="8dp"
+                                android:background="@drawable/bg_white"
+                                android:elevation="4dp"
+                                android:src="@drawable/td3"
+                                tools:ignore="ContentDescription" />
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 

@@ -54,6 +54,32 @@
                     android:padding="8dp"
                     android:lineSpacingMultiplier="1.5"
                     android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_darkprime"
+                    android:background="@drawable/bg_expand"
+                    android:elevation="2dp"
+                    android:text="@string/komponen_basis_data"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:background="@drawable/bg_white"
+                    android:elevation="2dp"
+                    android:text="@string/komponen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
                     android:textColor="@color/color_darkprime"
                     android:background="@drawable/bg_expand"
                     android:elevation="2dp"
@@ -66,9 +92,10 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cview1"
-                        android:layout_width="100dp"
-                        android:layout_height="120dp"
+                        android:layout_width="108dp"
+                        android:layout_height="240dp"
                         android:layout_marginStart="8dp"
+                        app:cardElevation="4dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -86,7 +113,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="96dp"
                                 android:layout_marginBottom="10dp">
 
                                 <TextView
@@ -101,8 +128,9 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cview2"
-                        android:layout_width="100dp"
-                        android:layout_height="120dp"
+                        android:layout_width="108dp"
+                        android:layout_height="240dp"
+                        app:cardElevation="4dp"
                         app:layout_constraintEnd_toStartOf="@+id/cview3"
                         app:layout_constraintStart_toEndOf="@+id/cview1"
                         app:layout_constraintTop_toTopOf="parent">
@@ -121,7 +149,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="96dp"
+
                                 android:layout_marginBottom="10dp">
 
                                 <TextView
@@ -136,9 +165,10 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cview3"
-                        android:layout_width="100dp"
-                        android:layout_height="120dp"
+                        android:layout_width="108dp"
+                        android:layout_height="240dp"
                         android:layout_marginEnd="8dp"
+                        app:cardElevation="4dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -156,7 +186,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="96dp"
                                 android:layout_marginBottom="10dp">
 
                                 <TextView
@@ -171,10 +201,11 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cview4"
-                        android:layout_width="100dp"
-                        android:layout_height="120dp"
+                        android:layout_width="108dp"
+                        android:layout_height="240dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="16dp"
+                        app:cardElevation="4dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/cview1">
 
@@ -192,7 +223,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="96dp"
                                 android:layout_marginBottom="10dp">
 
                                 <TextView
@@ -207,9 +238,10 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cview5"
-                        android:layout_width="100dp"
-                        android:layout_height="120dp"
+                        android:layout_width="108dp"
+                        android:layout_height="240dp"
                         android:layout_marginTop="16dp"
+                        app:cardElevation="4dp"
                         app:layout_constraintEnd_toStartOf="@+id/cview6"
                         app:layout_constraintStart_toEndOf="@+id/cview4"
                         app:layout_constraintTop_toBottomOf="@+id/cview2">
@@ -228,7 +260,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="96dp"
                                 android:layout_marginBottom="10dp">
 
                                 <TextView
@@ -243,10 +275,11 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/cview6"
-                        android:layout_width="100dp"
-                        android:layout_height="120dp"
+                        android:layout_width="108dp"
+                        android:layout_height="240dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="8dp"
+                        app:cardElevation="4dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/cview3">
 
@@ -264,7 +297,7 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="96dp"
                                 android:layout_marginBottom="10dp">
 
                                 <TextView
@@ -278,6 +311,30 @@
                     </androidx.cardview.widget.CardView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_darkprime"
+                    android:background="@drawable/bg_expand"
+                    android:elevation="2dp"
+                    android:text="@string/pengguna_basis_data"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:background="@drawable/bg_white"
+                    android:elevation="2dp"
+                    android:text="@string/user"/>
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/button_vid"
                     android:layout_width="80dp"

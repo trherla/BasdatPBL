@@ -5,11 +5,6 @@ import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
 
 import com.example.basdatpbl.R;
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
@@ -27,7 +22,7 @@ public class OneIntro extends IntroActivity {
         setButtonCtaVisible(false);
         setButtonCtaTintMode(BUTTON_CTA_TINT_MODE_BACKGROUND);
         TypefaceSpan labelSpan = new TypefaceSpan(
-                Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP ? "sans-serif-medium" : "sans serif");
+                "sans-serif-medium");
         SpannableString label = SpannableString
                 .valueOf("Get Started");
         label.setSpan(labelSpan, 0, label.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -39,27 +34,47 @@ public class OneIntro extends IntroActivity {
         }
 
         addSlide(new SimpleSlide.Builder()
-                .title("Problem Based Learning")
-                .description("Dapat melatih kemampuan pemecahan masalah")
-//                .image(R.drawable.ic_sync_problem_black_24dp)
-                .background(R.color.color_darkprime)
+                .title("Kasus Sekolah")
+//                .description("Dapat melatih kemampuan pemecahan masalah")
+//                .image(R.drawable.sekolah)
+                .background(R.color.blue5)
                 .backgroundDark(R.color.white)
                 .canGoBackward(false)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
-                .title("Basis Data")
-                .description("Materi yang dipelajari merupakan materi basis data")
-//                .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.color_darkprime)
+//                .title("Basis Data")
+                .description("Teman lama mu yang bernama Edi, akan mendirikan sebuah sekolah baru yang bernama SMP Harapan Bangsa")
+                .image(R.drawable.friend2)
+                .background(R.color.blue3)
                 .backgroundDark(R.color.white)
                 .build());
-
         addSlide(new SimpleSlide.Builder()
-                .title("Kuis")
-                .description("Terdapat kuis sebagai latihan")
-//                .image(R.drawable.ic_assignment_turned_in_black_24dp)
-                .background(R.color.color_darkprime)
+//                .title("Basis Data")
+                .description("Sekolah baru yang akan didirikan ini akan membuka penerimaan siswa pada tahun depan")
+                .image(R.drawable.school)
+                .background(R.color.blue3)
+                .backgroundDark(R.color.white)
+                .build());
+        addSlide(new SimpleSlide.Builder()
+//                .title("Basis Data")
+                .description("Namun sebelum sekolah dibuka, Edi bingung bagaimana melakukan manajemen data untuk siswa, guru, dan pegawai")
+                .image(R.drawable.manager_)
+                .background(R.color.blue3)
+                .backgroundDark(R.color.white)
+                .build());
+        addSlide(new SimpleSlide.Builder()
+//                .title("Basis Data")
+                .description("Kamu sebagai seseorang yang memiliki pengetahuan mengenai manajemen data akan membantu Edi")
+                .image(R.drawable.friend)
+                .background(R.color.blue3)
+                .backgroundDark(R.color.white)
+                .build());
+        addSlide(new SimpleSlide.Builder()
+//                .title("Kuis")
+                .description("Apa saja yang diperlukan untuk memudahkan memanajemen data untuk sekolah baru Edi?")
+                .image(R.drawable.thinking)
+                .background(R.color.blue5)
                 .backgroundDark(R.color.white)
                 .build());
 

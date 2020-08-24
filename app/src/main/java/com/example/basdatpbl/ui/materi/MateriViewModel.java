@@ -24,9 +24,9 @@ public class MateriViewModel extends RecyclerView.ViewHolder {
         super(itemView);
         context = itemView.getContext();
 
-        materi_title = (TextView) itemView.findViewById(R.id.cv_title);
-        img_thumbnail = (ImageView) itemView.findViewById(R.id.cv_img);
-        cardView = (CardView) itemView.findViewById(R.id.cv_click);
+        materi_title = itemView.findViewById(R.id.cv_title);
+        img_thumbnail = itemView.findViewById(R.id.cv_img);
+        cardView = itemView.findViewById(R.id.cv_click);
 
         cardView.setOnClickListener(view -> {
             Intent intent = new Intent();

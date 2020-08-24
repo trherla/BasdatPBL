@@ -21,7 +21,7 @@ public class TwoTahapDua extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two_tahap_dua);
+        setContentView(R.layout.kasus_two_tahap_dua);
 
         TextView Pertanyaan = findViewById(R.id.pertayaan_kasus);
         CbSatu = findViewById(R.id.cb_satu);

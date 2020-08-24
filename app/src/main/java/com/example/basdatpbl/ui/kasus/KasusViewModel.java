@@ -11,8 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.kasus.dua.TwoTahapSatu;
+import com.example.basdatpbl.ui.kasus.empat.FourTahapSatu;
 import com.example.basdatpbl.ui.kasus.satu.OneTahapSatu;
 import com.example.basdatpbl.ui.kasus.satu.OneIntro;
+import com.example.basdatpbl.ui.kasus.tiga.ThreeTahapSatu;
 import com.example.basdatpbl.ui.materi.TabsHirarki;
 import com.example.basdatpbl.ui.materi.TabsNormalisasi;
 
@@ -42,10 +44,10 @@ public class KasusViewModel extends RecyclerView.ViewHolder {
                     intent = new Intent(context, TwoTahapSatu.class);
                     break;
                 case 2 :
-                    intent = new Intent(context, OneIntro.class);
+                    intent = new Intent(context, ThreeTahapSatu.class);
                     break;
                 case 3 :
-                    intent = new Intent(context, TabsNormalisasi.class);
+                    intent = new Intent(context, FourTahapSatu.class);
                     break;
             }
             context.startActivity(intent);

@@ -131,7 +131,6 @@
             android:elevation="4dp"
             android:onClick="next"
             android:src="@drawable/next"
-            android:textColor="@color/color_darkprime"
             tools:ignore="ContentDescription" />
     </RelativeLayout>
 

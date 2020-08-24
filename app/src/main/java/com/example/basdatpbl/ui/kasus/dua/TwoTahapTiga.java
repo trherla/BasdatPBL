@@ -1,16 +1,12 @@
 package com.example.basdatpbl.ui.kasus.dua;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
-import android.widget.ScrollView;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,7 +27,7 @@ public class TwoTahapTiga extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two_tahap_tiga);
+        setContentView(R.layout.kasus_two_tahap_tiga);
 
 //        Spinner 1 
         final Spinner spinnerA = findViewById(R.id.spinnerA);

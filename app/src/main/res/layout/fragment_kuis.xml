@@ -35,7 +35,7 @@
                         android:layout_height="200dp"
                         android:padding="16dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/database6"
+                        android:src="@drawable/checklist_"
                         tools:ignore="ContentDescription"/>
                     <TextView
                         android:id="@+id/judul_awal"

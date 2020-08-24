@@ -22,7 +22,7 @@ public class TwoTahapEmpat extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two_tahap_empat);
+        setContentView(R.layout.kasus_two_tahap_empat);
 
         textView1 = findViewById(R.id.txtV1);
         textView2 = findViewById(R.id.txtV2);

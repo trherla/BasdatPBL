@@ -45,7 +45,7 @@ public class AppIntroActivity extends IntroActivity {
                 .title("Basis Data")
                 .description("Materi yang dipelajari merupakan materi basis data")
                 .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.bg_screen3)
+                .background(R.color.blue2)
                 .backgroundDark(R.color.colorPrimaryDark)
                 .build());
 

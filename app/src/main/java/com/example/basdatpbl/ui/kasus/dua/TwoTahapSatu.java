@@ -4,22 +4,16 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kasus.satu.OneIntro;
-import com.example.basdatpbl.ui.kasus.satu.OneTahapDua;
-
-import java.security.PublicKey;
 
 import static com.example.basdatpbl.BottomActivity.PREF_KEY_FIRST_START;
 import static com.example.basdatpbl.BottomActivity.REQUEST_CODE_INTRO;
@@ -34,7 +28,7 @@ public class TwoTahapSatu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two_tahap_satu);
+        setContentView(R.layout.kasus_two_tahap_satu);
 
         Pertanyaan = findViewById(R.id.pertayaan_kasus);
         CbSatu = findViewById(R.id.cb_satu);
@@ -97,7 +91,7 @@ public class TwoTahapSatu extends AppCompatActivity {
                 .getBoolean(PREF_KEY_FIRST_START, true);
 
         //set for first start
-        if (firstStart) {
+        if (!firstStart) {
             Intent intent = new Intent(this, TwoIntro.class);
             startActivityForResult(intent, REQUEST_CODE_INTRO);
         }

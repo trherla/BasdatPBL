@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_slider3"
+    android:padding="32dp"
+    tools:context=".ui.kasus.dua.TwoTahapSatu">
+
+    <TextView
+        android:id="@+id/jud_kasus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pertanyaan"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:text="@string/tahap2pbl"
+        android:textColor="@color/mi_icon_color_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/pertayaan_kasus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jud_kasus"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_pertanyaan"
+        android:padding="20dp"
+        android:textColor="@color/mi_icon_color_dark"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jud_kasus"
+        tools:ignore="MissingConstraints" />
+
+
+    <CheckBox
+        android:id="@+id/cb_satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.25"
+        android:background="@drawable/bg_white"
+        app:layout_constraintStart_toStartOf="@+id/cb_dua"
+        app:layout_constraintTop_toBottomOf="@+id/pertayaan_kasus" />
+
+    <CheckBox
+        android:id="@+id/cb_dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.25"
+        android:background="@drawable/bg_white"
+        app:layout_constraintStart_toStartOf="@+id/cb_tiga"
+        app:layout_constraintTop_toBottomOf="@+id/cb_satu" />
+
+    <CheckBox
+        android:id="@+id/cb_tiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.25"
+        android:background="@drawable/bg_white"
+        app:layout_constraintStart_toStartOf="@+id/cb_empat"
+        app:layout_constraintTop_toBottomOf="@+id/cb_dua" />
+
+    <CheckBox
+        android:id="@+id/cb_empat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.25"
+        android:background="@drawable/bg_white"
+        app:layout_constraintEnd_toEndOf="@+id/cb_tiga"
+        app:layout_constraintTop_toBottomOf="@+id/cb_tiga" />
+
+
+    <ImageButton
+        android:id="@+id/button_perpus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_next"
+        android:onClick="next"
+        android:elevation="4dp"
+        android:src="@drawable/next"
+        android:textColor="@color/color_darkprime"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

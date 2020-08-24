@@ -45,18 +45,6 @@
                     android:elevation="2dp"
                     android:text="@string/h1"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:padding="8dp"
-                    android:textSize="16sp"
-                    android:elevation="2dp"
-                    android:textColor="@color/color_darkprime"
-                    android:background="@drawable/bg_white"
-                    android:text="@string/h2"/>
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
@@ -232,20 +220,21 @@
                                 android:textColor="@color/color_darkprime"
                                 android:background="@drawable/bg_white"
                                 android:text="@string/h21"/>
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="120dp"
-                                android:padding="8dp"
-                                android:background="@drawable/bg_white"
-                                android:elevation="4dp"
-                                android:src="@drawable/record"
-                                tools:ignore="ContentDescription" />
+
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
                 </RelativeLayout>
 
-
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:background="@drawable/bg_white"
+                    android:padding="8dp"
+                    android:elevation="4dp"
+                    android:src="@drawable/strukturpenyimpanan"
+                    tools:ignore="ContentDescription" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

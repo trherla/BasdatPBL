@@ -62,8 +62,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="280dp"
+                    android:layout_height="480dp"
                     android:background="@drawable/bg_white"
+                    android:scaleType="fitCenter"
                     android:elevation="4dp"
                     android:padding="8dp"
                     android:src="@drawable/tahapnormalisasi"

@@ -35,30 +35,43 @@ public class TwoIntro extends IntroActivity {
         }
 
         addSlide(new SimpleSlide.Builder()
-                .title("Problem Based Learning")
-                .description("Dapat melatih kemampuan pemecahan masalah")
-//                .image(R.drawable.ic_sync_problem_black_24dp)
-                .background(R.color.color_light)
+                .title("Kasus Perpustakaan")
+//                .description("Dapat melatih kemampuan pemecahan masalah")
+                .image(R.drawable.ic_sync_problem_black_24dp)
+                .background(R.color.red2)
                 .backgroundDark(R.color.white)
                 .canGoBackward(false)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
-                .title("Basis Data")
-                .description("Materi yang dipelajari merupakan materi basis data")
-//                .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.color_light)
+//                .title("Basis Data")
+                .description("Terdapat Sekolah di daerah pinggiran kota, Sekolah itu bernama SD Pintar")
+                .image(R.drawable.machu_pichu)
+                .background(R.color.red3)
                 .backgroundDark(R.color.white)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
-                .title("Kuis")
-                .description("Terdapat kuis sebagai latihan")
-//                .image(R.drawable.ic_assignment_turned_in_black_24dp)
-                .background(R.color.color_light)
+//                .title("Kuis")
+                .description("Minat baca di sekolah ini sangat tinggi, penjaga perpustakaan sampai kerepotan mengatur peminjaman buku secara manual.")
+                .image(R.drawable.book_lover)
+                .background(R.color.red5)
                 .backgroundDark(R.color.white)
                 .build());
-
+        addSlide(new SimpleSlide.Builder()
+//                .title("Kuis")
+                .description("Karena bantuan dana dari pemerintah baru keluar, Kepala sekolah memiliki rencana untuk meningkatkan sistem peminjaman buku di perpustakaan SD Pintar.")
+                .image(R.drawable.bank_note)
+                .background(R.color.red4)
+                .backgroundDark(R.color.white)
+                .build());
+        addSlide(new SimpleSlide.Builder()
+//                .title("Kuis")
+                .description("Kepala sekolah meminta bantuanmu untuk merencanakan manajemen peminjaman buku di SD Cerdas")
+                .image(R.drawable.career)
+                .background(R.color.red1)
+                .backgroundDark(R.color.white)
+                .build());
         autoplay(2500, INFINITE);
 
     }

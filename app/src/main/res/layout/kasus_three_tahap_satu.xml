@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="32dp"
     tools:context=".ui.kasus.dua.TwoTahapSatu">
 
     <TextView
@@ -26,11 +26,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/jud_kasus"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:background="@drawable/bg_pertanyaan"
-        android:padding="16dp"
+        android:padding="20dp"
         android:textColor="@color/mi_icon_color_dark"
         android:textSize="16sp"
         android:lineSpacingMultiplier="1.5"
@@ -45,11 +43,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:padding="16dp"
         android:textSize="16sp"
-        android:lineSpacingMultiplier="1.5"
+        android:lineSpacingMultiplier="1.25"
         android:background="@drawable/bg_white"
         app:layout_constraintStart_toStartOf="@+id/cb_dua"
         app:layout_constraintTop_toBottomOf="@+id/pertayaan_kasus" />
@@ -59,11 +55,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:padding="16dp"
         android:textSize="16sp"
-        android:lineSpacingMultiplier="1.5"
+        android:lineSpacingMultiplier="1.25"
         android:background="@drawable/bg_white"
         app:layout_constraintStart_toStartOf="@+id/cb_tiga"
         app:layout_constraintTop_toBottomOf="@+id/cb_satu" />
@@ -73,11 +67,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:padding="16dp"
         android:textSize="16sp"
-        android:lineSpacingMultiplier="1.5"
+        android:lineSpacingMultiplier="1.25"
         android:background="@drawable/bg_white"
         app:layout_constraintStart_toStartOf="@+id/cb_empat"
         app:layout_constraintTop_toBottomOf="@+id/cb_dua" />
@@ -87,11 +79,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:padding="16dp"
         android:textSize="16sp"
-        android:lineSpacingMultiplier="1.5"
+        android:lineSpacingMultiplier="1.25"
         android:background="@drawable/bg_white"
         app:layout_constraintEnd_toEndOf="@+id/cb_tiga"
         app:layout_constraintTop_toBottomOf="@+id/cb_tiga" />
@@ -111,7 +101,8 @@
         android:src="@drawable/next"
         android:textColor="@color/color_darkprime"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

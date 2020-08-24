@@ -8,12 +8,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.basdatpbl.R;
 
 public class Tabs4Hirarki extends Fragment {
-
     public Tabs4Hirarki() {
         // Required empty public constructor
     }
@@ -29,6 +29,7 @@ public class Tabs4Hirarki extends Fragment {
         // Inflate the layout for this fragment
 
         View rootView = inflater.inflate(R.layout.hirarki_tabs4, container, false);
+
 
         ImageButton button = rootView.findViewById(R.id.button_vid);
         button.setOnClickListener(v -> video());
