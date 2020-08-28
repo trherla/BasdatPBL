@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_slider4"
-    tools:context=".ui.kuis.kuis_hirarki.KuisHirarki">
+    tools:context=".ui.kuis.kuis_erd.KuisErd">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,6 +44,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
                 android:layout_marginTop="16dp"
                 tools:ignore="ContentDescription" />
 

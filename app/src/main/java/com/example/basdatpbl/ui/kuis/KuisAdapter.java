@@ -31,6 +31,8 @@ public class KuisAdapter extends RecyclerView.Adapter<KuisViewModel> {
     public void onBindViewHolder(@NonNull KuisViewModel holder, int position) {
         holder.kuis_title.setText(mData.get(position).getTitle());
         holder.img_thumbnail.setImageResource(mData.get(position).getThumbnail());
+        holder.img_two.setImageResource(mData.get(position).getThumbnail2());
+
     }
 
     @Override

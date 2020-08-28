@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,10 +22,16 @@ public class HasilKuisHirarki extends Activity {
 
         TextView hasil = findViewById(R.id.hasil);
         TextView nilai = findViewById(R.id.nilai);
+        ImageView image = findViewById(R.id.imageView5);
 
 
         hasil.setText("Jawaban Benar : "+ KuisHirarki.benar+"\n Jawaban Salah : " +KuisHirarki.salah);
         nilai.setText(""+KuisHirarki.hasil);
+        if (KuisHirarki.hasil >= 70){
+            image.setImageResource(R.drawable.happy_face);
+        }else {
+            image.setImageResource(R.drawable.sad_face);
+        }
     }
 
     public void onBackPressed() {

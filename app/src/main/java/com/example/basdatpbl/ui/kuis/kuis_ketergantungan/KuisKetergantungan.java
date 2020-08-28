@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.kuis.kuis_hirarki.HasilKuisHirarki;
 
@@ -26,7 +27,6 @@ public class KuisKetergantungan extends AppCompatActivity {
     int nomor = 0;
 
     private long backPressedTime;
-    private Toast backToast;
 
     public static int hasil, benar, salah;
 
@@ -35,41 +35,36 @@ public class KuisKetergantungan extends AppCompatActivity {
 
     };
     String[] pertanyaan_kuis = new String[]{
-            "Kumpulan data yang tersimpan secara sistematik untuk dapat dilihat oleh user merupakan definisi dari ",
-            "Kumpulan record sejenis yang mempunyai panjang atribut/field sama, namun berbeda isi merupakan ",
-            "Perhatikan gambar berikut!\nDalam gambar berikut, nomor 1 disebut sebagai ",
-            "Terdapat tiga level dalam arsitektur basis data, kecuali",
-            "Karakteristik dari External level adalah",
+            "Ketergantungan Fungsional adalah  ",
+            "Ketergantungan Fungsional yang tepat pada tabel berikut adalah ",
+            "Diketahui pada suatu relasi memiliki atribut NIP, Nama, JenisKelamin, Pendidikan, TahunLulus.\nDalam Relasi ini memiliki ketergantungan Fungsional\n{NIP, Pendidikan} -> TahunLulus.\nMaka: NIP -> Nama disebut sebagai ",
+            "Syarat suatu atribut dikatakan dependensi penuh terhadap atribut lain jika",
+            "Amati tabel berikut ini, Ketergantungan Fungsional Transitif yang terdapat pada tabel berikut adalah",
 
     };
 
     String[] pilihan_jawaban = new String[]{
-            "Arsitektur Basis Data","Conceptual Mapping","Pemodelan Data","Analisa Data",
-            "Record","Field","Record","File",
-            "Field","Tuple","Record","Entitas",
-            "Physical Level","Logical Level","View Level","Planning Level",
-            "Menghubungkan physical level dengan view level","Menampilkan data yang ingin user lihat , namun tidak semua ditampilkan","Hanya developer yang dapat melihat data","Data disimpan dalam media penyimpanan berformat byte",
+            "Batasan yang menghasilkan konsep kunci","Keterkaitan antara dua atribut","Konsep yang menjelaskan tentang hubungan antar entitas","Acuan dekomposisi entitas ke dalam bentuk yang lebih efisien",
+            "X -> Y","X -> Z","Y -> Z","Z -> X",
+            "Ketergantungan Sepenuhnya","Ketergantungan Sebagian","Ketergantungan Penuh","Ketergantungan Transitif",
+            "Atribut B mempunyai dependensi fungsional terhadap atribut A dan begitupun sebaliknya","Ketergantungan fungsional terjadi pada tiga buah atribut","Atribut B mempunyai ketergantungan fungsional terhadap atribut A namun atribut B tidak memiliki dependensi terhadap bagian dari atribut A","Atribut B memiliki dependensi terhadap sebagian dari atribut A",
+            "IdPembeli -> KodeKota","IdPembeli -> IdBarang","IdPembeli -> Kota","KodeKota -> Kota"
     };
 
     String[] jawaban_benar = new String[]{
-            "Arsitektur Basis Data",
-            "File",
-            "Field",
-            "Planning Level",
-            "Menampilkan data yang ingin user lihat , namun tidak semua ditampilkan",
+            "Keterkaitan antara dua atribut",
+            "Y -> Z",
+            "Ketergantungan Sebagian",
+            "Atribut B mempunyai dependensi fungsional terhadap atribut A dan begitupun sebaliknya",
+            "IdPembeli -> Kota",
     };
 
     private static final Integer[] img ={
             R.drawable.rb_a_checked,
+            R.drawable.img_soal6,
             R.drawable.rb_a_checked,
-            R.drawable.record,
             R.drawable.rb_a_checked,
-            R.drawable.rb_a_checked,
-            R.drawable.internallevel,
-            R.drawable.rb_a_checked,
-            R.drawable.atribut_key,
-            R.drawable.rb_a_checked,
-            R.drawable.rb_a_checked
+            R.drawable.img_soal7
     };
 
     @SuppressLint("SetTextI18n")
@@ -124,18 +119,18 @@ public class KuisKetergantungan extends AppCompatActivity {
                 break;
         }
     }
-//    public void onBackPressed() {
-//        if(backPressedTime +2000 > System.currentTimeMillis()){
-//            finish();
-//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
-//            startActivity(backhome);
-//        }else {
-//            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
-//            backToast.show();
-//        }
-//        backPressedTime =System.currentTimeMillis();
-//
-//    }
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            Toast backToast = Toast.makeText(getBaseContext(), "Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
 
     @SuppressLint("SetTextI18n")
     public void next(View view){

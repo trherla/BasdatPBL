@@ -3,10 +3,13 @@ package com.example.basdatpbl.ui.kuis;
 public class Kuis {
     private String Title;
     private int Thumbnail;
+    private int Thumbnail2;
 
-    public Kuis(String title, int thumbnail) {
+
+    public Kuis(String title, int thumbnail, int thumbnail2) {
         Title = title;
         Thumbnail = thumbnail;
+        Thumbnail2 = thumbnail2;
     }
 
     public String getTitle() {
@@ -19,6 +22,9 @@ public class Kuis {
 
     public int getThumbnail() {
         return Thumbnail;
+    }
+    public int getThumbnail2() {
+        return Thumbnail2;
     }
 
 

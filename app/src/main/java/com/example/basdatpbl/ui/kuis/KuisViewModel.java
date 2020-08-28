@@ -19,6 +19,7 @@ public class KuisViewModel extends RecyclerView.ViewHolder {
 
     public TextView kuis_title;
     public ImageView img_thumbnail;
+    public ImageView img_two;
     public CardView cardView;
     Context context;
 
@@ -28,6 +29,8 @@ public class KuisViewModel extends RecyclerView.ViewHolder {
 
         kuis_title = itemView.findViewById(R.id.kuis_title);
         img_thumbnail = itemView.findViewById(R.id.kuis_img);
+        img_two = itemView.findViewById(R.id.kuis_img2);
+
         cardView = itemView.findViewById(R.id.kuis_click);
 
         cardView.setOnClickListener(view -> {

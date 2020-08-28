@@ -2,6 +2,7 @@ package com.example.basdatpbl.ui.kuis.kuis_hirarki;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 
 public class KuisHirarki extends AppCompatActivity {
@@ -24,7 +26,6 @@ public class KuisHirarki extends AppCompatActivity {
     int nomor = 0;
 
     private long backPressedTime;
-    private Toast backToast;
 
     public static int hasil, benar, salah;
 
@@ -35,7 +36,7 @@ public class KuisHirarki extends AppCompatActivity {
     String[] pertanyaan_kuis = new String[]{
             "Kumpulan data yang tersimpan secara sistematik untuk dapat dilihat oleh user merupakan definisi dari ",
             "Kumpulan record sejenis yang mempunyai panjang atribut/field sama, namun berbeda isi merupakan ",
-            "Perhatikan gambar berikut!\nDalam gambar berikut, nomor 1 disebut sebagai ",
+            "Perhatikan gambar berikut!\nDalam gambar berikut, nomor 4 disebut sebagai ",
             "Terdapat tiga level dalam arsitektur basis data, kecuali",
             "Karakteristik dari External level adalah",
             "Perhatikan gambar berikut!\nContoh gambar berikut terdapat pada level",
@@ -75,16 +76,17 @@ public class KuisHirarki extends AppCompatActivity {
     private static final Integer[] img ={
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked,
-            R.drawable.record,
+            R.drawable.img_soal1,
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked,
-            R.drawable.internallevel,
+            R.drawable.img_soal2,
             R.drawable.rb_a_checked,
-            R.drawable.atribut_key,
+            R.drawable.img_soal3,
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked
     };
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,7 +118,6 @@ public class KuisHirarki extends AppCompatActivity {
         nxt.animate().translationY(nxt.getHeight());
 
 
-
     }
 
     public void onRBClicked (View view){
@@ -136,19 +137,20 @@ public class KuisHirarki extends AppCompatActivity {
                 break;
         }
     }
-//    public void onBackPressed() {
-//        if(backPressedTime +2000 > System.currentTimeMillis()){
-//            finish();
-//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
-//            startActivity(backhome);
-//        }else {
-//            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
-//            backToast.show();
-//        }
-//        backPressedTime =System.currentTimeMillis();
-//
-//    }
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            Toast backToast = Toast.makeText(getBaseContext(), "Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
 
+    }
+
+    @SuppressLint("SetTextI18n")
     public void next(View view){
 
         if (PilA.isChecked() || PilB.isChecked() || PilC.isChecked() || PilD.isChecked()) {

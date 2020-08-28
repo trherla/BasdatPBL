@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,12 +21,18 @@ public class HasilKuisNormalisasi extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil_kuis_normalisasi);
 
-        TextView hasil = (TextView) findViewById(R.id.hasil);
-        TextView nilai = (TextView) findViewById(R.id.nilai);
+        TextView hasil = findViewById(R.id.hasil);
+        TextView nilai = findViewById(R.id.nilai);
+        ImageView image = findViewById(R.id.imageView5);
 
 
         hasil.setText("Jawaban Benar : "+ KuisNormalisasi.benar+"\n Jawaban Salah : " +KuisNormalisasi.salah);
         nilai.setText(""+KuisNormalisasi.hasil);
+        if (KuisNormalisasi.hasil >= 60){
+            image.setImageResource(R.drawable.happy_face);
+        }else {
+            image.setImageResource(R.drawable.sad_face);
+        }
     }
 
     public void onBackPressed() {

@@ -1,5 +1,6 @@
 package com.example.basdatpbl.ui.kuis.kuis_erd;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.kuis.kuis_hirarki.HasilKuisHirarki;
 
@@ -25,7 +27,6 @@ public class KuisErd extends AppCompatActivity {
     int nomor = 0;
 
     private long backPressedTime;
-    private Toast backToast;
 
     public static int hasil, benar, salah;
 
@@ -41,7 +42,7 @@ public class KuisErd extends AppCompatActivity {
             "Primary key dalam tabel berikut adalah",
             "Relasi adalah",
             "Gambar berikut merupakan derajat relasi ",
-            "Berdasarkan gambar berikut, pilihlah pernyataan yang paling tepat",
+            "Gambar dibawah ini merupakan contoh dari relasi",
             "Dalam kegiatan pembelajaran disekolah, bagaimanakah bentuk kardinalitas dari relasi antara entitas Siswa dengan entitas Mapel",
             "Setiap anggota entitas X dapat berhubungan dengan lebih dari satu anggota entitas Y namun tidak sebaliknya merupakan definisi dari"
 
@@ -55,7 +56,7 @@ public class KuisErd extends AppCompatActivity {
             "NIS","Nama","Kelas","Alamat",
             "Object yang mewakili sesuatu yang nyata","Batasan kombinasi suatu entitas","Hubungan antara dua atau beberapa entitas","Karakteristik khusus yang dimiliki suatu entitas",
             "Unary Degree","Binary Degree","Ternary Degree","Multi Degree",
-            "Atribut","Atribut2","Atribut3","Atribut4",
+            "Unary degree dengan kardinalitas one to many","Binary degree dengan kardinalitas many to many","Ternary degree dengan kardinalitas one to many","Ternary degree dengan kardinalitas many to many",
             "One to One","One to Many","Many to One","Many to Many",
             "One to One","One to Many","Many to One","Many to Many"
     };
@@ -78,14 +79,15 @@ public class KuisErd extends AppCompatActivity {
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked,
-            R.drawable.atribut_key,
+            R.drawable.img_soal4,
             R.drawable.rb_a_checked,
-            R.drawable.atribut_key,
-            R.drawable.atribut_key,
+            R.drawable.img_soal5,
+            R.drawable.img_soal51,
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked
     };
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -137,18 +139,18 @@ public class KuisErd extends AppCompatActivity {
                 break;
         }
     }
-//    public void onBackPressed() {
-//        if(backPressedTime +2000 > System.currentTimeMillis()){
-//            finish();
-//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
-//            startActivity(backhome);
-//        }else {
-//            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
-//            backToast.show();
-//        }
-//        backPressedTime =System.currentTimeMillis();
-//
-//    }
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            Toast backToast = Toast.makeText(getBaseContext(), "Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
 
     public void next(View view){
 

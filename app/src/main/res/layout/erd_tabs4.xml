@@ -36,7 +36,7 @@
                     android:id="@+id/lay1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="@color/color_lightprime">
+                    android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -71,67 +71,74 @@
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:layout_marginTop="8dp"
                                 android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/er5"/>
+                                android:padding="8dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.5"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/color_darkprime"
+                                    android:text="@string/er5"/>
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:padding="8dp"
-                                android:scaleType="fitCenter"
-                                android:background="@drawable/bg_white"
-                                android:src="@drawable/unary"
-                                tools:ignore="ContentDescription" />
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/unary"
+                                    tools:ignore="ContentDescription" />
+                            </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:padding="8dp"
+                            android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/er52"/>
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="80dp"
-                                android:padding="8dp"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/bg_white"
                                 android:src="@drawable/binary"
                                 tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:padding="8dp"
+                            android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/er53"/>
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="80dp"
-                                android:padding="8dp"
                                 android:scaleType="fitCenter"
-                                android:background="@drawable/bg_white"
                                 android:src="@drawable/ternary"
                                 tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
 
 
                         </LinearLayout>
@@ -143,7 +150,7 @@
                     android:id="@+id/lay2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:background="@color/color_lightprime">
+                    android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -190,63 +197,72 @@
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/er11"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:padding="8dp"
+                            android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/er2"/>
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
-                                android:padding="8dp"
-                                android:background="@drawable/bg_white"
                                 android:src="@drawable/ono"
                                 tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:padding="8dp"
+                            android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/er3"/>
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
-                                android:padding="8dp"
-                                android:background="@drawable/bg_white"
                                 android:src="@drawable/onm"
                                 tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:layout_marginTop="8dp"
+                            android:elevation="4dp"
+                            android:padding="8dp"
+                            android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:padding="8dp"
-                                android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
                                 android:text="@string/er4"/>
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="100dp"
-                                android:padding="8dp"
-                                android:background="@drawable/bg_white"
                                 android:src="@drawable/mnm"
                                 tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
 
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>

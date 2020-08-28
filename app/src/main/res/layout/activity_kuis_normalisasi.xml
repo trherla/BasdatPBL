@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_expand"
-    tools:context=".ui.kuis.kuis_hirarki.KuisHirarki">
+    tools:context=".ui.kuis.kuis_normalisasi.KuisNormalisasi">
 
     <ScrollView
         android:layout_width="match_parent"

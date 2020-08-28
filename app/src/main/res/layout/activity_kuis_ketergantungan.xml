@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_slider2"
-    tools:context=".ui.kuis.kuis_hirarki.KuisHirarki">
+    tools:context=".ui.kuis.kuis_ketergantungan.KuisKetergantungan">
 
     <ScrollView
         android:layout_width="match_parent"

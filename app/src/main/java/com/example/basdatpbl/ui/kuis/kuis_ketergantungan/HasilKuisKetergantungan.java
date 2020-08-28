@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.kuis.Kuis;
 import com.example.basdatpbl.ui.kuis.kuis_hirarki.KuisHirarki;
 
 public class HasilKuisKetergantungan extends Activity {
@@ -20,12 +22,18 @@ public class HasilKuisKetergantungan extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hasil_kuis_ketergantungan);
 
-        TextView hasil = (TextView) findViewById(R.id.hasil);
-        TextView nilai = (TextView) findViewById(R.id.nilai);
+        TextView hasil = findViewById(R.id.hasil);
+        TextView nilai = findViewById(R.id.nilai);
+        ImageView image = findViewById(R.id.imageView5);
 
 
-        hasil.setText("Jawaban Benar : "+ KuisKetergantungan.benar+"\n Jawaban Salah : " +KuisKetergantungan.salah);
+        hasil.setText("Jawaban Benar : "+ KuisKetergantungan.benar+"\n Jawaban Salah : " + KuisKetergantungan.salah);
         nilai.setText(""+KuisKetergantungan.hasil);
+        if (KuisKetergantungan.hasil >= 60){
+            image.setImageResource(R.drawable.happy_face);
+        }else {
+            image.setImageResource(R.drawable.sad_face);
+        }
     }
 
     public void onBackPressed() {

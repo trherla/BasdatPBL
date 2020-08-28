@@ -23,21 +23,21 @@
     <!--Materi Hirarki Basis Data-->
     <string name="definisiBasisData">Basis Data atau Database merupakan kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik dari suatu sistem komputer.</string>
     <string name="komponen">Basis Data dibangun oleh enam komponen pokok, antara lain:\n\n
-        1. <b><i>Hardware</i></b>\nDalam sistem pengolahan basis data digital, perangkat utama sebagai pengolah data adalah komputer.\n\n
-        2. <b><i>Software</i></b>\nPerangkat lunak digunakan untuk mendukung proses pengelolaan basis data dan bersifat opsional. Misal: bahasa pemrograman C, Pascal.\n\n
-        3. <b><i>Operating System</i></b>\nMerupakan perangkat lunak yang digunakan untuk mengelola aplikasi basis data dan penggunaan sumberdaya komputer.\n\n
-        4. <b><i>Database Management System</i></b> (DBMS)\nMerupakan program aplikasi untuk pengelolaan basis data, seperti <i>Microsoft acces, Oracle</i> dan lian-lain.\n\n
-        5. <b>Basis Data Lain</b>\nData lain yang mempunyai keterkaitan dan hubungan dengan basis data itu sendiri.\n\n
-        6. <b><i>User</i></b>\nPengguna yang terlibat dalam pengelolaan dan penggunaan basis data </string>
+        <b>1. <i>Hardware</i></b>\nDalam sistem pengolahan basis data digital, perangkat utama sebagai pengolah data adalah komputer.\n\n
+        <b>2. <i>Software</i></b>\nPerangkat lunak digunakan untuk mendukung proses pengelolaan basis data dan bersifat opsional. Misal: bahasa pemrograman C, Pascal.\n\n
+        <b>3. <i>Operating System</i></b>\nMerupakan perangkat lunak yang digunakan untuk mengelola aplikasi basis data dan penggunaan sumberdaya komputer.\n\n
+        <b>4. <i>Database Management System</i></b> (DBMS)\nMerupakan program aplikasi untuk pengelolaan basis data, seperti <i>Microsoft acces, Oracle</i> dan lian-lain.\n\n
+        <b>5. Basis Data Lain</b>\nData lain yang mempunyai keterkaitan dan hubungan dengan basis data itu sendiri.\n\n
+        <b>6. <i>User</i></b>\nPengguna yang terlibat dalam pengelolaan dan penggunaan basis data.\n\n </string>
     <string name="dbms">DBMS adalah program aplikasi yang dibuat dan bekerja dalam satu system.\nDBMS didesain untuk membantu dalam hal pemeliharaan dan utilitas kumpulan data dalam jumlah besar.\nDBMS dapat menjadi alternatif penggunaan secara khusus untuk aplikasi, misalnya penyimpanan data dalam field dan menulis kode aplikasi yang spesifik untuk pengaturannya.\n\nKumpulan file (table) yang saling berhubungan dalam di sebuah komputer dan sekumpulan program yang memungkinkan beberapa pemakai dan atau program lain untuk mengakses dan memanipulasi file-file atau table-tabel tersebut. </string>
     <string name="user">Basis Data dibangun oleh enam komponen pokok, antara lain:\n\n
-        1. <b><i>Database Administrator</i></b>\nSeseorang yang mengorganisasi seluruh sistem basis data. Database administrator imemiliki tanggung jawab penuh dalam manajemen database meliputi: pengaturan hak akses, koordinasi dan monitoring serta bertanggung jawab terhadap kebutuhan hardware dan software. Dalam pekerjaannya biasanya dibantu oleh staf Admin.\n\n
-        2. <b><i>Database Designer</i></b>\nSeseorang yang bertugas merancang dan mengembangkan database. database designer bertanggung jawab dalam identifikasi data yang tersimpan dalam database, menentukan struktur data yang tepat untuk disimpan dalam database. Database designer memerlukan koordinasi akan kebutuhan user database.\n\n
-        3. <b><i>Application Programmer</i></b>\nPenggunaa yang berinteraksi dengan basis data melalui Data Manipulation Language (DML). DML meliputi program yang ditulis dalam bahasa pemrograman induk yang dipakai.\n\n
-        4. <b><i>End user</i></b> (DBMS)\nPengguna yang memanfaatkan atau membutuhkan akses ke database melalui query, manambah, merubah menghapus maupun membuat report database. \n\n
-        5. <b><i>System Analyst</i></b>\nPengguna yang merencanakan dan menentukan kebutuhan sistem.\n\n
-        6. <b><i>Application Programmers (Software Engineering)</i></b>\nPengguna tanggung jawabnya berhubungan dengan kebutuhan koneksi database.\n\n
-        7. <b><i> Worker Behind The Scene</i></b>\nIalah pengguna yang tidak tertarik pada database, tetapi lebih cenderung pada membangun data base atau kebutuhannya menggunakan alat bantu.</string>
+        <b>1. <i>Database Administrator</i></b>\nSeseorang yang mengorganisasi seluruh sistem basis data. Database administrator imemiliki tanggung jawab penuh dalam manajemen database meliputi: pengaturan hak akses, koordinasi dan monitoring serta bertanggung jawab terhadap kebutuhan hardware dan software. Dalam pekerjaannya biasanya dibantu oleh staf Admin.\n\n
+        <b>2. <i>Database Designer</i></b>\nSeseorang yang bertugas merancang dan mengembangkan database. database designer bertanggung jawab dalam identifikasi data yang tersimpan dalam database, menentukan struktur data yang tepat untuk disimpan dalam database. Database designer memerlukan koordinasi akan kebutuhan user database.\n\n
+        <b>3. <i>Application Programmer</i></b>\nPenggunaa yang berinteraksi dengan basis data melalui Data Manipulation Language (DML). DML meliputi program yang ditulis dalam bahasa pemrograman induk yang dipakai.\n\n
+        <b>4. <i>End user</i></b> (DBMS)\nPengguna yang memanfaatkan atau membutuhkan akses ke database melalui query, manambah, merubah menghapus maupun membuat report database. \n\n
+        <b>5. <i>System Analyst</i></b>\nPengguna yang merencanakan dan menentukan kebutuhan sistem.\n\n
+        <b>6. <i>Application Programmers (Software Engineering)</i></b>\nPengguna tanggung jawabnya berhubungan dengan kebutuhan koneksi database.\n\n
+        <b>7. <i>Worker Behind The Scene</i></b>\nIalah pengguna yang tidak tertarik pada database, tetapi lebih cenderung pada membangun data base atau kebutuhannya menggunakan alat bantu.\n\n</string>
 
     <string name="h1">Arsitektur basis data merupakan suatu kumpulan data yang tersimpan secara sistematik dimana user dapat melihat data dan bagaimana cara user melihat data tersebut.\n\nDalam basis data, data diorganisasikan kedalam bentuk sebagai berikut:</string>
     <string name="h21">Elemen (kolom atau field) data adalah satuan data terkecil yang tidak dapat dipecah lagi menjadi unit lain yang bermakna.\n\nMisalnya data barang terdiri dari KodeBarang, NamaBarang, StokBarang.</string>
@@ -63,7 +63,7 @@
     <string name="hm71">Model ini menangkap hubungan antara entitas dunia nyata seperti model jaringan, namun tidak terkait langsung dengan struktur fisik database.\n\nSering digunakan untuk merancang database secara konseptual.\n\nDi sini, orang-orang, tempat, dan hal-hal tentang titik-titik data yang disimpan disebut sebagai entitas, yang masing-masing memiliki atribut tertentu yang bersama-sama membentuk domain mereka. </string>
 
     <!--Materi ERD-->
-    <string name="ed1">Entity Relationship Diagram (ERD) merupakan salah satu bentuk pemodelan basis data yang sering digunakan dalam pengembangan sistem informasi.\n\nDiagram hubungan entitas (ERD) menunjukkan hubungan dari entitas set disimpan dalam database.\n\nEntitas dalam konteks ini adalah komponen data. Dengan kata lain, diagram ER menggambarkan struktur logis dari database.</string>
+    <string name="ed1"><b><i>Entity Relationship Diagram</i> (ERD)</b> merupakan salah satu bentuk pemodelan basis data yang sering digunakan dalam pengembangan sistem informasi.\n\nDiagram hubungan entitas (ERD) menunjukkan hubungan dari <i>entity set</i> yang disimpan dalam <i>database</i>.\n\nEntitas dalam konteks ini adalah komponen data. Dengan kata lain, diagram ER menggambarkan struktur logis dari database.</string>
     <string name="ed3">Pada dasarnya ada tiga komponen yang digunakan di ERD, yaitu:\n1. Entitas\n2. Atribut\n3. Relasi</string>
     <!--    <string name="ed4">Materi</string>-->
 
@@ -86,7 +86,7 @@
     <string name="ea38">Atribut Bernilai (Mandatory Attribute) merupakan atribut yang harus memiliki nilai.</string>
     <string name="ea39">Atribut Tidak Harus Bernilai (Non-Mandatory Attribute) merupakan atribut yang nilainya boleh kosong (null).</string>
 
-    <string name="er1">Relasi menyatakan hubungan antara dua atau beberapa entitas. Setiap relasi mempunyai batasan (constraint) terhadap kemungkinan kombinasi entitas yang berpartisipasi. Batasan tersebut ditentukan dari situasi yang diwakili relasi tersebut.</string>
+    <string name="er1">Relasi menyatakan hubungan antara dua atau beberapa entitas. Setiap relasi mempunyai batasan (<b><i>constraint</i></b>) terhadap kemungkinan kombinasi entitas yang berpartisipasi. Batasan tersebut ditentukan dari situasi yang diwakili relasi tersebut.</string>
     <string name="er11">Cardinality Ratio Constraint menjelaskan batasan jumlah keterhubungan satu entitas dengan entitas lainnya. Berikut macam-macamnya:</string>
     <string name="er2"><b>One to One (1:1)</b>\nSetiap anggota entitas A hanya boleh berhubungan dengan satu anggota entitas B, begitu pula sebaliknya.</string>
     <string name="er3"><b>One to Many (1:N)</b>\nSetiap anggota entitas A dapat berhubungan dengan lebih dari satu anggota entitas B tetapi tidak sebaliknya.</string>
@@ -101,13 +101,13 @@
 
     <!--Definisi ketergantungan-->
     <string name="kde1">Dependensi merupakan ketergantungan setiap atribut dengan atribut lainnya</string>
-    <string name="kde2">Analisis dependensi merupakan konsep penting yang menjadi dasar melakukan normalisasi sehingga diperoleh relasi yang berstruktur baik.\n\nAda beberapa jenis dependensi:\n1. Dependensi Fungsional\n2. Dependensi Sepenuhnya\n3. Dependensi Sebagian\n4. Dependensi Penuh\n5. Dependensi Transitif</string>
+    <string name="kde2">Analisis dependensi merupakan konsep <b>penting</b> yang menjadi <b>dasar melakukan normalisasi</b> sehingga diperoleh relasi yang berstruktur baik.\n\nAda beberapa jenis dependensi:\n1. Dependensi Fungsional\n2. Dependensi Sepenuhnya\n3. Dependensi Sebagian\n4. Dependensi Penuh\n5. Dependensi Transitif</string>
 
     <!--    Ketergantungan fungsional-->
-    <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut.\n\nAnalogi: terdapat sebuah relasi yang bernama R dengan dua buah atributnya berupa A dan B, sehingga Notasinya R(A,B) </string>
+    <string name="kf1">Dependensi fungsional merupakan keterkaitan antara dua atribut atau dua himpunan atribut.\n\n<b>Analogi</b>: terdapat sebuah relasi yang bernama R dengan dua buah atributnya berupa A dan B, sehingga Notasinya R(A,B) </string>
     <string name="kf3">Pada keadaan tersebut, atribut B dikatakan mempunyai dependensi fungsional terhadap A apabila setiap nilai A berhubungan dengan satu nilai yang sama pada B</string>
     <string name="kf31">Dari Tabel Barang diatas ini dapat dinotasikan seperti berikut\n1. KodeBarang -> NamaBarang\n2. KodeBarang -> HargaBarang\n3. KodeBarang -> KodePemasok\n4. KodeBarang -> NamaPemasok\n5. NamaBarang -> KodeBarang\n6. KodePemasok -> NamaPemasok\n7. NamaPemasok -> KodePemasok </string>
-    <string name="kf32"><![CDATA[Ketergantungan Fungsional diwakili dengan tanda panah seperti ini "->" \n\nPada Notasi KodeBarang -> NamaBarang\nSetiap KodeBarang pasti akan berhubungan dengan hanya sebuah NamaBarang.\n\nContoh: KodeBarang B-001 hanya akan cocok dengan satu NamaBarang Mirrorless ABV]]></string>
+    <string name="kf32">Ketergantungan Fungsional diwakili dengan tanda panah seperti ini <b><![CDATA[->]]></b> \n\nPada Notasi KodeBarang -> NamaBarang\nSetiap KodeBarang pasti akan berhubungan dengan hanya sebuah NamaBarang.\n\nContoh: KodeBarang B-001 hanya akan cocok dengan satu NamaBarang yaitu Mirrorless ABV</string>
     <string name="kf33">Notasi singkat:\nKodeBarang -> {NamaBarang, HargaBarang, KodePemasok, NamaPemasok} </string>
 
     <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut\n\n<![CDATA[Notasi : {A,B,…} -> Z]]>\n\nAtribut Z mempunyai dependensi terhadap pasangan A dan B</string>
@@ -122,17 +122,17 @@
 
     <!--Ketergantungan sebagian -->
     <string name="ks1">Suatu atribut B dikatakan memiliki dependensi sebagian/parsial terhadap A apabila:\n\n1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key\n2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
-    <string name="ks2">Contoh:\nTabel Guru dikatakan memiliki kunci primer berupa (NIP dan Pendidikan)\n\nJadi ketergantungan parsial yang terdapat pada tabel Guru berupa JenisKelamin karena memiliki ketergantungan terhadap atribut NIP saja (bagian dari kunci primer). Begitu pula dengan atribut NamaGuru.</string>
+    <string name="ks2"><b>Contoh</b>:\nTabel Guru dikatakan memiliki kunci primer berupa (NIP dan Pendidikan)\n\nJadi ketergantungan parsial yang terdapat pada tabel Guru berupa JenisKelamin karena memiliki ketergantungan terhadap atribut NIP saja (bagian dari kunci primer). Begitu pula dengan atribut NamaGuru.</string>
 
 
     <!--    Ketergantungan penuh-->
     <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh/total terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut A mempunyai dependansi fungsional terhadap atribut B</string>
-    <string name="kpe2">Dependensi Total memiliki notasi <![CDATA[A<->B]]>\n\nContoh:\n1. KodePemasok -> NamaPemasok\n2. NamaPemasok -> KodePemasok\n\nDengan demikian :\nKodePemasok <![CDATA[<->]]> NamaPemasok\nDengan asumsi: tidak ada nama pemasok yang sama\n\nContoh lain:\nHargaBarang tidak dapat dikatakan dependensi total terhadap kode barang dikarenakan terdapat kemungkinan harga yang sama untuk kode barang yang berbeda.\nBegitu juga dengan atribut NamaPemasok tidak dapat dependensi total terhadap KodeBarang, karena pemasok bisa saja menaruh banyak barang ke toko </string>
+    <string name="kpe2">Dependensi Total memiliki notasi <![CDATA[A<->B]]>\n\n<b>Contoh</b>:\n1. KodePemasok -> NamaPemasok\n2. NamaPemasok -> KodePemasok\n\nDengan demikian :\nKodePemasok <![CDATA[<->]]> NamaPemasok\nDengan asumsi: tidak ada nama pemasok yang sama\n\n<b>Contoh lain</b>:\nHargaBarang tidak dapat dikatakan dependensi total terhadap KodeBarang dikarenakan terdapat kemungkinan harga yang sama untuk kode barang yang berbeda.\nBegitu juga dengan atribut NamaPemasok tidak dapat dependensi total terhadap KodeBarang, karena pemasok bisa saja menaruh banyak barang ke toko </string>
 
 
     <!--Ketergantungan Transitif    -->
     <string name="kt1">Dependensi Transitif biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A, B, C.\n\nNotasinya adalah A -> B dan B -> C.\nMaka C dikatakan sebagai dependensi transitif terhadap A melalui B.</string>
-    <string name="kt2">Contoh: Tabel Barang\nKodeBarang -> NamaPemasok\n\nKarena, KodeBarang -> KodePemasok dan Kode Pemasok -> NamaPemasok\n\nJadi:\n KodeBarang -> KodePemasok -> NamaPemasok</string>
+    <string name="kt2"><b>Contoh</b>: Tabel Barang\nKodeBarang -> NamaPemasok\n\nKarena, KodeBarang -> KodePemasok dan Kode Pemasok -> NamaPemasok\n\nJadi:\n KodeBarang -> KodePemasok -> NamaPemasok</string>
 
     <!--Normalisasi Data    -->
     <string name="nd1">Normalisasi adalah suatu proses yang digunakan untuk menentukan pengelompokan atribut dalam sebuah relasi sehingga diperoleh relasi berstruktur baik</string>
@@ -156,7 +156,7 @@
     <string name="nt1">Suatu relasi disebut memenuhi bentuk normal ketiga (3NF) jika dan hanya jika\n1. Memenuhi bentuk normal kedua (2NF)\n2. Setiap atribut yang bukan kunci tidak tergantung secara fungsional terdahap atribut non-key yang lain dalam relasi tersebut (tidak terdapat ketergantungan transitif pada atribut non-key)</string>
     <string name="nt2">Contoh:\nTerdapat Tabel TPS yang memiliki atribut S, Status, City, P, Qty.\n\nMemiliki:\nKey\t: S + P\nFD\t\t: S -> Status\n\t\t\t\t\tS -> City\n\t\t\t\t\tCity -> Status</string>
     <string name="nt3">Untuk membuat normal bentuk ketiga (3NF) Tabel TPS diatas, maka perlu dilakukan normalisasi tahap pertama (1NF) dengan hasil berikut:</string>
-    <string name="nt4">Tabel TPS sudah dalam tahap 1NF, namun masih terdapat masalah berupa:\n1. Redundansi\n2. Anomaly, berupa penambahan record pada atribut <b>S, Status, City</b> yang harus menyertakan atribut P dan Q. Menghapus satu baris data juga akan merusak keutuhan informasi.\n\nMaka Solusi yang harus diambil adalah dekomposisi tabel menjadi TPS 1–1 dan TPS 1–2.</string>
+    <string name="nt4">Tabel TPS sudah dalam tahap 1NF, namun masih terdapat masalah berupa:\n1. Redundansi\n2. Anomali, berupa penambahan record pada atribut <b>S, Status, City</b> yang harus menyertakan atribut P dan Q. Menghapus satu baris data juga akan merusak keutuhan informasi.\n\nMaka Solusi yang harus diambil adalah dekomposisi tabel menjadi TPS 1–1 dan TPS 1–2.</string>
     <string name="nt5"><![CDATA[Tabel TPS 1–1 dan TPS 1–2 sudah dalam bentuk 2NF, penambahan data kepada atribut S, Status, dan City bisa dilakukan dengan aman.\n\nTetapi masih ada anomaly: karena City –> Status, maka kita tidak bisa input data City baru sebelum Status punya nilai. Selain itu masih terdapat redundansi pada Status dan City.\n\nPada Tabel TPS 1–2 bisa dikatakan sudah dalam 3NF meskipun memiliki redundansi partial namun tidak memiliki potensi anomaly dan tabel TPS 1–2 lebih baik daripada bentuk tabel sebelumnya karena redundansi dapat diminimalisir.]]></string>
     <string name="nt6"><![CDATA[Pada Tabel TPS 1–1 masih dalam bentuk 2NF karena atribut City mempengaruhi Status (City –> Status) bukan S mempengaruhi Status, maka Tabel TPS 1–1 perlu didekomposisi kembali. Menghasilkan Tabel seperti dibawah ini.]]></string>
 
@@ -213,7 +213,7 @@
     <string name="kecepatan"><b>Kecepatan</b>\n\nMudah dan cepat dalam melakukan penyimpanan, perubahan dan menampilkan kembali.</string>
     <string name="efisiensi"><b>Efisiensi</b>\n\nMampu mengurangi pengulangan atau redundansi data.</string>
     <string name="ketersediaan"><b>Ketersediaan</b>\n\nData selalu siap dipakai.</string>
-    <string name="keamanan"><b>Keamanan\n\nData</b> lebih aman dengan perbedaan hak akses pengguna.</string>
+    <string name="keamanan"><b>Keamanan</b>\n\nData lebih aman dengan perbedaan hak akses pengguna.</string>
     <string name="kebersamaan"><b>Kebersamaan</b>\n\nData yang dikelola oleh sistem mendukung lingkungan banyak pemakai</string>
     <string name="keakuratan"><b>Keakuratan</b>\n\nData lebih terjaga dan akurat dengan menerapkan aturan dan batasan tertentu</string>
 
@@ -221,5 +221,7 @@
     <string name="apa_itu_basis_data">Apa itu Basis Data?</string>
     <string name="komponen_basis_data">Komponen Basis Data</string>
     <string name="pengguna_basis_data">Pengguna Basis Data</string>
+    <string name="ulangi_kuis">Ulangi Kuis</string>
+    <string name="halaman_awal">Halaman Awal</string>
 
 </resources>

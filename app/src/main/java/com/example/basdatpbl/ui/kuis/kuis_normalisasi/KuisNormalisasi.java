@@ -13,8 +13,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kuis.kuis_hirarki.HasilKuisHirarki;
 
 public class KuisNormalisasi extends AppCompatActivity {
 
@@ -26,7 +26,6 @@ public class KuisNormalisasi extends AppCompatActivity {
     int nomor = 0;
 
     private long backPressedTime;
-    private Toast backToast;
 
     public static int hasil, benar, salah;
 
@@ -35,42 +34,37 @@ public class KuisNormalisasi extends AppCompatActivity {
 
     };
     String[] pertanyaan_kuis = new String[]{
-            "Kumpulan data yang tersimpan secara sistematik untuk dapat dilihat oleh user merupakan definisi dari ",
-            "Kumpulan record sejenis yang mempunyai panjang atribut/field sama, namun berbeda isi merupakan ",
-            "Perhatikan gambar berikut!\nDalam gambar berikut, nomor 1 disebut sebagai ",
-            "Terdapat tiga level dalam arsitektur basis data, kecuali",
-            "Karakteristik dari External level adalah"
+            "Syarat terbentuknya tabel agar memiliki relasi yang baik adalah ",
+            "Diketahui suatu tabel memiliki nilai Null di salah satu atributnya, berarti tabel ini masih dalam bentuk?",
+            "Sebuah tabel disebut dalam bentuk normal pertama (1NF) ketika",
+            "Tabel kelas online berikut sudah dalam bentuk normal pertama (1NF), untuk merubah ke dalam bentuk normal kedua maka pilihlah salah satu pernyataan yang paling benar",
+            "Setiap atribut yang bukan kunci tidak tergantung secara fungsional terdahap atribut non-key yang lain dalam relasi tersebut (tidak terdapat ketergantungan transitif pada atribut non-key) merupakan definisi dari bentuk normal ke"
 
     };
 
     String[] pilihan_jawaban = new String[]{
-            "Arsitektur Basis Data","Conceptual Mapping","Pemodelan Data","Analisa Data",
-            "Record","Field","Record","File",
-            "Field","Tuple","Record","Entitas",
-            "Physical Level","Logical Level","View Level","Planning Level",
-            "Menghubungkan physical level dengan view level","Menampilkan data yang ingin user lihat , namun tidak semua ditampilkan","Hanya developer yang dapat melihat data","Data disimpan dalam media penyimpanan berformat byte",
+            "Memiliki Entity Relationship Diagram yang spesifik","Mengandung redundansi yang sedikit mungkin","Mempunyai ketergantungan transitif pada tiap atributnya","Memungkinkan relasi untuk menambah dan mengubah data tanpa menimbulkan kesalahan",
+            "UNF","1NF","2NF","3NF",
+            "Tabel memenuhi bentuk normal BCNF","Atribut pada sebuah tabel tidak memiliki ketergantungan pada foreign key ","Menghilangkan dependensi transitif pada atributnya","Tabel tidak mengandung grub atribut yang berulang",
+            "Perlu menghapus atribut Grade agar tidak memiliki ketergantungan kepada sebagian atribut kunci ","Memindahkan atribut TarifKelas ke sebelah kanan atribut Grade agar mudah terbaca","Perlu memisahkan tabel menjadi dua, tabel pertama berisi atribut IdKelas, Kelas, Grade sedangkan tabel kedua berisi atribut Kelas dan TarifKelas","Tidak Perlu dirubah karena sudah normal bentuk kedua (2NF)",
+            "UNF","1NF","2NF","3NF"
 
     };
 
     String[] jawaban_benar = new String[]{
-            "Arsitektur Basis Data",
-            "File",
-            "Field",
-            "Planning Level",
-            "Menampilkan data yang ingin user lihat , namun tidak semua ditampilkan",
+            "Mengandung redundansi yang sedikit mungkin",
+            "UNF",
+            "Tabel tidak boleh mengandung grub atribut yang berulang",
+            "Perlu memisahkan tabel menjadi dua, tabel pertama berisi atribut IdKelas, Kelas, Grade sedangkan tabel kedua berisi atribut Kelas dan TarifKelas",
+            "3NF",
 
     };
 
     private static final Integer[] img ={
             R.drawable.rb_a_checked,
             R.drawable.rb_a_checked,
-            R.drawable.record,
             R.drawable.rb_a_checked,
-            R.drawable.rb_a_checked,
-            R.drawable.internallevel,
-            R.drawable.rb_a_checked,
-            R.drawable.atribut_key,
-            R.drawable.rb_a_checked,
+            R.drawable.img_soal8,
             R.drawable.rb_a_checked
     };
 
@@ -126,18 +120,18 @@ public class KuisNormalisasi extends AppCompatActivity {
                 break;
         }
     }
-//    public void onBackPressed() {
-//        if(backPressedTime +2000 > System.currentTimeMillis()){
-//            finish();
-//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
-//            startActivity(backhome);
-//        }else {
-//            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
-//            backToast.show();
-//        }
-//        backPressedTime =System.currentTimeMillis();
-//
-//    }
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            Toast backToast = Toast.makeText(getBaseContext(), "Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
 
     @SuppressLint("SetTextI18n")
     public void next(View view){

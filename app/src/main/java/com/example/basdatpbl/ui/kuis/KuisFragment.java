@@ -40,10 +40,10 @@ public class KuisFragment extends Fragment {
         KuisAdapter adapter = new KuisAdapter(this, lstKuis);
 
         rv.setAdapter(adapter);
-        lstKuis.add(new Kuis("Kuis\nHirarki Basis Data", R.drawable.hirarki));
-        lstKuis.add(new Kuis("Kuis\nEntity Relationship Diagram", R.drawable.accuracy));
-        lstKuis.add(new Kuis("Kuis\nKetergantungan Fungsional", R.drawable.ketergantungan));
-        lstKuis.add(new Kuis("Kuis\nNormalisasi", R.drawable.normalisasi));
+        lstKuis.add(new Kuis("Hirarki Basis Data", R.drawable.next, R.drawable.one));
+        lstKuis.add(new Kuis("Entity Relationship Diagram", R.drawable.next, R.drawable.two));
+        lstKuis.add(new Kuis("Ketergantungan Fungsional", R.drawable.next, R.drawable.three));
+        lstKuis.add(new Kuis("Normalisasi", R.drawable.next, R.drawable.four));
 
         return root;
     }
