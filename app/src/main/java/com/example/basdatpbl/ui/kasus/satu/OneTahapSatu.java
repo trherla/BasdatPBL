@@ -13,7 +13,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.kuis.kuis_hirarki.KuisHirarki;
 
 import static com.example.basdatpbl.BottomActivity.PREF_KEY_FIRST_START;
 import static com.example.basdatpbl.BottomActivity.REQUEST_CODE_INTRO;
@@ -131,42 +133,38 @@ public class OneTahapSatu extends AppCompatActivity {
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
 //jawabannya ada di cb1 dan cb4
-                        if (CbSatu.isChecked() && CbEmpat.isChecked()){
+                        if(CbDua.isChecked() && CbSatu.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()){
+
+                            Intent selesai = new Intent(getApplicationContext(), KuisHirarki.class);
+                            startActivity(selesai);
+                        }else if (CbDua.isChecked()){
                             true_header.append("Selamat jawaban anda benar");
                             false_header.append("Berikut jawaban yang salah :");
                             result.append("> Kesalahan Atribut \n");
                             unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
                             unchecked.append("> Mengubah beberapa simbol ERD \n");
                             result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else if (CbEmpat.isChecked()){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut jawaban yang seharusnya dipilih");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
+
+                            String th_satu = true_header.toString();
+                            String fh_satu = false_header.toString();
+                            String r_satu = result.toString();
+                            String u_satu = unchecked.toString();
+
+                            Intent selesai = new Intent(getApplicationContext(), OneTahapDua.class);
+                            selesai.putExtra("thSatu", th_satu);
+                            selesai.putExtra("fhSatu", fh_satu);
+                            selesai.putExtra("resultSatu", r_satu);
+                            selesai.putExtra("unSatu", u_satu);
+
+                            startActivity(selesai);
+                        }
+                        else {
+                            Intent selesai = new Intent(getApplicationContext(), BottomActivity.class);
+                            startActivity(selesai);
                         }
 
-                        String th_satu = true_header.toString();
-                        String fh_satu = false_header.toString();
-                        String r_satu = result.toString();
-                        String u_satu = unchecked.toString();
 
-                        Intent selesai = new Intent(getApplicationContext(), OneTahapDua.class);
-                        selesai.putExtra("thSatu", th_satu);
-                        selesai.putExtra("fhSatu", fh_satu);
-                        selesai.putExtra("resultSatu", r_satu);
-                        selesai.putExtra("unSatu", u_satu);
 
-                        startActivity(selesai);
 
                     })
                     .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());

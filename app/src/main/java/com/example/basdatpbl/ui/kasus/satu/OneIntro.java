@@ -37,7 +37,7 @@ public class OneIntro extends IntroActivity {
                 .title("Kasus Sekolah")
 //                .description("Dapat melatih kemampuan pemecahan masalah")
 //                .image(R.drawable.sekolah)
-                .background(R.color.blue5)
+                .background(R.color.blue3)
                 .backgroundDark(R.color.white)
                 .canGoBackward(false)
                 .build());
@@ -72,9 +72,9 @@ public class OneIntro extends IntroActivity {
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Kuis")
-                .description("Apa saja yang diperlukan untuk memudahkan memanajemen data untuk sekolah baru Edi?")
+                .description("Kamu perlu merencanakan apa saja data yang perlu dimanajemen untuk sekolah Edi")
                 .image(R.drawable.thinking)
-                .background(R.color.blue5)
+                .background(R.color.blue3)
                 .backgroundDark(R.color.white)
                 .build());
 

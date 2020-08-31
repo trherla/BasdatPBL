@@ -27,4 +27,9 @@
         android:name="com.example.basdatpbl.ui.kasus.KasusFragment"
         android:label="@string/kasus"
         tools:layout="@layout/fragment_kasus" />
+    <fragment
+        android:id="@+id/info"
+        android:name="com.example.basdatpbl.ui.info.InfoFragment"
+        android:label="@string/info"
+        tools:layout="@layout/fragment_info" />
 </navigation>

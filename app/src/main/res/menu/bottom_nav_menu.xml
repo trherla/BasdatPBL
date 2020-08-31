@@ -20,5 +20,9 @@
         android:id="@+id/kuis"
         android:icon="@drawable/kuis24dp"
         android:title="@string/kuis" />
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/info" />
 
 </menu>

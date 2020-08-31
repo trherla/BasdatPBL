@@ -8,6 +8,7 @@
     <string name="materi">Materi</string>
     <string name="kasus">Kasus</string>
     <string name="kuis">Kuis</string>
+    <string name="info">Info</string>
 
     <string name="judul_hero">PBL-Basdat</string>
     <string name="des_hero">Media pembelajaran Basis Data bermuatan Problem Based Learning untuk siswa SMK Kelas XI Kompetensi Keahlian Rekayasa Perangkat Lunak.</string>
@@ -174,7 +175,7 @@
     <string name="masalah4_perpus">Ketidakcocokan Relasi antar Entitas</string>
 
     <string name="pertanyaan_sekolah">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
-    <string name="masalah1_sekolah">Sekolah Baru memiliki sistem manajemen yang kurang optimal </string>
+    <string name="masalah1_sekolah">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
     <string name="masalah2_sekolah">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
     <string name="masalah3_sekolah">Tidak ada siswa yang mendaftar di SMP Harapan Bangsa</string>
     <string name="masalah4_sekolah">SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik</string>
@@ -223,5 +224,5 @@
     <string name="pengguna_basis_data">Pengguna Basis Data</string>
     <string name="ulangi_kuis">Ulangi Kuis</string>
     <string name="halaman_awal">Halaman Awal</string>
-
+    <string name="basis_data">Basis Data</string>
 </resources>
