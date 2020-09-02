@@ -27,15 +27,15 @@ public class OneTahapDua extends AppCompatActivity {
         CbDua = findViewById(R.id.cb_dua);
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
-        nxt = findViewById(R.id.button_perpus2);
+        nxt = findViewById(R.id.button_sekolah2);
 
         nxt.setVisibility(View.GONE);
 
-        Pertanyaan.setText(R.string.solusi_perpus);
-        CbSatu.setText(R.string.solusi1_perpus);
-        CbDua.setText(R.string.solusi2_perpus);
-        CbTiga.setText(R.string.solusi3_perpus);
-        CbEmpat.setText(R.string.solusi4_perpus);
+        Pertanyaan.setText(R.string.solusi_sekolah);
+        CbSatu.setText(R.string.solusi1_sekolah);
+        CbDua.setText(R.string.solusi2_sekolah);
+        CbTiga.setText(R.string.solusi3_sekolah);
+        CbEmpat.setText(R.string.solusi4_sekolah);
 
         CbSatu.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()) {
@@ -89,28 +89,20 @@ public class OneTahapDua extends AppCompatActivity {
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
 
-                        if (CbSatu.isChecked() && CbDua.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+                        if (CbSatu.isChecked()){
+                            true_header.append("Selamat ! Jawaban kamu benar");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbDua.isChecked()){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            result.append("> Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran \n");
+                            unchecked.append("> Mengoptimalkan sistem manajemen data yang sudah ada di SMP Harapan Bangsa\n");
+                            unchecked.append("> Membuat database sekolah untuk memanajemen data siswa, guru dan tenaga non-pendidik \n");
+                            unchecked.append("> Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik \n");
                         }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut solusi yang seharusnya dipilih");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih solusi ini:");
+                            false_header.append("Berikut solusi yang kurang tepat untuk dipilih");
+                            result.append("> Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran \n");
+                            unchecked.append("> Mengoptimalkan sistem manajemen data yang sudah ada di SMP Harapan Bangsa\n");
+                            unchecked.append("> Membuat database sekolah untuk memanajemen data siswa, guru dan tenaga non-pendidik \n");
+                            unchecked.append("> Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik \n");
                         }
 
                         String r_dua = result.toString();

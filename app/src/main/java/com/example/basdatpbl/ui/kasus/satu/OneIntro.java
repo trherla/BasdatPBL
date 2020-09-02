@@ -58,7 +58,7 @@ public class OneIntro extends IntroActivity {
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
-                .description("Namun sebelum sekolah dibuka, Edi bingung bagaimana melakukan manajemen data untuk siswa, guru, dan pegawai")
+                .description("Namun sebelum sekolah dibuka, Edi bingung bagaimana melakukan manajemen penjadwalan mata pelajaran")
                 .image(R.drawable.manager_)
                 .background(R.color.blue3)
                 .backgroundDark(R.color.white)
@@ -72,7 +72,7 @@ public class OneIntro extends IntroActivity {
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Kuis")
-                .description("Kamu perlu merencanakan apa saja data yang perlu dimanajemen untuk sekolah Edi")
+                .description("Kamu perlu merencanakan apa saja data yang perlu dimanajemen untuk sekolah Edi?")
                 .image(R.drawable.thinking)
                 .background(R.color.blue3)
                 .backgroundDark(R.color.white)

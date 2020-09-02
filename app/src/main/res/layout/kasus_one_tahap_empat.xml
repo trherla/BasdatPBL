@@ -58,7 +58,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV1"
@@ -66,7 +66,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/fheader1"
@@ -75,7 +76,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV2"
@@ -83,7 +84,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
                              />
                     </LinearLayout>
                 </RelativeLayout>
@@ -118,7 +120,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV3"
@@ -129,7 +131,8 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="16dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/fheader2"
@@ -138,7 +141,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV4"
@@ -148,7 +151,8 @@
                             android:textColor="@color/colorDark"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="32dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
                             />
                     </LinearLayout>
                 </RelativeLayout>
@@ -168,35 +172,405 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="16dp">
-
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         tools:ignore="UselessParent">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="3">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/atribut_table_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/tipedata_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
 
-                        <TextView
-                            android:id="@+id/txtV5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:textColor="@color/colorDark"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="16dp"
-                            />
-                        <TextView
-                            android:id="@+id/txtV6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:textColor="@color/colorDark"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="32dp"
-                            />
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nis"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa1"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nama"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa2"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/tgl_lahir"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa3"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa3"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/jenis_kelamin"
+                                    android:textColor="@color/color_darkprime"
+
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa4"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa4"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="24dp"
+                            android:stretchColumns="3">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/atribut_table_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/tipedata_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/kode_mapel"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa5"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa5"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nama_mapel"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa6"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa6"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/hari"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa7"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa7"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/jam_mapel"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa8"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa8"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nip"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa9"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa9"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/kelas"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa10"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa10"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="24dp"
+                            android:stretchColumns="3">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/atribut_table_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/tipedata_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nip"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa11"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa11"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nama"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa12"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa12"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/pendidikan"
+                                    android:textColor="@color/color_darkprime"
+
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa13"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa13"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/tgl_lahir"
+                                    android:textColor="@color/color_darkprime"
+
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa14"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa14"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/jenis_kelamin"
+                                    android:textColor="@color/color_darkprime"
+
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa15"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa15"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/alamat"
+                                    android:textColor="@color/color_darkprime"
+
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa16"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa16"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nomor_hp"
+                                    android:textColor="@color/color_darkprime"
+
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa17"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa17"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                        </TableLayout>
                     </LinearLayout>
+
+
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
             <ImageButton
@@ -208,7 +582,8 @@
                 android:background="@drawable/bg_next"
                 android:onClick="next"
                 android:src="@drawable/home"
-                android:textColor="@color/color_darkprime"/>
+                android:textColor="@color/color_darkprime"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
     </ScrollView>
 

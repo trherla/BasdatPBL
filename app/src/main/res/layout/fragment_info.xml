@@ -14,7 +14,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="24dp"
+            android:paddingTop="16dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,7 +45,7 @@
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="16sp"
                     android:textColor="@color/colorPrimaryDark"
-                    android:text="@string/definisiBasisData"/>
+                    android:text="@string/info_des"/>
 
                 <!--Expendable 1-->
                 <LinearLayout
@@ -51,11 +53,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="8dp"
+                    android:elevation="2dp"
                     android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Deskripsi Menu"
+                        android:text="@string/penjelasan_menu"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_darkprime"
@@ -86,15 +89,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="-12dp"
                                 android:layout_marginBottom="2dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:padding="8dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:paddingTop="20dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:textSize="16sp"
                                 android:elevation="2dp"
                                 android:textColor="@color/colorPrimaryDark"
@@ -114,7 +120,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Cara Mengerjakan Kasus"
+                        android:text="@string/cara_mengerjakan_kasus"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_darkprime"
@@ -145,15 +151,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="-12dp"
                                 android:layout_marginBottom="2dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:padding="8dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:paddingTop="20dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:textSize="16sp"
                                 android:elevation="2dp"
                                 android:textColor="@color/colorPrimaryDark"
@@ -162,7 +171,7 @@
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
                 </RelativeLayout>
-                <!--Expendable 2-->
+                <!--Expendable 3-->
                 <LinearLayout
                     android:id="@+id/info_lay3"
                     android:layout_width="match_parent"
@@ -172,7 +181,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Cara Mengerjakan Kuis"
+                        android:text="@string/cara_mengerjakan_kuis"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_darkprime"
@@ -203,15 +212,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="-12dp"
                                 android:layout_marginBottom="2dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:padding="8dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:paddingTop="20dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:textSize="16sp"
                                 android:elevation="2dp"
                                 android:textColor="@color/colorPrimaryDark"
@@ -220,7 +232,7 @@
                         </LinearLayout>
                     </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
                 </RelativeLayout>
-                <!--Expendable 2-->
+                <!--Expendable 4-->
                 <LinearLayout
                     android:id="@+id/info_lay4"
                     android:layout_width="match_parent"
@@ -230,7 +242,7 @@
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:text="Informasi Pengembang"
+                        android:text="@string/informasi_pengembang"
                         android:gravity="center_vertical"
                         android:textStyle="bold"
                         android:textColor="@color/color_darkprime"
@@ -261,15 +273,18 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
                             android:layout_marginBottom="8dp"
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_marginTop="-12dp"
                                 android:layout_marginBottom="2dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:padding="8dp"
+                                android:lineSpacingMultiplier="1.25"
+                                android:paddingTop="20dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:textSize="16sp"
                                 android:elevation="2dp"
                                 android:textColor="@color/colorPrimaryDark"

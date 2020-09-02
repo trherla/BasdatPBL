@@ -36,7 +36,7 @@ public class OneTahapSatu extends AppCompatActivity {
         CbDua = findViewById(R.id.cb_dua);
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
-        nxt = findViewById(R.id.button_perpus1);
+        nxt = findViewById(R.id.button_sekolah1);
 
         nxt.setVisibility(View.GONE);
 
@@ -94,8 +94,8 @@ public class OneTahapSatu extends AppCompatActivity {
         boolean firstStart = PreferenceManager.getDefaultSharedPreferences(this)
                 .getBoolean(PREF_KEY_FIRST_START, true);
 
-        //set for first start
-        if (!firstStart) {
+        //set for first start (delete ! if you want use it first time only)
+        if (firstStart) {
             Intent intent = new Intent(this, OneIntro.class);
             startActivityForResult(intent, REQUEST_CODE_INTRO);
         }
@@ -132,38 +132,76 @@ public class OneTahapSatu extends AppCompatActivity {
                         StringBuilder false_header = new StringBuilder();
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
-//jawabannya ada di cb1 dan cb4
-                        if(CbDua.isChecked() && CbSatu.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()){
+//jawabannya ada di cb2
+//                        if(CbDua.isChecked() && CbSatu.isChecked()){
+//                            true_header.append("Jawabanmu hampir benar, ini pilihanmu :");
+//                            false_header.append("Seharusnya kamu tidak memilih jawaban ini :");
+//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
+//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
+//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
+//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
+//
+//                        }else if(CbDua.isChecked() &&  CbTiga.isChecked()){
+//                            true_header.append("Jawabanmu hampir benar, ini pilihanmu :");
+//                            false_header.append("Seharusnya kamu tidak memilih jawaban ini :");
+//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
+//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
+//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
+//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
+//
+//                        }else if(CbDua.isChecked() && CbEmpat.isChecked()){
+//                            true_header.append("Jawabanmu hampir benar, ini pilihanmu :");
+//                            false_header.append("Seharusnya kamu tidak memilih jawaban ini :");
+//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
+//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
+//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
+//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
+//
+//                        }else if (CbDua.isChecked()){
+//                            true_header.append("Selamat ! Jawaban kamu benar");
+//                            false_header.append("Berikut jawaban yang salah :");
+//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
+//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
+//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
+//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
+//                        }
+//                        else {
+//                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu memilih jawaban ini:");
+//                            false_header.append("Berikut jawaban yang salah :");
+//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
+//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
+//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
+//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
+//                        }
 
-                            Intent selesai = new Intent(getApplicationContext(), KuisHirarki.class);
-                            startActivity(selesai);
-                        }else if (CbDua.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+                        if(CbSatu.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()){
+                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih jawaban ini:");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
+                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
+                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
+                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
+                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
 
-                            String th_satu = true_header.toString();
-                            String fh_satu = false_header.toString();
-                            String r_satu = result.toString();
-                            String u_satu = unchecked.toString();
-
-                            Intent selesai = new Intent(getApplicationContext(), OneTahapDua.class);
-                            selesai.putExtra("thSatu", th_satu);
-                            selesai.putExtra("fhSatu", fh_satu);
-                            selesai.putExtra("resultSatu", r_satu);
-                            selesai.putExtra("unSatu", u_satu);
-
-                            startActivity(selesai);
+                        }else if (CbDua.isChecked()){
+                            true_header.append("Selamat ! Jawaban kamu benar");
+                            false_header.append("Berikut jawaban yang salah :");
+                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
+                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
+                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
+                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
                         }
-                        else {
-                            Intent selesai = new Intent(getApplicationContext(), BottomActivity.class);
-                            startActivity(selesai);
-                        }
+                        String th_satu = true_header.toString();
+                        String fh_satu = false_header.toString();
+                        String r_satu = result.toString();
+                        String u_satu = unchecked.toString();
 
+                        Intent selesai = new Intent(getApplicationContext(), OneTahapDua.class);
+                        selesai.putExtra("thSatu", th_satu);
+                        selesai.putExtra("fhSatu", fh_satu);
+                        selesai.putExtra("resultSatu", r_satu);
+                        selesai.putExtra("unSatu", u_satu);
 
+                        startActivity(selesai);
 
 
                     })

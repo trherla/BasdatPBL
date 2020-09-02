@@ -21,6 +21,9 @@
     <string name="judul_kasus">Kasus</string>
     <string name="des_kasus"> </string>
 
+
+    <string name="info_des">Aplikasi ini dikembangkan untuk menunjang pembelajaran mata pelajaran Basis Data Kelas XI. Aplikasi ini dapat berjalan dengan baik dengan spesifikasi minimun smartphone sebagai berikut:\n\nVersi OS : 5.0 JellyBean - 10.0 Android Ten\nRAM : 1GB</string>
+
     <!--Materi Hirarki Basis Data-->
     <string name="definisiBasisData">Basis Data atau Database merupakan kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik dari suatu sistem komputer.</string>
     <string name="komponen">Basis Data dibangun oleh enam komponen pokok, antara lain:\n\n
@@ -167,25 +170,35 @@
     <string name="tahap3pbl">Perencanaan Penyelesaian</string>
     <string name="tahap4pbl">Pelaksanaan Rencana</string>
     <string name="tahap5pbl">Evaluasi</string>
-
+<!--Kasus Perpustakaan-->
     <string name="pertanyaan_perpus">Pilihlah beberapa permasalahan yang sesuai dengan kasus yang telah dijelaskan di awal</string>
     <string name="masalah1_perpus">Kesalahan Atribut</string>
     <string name="masalah2_perpus">Terdapat Entitas yang tidak sesuai dengan database perpustakaan</string>
     <string name="masalah3_perpus">Penggunaan Notasi E-R Diagram yang salah</string>
     <string name="masalah4_perpus">Ketidakcocokan Relasi antar Entitas</string>
 
+    <string name="solusi_perpus">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
+    <string name="solusi1_perpus">Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran</string>
+    <string name="solusi2_perpus">Ini Solusi 3</string>
+    <string name="solusi3_perpus">Solusi 4 mah</string>
+    <string name="solusi4_perpus">Yang ini 5 deh</string>
+<!--End Kasus Perpustakaan-->
+<!--Kasus Sekolah-->
     <string name="pertanyaan_sekolah">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
     <string name="masalah1_sekolah">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
     <string name="masalah2_sekolah">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
     <string name="masalah3_sekolah">Tidak ada siswa yang mendaftar di SMP Harapan Bangsa</string>
     <string name="masalah4_sekolah">SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik</string>
 
-    <string name="solusi_perpus">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
-    <string name="solusi1_perpus">Membuat database sekolah dengan entitas siswa, guru, pegawai</string>
-    <string name="solusi2_perpus">Ini Solusi 3</string>
-    <string name="solusi3_perpus">Solusi 4 mah</string>
-    <string name="solusi4_perpus">Yang ini 5 deh</string>
+    <string name="solusi_sekolah">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
+    <string name="solusi1_sekolah">Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran</string>
+    <string name="solusi2_sekolah">Mengoptimalkan sistem manajemen data yang sudah ada di SMP Harapan Bangsa</string>
+    <string name="solusi3_sekolah">Membuat database sekolah untuk memanajemen data siswa, guru dan tenaga non-pendidik</string>
+    <string name="solusi4_sekolah">Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik</string>
 
+    <string name="penyelesaian_sekolah">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
+
+    <!--End Kasus Sekolah-->
     <string name="image">image</string>
     <string name="file"><b><i>File</i></b></string>
     <string name="record"><b><i>Record</i></b></string>
@@ -225,4 +238,27 @@
     <string name="ulangi_kuis">Ulangi Kuis</string>
     <string name="halaman_awal">Halaman Awal</string>
     <string name="basis_data">Basis Data</string>
+    <string name="penjelasan_menu">1. Penjelasan Menu</string>
+    <string name="cara_mengerjakan_kasus">2. Cara Mengerjakan Kasus</string>
+    <string name="cara_mengerjakan_kuis">3. Cara Mengerjakan Kuis</string>
+    <string name="informasi_pengembang">4. Informasi Pengembang</string>
+    <string name="atribut_table_kasussekolah">Atribut</string>
+    <string name="tipedata_tabel_kasussekolah">Tipe Data</string>
+    <string name="deskripsi_tabel_kasussekolah">Deskripsi</string>
+    <string name="nis">NIS</string>
+    <string name="nama">Nama</string>
+    <string name="tgl_lahir">Tgl_Lahir</string>
+    <string name="jenis_kelamin">Jenis_Kelamin</string>
+    <string name="kode_mapel">Kode_Mapel</string>
+    <string name="nama_mapel">Nama_Mapel</string>
+    <string name="hari">Hari</string>
+    <string name="jam_mapel">Jam_Mapel</string>
+    <string name="nip">NIP</string>
+    <string name="kelas">Kelas</string>
+    <string name="pendidikan">Pendidikan</string>
+    <string name="alamat">Alamat</string>
+    <string name="nomor_hp">Nomor_HP</string>
+    <string name="varchar_desc">Seharusnya menggunakan tipe data VARCHAR, karena tipe data VARCHAR digunakan untuk menyimpan karakter. Panjang String yang di input flexible sesuai dengan banyak karakter yang di input</string>
+    <string name="int_desc">Seharusnya menggunakan tipe data INT, karena tipe data INT digunakan untuk menyimpan nilai bilangan bulat desimal</string>
+    <string name="date_desc">Seharusnya menggunakan tipe data DATE, karena tipe data DATE digunakan untuk menyimpan keterangan berupa tanggal yang dimulai dari 1 Januari 4712 SM sampai 31 Desember 9999 M</string>
 </resources>
