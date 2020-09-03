@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.materi.hirarki.Tabs5Hirarki"></activity>
+        <activity android:name=".ui.materi.hirarki.Tabs5Hirarki" />
         <activity
             android:name=".ui.materi.hirarki.VideoPlayerHirarki"
             android:screenOrientation="landscape"
@@ -26,8 +26,7 @@
         <activity
             android:name=".ui.materi.normalisasi.VideoPlayerNormalisasi"
             android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.NoActionBar" />
-<!--        Kasus Empat-->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Kasus Empat -->
         <activity
             android:name=".ui.kasus.empat.FourIntro"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -42,9 +41,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.empat.FourTahapSatu"
-            android:theme="@style/AppTheme.NoActionBar" />
-<!--        End Kasus Empat-->
-<!--        Kasus Tiga-->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Empat -->
+        <!-- Kasus Tiga -->
         <activity
             android:name=".ui.kasus.tiga.ThreeIntro"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -59,9 +57,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.tiga.ThreeTahapSatu"
-            android:theme="@style/AppTheme.NoActionBar" />
-<!--        End Kasus Tiga-->
-<!--        Kasus Dua-->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Tiga -->
+        <!-- Kasus Dua -->
         <activity
             android:name=".ui.kasus.dua.TwoIntro"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -76,9 +73,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.dua.TwoTahapSatu"
-            android:theme="@style/AppTheme.NoActionBar" />
-<!--        End Kasus Dua-->
-<!--        Kasus Satu-->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Dua -->
+        <!-- Kasus Satu -->
         <activity
             android:name=".ui.kasus.satu.OneIntro"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -95,7 +91,10 @@
         <activity
             android:name=".ui.kasus.satu.OneTahapEmpat"
             android:theme="@style/AppTheme.NoActionBar" />
-<!--        End Kasus Satu-->
+        <activity
+            android:name=".ui.kasus.satu.OneTahapEmpat_2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <!-- End Kasus Satu -->
         <activity android:name=".ui.kuis.kuis_hirarki.HasilKuisHirarki" />
         <activity android:name=".ui.kuis.kuis_erd.HasilKuisErd" />
         <activity android:name=".ui.kuis.kuis_normalisasi.HasilKuisNormalisasi" />

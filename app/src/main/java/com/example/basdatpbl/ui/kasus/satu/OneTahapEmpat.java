@@ -36,41 +36,7 @@ public class OneTahapEmpat extends AppCompatActivity {
         theader2 = findViewById(R.id.theader2);
         fheader2 = findViewById(R.id.fheader2);
 
-        tipeData1 = findViewById(R.id.tipedata_tabelsiswa1);
-        tipeData2 = findViewById(R.id.tipedata_tabelsiswa2);
-        tipeData3 = findViewById(R.id.tipedata_tabelsiswa3);
-        tipeData4 = findViewById(R.id.tipedata_tabelsiswa4);
-        tipeData5 = findViewById(R.id.tipedata_tabelsiswa5);
-        tipeData6 = findViewById(R.id.tipedata_tabelsiswa6);
-        tipeData7 = findViewById(R.id.tipedata_tabelsiswa7);
-        tipeData8 = findViewById(R.id.tipedata_tabelsiswa8);
-        tipeData9 = findViewById(R.id.tipedata_tabelsiswa9);
-        tipeData10 = findViewById(R.id.tipedata_tabelsiswa10);
-        tipeData11 = findViewById(R.id.tipedata_tabelsiswa11);
-        tipeData12 = findViewById(R.id.tipedata_tabelsiswa12);
-        tipeData13 = findViewById(R.id.tipedata_tabelsiswa13);
-        tipeData14 = findViewById(R.id.tipedata_tabelsiswa14);
-        tipeData15 = findViewById(R.id.tipedata_tabelsiswa15);
-        tipeData16 = findViewById(R.id.tipedata_tabelsiswa16);
-        tipeData17 = findViewById(R.id.tipedata_tabelsiswa17);
 
-        deskripsiData1 =findViewById(R.id.deskripsi_tabelsiswa1);
-        deskripsiData2 =findViewById(R.id.deskripsi_tabelsiswa2);
-        deskripsiData3 =findViewById(R.id.deskripsi_tabelsiswa3);
-        deskripsiData4 =findViewById(R.id.deskripsi_tabelsiswa4);
-        deskripsiData5 =findViewById(R.id.deskripsi_tabelsiswa5);
-        deskripsiData6 =findViewById(R.id.deskripsi_tabelsiswa6);
-        deskripsiData7 =findViewById(R.id.deskripsi_tabelsiswa7);
-        deskripsiData8 =findViewById(R.id.deskripsi_tabelsiswa8);
-        deskripsiData9 =findViewById(R.id.deskripsi_tabelsiswa9);
-        deskripsiData10 =findViewById(R.id.deskripsi_tabelsiswa10);
-        deskripsiData11 =findViewById(R.id.deskripsi_tabelsiswa11);
-        deskripsiData12 =findViewById(R.id.deskripsi_tabelsiswa12);
-        deskripsiData13 =findViewById(R.id.deskripsi_tabelsiswa13);
-        deskripsiData14 =findViewById(R.id.deskripsi_tabelsiswa14);
-        deskripsiData15 =findViewById(R.id.deskripsi_tabelsiswa15);
-        deskripsiData16 =findViewById(R.id.deskripsi_tabelsiswa16);
-        deskripsiData17 =findViewById(R.id.deskripsi_tabelsiswa17);
 
         Intent i = getIntent();
 //        Tahap Satu
@@ -84,7 +50,39 @@ public class OneTahapEmpat extends AppCompatActivity {
         String u_dua = i.getStringExtra("unDua");
         String th_dua = i.getStringExtra("thDua");
         String fh_dua = i.getStringExtra("fhDua");
-//        Tahap tiga
+
+
+
+        theader1.setText(th_satu);
+        fheader1.setText(fh_satu);
+        textView1.setText(r_satu);
+        textView2.setText(u_satu);
+
+        theader2.setText(th_dua);
+        fheader2.setText(fh_dua);
+        textView3.setText(r_dua);
+        textView4.setText(u_dua);
+
+
+
+    }
+    //    public void onBackPressed() {
+//        if(backPressedTime +2000 > System.currentTimeMillis()){
+//            finish();
+//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+//            startActivity(backhome);
+//        }else {
+//            backToast = Toast.makeText(getBaseContext(),"Press back again to menu", Toast.LENGTH_SHORT);
+//            backToast.show();
+//        }
+//        backPressedTime =System.currentTimeMillis();
+//
+//    }
+    public void next(View view) {
+        Intent selesai = new Intent(getApplicationContext(), OneTahapEmpat_2.class);
+
+        Intent i = getIntent();
+        //        Tahap tiga
         String spinA = i.getStringExtra("spinA");
         String spinB = i.getStringExtra("spinB");
         String spinC = i.getStringExtra("spinC");
@@ -102,180 +100,24 @@ public class OneTahapEmpat extends AppCompatActivity {
         String spinO = i.getStringExtra("spinO");
         String spinP = i.getStringExtra("spinP");
         String spinQ = i.getStringExtra("spinQ");
+        selesai.putExtra("spinA", spinA);
+        selesai.putExtra("spinB", spinB);
+        selesai.putExtra("spinC", spinC);
+        selesai.putExtra("spinD", spinD);
+        selesai.putExtra("spinE", spinE);
+        selesai.putExtra("spinF", spinF);
+        selesai.putExtra("spinG", spinG);
+        selesai.putExtra("spinH", spinH);
+        selesai.putExtra("spinI", spinI);
+        selesai.putExtra("spinJ", spinJ);
+        selesai.putExtra("spinK", spinK);
+        selesai.putExtra("spinL", spinL);
+        selesai.putExtra("spinM", spinM);
+        selesai.putExtra("spinN", spinN);
+        selesai.putExtra("spinO", spinO);
+        selesai.putExtra("spinP", spinP);
+        selesai.putExtra("spinQ", spinQ);
 
-
-        theader1.setText(th_satu);
-        fheader1.setText(fh_satu);
-        textView1.setText(r_satu);
-        textView2.setText(u_satu);
-
-        theader2.setText(th_dua);
-        fheader2.setText(fh_dua);
-        textView3.setText(r_dua);
-        textView4.setText(u_dua);
-
-        tipeData1.setText(spinA);
-        tipeData2.setText(spinB);
-        tipeData3.setText(spinC);
-        tipeData4.setText(spinD);
-        tipeData5.setText(spinE);
-        tipeData6.setText(spinF);
-        tipeData7.setText(spinG);
-        tipeData8.setText(spinH);
-        tipeData9.setText(spinI);
-        tipeData10.setText(spinJ);
-        tipeData11.setText(spinK);
-        tipeData12.setText(spinL);
-        tipeData13.setText(spinM);
-        tipeData14.setText(spinN);
-        tipeData15.setText(spinO);
-        tipeData16.setText(spinP);
-        tipeData17.setText(spinQ);
-
-
-        String[] jawaban_spinner={
-                "Int",//0
-                "Varchar",//1
-                "Date",//2
-                "Varchar",//3
-
-                "Varchar",//4
-                "Varchar",//5
-                "Varchar",//6
-                "Varchar",//7
-                "Varchar",//8
-                "Varchar",//9
-
-                "Int",//10
-                "Varchar",//11
-                "Varchar",//12
-                "Date",//13
-                "Varchar",//14
-                "Varchar",//15
-                "Int",//16
-        };
-
-        StringBuilder kecocokan = new StringBuilder();
-        if (spinA.equalsIgnoreCase(jawaban_spinner[0])){
-            tipeData1.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData1.setBackgroundResource(R.color.red4);
-            deskripsiData1.setText(R.string.int_desc);
-        }
-        if (spinB.equalsIgnoreCase(jawaban_spinner[1])){
-            tipeData2.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData2.setBackgroundResource(R.color.red4);
-            deskripsiData2.setText(R.string.varchar_desc);
-        }
-        if (spinC.equalsIgnoreCase(jawaban_spinner[2])){
-            tipeData3.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData3.setBackgroundResource(R.color.red4);
-            deskripsiData3.setText(R.string.date_desc);
-        }
-        if (spinD.equalsIgnoreCase(jawaban_spinner[3])){
-            tipeData4.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData4.setBackgroundResource(R.color.red4);
-            deskripsiData4.setText(R.string.varchar_desc);
-        }
-        //Tabel kedua
-        if (spinE.equalsIgnoreCase(jawaban_spinner[4])){
-            tipeData5.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData5.setBackgroundResource(R.color.red4);
-            deskripsiData5.setText(R.string.varchar_desc);
-        }
-        if (spinF.equalsIgnoreCase(jawaban_spinner[5])){
-            tipeData6.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData6.setBackgroundResource(R.color.red4);
-            deskripsiData6.setText(R.string.varchar_desc);
-        }
-        if (spinG.equalsIgnoreCase(jawaban_spinner[6])){
-            tipeData7.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData7.setBackgroundResource(R.color.red4);
-            deskripsiData7.setText(R.string.varchar_desc);
-        }
-        if (spinH.equalsIgnoreCase(jawaban_spinner[7])){
-            tipeData8.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData8.setBackgroundResource(R.color.red4);
-            deskripsiData8.setText(R.string.varchar_desc);
-        }
-        if (spinI.equalsIgnoreCase(jawaban_spinner[8])){
-            tipeData9.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData9.setBackgroundResource(R.color.red4);
-            deskripsiData9.setText(R.string.varchar_desc);
-        }
-        if (spinJ.equalsIgnoreCase(jawaban_spinner[9])){
-            tipeData10.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData10.setBackgroundResource(R.color.red4);
-            deskripsiData10.setText(R.string.varchar_desc);
-        }
-        //Tabel 3
-        if (spinK.equalsIgnoreCase(jawaban_spinner[10])){
-            tipeData11.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData11.setBackgroundResource(R.color.red4);
-            deskripsiData11.setText(R.string.int_desc);
-        }
-        if (spinL.equalsIgnoreCase(jawaban_spinner[11])){
-            tipeData12.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData12.setBackgroundResource(R.color.red4);
-            deskripsiData12.setText(R.string.varchar_desc);
-        }
-        if (spinM.equalsIgnoreCase(jawaban_spinner[12])){
-            tipeData13.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData13.setBackgroundResource(R.color.red4);
-            deskripsiData13.setText(R.string.varchar_desc);
-        }
-        if (spinN.equalsIgnoreCase(jawaban_spinner[13])){
-            tipeData14.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData14.setBackgroundResource(R.color.red4);
-            deskripsiData14.setText(R.string.date_desc);
-        }
-        if (spinO.equalsIgnoreCase(jawaban_spinner[14])){
-            tipeData15.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData15.setBackgroundResource(R.color.red4);
-            deskripsiData15.setText(R.string.varchar_desc);
-        }
-        if (spinP.equalsIgnoreCase(jawaban_spinner[15])){
-            tipeData16.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData16.setBackgroundResource(R.color.red4);
-            deskripsiData16.setText(R.string.varchar_desc);
-        }
-        if (spinQ.equalsIgnoreCase(jawaban_spinner[16])){
-            tipeData17.setBackgroundResource(R.color.green1);
-        }else {
-            tipeData17.setBackgroundResource(R.color.red4);
-            deskripsiData17.setText(R.string.int_desc);
-        }
-
-    }
-    //    public void onBackPressed() {
-//        if(backPressedTime +2000 > System.currentTimeMillis()){
-//            finish();
-//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
-//            startActivity(backhome);
-//        }else {
-//            backToast = Toast.makeText(getBaseContext(),"Press back again to menu", Toast.LENGTH_SHORT);
-//            backToast.show();
-//        }
-//        backPressedTime =System.currentTimeMillis();
-//
-//    }
-    public void next(View view) {
-        Intent selesai = new Intent(getApplicationContext(), BottomActivity.class);
         startActivity(selesai);
     }
 }

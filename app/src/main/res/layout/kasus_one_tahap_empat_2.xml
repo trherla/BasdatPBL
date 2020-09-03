@@ -1,50 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_slider3"
-    tools:context=".ui.kasus.dua.TwoTahapTiga"
-    tools:ignore="ExtraText">
+    tools:context=".ui.kasus.satu.OneTahapEmpat_2">
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="UselessParent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="32dp">
+
             <TextView
                 android:id="@+id/jud_kasus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_pertanyaan"
                 android:padding="12dp"
-                android:textSize="16sp"
-                android:text="@string/tahap4pbl"
+                android:text="@string/tahap5pbl"
                 android:textColor="@color/mi_icon_color_dark"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
-            <TextView
-                android:id="@+id/penyelesaian_sekolah"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/bg_white"
-                android:elevation="4dp"
-                android:padding="12dp"
-                android:textSize="16sp"
-                android:text="@string/penyelesaian_sekolah"
-                android:textColor="@color/colorDark"
-                tools:ignore="MissingConstraints" />
-<!--Tabel Pertama-->
+
+
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16sp"
+                android:layout_marginBottom="32dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="12dp"
@@ -57,122 +45,7 @@
                     android:layout_height="match_parent"
                     android:padding="16dp">
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        tools:ignore="UselessParent">
-                        <TableLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:stretchColumns="2">
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:text="@string/atribut_table_kasussekolah"
-                                    android:layout_weight="1"
-                                    android:background="@color/grey1"
-                                    android:textColor="@color/white"
-                                    android:textStyle="bold"
-                                    android:gravity="center_horizontal" />
-                                <TextView
-                                    android:text="@string/tipedata_tabel_kasussekolah"
-                                    android:layout_weight="1"
-                                    android:background="@color/grey1"
-                                    android:textColor="@color/white"
-                                    android:textStyle="bold"
-                                    android:gravity="center_horizontal" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:text="@string/nis"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:paddingStart="16dip"
-                                    android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerA"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dip"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:text="@string/nama"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerB"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:text="@string/tgl_lahir"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerC"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:text="@string/jenis_kelamin"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerD"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                        </TableLayout>
-
-                    </LinearLayout>
-
-
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-<!--Tabel Kedua-->
-            <androidx.cardview.widget.CardView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="12dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp"
-                app:cardUseCompatPadding="false">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="16dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         tools:ignore="UselessParent">
@@ -196,103 +69,84 @@
                                     android:textColor="@color/white"
                                     android:textStyle="bold"
                                     android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
 
+                                    android:gravity="center_horizontal" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
                                 <TextView
-                                    android:text="@string/kode_mapel"
+                                    android:text="@string/nis"
                                     android:textColor="@color/color_darkprime"
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerE"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa1"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa1"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
                                 <TextView
-                                    android:text="@string/nama_mapel"
+                                    android:text="@string/nama"
                                     android:textColor="@color/color_darkprime"
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerF"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa2"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa2"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
                                 <TextView
-                                    android:text="@string/hari"
+                                    android:text="@string/tgl_lahir"
                                     android:textColor="@color/color_darkprime"
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerG"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa3"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa3"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
                                 <TextView
-                                    android:text="@string/jam_mapel"
+                                    android:text="@string/jenis_kelamin"
                                     android:textColor="@color/color_darkprime"
+
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerH"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
                                 <TextView
-                                    android:text="@string/nip"
-                                    android:textColor="@color/color_darkprime"
+                                    android:id="@+id/tipedata_tabelsiswa4"
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerI"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
                                 <TextView
-                                    android:text="@string/kelas"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerJ"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:id="@+id/deskripsi_tabelsiswa4"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
-
                         </TableLayout>
 
                     </LinearLayout>
@@ -300,8 +154,6 @@
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
-
-<!--Tabel Ketiga -->
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="32dp"
@@ -317,15 +169,15 @@
                     android:layout_height="match_parent"
                     android:padding="16dp">
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         tools:ignore="UselessParent">
-
                         <TableLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:stretchColumns="2">
+                            android:layout_marginTop="24dp"
+                            android:stretchColumns="3">
                             <TableRow
                                 android:padding="3dip">
                                 <TextView
@@ -342,7 +194,82 @@
                                     android:textColor="@color/white"
                                     android:textStyle="bold"
                                     android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
 
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/kode_mapel"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa5"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa5"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nama_mapel"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa6"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa6"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/hari"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa7"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa7"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/jam_mapel"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa8"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa8"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -351,14 +278,108 @@
                                     android:textColor="@color/color_darkprime"
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerK"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa9"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa9"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/kelas"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa10"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa10"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
 
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="24dp"
+                            android:stretchColumns="3">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/atribut_table_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/tipedata_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/nip"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa11"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa11"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -367,14 +388,15 @@
                                     android:textColor="@color/color_darkprime"
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerL"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa12"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa12"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -384,14 +406,15 @@
 
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerM"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa13"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa13"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
-
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -401,13 +424,15 @@
 
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerN"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa14"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa14"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -417,13 +442,15 @@
 
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerO"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa15"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa15"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -433,13 +460,15 @@
 
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerP"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa16"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa16"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -449,13 +478,15 @@
 
                                     android:layout_weight="1"
                                     android:gravity="center_horizontal" />
-                                <Spinner
-                                    android:id="@+id/spinnerQ"
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa17"
                                     android:layout_weight="1"
-                                    android:layout_width="match_parent"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa17"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginStart="16dp"
-                                    android:spinnerMode="dialog" />
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
                             </TableRow>
                         </TableLayout>
                     </LinearLayout>
@@ -465,17 +496,17 @@
             </androidx.cardview.widget.CardView>
 
             <ImageButton
-                android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginBottom="52dp"
-                android:elevation="4dp"
                 android:background="@drawable/bg_next"
-                android:src="@drawable/next"
+                android:onClick="next"
+                android:src="@drawable/home"
+                android:textColor="@color/color_darkprime"
                 tools:ignore="ContentDescription" />
         </LinearLayout>
     </ScrollView>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

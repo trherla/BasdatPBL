@@ -170,7 +170,7 @@
     <string name="tahap3pbl">Perencanaan Penyelesaian</string>
     <string name="tahap4pbl">Pelaksanaan Rencana</string>
     <string name="tahap5pbl">Evaluasi</string>
-<!--Kasus Perpustakaan-->
+    <!--Kasus Perpustakaan-->
     <string name="pertanyaan_perpus">Pilihlah beberapa permasalahan yang sesuai dengan kasus yang telah dijelaskan di awal</string>
     <string name="masalah1_perpus">Kesalahan Atribut</string>
     <string name="masalah2_perpus">Terdapat Entitas yang tidak sesuai dengan database perpustakaan</string>
@@ -182,8 +182,8 @@
     <string name="solusi2_perpus">Ini Solusi 3</string>
     <string name="solusi3_perpus">Solusi 4 mah</string>
     <string name="solusi4_perpus">Yang ini 5 deh</string>
-<!--End Kasus Perpustakaan-->
-<!--Kasus Sekolah-->
+    <!--End Kasus Perpustakaan-->
+    <!--Kasus Sekolah-->
     <string name="pertanyaan_sekolah">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
     <string name="masalah1_sekolah">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
     <string name="masalah2_sekolah">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
