@@ -130,29 +130,21 @@ public class TwoTahapSatu extends AppCompatActivity {
                         StringBuilder false_header = new StringBuilder();
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
-//jawabannya ada di cb1 dan cb4
-                        if (CbSatu.isChecked() && CbEmpat.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+//jawabannya ada di cb3
+                        if (CbSatu.isChecked() || CbDua.isChecked()|| CbEmpat.isChecked()){
+                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih jawaban ini:");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else if (CbEmpat.isChecked()){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut jawaban yang seharusnya dipilih");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
+                            unchecked.append("> Banyak Atribut yang tidak sesuai di ERD Perpustakaan\n");
+                            unchecked.append("> Pengelola perpustakaan membutuhkan buku baru untuk perpustakaan \n");
+                            result.append("> Banyak anggota yang sering terlambat mengembalikan buku pinjaman dari perpustakaan.\n");
+                            unchecked.append("> Relasi antar Entitas Buku dan Anggota di ERD perpustakaan kurang tepat \n");
+                        }else if (CbTiga.isChecked() ){
+                            true_header.append("Selamat ! Jawaban kamu benar");
+                            false_header.append("Berikut jawaban yang salah :");
+                            unchecked.append("> Banyak Atribut yang tidak sesuai di ERD Perpustakaan\n");
+                            unchecked.append("> Pengelola perpustakaan membutuhkan buku baru untuk perpustakaan \n");
+                            result.append("> Banyak anggota yang sering terlambat mengembalikan buku pinjaman dari perpustakaan.\n");
+                            unchecked.append("> Relasi antar Entitas Buku dan Anggota di ERD perpustakaan kurang tepat \n");
                         }
 
                         String th_satu = true_header.toString();

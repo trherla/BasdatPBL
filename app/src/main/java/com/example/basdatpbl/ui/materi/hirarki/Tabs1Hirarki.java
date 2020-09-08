@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.example.basdatpbl.R;
 import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
@@ -21,6 +22,9 @@ public class Tabs1Hirarki extends Fragment implements View.OnClickListener{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
     }
 
     public ExpandableRelativeLayout mExpandLayout1;
@@ -46,6 +50,11 @@ public class Tabs1Hirarki extends Fragment implements View.OnClickListener{
         linearLayout1 = root.findViewById(R.id.lay1);
         linearLayout2 = root.findViewById(R.id.lay2);
         linearLayout3 = root.findViewById(R.id.lay3);
+
+//        mExpandLayout1.setVisibility(View.GONE);
+//        mExpandLayout2.setVisibility(View.GONE);
+//        mExpandLayout3.setVisibility(View.GONE);
+
 
         linearLayout1.setOnClickListener(this);
         linearLayout2.setOnClickListener(this);

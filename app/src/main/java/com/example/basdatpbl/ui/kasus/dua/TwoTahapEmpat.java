@@ -35,10 +35,6 @@ public class TwoTahapEmpat extends AppCompatActivity {
         theader2 = findViewById(R.id.theader2);
         fheader2 = findViewById(R.id.fheader2);
 
-//        textView1.setText();
-//        textView2.setText();
-//        textView3.setText();
-//        textView4.setText();
 
         Intent i = getIntent();
         String r_satu = i.getStringExtra("resultSatu");
@@ -51,11 +47,6 @@ public class TwoTahapEmpat extends AppCompatActivity {
         String th_dua = i.getStringExtra("thDua");
         String fh_dua = i.getStringExtra("fhDua");
 
-        String spinA = i.getStringExtra("spinA");
-        String spinB = i.getStringExtra("spinB");
-        String spinC = i.getStringExtra("spinC");
-        String spinD = i.getStringExtra("spinD");
-        String spinE = i.getStringExtra("spinE");
 
         theader1.setText(th_satu);
         fheader1.setText(fh_satu);
@@ -67,52 +58,6 @@ public class TwoTahapEmpat extends AppCompatActivity {
         textView3.setText(r_dua);
         textView4.setText(u_dua);
 
-
-        String[] jawaban_spinner={
-                "TK",
-                "Lawang",
-                "SMA",
-                "Shogun",
-                "Brio"
-        };
-
-        StringBuilder kecocokan = new StringBuilder();
-        if (spinA.equalsIgnoreCase(jawaban_spinner[0])){
-            kecocokan.append("Benar \n");
-        }else {
-            kecocokan.append("Salah \n");
-        }
-        if (spinB.equalsIgnoreCase(jawaban_spinner[1])){
-            kecocokan.append("Benar \n");
-        }else {
-            kecocokan.append("Salah \n");
-        }
-        if (spinC.equalsIgnoreCase(jawaban_spinner[2])){
-            kecocokan.append("Benar \n");
-        }else {
-            kecocokan.append("Salah \n");
-        }
-        if (spinD.equalsIgnoreCase(jawaban_spinner[3])){
-            kecocokan.append("Benar \n");
-        }else {
-            kecocokan.append("Salah \n");
-        }
-        if (spinE.equalsIgnoreCase(jawaban_spinner[4])){
-            kecocokan.append("Benar \n");
-        }else {
-            kecocokan.append("Salah \n");
-        }
-        String cocok = kecocokan.toString();
-
-        List<String> spin = new ArrayList<>();
-        spin.add(spinA);
-        spin.add(spinB);
-        spin.add(spinC);
-        spin.add(spinD);
-//spin.get(3) untuk mengambil urutan ke 4
-
-        textView5.setText(spinA + spinB + spinC + spinD + spinE);
-        textView6.setText(cocok);
     }
 //    public void onBackPressed() {
 //        if(backPressedTime +2000 > System.currentTimeMillis()){
@@ -127,7 +72,27 @@ public class TwoTahapEmpat extends AppCompatActivity {
 //
 //    }
     public void next(View view) {
-        Intent selesai = new Intent(getApplicationContext(), BottomActivity.class);
+        Intent selesai = new Intent(getApplicationContext(), TwoTahapEmpat_2.class);
+
+        Intent i = getIntent();
+
+        String spinA = i.getStringExtra("spinA");
+        String spinB = i.getStringExtra("spinB");
+        String spinC = i.getStringExtra("spinC");
+        String spinD = i.getStringExtra("spinD");
+        String spinE = i.getStringExtra("spinE");
+        String spinF = i.getStringExtra("spinF");
+        String spinG = i.getStringExtra("spinG");
+        String spinH = i.getStringExtra("spinH");
+
+        selesai.putExtra("spinA", spinA);
+        selesai.putExtra("spinB", spinB);
+        selesai.putExtra("spinC", spinC);
+        selesai.putExtra("spinD", spinD);
+        selesai.putExtra("spinE", spinE);
+        selesai.putExtra("spinF", spinF);
+        selesai.putExtra("spinG", spinG);
+        selesai.putExtra("spinH", spinH);
         startActivity(selesai);
     }
 }

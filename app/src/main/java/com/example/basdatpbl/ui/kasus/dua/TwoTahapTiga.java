@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.basdatpbl.R;
@@ -34,91 +35,122 @@ public class TwoTahapTiga extends AppCompatActivity implements AdapterView.OnIte
         final Spinner spinnerB = findViewById(R.id.spinnerB);
         final Spinner spinnerC = findViewById(R.id.spinnerC);
         final Spinner spinnerD = findViewById(R.id.spinnerD);
+
         final Spinner spinnerE = findViewById(R.id.spinnerE);
+        final Spinner spinnerF = findViewById(R.id.spinnerF);
+        final Spinner spinnerG = findViewById(R.id.spinnerG);
+        final Spinner spinnerH = findViewById(R.id.spinnerH);
         ImageButton next = findViewById(R.id.button);
 
-        List<String> categories = new ArrayList<>();
-        categories.add("TK");
-        categories.add("SD");
-        categories.add("SMP");
-        categories.add("SMA");
+        List<String> atribut = new ArrayList<>();
+        atribut.add("Kode Denda");
+        atribut.add("NIS");
+        atribut.add("Tgl Pinjam");
+        atribut.add("Tgl Kembali");
+        atribut.add("Jumlah Denda");
+        atribut.add("Tarif Denda");
+        atribut.add("Lama Pinjam");
+        atribut.add("No. Buku");
 
-        List<String> spd = new ArrayList<>();
-        spd.add("Shogun");
-        spd.add("Beat");
-        spd.add("Revo");
-        spd.add("NMax");
-        spd.add("Jupiter");
-        spd.add("Spin");
 
-        List<String> mbl = new ArrayList<>();
-        mbl.add("Yaris");
-        mbl.add("Jazz");
-        mbl.add("Brio");
+        List<String> rasio = new ArrayList<>();
+        rasio.add("One");
+        rasio.add("Many");
 
+
+//        Spinner 1
         spinnerA.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterA = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, categories);
+        ArrayAdapter<String> spinAdapterA = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, atribut);
         spinAdapterA.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerA.setAdapter(spinAdapterA);
 
 //        Spinner 2
         spinnerB.setOnItemSelectedListener(this);
-        ArrayAdapter<String> arrayAdapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, alamat);
-        arrayAdapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerB.setAdapter(arrayAdapter1);
+        ArrayAdapter<String> spinAdapterB = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, atribut);
+        spinAdapterB.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerB.setAdapter(spinAdapterB);
 
 //        SPinner 3
         spinnerC.setOnItemSelectedListener(this);
-        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, pendidikan);
-        arrayAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerC.setAdapter(arrayAdapter2);
+        ArrayAdapter<String> spinAdapterC = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, atribut);
+        spinAdapterC.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerC.setAdapter(spinAdapterC);
 
 //      Spinner 4
         spinnerD.setOnItemSelectedListener(this);
-        ArrayAdapter<String> arrayAdapter3 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, spd);
-        arrayAdapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerD.setAdapter(arrayAdapter3);
+        ArrayAdapter<String> spinAdapterD = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, atribut);
+        spinAdapterD.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerD.setAdapter(spinAdapterD);
 
+//        Tabel 2
 //        Spinner 5
         spinnerE.setOnItemSelectedListener(this);
-        ArrayAdapter<String> arrayAdapter4 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, mbl);
-        arrayAdapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerE.setAdapter(arrayAdapter4);
+        ArrayAdapter<String> spinAdapterE = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, atribut);
+        spinAdapterE.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerE.setAdapter(spinAdapterE);
+//        Spinner 6
+        spinnerF.setOnItemSelectedListener(this);
+        ArrayAdapter<String> spinAdapterF = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, atribut);
+        spinAdapterF.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerF.setAdapter(spinAdapterF);
+
+//        Spinner 7
+        spinnerG.setOnItemSelectedListener(this);
+        ArrayAdapter<String> spinAdapterG = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, rasio);
+        spinAdapterG.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerG.setAdapter(spinAdapterG);
+
+//        SPinner 8
+        spinnerH.setOnItemSelectedListener(this);
+        ArrayAdapter<String> spinAdapterH = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, rasio);
+        spinAdapterH.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerH.setAdapter(spinAdapterH);
 
 
 
         next.setOnClickListener(v -> {
-            Intent selesai = new Intent(getApplicationContext(), TwoTahapEmpat.class);
+            AlertDialog.Builder dial = new AlertDialog.Builder(this);
+//            dial.setTitle("Yakin?");
+            dial.setMessage("Yakin dengan jawaban anda")
+                    .setPositiveButton("Ya", (dialog, which) -> {
+                        Intent selesai = new Intent(getApplicationContext(), TwoTahapEmpat.class);
 //receive value from activity one and two
 
-            Intent i = getIntent();
-            String r_satu = i.getStringExtra("resultSatu");
-            String u_satu = i.getStringExtra("unSatu");
-            String th_satu = i.getStringExtra("thSatu");
-            String fh_satu = i.getStringExtra("fhSatu");
+                        Intent i = getIntent();
+                        String r_satu = i.getStringExtra("resultSatu");
+                        String u_satu = i.getStringExtra("unSatu");
+                        String th_satu = i.getStringExtra("thSatu");
+                        String fh_satu = i.getStringExtra("fhSatu");
 
-            String r_dua = i.getStringExtra("resultDua");
-            String u_dua = i.getStringExtra("unDua");
-            String th_dua = i.getStringExtra("thDua");
-            String fh_dua = i.getStringExtra("fhDua");
+                        String r_dua = i.getStringExtra("resultDua");
+                        String u_dua = i.getStringExtra("unDua");
+                        String th_dua = i.getStringExtra("thDua");
+                        String fh_dua = i.getStringExtra("fhDua");
 
-            selesai.putExtra("resultSatu", r_satu);
-            selesai.putExtra("unSatu", u_satu);
-            selesai.putExtra("thSatu", th_satu);
-            selesai.putExtra("fhSatu", fh_satu);
+                        selesai.putExtra("resultSatu", r_satu);
+                        selesai.putExtra("unSatu", u_satu);
+                        selesai.putExtra("thSatu", th_satu);
+                        selesai.putExtra("fhSatu", fh_satu);
 
-            selesai.putExtra("resultDua", r_dua);
-            selesai.putExtra("unDua", u_dua);
-            selesai.putExtra("thDua", th_dua);
-            selesai.putExtra("fhDua", fh_dua);
+                        selesai.putExtra("resultDua", r_dua);
+                        selesai.putExtra("unDua", u_dua);
+                        selesai.putExtra("thDua", th_dua);
+                        selesai.putExtra("fhDua", fh_dua);
 
-            selesai.putExtra("spinA", String.valueOf(spinnerA.getSelectedItem()));
-            selesai.putExtra("spinB", String.valueOf(spinnerB.getSelectedItem()));
-            selesai.putExtra("spinC", String.valueOf(spinnerC.getSelectedItem()));
-            selesai.putExtra("spinD", String.valueOf(spinnerD.getSelectedItem()));
-            selesai.putExtra("spinE", String.valueOf(spinnerE.getSelectedItem()));
+                        selesai.putExtra("spinA", String.valueOf(spinnerA.getSelectedItem()));
+                        selesai.putExtra("spinB", String.valueOf(spinnerB.getSelectedItem()));
+                        selesai.putExtra("spinC", String.valueOf(spinnerC.getSelectedItem()));
+                        selesai.putExtra("spinD", String.valueOf(spinnerD.getSelectedItem()));
+                        selesai.putExtra("spinE", String.valueOf(spinnerE.getSelectedItem()));
+                        selesai.putExtra("spinF", String.valueOf(spinnerF.getSelectedItem()));
+                        selesai.putExtra("spinG", String.valueOf(spinnerG.getSelectedItem()));
+                        selesai.putExtra("spinH", String.valueOf(spinnerH.getSelectedItem()));
 
-            startActivity(selesai);
+                        startActivity(selesai);
+                    })
+                    .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());
+            dial.create();
+            dial.show();
         });
 
 

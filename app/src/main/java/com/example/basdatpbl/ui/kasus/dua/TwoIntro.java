@@ -23,16 +23,14 @@ public class TwoIntro extends IntroActivity {
         setButtonCtaVisible(false);
         setButtonCtaTintMode(BUTTON_CTA_TINT_MODE_BACKGROUND);
         TypefaceSpan labelSpan = new TypefaceSpan(
-                Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP ? "sans-serif-medium" : "sans serif");
+                "sans-serif-medium");
         SpannableString label = SpannableString
                 .valueOf("Get Started");
         label.setSpan(labelSpan, 0, label.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         setButtonCtaLabel(label);
 
         setPageScrollDuration(500);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            setPageScrollInterpolator(android.R.interpolator.fast_out_slow_in);
-        }
+        setPageScrollInterpolator(android.R.interpolator.fast_out_slow_in);
 
         addSlide(new SimpleSlide.Builder()
                 .title("Kasus Perpustakaan")
@@ -47,29 +45,36 @@ public class TwoIntro extends IntroActivity {
 //                .title("Basis Data")
                 .description("Terdapat Sekolah di daerah pinggiran kota, Sekolah itu bernama SD Pintar")
                 .image(R.drawable.machu_pichu)
-                .background(R.color.red3)
+                .background(R.color.red2)
                 .backgroundDark(R.color.white)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
 //                .title("Kuis")
-                .description("Minat baca di sekolah ini sangat tinggi, penjaga perpustakaan sampai kerepotan mengatur peminjaman buku secara manual.")
+                .description("Banyak sekali buku yang dimiliki perpustakaan SD Pintar, bahkan seringkali membuat petugas kerepotan mengelola peminjaman ketika siswa terlambat mengembalikan buku.")
                 .image(R.drawable.book_lover)
-                .background(R.color.red5)
+                .background(R.color.red2)
                 .backgroundDark(R.color.white)
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Kuis")
-                .description("Karena bantuan dana dari pemerintah baru keluar, Kepala sekolah memiliki rencana untuk meningkatkan sistem peminjaman buku di perpustakaan SD Pintar.")
+                .description("Pengelola perpustakaan ingin memberikan denda kepada peminjam yang terlambat mengembalikan buku sebesar Rp. 500,- per hari keterlambatan")
                 .image(R.drawable.bank_note)
-                .background(R.color.red4)
+                .background(R.color.red2)
                 .backgroundDark(R.color.white)
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Kuis")
-                .description("Kepala sekolah meminta bantuanmu untuk merencanakan manajemen peminjaman buku di SD Cerdas")
+                .description("Berikut merupakan ERD perpustakaan yang ada di SD Pintar")
+                .image(R.drawable.kasus_erdperpus)
+                .background(R.color.red2)
+                .backgroundDark(R.color.white)
+                .build());
+        addSlide(new SimpleSlide.Builder()
+//                .title("Kuis")
+                .description("Kamu sebagai bagian IT di SD Pintar akan merubah ERD perpustakaan sesuai dengan permintaan pengelola perpustakaan. Apa yang harus kamu lakukan?")
                 .image(R.drawable.career)
-                .background(R.color.red1)
+                .background(R.color.red2)
                 .backgroundDark(R.color.white)
                 .build());
         autoplay(2500, INFINITE);

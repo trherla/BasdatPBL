@@ -14,8 +14,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.basdatpbl.R;
-import com.example.basdatpbl.ui.kasus.satu.OneIntro;
-import com.example.basdatpbl.ui.kasus.satu.OneTahapDua;
+
 
 import static com.example.basdatpbl.BottomActivity.PREF_KEY_FIRST_START;
 import static com.example.basdatpbl.BottomActivity.REQUEST_CODE_INTRO;
@@ -36,15 +35,15 @@ public class ThreeTahapSatu extends AppCompatActivity {
         CbDua = findViewById(R.id.cb_dua);
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
-        nxt = findViewById(R.id.button_perpus1);
+        nxt = findViewById(R.id.button_rs1);
 
         nxt.setVisibility(View.GONE);
 
-        Pertanyaan.setText(R.string.pertanyaan_sekolah);
-        CbSatu.setText(R.string.masalah1_sekolah);
-        CbDua.setText(R.string.masalah2_sekolah);
-        CbTiga.setText(R.string.masalah3_sekolah);
-        CbEmpat.setText(R.string.masalah4_sekolah);
+        Pertanyaan.setText(R.string.pertanyaan_rs);
+        CbSatu.setText(R.string.masalah1_rs);
+        CbDua.setText(R.string.masalah2_rs);
+        CbTiga.setText(R.string.masalah3_rs);
+        CbEmpat.setText(R.string.masalah4_rs);
 
 
 

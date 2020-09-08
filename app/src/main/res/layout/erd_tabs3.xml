@@ -70,19 +70,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
-
                             android:orientation="vertical"
                             tools:ignore="UseCompoundDrawables">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -137,18 +138,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -163,6 +166,7 @@
                     android:id="@+id/lay3"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
@@ -194,18 +198,19 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
-
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -220,6 +225,7 @@
                     android:id="@+id/lay4"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
@@ -251,18 +257,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -277,6 +285,7 @@
                     android:id="@+id/lay5"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
@@ -308,18 +317,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -334,6 +345,7 @@
                     android:id="@+id/lay6"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/bg_expand">
                     <TextView
                         android:layout_width="0dp"
@@ -365,18 +377,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -390,6 +404,7 @@
                 <LinearLayout
                     android:id="@+id/lay7"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
                     android:layout_height="40dp"
                     android:background="@drawable/bg_expand">
                     <TextView
@@ -422,18 +437,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -447,6 +464,7 @@
                 <LinearLayout
                     android:id="@+id/lay8"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
                     android:layout_height="40dp"
                     android:background="@drawable/bg_expand">
                     <TextView
@@ -479,18 +497,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"
@@ -504,6 +524,7 @@
                 <LinearLayout
                     android:id="@+id/lay9"
                     android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
                     android:layout_height="40dp"
                     android:background="@drawable/bg_expand">
                     <TextView
@@ -536,18 +557,20 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="-8dp"
                             android:layout_marginBottom="8dp"
 
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
                                 android:layout_marginBottom="8dp"
                                 android:lineSpacingMultiplier="1.5"
                                 android:background="@drawable/bg_white"
-                                android:padding="8dp"
+                                android:paddingTop="16dp"
+                                android:paddingStart="8dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="8dp"
                                 android:elevation="4dp"
                                 android:textSize="16sp"
                                 android:textColor="@color/color_darkprime"

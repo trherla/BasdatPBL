@@ -117,28 +117,20 @@ public class TwoTahapDua extends AppCompatActivity {
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
 
-                        if (CbSatu.isChecked() && CbDua.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+                        if (CbEmpat.isChecked()){
+                            true_header.append("Selamat ! Jawaban kamu benar");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbDua.isChecked()){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            unchecked.append("> Merencanakan ERD perpustakaan yang baru \n");
+                            unchecked.append("> Menghapus beberapa atribut dalam entitas Buku\n");
+                            unchecked.append("> Mengganti rasio kardinalitas pada relasi pinjam \n");
+                            result.append("> Menambahkan entitas baru bernama Denda dan relasi bernama membayar yang terhubung ke atribut Siswa \n");
                         }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut solusi yang seharusnya dipilih");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih solusi ini:");
+                            false_header.append("Berikut solusi yang kurang tepat untuk dipilih");
+                            unchecked.append("> Merencanakan ERD perpustakaan yang baru \n");
+                            unchecked.append("> Menghapus beberapa atribut dalam entitas Buku\n");
+                            unchecked.append("> Mengganti rasio kardinalitas pada relasi pinjam \n");
+                            result.append("> Menambahkan entitas baru bernama Denda dan relasi bernama membayar yang terhubung ke atribut Siswa \n");
                         }
 
 //                        if (CbSatu.isChecked() && CbDua.isChecked() && CbTiga.isChecked() && CbEmpat.isChecked()){

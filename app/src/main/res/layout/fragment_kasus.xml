@@ -13,61 +13,57 @@
         tools:ignore="MissingConstraints">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/rVKasus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            app:cardCornerRadius="8dp"
+            android:background="@drawable/bg_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <RelativeLayout
+            <ImageView
+                android:id="@+id/hero_awal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/hero_awal"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:padding="16dp"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/problem_solving"
-                    tools:ignore="ContentDescription"/>
-                <TextView
-                    android:id="@+id/judul_awal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/hero_awal"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:text="@string/judul_kasus"
-                    android:textSize="24sp"
-                    android:layout_marginBottom="16dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/judul_awal"
-                    android:layout_marginBottom="16dp"
-                    android:paddingStart="32dp"
-                    android:paddingEnd="32dp"
-                    android:gravity="center"
-                    android:textSize="16sp"
-                    android:text="@string/des_kasus"
-                    />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+                android:layout_height="200dp"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/problem_solving"
+                tools:ignore="ContentDescription"/>
+            <TextView
+                android:id="@+id/judul_awal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hero_awal"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="@string/judul_kasus"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judul_awal"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/des_kasus"
+                />
+        </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_idkasus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/cardView" />
+            android:layout_below="@id/rVKasus" />
     </RelativeLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

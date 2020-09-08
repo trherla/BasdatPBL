@@ -20,6 +20,7 @@
     <string name="des_kuis"> </string>
     <string name="judul_kasus">Kasus</string>
     <string name="des_kasus"> </string>
+    <string name="info_pengembang">Tri Rizki Herlambang\n16 Oktober 1996</string>
 
 
     <string name="info_des">Aplikasi ini dikembangkan untuk menunjang pembelajaran mata pelajaran Basis Data Kelas XI. Aplikasi ini dapat berjalan dengan baik dengan spesifikasi minimun smartphone sebagai berikut:\n\nVersi OS : 5.0 JellyBean - 10.0 Android Ten\nRAM : 1GB</string>
@@ -102,7 +103,20 @@
 
 
     <string name="eb1">Batasan partisipasi atau batasan hubungan entitas menjelaskan bagaimana data itu berelasi, batasan ini menentukan bagaimana (harus ataukah tidak) berpartisipasi suatu entitas dengan relasinya pada entitas lain. </string>
-
+    <string name="_1_internal_level">1. <i>Internal Level</i></string>
+    <string name="_2_conceptual_level">2. <i>Conceptual Level</i></string>
+    <string name="_3_view_level">3. <i>View Level</i></string>
+    <string name="atribut_tidak_harus_bernilai">9. Atribut Tidak Harus bernilai</string>
+    <string name="atribut_bernilai">8. Atribut Bernilai</string>
+    <string name="atribut_turunan">7. Atribut Turunan</string>
+    <string name="atribut_bernilai_tunggal">6. Atribut Bernilai Tunggal</string>
+    <string name="atribut_bernilai_banyak">5. Atribut Bernilai Banyak</string>
+    <string name="atribut_komposit">4. Atribut Komposit</string>
+    <string name="atribut_sederhana">3. Atribut Sederhana</string>
+    <string name="atribut_deskriptif">2. Atribut Deskriptif</string>
+    <string name="atribut_kunci">1. Atribut Kunci</string>
+    <string name="relasi_berdasarkan_derajatnya">Relasi Berdasarkan Derajatnya</string>
+    <string name="kardinalitas">Kardinalitas</string>
     <!--Definisi ketergantungan-->
     <string name="kde1">Dependensi merupakan ketergantungan setiap atribut dengan atribut lainnya</string>
     <string name="kde2">Analisis dependensi merupakan konsep <b>penting</b> yang menjadi <b>dasar melakukan normalisasi</b> sehingga diperoleh relasi yang berstruktur baik.\n\nAda beberapa jenis dependensi:\n1. Dependensi Fungsional\n2. Dependensi Sepenuhnya\n3. Dependensi Sebagian\n4. Dependensi Penuh\n5. Dependensi Transitif</string>
@@ -171,17 +185,24 @@
     <string name="tahap4pbl">Pelaksanaan Rencana</string>
     <string name="tahap5pbl">Evaluasi</string>
     <!--Kasus Perpustakaan-->
-    <string name="pertanyaan_perpus">Pilihlah beberapa permasalahan yang sesuai dengan kasus yang telah dijelaskan di awal</string>
-    <string name="masalah1_perpus">Kesalahan Atribut</string>
-    <string name="masalah2_perpus">Terdapat Entitas yang tidak sesuai dengan database perpustakaan</string>
-    <string name="masalah3_perpus">Penggunaan Notasi E-R Diagram yang salah</string>
-    <string name="masalah4_perpus">Ketidakcocokan Relasi antar Entitas</string>
+    <string name="pertanyaan_perpus">Pilihlah beberapa permasalahan yang sesuai dengan paparan yang telah dijelaskan di awal</string>
+    <string name="masalah1_perpus">Banyak Atribut yang tidak sesuai di ERD Perpustakaan</string>
+    <string name="masalah2_perpus">Pengelola perpustakaan membutuhkan buku baru untuk perpustakaan</string>
+    <string name="masalah3_perpus">Banyak anggota yang sering terlambat mengembalikan buku pinjaman dari perpustakaan</string>
+    <string name="masalah4_perpus">Relasi antar Entitas Buku dan Anggota di ERD perpustakaan kurang tepat</string>
 
     <string name="solusi_perpus">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
-    <string name="solusi1_perpus">Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran</string>
-    <string name="solusi2_perpus">Ini Solusi 3</string>
-    <string name="solusi3_perpus">Solusi 4 mah</string>
-    <string name="solusi4_perpus">Yang ini 5 deh</string>
+    <string name="solusi1_perpus">Merencanakan ERD perpustakaan yang baru</string>
+    <string name="solusi2_perpus">Menghapus beberapa atribut dalam entitas Buku</string>
+    <string name="solusi3_perpus">Mengganti rasio kardinalitas pada relasi pinjam</string>
+    <string name="solusi4_perpus">Menambahkan entitas baru bernama Denda dan relasi bernama membayar yang terhubung ke atribut Siswa</string>
+
+    <string name="penyelesaian_perpus">Setelah dilakukan analisis permasalahan, maka ditambahkan entitas baru bernama Denda yang terhubung dengan entitas siswa dengan relasi bernama bayar.\n\nMaka dari itu, Lengkapi atribut dan rasio kardinalitas dalam ERD perputakaan berikut : </string>
+    <string name="primary_desc">Primary key merupakan pengidentifikasi suatu atribut yang paling unik dalam himpunan entitas, dan dalam ERD seringkali ditantadi dengan garis bawah</string>
+    <string name="denda_desc">Entitas Denda seharusnya memiliki atribut untuk mengetahui biaya denda dan juga berapa lama keterlambatan pengembalian buku</string>
+    <string name="bayar_desc">Atribut untuk relasi Bayar seharusnya menjelaskan tentang siapa saja yang perlu membayar denda dan juga berapa total yang harus dibayarkan</string>
+    <string name="rasio_desc">Rasio kardinalitas yang dipilih kurang tepat, cermati kembali antara atribut dan relasi yang bersangkutan</string>
+
     <!--End Kasus Perpustakaan-->
     <!--Kasus Sekolah-->
     <string name="pertanyaan_sekolah">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
@@ -197,26 +218,33 @@
     <string name="solusi4_sekolah">Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik</string>
 
     <string name="penyelesaian_sekolah">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
+    <string name="varchar_desc">Seharusnya menggunakan tipe data VARCHAR, karena tipe data VARCHAR digunakan untuk menyimpan karakter. Panjang String yang di input flexible sesuai dengan banyak karakter yang di input</string>
+    <string name="int_desc">Seharusnya menggunakan tipe data INT, karena tipe data INT digunakan untuk menyimpan nilai bilangan bulat desimal</string>
+    <string name="date_desc">Seharusnya menggunakan tipe data DATE, karena tipe data DATE digunakan untuk menyimpan keterangan berupa tanggal yang dimulai dari 1 Januari 4712 SM sampai 31 Desember 9999 M</string>
+    <!--End Kasus Sekolah-->
+
+    <!--Kasus Rumah Sakit-->
+    <string name="pertanyaan_rs">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
+    <string name="masalah1_rs">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
+    <string name="masalah2_rs">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
+    <string name="masalah3_rs">Tidak ada siswa yang mendaftar di SMP Harapan Bangsa</string>
+    <string name="masalah4_rs">SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik</string>
+
+    <string name="solusi_rs">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
+    <string name="solusi1_rs">Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran</string>
+    <string name="solusi2_rs">Mengoptimalkan sistem manajemen data yang sudah ada di SMP Harapan Bangsa</string>
+    <string name="solusi3_rs">Membuat database sekolah untuk memanajemen data siswa, guru dan tenaga non-pendidik</string>
+    <string name="solusi4_rs">Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik</string>
+
+    <string name="penyelesaian_rs">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
 
     <!--End Kasus Sekolah-->
+
     <string name="image">image</string>
     <string name="file"><b><i>File</i></b></string>
     <string name="record"><b><i>Record</i></b></string>
     <string name="field"><b><i>Field</i></b></string>
-    <string name="_1_internal_level">1. <i>Internal Level</i></string>
-    <string name="_2_conceptual_level">2. <i>Conceptual Level</i></string>
-    <string name="_3_view_level">3. <i>View Level</i></string>
-    <string name="atribut_tidak_harus_bernilai">9. Atribut Tidak Harus bernilai</string>
-    <string name="atribut_bernilai">8. Atribut Bernilai</string>
-    <string name="atribut_turunan">7. Atribut Turunan</string>
-    <string name="atribut_bernilai_tunggal">6. Atribut Bernilai Tunggal</string>
-    <string name="atribut_bernilai_banyak">5. Atribut Bernilai Banyak</string>
-    <string name="atribut_komposit">4. Atribut Komposit</string>
-    <string name="atribut_sederhana">3. Atribut Sederhana</string>
-    <string name="atribut_deskriptif">2. Atribut Deskriptif</string>
-    <string name="atribut_kunci">1. Atribut Kunci</string>
-    <string name="relasi_berdasarkan_derajatnya">Relasi Berdasarkan Derajatnya</string>
-    <string name="kardinalitas">Kardinalitas</string>
+
     <string name="quiz_hirarki_basis_data">Quiz Hirarki Basis Data</string>
 
     <string name="videoHirarki">ioNng23DkIM</string>
@@ -258,7 +286,8 @@
     <string name="pendidikan">Pendidikan</string>
     <string name="alamat">Alamat</string>
     <string name="nomor_hp">Nomor_HP</string>
-    <string name="varchar_desc">Seharusnya menggunakan tipe data VARCHAR, karena tipe data VARCHAR digunakan untuk menyimpan karakter. Panjang String yang di input flexible sesuai dengan banyak karakter yang di input</string>
-    <string name="int_desc">Seharusnya menggunakan tipe data INT, karena tipe data INT digunakan untuk menyimpan nilai bilangan bulat desimal</string>
-    <string name="date_desc">Seharusnya menggunakan tipe data DATE, karena tipe data DATE digunakan untuk menyimpan keterangan berupa tanggal yang dimulai dari 1 Januari 4712 SM sampai 31 Desember 9999 M</string>
+    <string name="video_pembelajaran_erd">Video Pembelajaran ERD</string>
+    <string name="nomor">Nomor</string>
+    <string name="jawaban">Jawaban</string>
+
 </resources>

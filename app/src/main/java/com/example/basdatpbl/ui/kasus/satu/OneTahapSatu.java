@@ -95,7 +95,7 @@ public class OneTahapSatu extends AppCompatActivity {
                 .getBoolean(PREF_KEY_FIRST_START, true);
 
         //set for first start (delete ! if you want use it first time only)
-        if (firstStart) {
+        if (!firstStart) {
             Intent intent = new Intent(this, OneIntro.class);
             startActivityForResult(intent, REQUEST_CODE_INTRO);
         }
@@ -132,47 +132,6 @@ public class OneTahapSatu extends AppCompatActivity {
                         StringBuilder false_header = new StringBuilder();
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
-//jawabannya ada di cb2
-//                        if(CbDua.isChecked() && CbSatu.isChecked()){
-//                            true_header.append("Jawabanmu hampir benar, ini pilihanmu :");
-//                            false_header.append("Seharusnya kamu tidak memilih jawaban ini :");
-//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
-//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
-//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
-//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
-//
-//                        }else if(CbDua.isChecked() &&  CbTiga.isChecked()){
-//                            true_header.append("Jawabanmu hampir benar, ini pilihanmu :");
-//                            false_header.append("Seharusnya kamu tidak memilih jawaban ini :");
-//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
-//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
-//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
-//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
-//
-//                        }else if(CbDua.isChecked() && CbEmpat.isChecked()){
-//                            true_header.append("Jawabanmu hampir benar, ini pilihanmu :");
-//                            false_header.append("Seharusnya kamu tidak memilih jawaban ini :");
-//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
-//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
-//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
-//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
-//
-//                        }else if (CbDua.isChecked()){
-//                            true_header.append("Selamat ! Jawaban kamu benar");
-//                            false_header.append("Berikut jawaban yang salah :");
-//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
-//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
-//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
-//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
-//                        }
-//                        else {
-//                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu memilih jawaban ini:");
-//                            false_header.append("Berikut jawaban yang salah :");
-//                            unchecked.append("> SMP Harapan Bangsa sistem manajemen yang kurang optimal\n");
-//                            result.append("> SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah \n");
-//                            unchecked.append("> Tidak ada siswa yang mendaftar di SMP Harapan Bangsa \n");
-//                            unchecked.append("> SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik \n");
-//                        }
 
                         if(CbSatu.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()){
                             true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih jawaban ini:");

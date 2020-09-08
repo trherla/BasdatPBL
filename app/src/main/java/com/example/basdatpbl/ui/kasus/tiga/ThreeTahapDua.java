@@ -27,15 +27,15 @@ public class ThreeTahapDua extends AppCompatActivity {
         CbDua = findViewById(R.id.cb_dua);
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
-        nxt = findViewById(R.id.button_perpus2);
+        nxt = findViewById(R.id.button_rs2);
 
         nxt.setVisibility(View.GONE);
 
-        Pertanyaan.setText(R.string.solusi_perpus);
-        CbSatu.setText(R.string.solusi1_perpus);
-        CbDua.setText(R.string.solusi2_perpus);
-        CbTiga.setText(R.string.solusi3_perpus);
-        CbEmpat.setText(R.string.solusi4_perpus);
+        Pertanyaan.setText(R.string.solusi_rs);
+        CbSatu.setText(R.string.solusi1_rs);
+        CbDua.setText(R.string.solusi2_rs);
+        CbTiga.setText(R.string.solusi3_rs);
+        CbEmpat.setText(R.string.solusi4_rs);
 
         CbSatu.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()) {

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_slider3"
     tools:context=".ui.kasus.dua.TwoTahapTiga"
     tools:ignore="ExtraText">
 
@@ -30,33 +31,48 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/penyelesaian_sekolah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_white"
+                android:elevation="4dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:text="@string/penyelesaian_sekolah"
+                android:textColor="@color/colorDark"
+                tools:ignore="MissingConstraints" />
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="320dp"
                 android:scaleType="fitCenter"
                 android:layout_gravity="center"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
                 android:layout_marginBottom="16dp"
-                android:contentDescription="@string/tahap4pbl"
-                android:src="@drawable/atribut_key"
-                app:layout_constraintTop_toBottomOf="@+id/jud_kasus" />
+                android:src="@drawable/jawab_erdperpus"
+                android:background="@drawable/bg_white"
+                app:layout_constraintTop_toBottomOf="@+id/jud_kasus"
+                tools:ignore="ContentDescription" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/bg_white"
-                android:layout_marginTop="16dp"
-                android:padding="12dp">
+                android:padding="8dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
-                    android:background="@color/colorDark"
-                    />
+                    android:text="1."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
+
                 <Spinner
                     android:id="@+id/spinnerA"
                     android:layout_width="match_parent"
@@ -64,40 +80,48 @@
                     android:layout_marginStart="16dp"
                     android:spinnerMode="dialog" />
             </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:background="@drawable/bg_white"
-               android:layout_marginTop="16dp"
-              android:padding="12dp">
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginStart="16dp"
-                   android:paddingStart="10dp"
-                   android:paddingEnd="10dp"
-                   android:background="@color/colorPrimary"/>
 
-               <Spinner
-                   android:id="@+id/spinnerB"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_marginStart="16dp"
-                   android:spinnerMode="dialog" />
-           </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/bg_white"
-                android:layout_marginTop="16dp"
-               android:padding="12dp">
+                android:padding="8dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:text="2."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_white"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="3."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
 
                 <Spinner
                     android:id="@+id/spinnerC"
@@ -106,19 +130,23 @@
                     android:layout_marginStart="16dp"
                     android:spinnerMode="dialog" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/bg_white"
-                android:layout_marginTop="16dp"
-                android:padding="12dp">
+                android:padding="8dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
-                    android:background="@color/red2"/>
+                    android:text="4."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
 
                 <Spinner
                     android:id="@+id/spinnerD"
@@ -127,22 +155,101 @@
                     android:layout_marginStart="16dp"
                     android:spinnerMode="dialog" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:background="@drawable/bg_white"
-                android:layout_marginTop="16dp"
-                android:padding="12dp">
+                android:padding="8dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
-                    android:background="@color/colorAccent"/>
+                    android:text="5."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
 
                 <Spinner
                     android:id="@+id/spinnerE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_white"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="6."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_white"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="7."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerG"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_white"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="8."
+                    android:textColor="@color/color_darkprime"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerH"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -159,7 +266,8 @@
                 android:elevation="4dp"
                 android:background="@drawable/bg_next"
                 android:src="@drawable/next"
-                android:textColor="@color/color_darkprime" />
+                android:textColor="@color/color_darkprime"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
     </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

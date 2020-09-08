@@ -1,5 +1,6 @@
 package com.example.basdatpbl.ui.kasus.satu;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -157,53 +158,64 @@ public class OneTahapTiga extends AppCompatActivity implements AdapterView.OnIte
         spinAdapterQ.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerQ.setAdapter(spinAdapterQ);
 
-
         next.setOnClickListener(v -> {
-            Intent selesai = new Intent(getApplicationContext(), OneTahapEmpat.class);
+            AlertDialog.Builder dial = new AlertDialog.Builder(this);
+//            dial.setTitle("Yakin?");
+            dial.setMessage("Yakin dengan jawaban anda")
+                    .setPositiveButton("Ya", (dialog, which) -> {
+                        Intent selesai = new Intent(getApplicationContext(), OneTahapEmpat.class);
 //receive value from activity one and two
 
-            Intent i = getIntent();
-            String r_satu = i.getStringExtra("resultSatu");
-            String u_satu = i.getStringExtra("unSatu");
-            String th_satu = i.getStringExtra("thSatu");
-            String fh_satu = i.getStringExtra("fhSatu");
+                        Intent i = getIntent();
+                        String r_satu = i.getStringExtra("resultSatu");
+                        String u_satu = i.getStringExtra("unSatu");
+                        String th_satu = i.getStringExtra("thSatu");
+                        String fh_satu = i.getStringExtra("fhSatu");
 
-            String r_dua = i.getStringExtra("resultDua");
-            String u_dua = i.getStringExtra("unDua");
-            String th_dua = i.getStringExtra("thDua");
-            String fh_dua = i.getStringExtra("fhDua");
+                        String r_dua = i.getStringExtra("resultDua");
+                        String u_dua = i.getStringExtra("unDua");
+                        String th_dua = i.getStringExtra("thDua");
+                        String fh_dua = i.getStringExtra("fhDua");
 
-            selesai.putExtra("resultSatu", r_satu);
-            selesai.putExtra("unSatu", u_satu);
-            selesai.putExtra("thSatu", th_satu);
-            selesai.putExtra("fhSatu", fh_satu);
+                        selesai.putExtra("resultSatu", r_satu);
+                        selesai.putExtra("unSatu", u_satu);
+                        selesai.putExtra("thSatu", th_satu);
+                        selesai.putExtra("fhSatu", fh_satu);
 
-            selesai.putExtra("resultDua", r_dua);
-            selesai.putExtra("unDua", u_dua);
-            selesai.putExtra("thDua", th_dua);
-            selesai.putExtra("fhDua", fh_dua);
+                        selesai.putExtra("resultDua", r_dua);
+                        selesai.putExtra("unDua", u_dua);
+                        selesai.putExtra("thDua", th_dua);
+                        selesai.putExtra("fhDua", fh_dua);
 
-            selesai.putExtra("spinA", String.valueOf(spinnerA.getSelectedItem()));
-            selesai.putExtra("spinB", String.valueOf(spinnerB.getSelectedItem()));
-            selesai.putExtra("spinC", String.valueOf(spinnerC.getSelectedItem()));
-            selesai.putExtra("spinD", String.valueOf(spinnerD.getSelectedItem()));
-            selesai.putExtra("spinE", String.valueOf(spinnerE.getSelectedItem()));
-            selesai.putExtra("spinF", String.valueOf(spinnerF.getSelectedItem()));
-            selesai.putExtra("spinG", String.valueOf(spinnerG.getSelectedItem()));
-            selesai.putExtra("spinH", String.valueOf(spinnerH.getSelectedItem()));
-            selesai.putExtra("spinI", String.valueOf(spinnerI.getSelectedItem()));
-            selesai.putExtra("spinJ", String.valueOf(spinnerJ.getSelectedItem()));
-            selesai.putExtra("spinK", String.valueOf(spinnerK.getSelectedItem()));
-            selesai.putExtra("spinL", String.valueOf(spinnerL.getSelectedItem()));
-            selesai.putExtra("spinM", String.valueOf(spinnerM.getSelectedItem()));
-            selesai.putExtra("spinN", String.valueOf(spinnerN.getSelectedItem()));
-            selesai.putExtra("spinO", String.valueOf(spinnerO.getSelectedItem()));
-            selesai.putExtra("spinP", String.valueOf(spinnerP.getSelectedItem()));
-            selesai.putExtra("spinQ", String.valueOf(spinnerQ.getSelectedItem()));
+                        selesai.putExtra("spinA", String.valueOf(spinnerA.getSelectedItem()));
+                        selesai.putExtra("spinB", String.valueOf(spinnerB.getSelectedItem()));
+                        selesai.putExtra("spinC", String.valueOf(spinnerC.getSelectedItem()));
+                        selesai.putExtra("spinD", String.valueOf(spinnerD.getSelectedItem()));
+                        selesai.putExtra("spinE", String.valueOf(spinnerE.getSelectedItem()));
+                        selesai.putExtra("spinF", String.valueOf(spinnerF.getSelectedItem()));
+                        selesai.putExtra("spinG", String.valueOf(spinnerG.getSelectedItem()));
+                        selesai.putExtra("spinH", String.valueOf(spinnerH.getSelectedItem()));
+                        selesai.putExtra("spinI", String.valueOf(spinnerI.getSelectedItem()));
+                        selesai.putExtra("spinJ", String.valueOf(spinnerJ.getSelectedItem()));
+                        selesai.putExtra("spinK", String.valueOf(spinnerK.getSelectedItem()));
+                        selesai.putExtra("spinL", String.valueOf(spinnerL.getSelectedItem()));
+                        selesai.putExtra("spinM", String.valueOf(spinnerM.getSelectedItem()));
+                        selesai.putExtra("spinN", String.valueOf(spinnerN.getSelectedItem()));
+                        selesai.putExtra("spinO", String.valueOf(spinnerO.getSelectedItem()));
+                        selesai.putExtra("spinP", String.valueOf(spinnerP.getSelectedItem()));
+                        selesai.putExtra("spinQ", String.valueOf(spinnerQ.getSelectedItem()));
 
 
-            startActivity(selesai);
+                        startActivity(selesai);
+                    })
+                    .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());
+            dial.create();
+            dial.show();
         });
+
+
+
+
 
 
     }

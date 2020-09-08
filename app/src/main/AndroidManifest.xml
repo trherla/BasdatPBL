@@ -5,12 +5,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/basdatpbl_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/basdatpbl_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ui.materi.hirarki.Tabs5Hirarki" />
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true">
+        <activity android:name=".ui.materi.hirarki.Tabs5Hirarki"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".ui.materi.hirarki.VideoPlayerHirarki"
             android:screenOrientation="landscape"
@@ -65,6 +67,9 @@
         <activity
             android:name=".ui.kasus.dua.TwoTahapEmpat"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.dua.TwoTahapEmpat_2"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ui.kasus.dua.TwoTahapTiga"
             android:theme="@style/AppTheme.NoActionBar" />
