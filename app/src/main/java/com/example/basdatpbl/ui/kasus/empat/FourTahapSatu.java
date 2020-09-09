@@ -38,11 +38,11 @@ public class FourTahapSatu extends AppCompatActivity {
 
         nxt.setVisibility(View.GONE);
 
-        Pertanyaan.setText(R.string.pertanyaan_sekolah);
-        CbSatu.setText(R.string.masalah1_sekolah);
-        CbDua.setText(R.string.masalah2_sekolah);
-        CbTiga.setText(R.string.masalah3_sekolah);
-        CbEmpat.setText(R.string.masalah4_sekolah);
+        Pertanyaan.setText(R.string.pertanyaan_toko);
+        CbSatu.setText(R.string.masalah1_toko);
+        CbDua.setText(R.string.masalah2_toko);
+        CbTiga.setText(R.string.masalah3_toko);
+        CbEmpat.setText(R.string.masalah4_toko);
 
 
 

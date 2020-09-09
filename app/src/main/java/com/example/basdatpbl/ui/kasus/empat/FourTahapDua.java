@@ -30,11 +30,11 @@ public class FourTahapDua extends AppCompatActivity {
 
         nxt.setVisibility(View.GONE);
 
-        Pertanyaan.setText(R.string.solusi_perpus);
-        CbSatu.setText(R.string.solusi1_perpus);
-        CbDua.setText(R.string.solusi2_perpus);
-        CbTiga.setText(R.string.solusi3_perpus);
-        CbEmpat.setText(R.string.solusi4_perpus);
+        Pertanyaan.setText(R.string.solusi_toko);
+        CbSatu.setText(R.string.solusi1_toko);
+        CbDua.setText(R.string.solusi2_toko);
+        CbTiga.setText(R.string.solusi3_toko);
+        CbEmpat.setText(R.string.solusi4_toko);
 
         CbSatu.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()) {

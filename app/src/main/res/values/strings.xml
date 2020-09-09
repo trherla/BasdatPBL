@@ -184,6 +184,24 @@
     <string name="tahap3pbl">Perencanaan Penyelesaian</string>
     <string name="tahap4pbl">Pelaksanaan Rencana</string>
     <string name="tahap5pbl">Evaluasi</string>
+
+
+    <!--Kasus Toko-->
+    <string name="pertanyaan_toko">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
+    <string name="masalah1_toko">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
+    <string name="masalah2_toko">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
+    <string name="masalah3_toko">Tidak ada siswa yang mendaftar di SMP Harapan Bangsa</string>
+    <string name="masalah4_toko">SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik</string>
+
+    <string name="solusi_toko">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
+    <string name="solusi1_toko">Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran</string>
+    <string name="solusi2_toko">Mengoptimalkan sistem manajemen data yang sudah ada di SMP Harapan Bangsa</string>
+    <string name="solusi3_toko">Membuat database sekolah untuk memanajemen data siswa, guru dan tenaga non-pendidik</string>
+    <string name="solusi4_toko">Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik</string>
+
+    <string name="penyelesaian_toko">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
+    <!--End Kasus Toko-->
+
     <!--Kasus Perpustakaan-->
     <string name="pertanyaan_perpus">Pilihlah beberapa permasalahan yang sesuai dengan paparan yang telah dijelaskan di awal</string>
     <string name="masalah1_perpus">Banyak Atribut yang tidak sesuai di ERD Perpustakaan</string>
@@ -225,16 +243,16 @@
 
     <!--Kasus Rumah Sakit-->
     <string name="pertanyaan_rs">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
-    <string name="masalah1_rs">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
-    <string name="masalah2_rs">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
-    <string name="masalah3_rs">Tidak ada siswa yang mendaftar di SMP Harapan Bangsa</string>
-    <string name="masalah4_rs">SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik</string>
+    <string name="masalah1_rs">Operasi dilaksanakan tiap hari </string>
+    <string name="masalah2_rs">Dokter melakukan operasi pada waktu yang sudah ditentukan</string>
+    <string name="masalah3_rs">Beberapa dokter bertanggung jawab pada satu operasi pasien</string>
+    <string name="masalah4_rs">Dokter bisa ditugaskan pada banyak operasi</string>
 
     <string name="solusi_rs">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
-    <string name="solusi1_rs">Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran</string>
-    <string name="solusi2_rs">Mengoptimalkan sistem manajemen data yang sudah ada di SMP Harapan Bangsa</string>
-    <string name="solusi3_rs">Membuat database sekolah untuk memanajemen data siswa, guru dan tenaga non-pendidik</string>
-    <string name="solusi4_rs">Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik</string>
+    <string name="solusi1_rs">Menentukan ketergantungan dependensi berdasarkan tabel dan analisa permasalahan dari tahap sebelumnya</string>
+    <string name="solusi2_rs">Membuat tabel dan atribut baru untuk memudahkan menentukan ketergantungan fungsional dari operasi yang dilakukan dokter</string>
+    <string name="solusi3_rs">Menambahkan atribut pengawas sebagai pengamat dokter yang sedang melakukan operasi</string>
+    <string name="solusi4_rs">Menghapus atribut tanggal agar tidak terjadi redundansi dan memudahkan menentukan ketergantungan fungsional tabel operasi</string>
 
     <string name="penyelesaian_rs">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
 
@@ -289,5 +307,9 @@
     <string name="video_pembelajaran_erd">Video Pembelajaran ERD</string>
     <string name="nomor">Nomor</string>
     <string name="jawaban">Jawaban</string>
+    <string name="FD"><![CDATA[->]]></string>
+    <string name="video_pembelajaran_hirarki_basis_data">Video Pembelajaran Hirarki Basis Data</string>
+    <string name="video_pembelajaran_ketergantungan_fungsional">Video Pembelajaran Ketergantungan Fungsional</string>
+    <string name="video_pembelajaran_normalisasi">Video Pembelajaran Normalisasi</string>
 
 </resources>

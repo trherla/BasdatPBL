@@ -29,9 +29,7 @@ public class ThreeIntro extends IntroActivity {
         setButtonCtaLabel(label);
 
         setPageScrollDuration(500);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            setPageScrollInterpolator(android.R.interpolator.fast_out_slow_in);
-        }
+        setPageScrollInterpolator(android.R.interpolator.fast_out_slow_in);
 
         addSlide(new SimpleSlide.Builder()
                 .title("Kasus Tiga")
@@ -44,39 +42,47 @@ public class ThreeIntro extends IntroActivity {
 
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
-                .description("Kasus Tiga")
+                .description("Kamu adalah siswa jurusan Rekayasa Perangkat Lunak yang sedang magang di bagian IT Rumah Sakit Swasta")
 //                .image(R.drawable.ic_device_hub_black_24dp)
                 .background(R.color.yellow4)
                 .backgroundDark(R.color.white)
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
-                .description("Kasus Tiga")
+                .description("Tugas pertama yang diberikan penanggung jawabmu adalah menentukan Ketergantungan Fungsional dari kegiatan operasi yang ada di RS ini")
 //                .image(R.drawable.ic_device_hub_black_24dp)
                 .background(R.color.yellow3)
                 .backgroundDark(R.color.white)
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
-                .description("Kasus Tiga")
+                .description("Setelah kamu analisa dan mengamati jadwal operasi di RS ini kamu mendapat beberapa informasi")
 //                .image(R.drawable.ic_device_hub_black_24dp)
                 .background(R.color.yellow4)
                 .backgroundDark(R.color.white)
                 .build());
-        addSlide(new SimpleSlide.Builder()
-//                .title("Basis Data")
-                .description("Kasus Tiga")
-//                .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.yellow3)
-                .backgroundDark(R.color.white)
-                .build());
+//        addSlide(new SimpleSlide.Builder()
+////                .title("Basis Data")
+//                .description("1. Kamu mengasumsikan dokter melakukan operasi pada tanggal yang telah ditentukan\n2. Operasi dilaksanakan tiap hari")
+////                .image(R.drawable.ic_device_hub_black_24dp)
+//                .background(R.color.yellow3)
+//                .backgroundDark(R.color.white)
+//                .build());
+//        addSlide(new SimpleSlide.Builder()
+////                .title("Kuis")
+//                .description("3. Seorang dokter bertanggung jawab pada operasi yang diberikan\n4. Dokter bisa ditugaskan pada banyak operasi")
+////                .image(R.drawable.ic_assignment_turned_in_black_24dp)
+//                .background(R.color.yellow4)
+//                .backgroundDark(R.color.white)
+//                .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Kuis")
-                .description("Kasus Tiga")
-//                .image(R.drawable.ic_assignment_turned_in_black_24dp)
+                .description("Hasil pengamatanmu tadi kamu ubah menjadi sebuah tabel, dan menghasilkan tabel seperti ini")
+                .image(R.drawable.kasus_tabelrs)
                 .background(R.color.yellow4)
                 .backgroundDark(R.color.white)
                 .build());
+
 
         autoplay(2500, INFINITE);
 

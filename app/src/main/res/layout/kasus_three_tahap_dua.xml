@@ -4,103 +4,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="32dp"
+    android:background="@drawable/bg_slider3"
     tools:context=".ui.kasus.dua.TwoTahapDua">
 
-    <TextView
-        android:id="@+id/jud_kasus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_pertanyaan"
-        android:padding="12dp"
-        android:textSize="16sp"
-        android:text="@string/tahap3pbl"
-        android:textColor="@color/mi_icon_color_dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/pertayaan_kasus"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/jud_kasus"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_pertanyaan"
-        android:padding="20dp"
-        android:textColor="@color/mi_icon_color_dark"
-        android:textSize="16sp"
-        android:lineSpacingMultiplier="1.5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jud_kasus"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="32dp">
+            <TextView
+                android:id="@+id/jud_kasus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pertanyaan"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:text="@string/tahap3pbl"
+                android:textColor="@color/mi_icon_color_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
-    <CheckBox
-        android:id="@+id/cb_satu"
+            <TextView
+                android:id="@+id/pertayaan_kasus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_pertanyaan"
+                android:padding="20dp"
+                android:textColor="@color/mi_icon_color_dark"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jud_kasus"
+                tools:ignore="MissingConstraints" />
+
+            <CheckBox
+                android:id="@+id/cb_satu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.25"
+                android:background="@drawable/bg_white" />
+
+            <CheckBox
+                android:id="@+id/cb_dua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.25"
+                android:background="@drawable/bg_white" />
+
+            <CheckBox
+                android:id="@+id/cb_tiga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.25"
+                android:background="@drawable/bg_white" />
+
+            <CheckBox
+                android:id="@+id/cb_empat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="80dp"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.25"
+                android:background="@drawable/bg_white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:padding="16dp"
-        android:textSize="16sp"
-        android:lineSpacingMultiplier="1.25"
-        android:background="@drawable/bg_white"
-        app:layout_constraintStart_toStartOf="@+id/cb_dua"
-        app:layout_constraintTop_toBottomOf="@+id/pertayaan_kasus" />
-
-    <CheckBox
-        android:id="@+id/cb_dua"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:padding="16dp"
-        android:textSize="16sp"
-        android:lineSpacingMultiplier="1.25"
-        android:background="@drawable/bg_white"
-        app:layout_constraintStart_toStartOf="@+id/cb_tiga"
-        app:layout_constraintTop_toBottomOf="@+id/cb_satu" />
-
-    <CheckBox
-        android:id="@+id/cb_tiga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:padding="16dp"
-        android:textSize="16sp"
-        android:lineSpacingMultiplier="1.25"
-        android:background="@drawable/bg_white"
-        app:layout_constraintStart_toStartOf="@+id/cb_empat"
-        app:layout_constraintTop_toBottomOf="@+id/cb_dua" />
-
-    <CheckBox
-        android:id="@+id/cb_empat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:padding="16dp"
-        android:textSize="16sp"
-        android:lineSpacingMultiplier="1.25"
-        android:background="@drawable/bg_white"
-        app:layout_constraintEnd_toEndOf="@+id/cb_tiga"
-        app:layout_constraintTop_toBottomOf="@+id/cb_tiga" />
-
-    <ImageButton
-        android:id="@+id/button_rs2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/bg_next"
-        android:elevation="4dp"
-        android:onClick="next"
-        android:src="@drawable/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="ContentDescription" />
+        android:layout_height="match_parent"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        tools:ignore="RtlSymmetry">
+        <ImageButton
+            android:id="@+id/button_rs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_next"
+            android:elevation="4dp"
+            android:onClick="next"
+            android:src="@drawable/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

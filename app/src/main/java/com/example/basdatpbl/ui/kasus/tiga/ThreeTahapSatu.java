@@ -132,28 +132,20 @@ public class ThreeTahapSatu extends AppCompatActivity {
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
 //jawabannya ada di cb1 dan cb4
-                        if (CbSatu.isChecked() && CbEmpat.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+                        if (CbTiga.isChecked() ){
+                            true_header.append("Pilihanmu salah pada tahap ini");
+                            false_header.append("Berikut jawaban yang Benar :");
+                            unchecked.append("> Operasi dilaksanakan tiap hari \n");
+                            unchecked.append("> Dokter melakukan operasi pada waktu yang sudah ditentukan\n");
+                            result.append("> Beberapa dokter bertanggung jawab pada satu operasi \n");
+                            unchecked.append("> Dokter bisa ditugaskan pada banyak operasi \n");
+                        }else if (CbSatu.isChecked() && CbDua.isChecked() && CbEmpat.isChecked()){
+                            true_header.append("Selamat ! Jawaban kamu benar");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else if (CbEmpat.isChecked()){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut jawaban yang seharusnya dipilih");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
+                            result.append("> Operasi dilaksanakan tiap hari \n");
+                            result.append("> Dokter melakukan operasi pada waktu yang sudah ditentukan\n");
+                            unchecked.append("> Beberapa dokter bertanggung jawab pada satu operasi \n");
+                            result.append("> Dokter bisa ditugaskan pada banyak operasi \n");
                         }
 
                         String th_satu = true_header.toString();

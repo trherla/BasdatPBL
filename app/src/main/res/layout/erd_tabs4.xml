@@ -32,245 +32,218 @@
                     android:textColor="@color/color_darkprime"
                     android:text="@string/er1"/>
 
-                <LinearLayout
-                    android:id="@+id/lay1"
+
+                <!--Expendable 1-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/relasi_berdasarkan_derajatnya"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
-
-                            android:orientation="vertical">
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/bg_white"
-                                android:layout_marginTop="8dp"
-                                android:elevation="4dp"
-                                android:padding="8dp"
-                                android:orientation="vertical">
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:lineSpacingMultiplier="1.5"
-                                    android:textSize="16sp"
-                                    android:textColor="@color/color_darkprime"
-                                    android:text="@string/er5"/>
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="80dp"
-                                    android:scaleType="fitCenter"
-                                    android:src="@drawable/unary"
-                                    tools:ignore="ContentDescription" />
-                            </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/bg_white"
-                            android:elevation="4dp"
-                            android:padding="8dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:lineSpacingMultiplier="1.5"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/er52"/>
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/binary"
-                                tools:ignore="ContentDescription" />
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bg_white"
-                            android:layout_marginTop="8dp"
-                            android:elevation="4dp"
-                            android:padding="8dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:lineSpacingMultiplier="1.5"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/er53"/>
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/ternary"
-                                tools:ignore="ContentDescription" />
-                        </LinearLayout>
-
-
-
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
-
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay2"
-                    android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader"
                     android:layout_marginTop="8dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/kardinalitas"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator"
+                    app:expansion_layout="@id/expansionLayout"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen2"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_centerVertical="true"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
-
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/er11"/>
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/bg_white"
-                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:text="@string/relasi_berdasarkan_derajatnya"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
                             android:elevation="4dp"
-                            android:padding="8dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:lineSpacingMultiplier="1.5"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/er2"/>
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="100dp"
-                                android:src="@drawable/ono"
-                                tools:ignore="ContentDescription" />
-                        </LinearLayout>
+                            android:layout_marginBottom="4dp" />
 
-                        <LinearLayout
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_white"
-                            android:layout_marginTop="8dp"
-                            android:elevation="4dp"
-                            android:padding="8dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:lineSpacingMultiplier="1.5"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/er3"/>
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="100dp"
-                                android:src="@drawable/onm"
-                                tools:ignore="ContentDescription" />
-                        </LinearLayout>
-
-                        <LinearLayout
+                            android:layout_marginTop="-12dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime"
+                            android:text="@string/er5"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/unary"
+                            tools:ignore="ContentDescription" />
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/bg_white"
-                            android:layout_marginTop="8dp"
-                            android:elevation="4dp"
+                            android:lineSpacingMultiplier="1.5"
                             android:padding="8dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:lineSpacingMultiplier="1.5"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/er4"/>
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="100dp"
-                                android:src="@drawable/mnm"
-                                tools:ignore="ContentDescription" />
-                        </LinearLayout>
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime"
+                            android:text="@string/er52"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/binary"
+                            tools:ignore="ContentDescription" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.5"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime"
+                            android:text="@string/er53"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ternary"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                <!--Expendable 2-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader2"
+                    android:layout_marginTop="8dp"
+                    app:expansion_headerIndicator="@id/headerIndicator2"
+                    app:expansion_layout="@id/expansionLayout2"
+                    app:expansion_toggleOnClick="true">
 
-                </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/kardinalitas"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout2"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-12dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime"
+                            android:text="@string/er2"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/ono"
+                            tools:ignore="ContentDescription" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.5"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime"
+                            android:text="@string/er3"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/onm"
+                            tools:ignore="ContentDescription" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.5"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime"
+                            android:text="@string/er4"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@drawable/mnm"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionLayout>
+
 
 
                 <TextView

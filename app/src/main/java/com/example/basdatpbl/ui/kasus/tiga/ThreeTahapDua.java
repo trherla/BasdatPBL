@@ -89,28 +89,20 @@ public class ThreeTahapDua extends AppCompatActivity {
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
 
-                        if (CbSatu.isChecked() && CbDua.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+                        if (CbSatu.isChecked() ){
+                            true_header.append("Selamat ! Jawaban kamu benar");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbDua.isChecked()){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            result.append("> Menentukan ketergantungan dependensi berdasarkan tabel dan analisa permasalahan dari tahap sebelumnya \n");
+                            unchecked.append("> Membuat tabel dan atribut baru untuk memudahkan menentukan ketergantungan fungsional dari operasi yang dilakukan dokter\n");
+                            unchecked.append("> Menambahkan atribut pengawas sebagai pengamat dokter yang sedang melakukan operasi \n");
+                            unchecked.append("> Menghapus atribut tanggal agar tidak terjadi redundansi dan memudahkan menentukan ketergantungan fungsional tabel operasi \n");
                         }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut solusi yang seharusnya dipilih");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih solusi ini:");
+                            false_header.append("Berikut solusi yang kurang tepat untuk dipilih");
+                            result.append("> Menentukan ketergantungan dependensi berdasarkan tabel dan analisa permasalahan dari tahap sebelumnya \n");
+                            unchecked.append("> Membuat tabel dan atribut baru untuk memudahkan menentukan ketergantungan fungsional dari operasi yang dilakukan dokter\n");
+                            unchecked.append("> Menambahkan atribut pengawas sebagai pengamat dokter yang sedang melakukan operasi \n");
+                            unchecked.append("> Menghapus atribut tanggal agar tidak terjadi redundansi dan memudahkan menentukan ketergantungan fungsional tabel operasi \n");
                         }
 
                         String r_dua = result.toString();

@@ -48,305 +48,464 @@
                     android:background="@drawable/bg_white"
                     android:elevation="2dp"
                     android:text="@string/definisiBasisData"/>
-
-                <TextView
-                    android:layout_width="match_parent"
+                <com.github.florent37.expansionpanel.ExpansionHeader
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:padding="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_darkprime"
-                    android:background="@drawable/bg_expand"
-                    android:elevation="2dp"
-                    android:text="@string/komponen_basis_data"/>
-                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader"
+                    android:layout_marginTop="8dp"
+                    app:expansion_headerIndicator="@id/headerIndicator"
+                    app:expansion_layout="@id/expansionLayout"
+                    app:expansion_toggleOnClick="true">
+
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/komponen_basis_data"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="8dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/komponen"/>
+
+                    </LinearLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionLayout>
+
+<!--                Dua-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader2"
+                    android:layout_marginTop="8dp"
+                    app:expansion_headerIndicator="@id/headerIndicator2"
+                    app:expansion_layout="@id/expansionLayout2"
+                    app:expansion_toggleOnClick="true">
+
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/tujuan_penggunaan_basis_data"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout2"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container2"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cview1"
+                                android:layout_width="108dp"
+                                android:layout_height="240dp"
+                                android:layout_marginStart="8dp"
+                                app:cardElevation="4dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:padding="8dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/fast" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="96dp"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/kecepatan"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/color_darkprime" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cview2"
+                                android:layout_width="108dp"
+                                android:layout_height="240dp"
+                                app:cardElevation="4dp"
+                                app:layout_constraintEnd_toStartOf="@+id/cview3"
+                                app:layout_constraintStart_toEndOf="@+id/cview1"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:padding="8dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/save" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="96dp"
+
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/efisiensi"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/color_darkprime" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cview3"
+                                android:layout_width="108dp"
+                                android:layout_height="240dp"
+                                android:layout_marginEnd="8dp"
+                                app:cardElevation="4dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:padding="8dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/accuracy" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="96dp"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/keakuratan"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/color_darkprime" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cview4"
+                                android:layout_width="108dp"
+                                android:layout_height="240dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="16dp"
+                                app:cardElevation="4dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/cview1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:padding="8dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/hand" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="96dp"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/ketersediaan"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/color_darkprime" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cview5"
+                                android:layout_width="108dp"
+                                android:layout_height="240dp"
+                                android:layout_marginTop="16dp"
+                                app:cardElevation="4dp"
+                                app:layout_constraintEnd_toStartOf="@+id/cview6"
+                                app:layout_constraintStart_toEndOf="@+id/cview4"
+                                app:layout_constraintTop_toBottomOf="@+id/cview2">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:padding="8dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/padlock" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="96dp"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/keamanan"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/color_darkprime" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cview6"
+                                android:layout_width="108dp"
+                                android:layout_height="240dp"
+                                android:layout_marginTop="16dp"
+                                android:layout_marginEnd="8dp"
+                                app:cardElevation="4dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/cview3">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <androidx.appcompat.widget.AppCompatImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="80dp"
+                                        android:padding="8dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/share" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="96dp"
+                                        android:layout_marginBottom="10dp">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/kebersamaan"
+                                            android:textAlignment="center"
+                                            android:textColor="@color/color_darkprime" />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionLayout>
+
+<!--                Tiga-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader3"
+                    android:layout_marginTop="8dp"
+                    app:expansion_headerIndicator="@id/headerIndicator3"
+                    app:expansion_layout="@id/expansionLayout3"
+                    app:expansion_toggleOnClick="true">
+
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/pengguna_basis_data"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout3"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/user"/>
+
+                    </LinearLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:padding="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
                     android:background="@drawable/bg_white"
-                    android:elevation="2dp"
-                    android:text="@string/komponen"/>
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/button_vid"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/playvid"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/bg_white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/color_darkprime"
+                        android:text="@string/video_pembelajaran_hirarki_basis_data"/>
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:padding="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_darkprime"
-                    android:background="@drawable/bg_expand"
-                    android:elevation="2dp"
-                    android:text="@string/tujuan_penggunaan_basis_data"/>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp">
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cview1"
-                        android:layout_width="108dp"
-                        android:layout_height="240dp"
-                        android:layout_marginStart="8dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <androidx.appcompat.widget.AppCompatImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:padding="8dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/fast" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="96dp"
-                                android:layout_marginBottom="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/kecepatan"
-                                    android:textAlignment="center"
-                                    android:textColor="@color/color_darkprime" />
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cview2"
-                        android:layout_width="108dp"
-                        android:layout_height="240dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintEnd_toStartOf="@+id/cview3"
-                        app:layout_constraintStart_toEndOf="@+id/cview1"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <androidx.appcompat.widget.AppCompatImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:padding="8dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/save" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="96dp"
-
-                                android:layout_marginBottom="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/efisiensi"
-                                    android:textAlignment="center"
-                                    android:textColor="@color/color_darkprime" />
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cview3"
-                        android:layout_width="108dp"
-                        android:layout_height="240dp"
-                        android:layout_marginEnd="8dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <androidx.appcompat.widget.AppCompatImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:padding="8dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/accuracy" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="96dp"
-                                android:layout_marginBottom="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/keakuratan"
-                                    android:textAlignment="center"
-                                    android:textColor="@color/color_darkprime" />
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cview4"
-                        android:layout_width="108dp"
-                        android:layout_height="240dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="16dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cview1">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <androidx.appcompat.widget.AppCompatImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:padding="8dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/hand" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="96dp"
-                                android:layout_marginBottom="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/ketersediaan"
-                                    android:textAlignment="center"
-                                    android:textColor="@color/color_darkprime" />
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cview5"
-                        android:layout_width="108dp"
-                        android:layout_height="240dp"
-                        android:layout_marginTop="16dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintEnd_toStartOf="@+id/cview6"
-                        app:layout_constraintStart_toEndOf="@+id/cview4"
-                        app:layout_constraintTop_toBottomOf="@+id/cview2">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <androidx.appcompat.widget.AppCompatImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:padding="8dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/padlock" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="96dp"
-                                android:layout_marginBottom="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/keamanan"
-                                    android:textAlignment="center"
-                                    android:textColor="@color/color_darkprime" />
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/cview6"
-                        android:layout_width="108dp"
-                        android:layout_height="240dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="8dp"
-                        app:cardElevation="4dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/cview3">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <androidx.appcompat.widget.AppCompatImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="80dp"
-                                android:padding="8dp"
-                                android:scaleType="fitCenter"
-                                android:src="@drawable/share" />
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="96dp"
-                                android:layout_marginBottom="10dp">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/kebersamaan"
-                                    android:textAlignment="center"
-                                    android:textColor="@color/color_darkprime" />
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:padding="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/color_darkprime"
-                    android:background="@drawable/bg_expand"
-                    android:elevation="2dp"
-                    android:text="@string/pengguna_basis_data"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:padding="8dp"
-                    android:lineSpacingMultiplier="1.5"
-                    android:textSize="16sp"
-                    android:textColor="@color/color_darkprime"
-                    android:background="@drawable/bg_white"
-                    android:elevation="2dp"
-                    android:text="@string/user"/>
-                <androidx.appcompat.widget.AppCompatImageButton
-                    android:id="@+id/button_vid"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:padding="16dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/video2"
-                    android:scaleType="fitCenter"
-                    android:background="@drawable/bg_slider2"
-                    />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

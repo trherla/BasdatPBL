@@ -33,553 +33,677 @@
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ea1"/>
 
-
-                <LinearLayout
-                    android:id="@+id/lay1"
+                <!--Expendable 1-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:id="@+id/sampleHeader"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_kunci"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator"
+                    app:expansion_layout="@id/expansionLayout"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen1"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_kunci"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
-                            android:orientation="vertical"
-                            tools:ignore="UseCompoundDrawables">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea31"/>
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea31"/>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="240dp"
+                            android:padding="8dp"
+                            android:background="@drawable/bg_white"
+                            android:src="@drawable/atribut_key"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="240dp"
-                                android:padding="8dp"
-                                android:background="@drawable/bg_white"
-                                android:src="@drawable/atribut_key"
-                                tools:ignore="ContentDescription" />
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay2"
+                <!--Expendable 2-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:id="@+id/sampleHeader2"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_deskriptif"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator2"
+                    app:expansion_layout="@id/expansionLayout2"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen2"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_deskriptif"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout2"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea32"/>
 
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea32"/>
+                    </LinearLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay3"
+                <!--Expendable 3-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:id="@+id/sampleHeader3"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_sederhana"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator3"
+                    app:expansion_layout="@id/expansionLayout3"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen3"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_sederhana"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator3"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout3"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container3"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea33"/>
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea33"/>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                    </LinearLayout>
 
-                </RelativeLayout>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                <LinearLayout
-                    android:id="@+id/lay4"
+                <!--Expendable 4-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:id="@+id/sampleHeader4"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_komposit"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator4"
+                    app:expansion_layout="@id/expansionLayout4"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen4"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_komposit"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator4"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout4"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container4"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea34"/>
+                    </LinearLayout>
 
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea34"/>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
-
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay5"
+                <!--Expendable 5-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:id="@+id/sampleHeader5"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_bernilai_banyak"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator5"
+                    app:expansion_layout="@id/expansionLayout5"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen5"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_bernilai_banyak"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator5"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout5"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container5"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea35"/>
+                    </LinearLayout>
 
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea35"/>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
-
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay6"
+                <!--Expendable 6-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:id="@+id/sampleHeader6"
                     android:layout_marginTop="8dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_bernilai_tunggal"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator6"
+                    app:expansion_layout="@id/expansionLayout6"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen6"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_bernilai_tunggal"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator6"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout6"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container6"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea36"/>
+                    </LinearLayout>
 
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea36"/>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay7"
+                <!--Expendable 7-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader7"
                     android:layout_marginTop="8dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_turunan"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator7"
+                    app:expansion_layout="@id/expansionLayout7"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen7"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_turunan"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator7"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout7"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container7"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea37"/>
 
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea37"/>
+                    </LinearLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay8"
+                <!--Expendable 8-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader8"
                     android:layout_marginTop="8dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_bernilai"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator8"
+                    app:expansion_layout="@id/expansionLayout8"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen8"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_bernilai"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator8"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout8"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container8"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea38"/>
 
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea38"/>
+                    </LinearLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                </RelativeLayout>
-
-                <LinearLayout
-                    android:id="@+id/lay9"
+                <!--Expendable 9-->
+                <com.github.florent37.expansionpanel.ExpansionHeader
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:id="@+id/sampleHeader9"
                     android:layout_marginTop="8dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/bg_expand">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:text="@string/atribut_tidak_harus_bernilai"
-                        android:gravity="center_vertical"
-                        android:textStyle="bold"
-                        android:textColor="@color/color_dark"
-                        android:textSize="16sp"
-                        android:layout_weight="0.5"
-                        android:paddingStart="16dp"
-                        android:layout_marginBottom="4dp"
-                        tools:ignore="RtlSymmetry" />
-                </LinearLayout>
-                <RelativeLayout
+                    app:expansion_headerIndicator="@id/headerIndicator9"
+                    app:expansion_layout="@id/expansionLayout9"
+                    app:expansion_toggleOnClick="true">
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                        android:id="@+id/expen9"
+                    <RelativeLayout
+                        android:background="@drawable/bg_expand"
+                        android:layout_height="48dp"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:ael_expanded="false"
-                        app:ael_duration="500"
-                        app:ael_interpolator="accelerateDecelerate"
-                        app:ael_orientation="vertical"
-                        tools:ignore="NotSibling">
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
 
-                        <LinearLayout
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/atribut_tidak_harus_bernilai"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"
+                            android:elevation="4dp"
+                            android:layout_marginBottom="4dp" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:adjustViewBounds="true"
+                            android:id="@+id/headerIndicator9"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_width="wrap_content"
+                            app:srcCompat="@drawable/expansion_header" />
+
+                    </RelativeLayout>
+
+                </com.github.florent37.expansionpanel.ExpansionHeader>
+                <com.github.florent37.expansionpanel.ExpansionLayout
+                    android:id="@+id/expansionLayout9"
+                    app:expansion_expanded="false"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/container9"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-8dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="-12dp"
+                            android:layout_marginBottom="2dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:paddingTop="20dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:textSize="16sp"
+                            android:elevation="2dp"
+                            android:textColor="@color/color_darkprime"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/ea39"/>
+                    </LinearLayout>
 
-                            android:orientation="vertical">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="8dp"
-                                android:lineSpacingMultiplier="1.5"
-                                android:background="@drawable/bg_white"
-                                android:paddingTop="16dp"
-                                android:paddingStart="8dp"
-                                android:paddingEnd="8dp"
-                                android:paddingBottom="8dp"
-                                android:elevation="4dp"
-                                android:textSize="16sp"
-                                android:textColor="@color/color_darkprime"
-                                android:text="@string/ea39"/>
+                </com.github.florent37.expansionpanel.ExpansionLayout>
 
-                        </LinearLayout>
-                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
-                </RelativeLayout>
 
                 <TextView
                     android:layout_width="match_parent"
