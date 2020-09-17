@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_slider3"
+    tools:context=".ui.kasus.satu.OneTahapEmpat_2">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="32dp">
+
+            <TextView
+                android:id="@+id/jud_kasus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pertanyaan"
+                android:padding="12dp"
+                android:text="@string/tahap5pbl"
+                android:textColor="@color/mi_icon_color_dark"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/kasus_tabelrs"
+                android:background="@drawable/bg_white"
+                tools:ignore="ContentDescription" />
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/ketergantungan_penuh"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"/>
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="3">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/ResultSpinnerA"
+                                    android:layout_weight="2"
+                                    android:textColor="@color/color_darkprime"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/FULLD"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/color_darkprime"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/ResultSpinnerB"
+                                    android:layout_weight="2"
+                                    android:textColor="@color/color_darkprime"
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                        </TableLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:id="@+id/DescFullD"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/ketergantungan_sepenuhnya"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"/>
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:stretchColumns="3">
+
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/ResultSpinnerC"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/FD"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/color_darkprime"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:id="@+id/ResultSpinnerG"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/ResultSpinnerD"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/ResultSpinnerE"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/ResultSpinnerF"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center_horizontal"/>
+                            </TableRow>
+
+                        </TableLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:lineSpacingMultiplier="1.5"
+                            android:id="@+id/DescFully"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_darkprime" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/bg_next"
+                android:onClick="next"
+                android:src="@drawable/home"
+                android:textColor="@color/color_darkprime"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

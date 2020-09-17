@@ -35,9 +35,8 @@
                         android:layout_height="240dp"
                         android:padding="8dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/database2"
-                        android:contentDescription="@string/image"
-                        tools:ignore="HardcodedText" />
+                        android:src="@drawable/book_lover"
+                        tools:ignore="ContentDescription,HardcodedText" />
 
                     <TextView
                         android:id="@+id/judul_awal"

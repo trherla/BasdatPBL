@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
@@ -223,6 +224,20 @@ public class OneTahapEmpat_2 extends AppCompatActivity {
             tipeData17.setBackgroundResource(R.color.red4);
             deskripsiData17.setText(R.string.int_desc);
         }
+    }
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
     }
     public void next(View view) {
         Intent selesai = new Intent(getApplicationContext(), BottomActivity.class);

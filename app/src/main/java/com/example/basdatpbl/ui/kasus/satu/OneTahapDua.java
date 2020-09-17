@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.kasus.dua.TwoTahapTiga;
 
@@ -76,7 +77,20 @@ public class OneTahapDua extends AppCompatActivity {
             }
         });
     }
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
 
+    }
     public void next(View view) {
         if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()){
             //           Dialog

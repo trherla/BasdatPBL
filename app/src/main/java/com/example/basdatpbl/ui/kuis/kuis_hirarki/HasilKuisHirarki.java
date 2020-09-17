@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+
 import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 
@@ -48,9 +50,17 @@ public class HasilKuisHirarki extends Activity {
     }
 
     public void ulangi(View view){
-        finish();
-        Intent i = new Intent(getApplicationContext(), KuisHirarki.class);
-        startActivity(i);
+        AlertDialog.Builder dial = new AlertDialog.Builder(this);
+//            dial.setTitle("Yakin?");
+        dial.setMessage("Ulangi Kuis?")
+                .setPositiveButton("Ya", (dialog, which) -> {
+                    finish();
+                    Intent i = new Intent(getApplicationContext(), KuisHirarki.class);
+                    startActivity(i);
+                })
+                .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());
+        dial.create();
+        dial.show();
     }
     public void kuis(View view){
         finish();

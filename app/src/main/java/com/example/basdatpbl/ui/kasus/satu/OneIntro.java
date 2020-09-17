@@ -45,7 +45,7 @@ public class OneIntro extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Teman lama mu yang bernama Edi, akan mendirikan sebuah sekolah baru yang bernama SMP Harapan Bangsa")
-                .image(R.drawable.friend2)
+                .image(R.drawable.conversation_)
                 .background(R.color.blue3)
                 .backgroundDark(R.color.white)
                 .build());
@@ -66,7 +66,7 @@ public class OneIntro extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Kamu sebagai seseorang yang memiliki pengetahuan mengenai manajemen data akan membantu Edi")
-                .image(R.drawable.friend)
+                .image(R.drawable.team_presentation_)
                 .background(R.color.blue3)
                 .backgroundDark(R.color.white)
                 .build());

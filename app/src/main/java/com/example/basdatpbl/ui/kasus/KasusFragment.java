@@ -46,10 +46,10 @@ public class KasusFragment extends Fragment {
         KasusAdapter adapter = new KasusAdapter(this, lstKasus);
 
         rv.setAdapter(adapter);
-        lstKasus.add(new Kasus("Sekolah", "Categories 1", "Data Siswa", R.drawable.sekolah));
-        lstKasus.add(new Kasus("Perpustakaan", "Categories 2", "Data Buku", R.drawable.perpustakaan));
-        lstKasus.add(new Kasus("Rumah Sakit", "Categories 3", "Data Obat", R.drawable.rumahsakit));
-        lstKasus.add(new Kasus("Toko Buku", "Categories 4", "Data Penjualan", R.drawable.toko));
+        lstKasus.add(new Kasus("Sekolah",  R.drawable.sekolah));
+        lstKasus.add(new Kasus("Perpustakaan",  R.drawable.perpustakaan));
+        lstKasus.add(new Kasus("Rumah Sakit", R.drawable.rumahsakit));
+        lstKasus.add(new Kasus("Toko Buku",  R.drawable.toko));
         return root;
     }
 }

@@ -34,7 +34,7 @@
         <LinearLayout
             android:id="@+id/linearheader"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:padding="8dp"
             android:layout_alignParentEnd="true"
@@ -49,13 +49,6 @@
                 android:textColor="@color/color_darkprime"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/kasus_desc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/color_darkprime"
-                android:textSize="12sp" />
         </LinearLayout>
 
 

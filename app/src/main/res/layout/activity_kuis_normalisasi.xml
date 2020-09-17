@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_expand"
+    android:background="@drawable/bg_slider3"
     tools:context=".ui.kuis.kuis_normalisasi.KuisNormalisasi">
 
     <ScrollView
@@ -16,15 +16,28 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Kuis Normalisasi"
+                    android:background="@drawable/bg_pertanyaan"
+                    android:padding="8dp"
+                    android:textColor="@color/mi_icon_color_dark"
+                    android:textSize="18sp" />
                 <TextView
                     android:id="@+id/jud"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
                     android:background="@drawable/bg_pertanyaan"
                     android:padding="8dp"
-                    android:text="Quiz Hirarki Basis Data"
                     android:textColor="@color/mi_icon_color_dark"
                     android:textSize="18sp" />
+            </RelativeLayout>
 
                 <TextView
                     android:id="@+id/pertanyaan"

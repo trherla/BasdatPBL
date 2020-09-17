@@ -33,7 +33,7 @@
                     android:layout_height="200dp"
                     android:padding="16dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/checklist_"
+                    android:src="@drawable/checklist"
                     tools:ignore="ContentDescription"/>
                 <TextView
                     android:id="@+id/judul_awal"

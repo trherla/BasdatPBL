@@ -3,6 +3,7 @@ package com.example.basdatpbl.ui.kasus.satu;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.CheckBox;
@@ -23,7 +24,8 @@ import static com.example.basdatpbl.BottomActivity.REQUEST_CODE_INTRO;
 public class OneTahapSatu extends AppCompatActivity {
     TextView Pertanyaan;
     CheckBox CbSatu, CbDua, CbTiga, CbEmpat;
-    ImageButton nxt;
+    ImageButton nxt, bck;
+
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -37,8 +39,23 @@ public class OneTahapSatu extends AppCompatActivity {
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
         nxt = findViewById(R.id.button_sekolah1);
+//        bck = findViewById(R.id.back_sekolah1);
 
         nxt.setVisibility(View.GONE);
+//        bck.setVisibility(View.GONE);
+//
+//        new CountDownTimer(60000, 1000){
+//            @Override
+//            public void onTick(long millisUntilFinished) {
+//
+//            }
+//
+//            @Override
+//            public void onFinish() {
+//                bck.setVisibility(View.VISIBLE);
+//                bck.animate().translationY(0);
+//            }
+//        }.start();
 
         Pertanyaan.setText(R.string.pertanyaan_sekolah);
         CbSatu.setText(R.string.masalah1_sekolah);
@@ -88,35 +105,24 @@ public class OneTahapSatu extends AppCompatActivity {
         });
 
 
+        Intent intent = new Intent(this, OneIntro.class);
+        startActivity(intent);
 
-
-        //Call Petunjuk penggunaan on first run
-        boolean firstStart = PreferenceManager.getDefaultSharedPreferences(this)
-                .getBoolean(PREF_KEY_FIRST_START, true);
-
-        //set for first start (delete ! if you want use it first time only)
-        if (!firstStart) {
-            Intent intent = new Intent(this, OneIntro.class);
-            startActivityForResult(intent, REQUEST_CODE_INTRO);
-        }
     }
-    //Function for check first run
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_INTRO) {
-            if (resultCode == RESULT_OK) {
-                PreferenceManager.getDefaultSharedPreferences(this).edit()
-                        .putBoolean(PREF_KEY_FIRST_START, false)
-                        .apply();
-            } else {
-                PreferenceManager.getDefaultSharedPreferences(this).edit()
-                        .putBoolean(PREF_KEY_FIRST_START, true)
-                        .apply();
-                //User cancelled the intro so we'll finish this activity too.
-                finish();
-            }
+
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
         }
+        backPressedTime =System.currentTimeMillis();
+
     }
 
     public void next(View view) {
@@ -171,6 +177,20 @@ public class OneTahapSatu extends AppCompatActivity {
         }else {
             Toast.makeText(this, "Pilih Terlebih dahulu", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void illustration(View view) {
+        AlertDialog.Builder dial = new AlertDialog.Builder(this);
+//            dial.setTitle("Yakin?");
+        dial.setMessage("Lihat Orientasi Masalah lagi?")
+                .setPositiveButton("Ya", (dialog, which) -> {
+                    Intent intent = new Intent(this, OneIntro.class);
+                    startActivity(intent);
+                })
+                .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());
+        dial.create();
+        dial.show();
+
     }
 }
 

@@ -28,7 +28,8 @@
         <activity
             android:name=".ui.materi.normalisasi.VideoPlayerNormalisasi"
             android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.NoActionBar" /> <!-- Kasus Empat -->
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- Kasus Empat -->
         <activity
             android:name=".ui.kasus.empat.FourIntro"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -36,7 +37,19 @@
             android:name=".ui.kasus.empat.FourTahapEmpat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".ui.kasus.empat.FourTahapEmpat_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".ui.kasus.empat.FourTahapTiga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.empat.FourTahapTiga_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.empat.FourTahapTiga_3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.empat.FourTahapTiga_4"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.empat.FourTahapDua"
@@ -50,6 +63,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.tiga.ThreeTahapEmpat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.kasus.tiga.ThreeTahapEmpat_2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.tiga.ThreeTahapTiga"

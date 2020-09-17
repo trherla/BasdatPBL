@@ -7,10 +7,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 
 import java.util.ArrayList;
@@ -20,9 +22,6 @@ public class TwoTahapTiga extends AppCompatActivity implements AdapterView.OnIte
 
 //    private long backPressedTime;
 //    private Toast backToast;
-
-    String[] pendidikan = {"SD", "SMP", "SMA", "STRATA 1", "STRATA 2", "STRATA 3"};
-    String[] alamat = {"Lawang", "Malang", "Purwosari", "Purwodadi"};
 
 
     @Override
@@ -156,6 +155,20 @@ public class TwoTahapTiga extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

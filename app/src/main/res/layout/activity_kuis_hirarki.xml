@@ -16,15 +16,29 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Kuis Hirarki Basis Data"
+                    android:background="@drawable/bg_pertanyaan"
+                    android:padding="8dp"
+                    android:textColor="@color/mi_icon_color_dark"
+                    android:textSize="18sp" />
                 <TextView
                     android:id="@+id/jud"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
                     android:background="@drawable/bg_pertanyaan"
                     android:padding="8dp"
-                    android:text="Quiz Hirarki Basis Data"
                     android:textColor="@color/mi_icon_color_dark"
                     android:textSize="18sp" />
+            </RelativeLayout>
+
 
                 <TextView
                     android:id="@+id/pertanyaan"
@@ -45,7 +59,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:layout_marginTop="16dp" />
+                    android:layout_marginTop="16dp"
+                    tools:ignore="ContentDescription" />
 
                 <RadioGroup
                     android:id="@+id/radio_group"
@@ -114,13 +129,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingEnd="16dp"
-        android:paddingBottom="16dp">
+        android:paddingBottom="16dp"
+        tools:ignore="RtlSymmetry">
 
         <ImageButton
             android:id="@+id/nxtbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
@@ -130,7 +146,8 @@
             android:elevation="4dp"
             android:onClick="next"
             android:src="@drawable/next"
-            android:textColor="@color/color_darkprime" />
+            android:textColor="@color/color_darkprime"
+            tools:ignore="ContentDescription" />
     </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

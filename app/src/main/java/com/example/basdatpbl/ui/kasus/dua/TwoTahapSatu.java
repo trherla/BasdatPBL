@@ -13,7 +13,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.kasus.satu.OneIntro;
 
 import static com.example.basdatpbl.BottomActivity.PREF_KEY_FIRST_START;
 import static com.example.basdatpbl.BottomActivity.REQUEST_CODE_INTRO;
@@ -86,35 +88,10 @@ public class TwoTahapSatu extends AppCompatActivity {
             }
         });
 
-        //Call Petunjuk penggunaan on first run
-        boolean firstStart = PreferenceManager.getDefaultSharedPreferences(this)
-                .getBoolean(PREF_KEY_FIRST_START, true);
-
-        //set for first start
-        if (!firstStart) {
-            Intent intent = new Intent(this, TwoIntro.class);
-            startActivityForResult(intent, REQUEST_CODE_INTRO);
-        }
+        Intent intent = new Intent(this, TwoIntro.class);
+        startActivity(intent);
     }
 
-    //Function for check first run
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_INTRO) {
-            if (resultCode == RESULT_OK) {
-                PreferenceManager.getDefaultSharedPreferences(this).edit()
-                        .putBoolean(PREF_KEY_FIRST_START, false)
-                        .apply();
-            } else {
-                PreferenceManager.getDefaultSharedPreferences(this).edit()
-                        .putBoolean(PREF_KEY_FIRST_START, true)
-                        .apply();
-                //User cancelled the intro so we'll finish this activity too.
-                finish();
-            }
-        }
-    }
     public void next(View view) {
 
 
@@ -169,5 +146,31 @@ public class TwoTahapSatu extends AppCompatActivity {
         }
 
         ////////
+    }
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
+    public void illustration(View view) {
+        AlertDialog.Builder dial = new AlertDialog.Builder(this);
+//            dial.setTitle("Yakin?");
+        dial.setMessage("Lihat Orientasi Masalah lagi?")
+                .setPositiveButton("Ya", (dialog, which) -> {
+                    Intent intent = new Intent(this, TwoIntro.class);
+                    startActivity(intent);
+                })
+                .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());
+        dial.create();
+        dial.show();
     }
 }

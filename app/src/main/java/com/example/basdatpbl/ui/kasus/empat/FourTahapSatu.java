@@ -13,7 +13,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.kasus.satu.OneIntro;
 
 import static com.example.basdatpbl.BottomActivity.PREF_KEY_FIRST_START;
 import static com.example.basdatpbl.BottomActivity.REQUEST_CODE_INTRO;
@@ -34,7 +36,7 @@ public class FourTahapSatu extends AppCompatActivity {
         CbDua = findViewById(R.id.cb_dua);
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
-        nxt = findViewById(R.id.button_perpus1);
+        nxt = findViewById(R.id.button_toko1);
 
         nxt.setVisibility(View.GONE);
 
@@ -88,33 +90,8 @@ public class FourTahapSatu extends AppCompatActivity {
 
 
 
-        //Call Petunjuk penggunaan on first run
-        boolean firstStart = PreferenceManager.getDefaultSharedPreferences(this)
-                .getBoolean(PREF_KEY_FIRST_START, true);
-
-        //set for first start
-        if (!firstStart) {
-            Intent intent = new Intent(this, FourIntro.class);
-            startActivityForResult(intent, REQUEST_CODE_INTRO);
-        }
-    }
-    //Function for check first run
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_INTRO) {
-            if (resultCode == RESULT_OK) {
-                PreferenceManager.getDefaultSharedPreferences(this).edit()
-                        .putBoolean(PREF_KEY_FIRST_START, false)
-                        .apply();
-            } else {
-                PreferenceManager.getDefaultSharedPreferences(this).edit()
-                        .putBoolean(PREF_KEY_FIRST_START, true)
-                        .apply();
-                //User cancelled the intro so we'll finish this activity too.
-                finish();
-            }
-        }
+        Intent intent = new Intent(this, FourIntro.class);
+        startActivity(intent);
     }
 
     public void next(View view) {
@@ -130,29 +107,22 @@ public class FourTahapSatu extends AppCompatActivity {
                         StringBuilder false_header = new StringBuilder();
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
-//jawabannya ada di cb1 dan cb4
-                        if (CbSatu.isChecked() && CbEmpat.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+//jawabannya ada di cb4
+                        if(CbSatu.isChecked() || CbTiga.isChecked() || CbDua.isChecked()){
+                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih jawaban ini:");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            result.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
+                            unchecked.append("> Buku terlalu banyak dan membuat komputer tidak sanggup menyimpan banyak data buku\n");
+                            unchecked.append("> Komputer untuk mendata buku beroperasi sangat lambat dan menyebabkan susahnya mendata buku\n");
+                            unchecked.append("> Toko buku sepi pelanggan \n");
+                            result.append("> Tabel untuk mendata buku dalam komputer masih belum berstruktur baik, sehingga menyebabkan kesusahan dalam mendata buku\n");
+
                         }else if (CbEmpat.isChecked()){
-                            true_header.append("Selamat jawaban kamu hampir benar");
-                            false_header.append("Berikut jawaban yang seharusnya kamu pilih juga");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            result.append("> Ketidakcocokan Relasi antar Entitas \n");
-                        }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut jawaban yang seharusnya dipilih");
-                            unchecked.append("> Kesalahan Atribut \n");
-                            unchecked.append("> Ketidakcocokan Relasi antar Entitas \n");
+                            true_header.append("Selamat ! Jawaban kamu benar");
+                            false_header.append("Berikut jawaban yang salah :");
+                            unchecked.append("> Buku terlalu banyak dan membuat komputer tidak sanggup menyimpan banyak data buku\n");
+                            unchecked.append("> Komputer untuk mendata buku beroperasi sangat lambat dan menyebabkan susahnya mendata buku\n");
+                            unchecked.append("> Toko buku sepi pelanggan \n");
+                            result.append("> Tabel untuk mendata buku dalam komputer masih belum berstruktur baik, sehingga menyebabkan kesusahan dalam mendata buku\n");
                         }
 
                         String th_satu = true_header.toString();
@@ -175,6 +145,34 @@ public class FourTahapSatu extends AppCompatActivity {
         }else {
             Toast.makeText(this, "Pilih Terlebih dahulu", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
+
+    public void illustration(View view) {
+        AlertDialog.Builder dial = new AlertDialog.Builder(this);
+//            dial.setTitle("Yakin?");
+        dial.setMessage("Lihat Orientasi Masalah lagi?")
+                .setPositiveButton("Ya", (dialog, which) -> {
+                    Intent intent = new Intent(this, FourIntro.class);
+                    startActivity(intent);
+                })
+                .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());
+        dial.create();
+        dial.show();
     }
 }
 

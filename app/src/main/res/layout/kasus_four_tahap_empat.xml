@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_slider4"
-    tools:context=".ui.kasus.dua.TwoTahapEmpat">
+    android:background="@drawable/bg_slider3"
+    tools:context=".ui.kasus.empat.FourTahapEmpat">
 
 
     <ScrollView
@@ -58,7 +58,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV1"
@@ -66,7 +66,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/fheader1"
@@ -75,7 +76,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV2"
@@ -83,8 +84,9 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
-                             />
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
+                            />
                     </LinearLayout>
                 </RelativeLayout>
 
@@ -118,7 +120,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV3"
@@ -129,7 +131,8 @@
                             android:layout_marginTop="16dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="16dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/fheader2"
@@ -138,7 +141,7 @@
                             android:fontFamily="sans-serif"
                             android:textSize="20sp"
                             android:textColor="@color/colorDark"
-                            android:layout_marginBottom="16dp"
+                            android:layout_marginBottom="8dp"
                             />
                         <TextView
                             android:id="@+id/txtV4"
@@ -148,57 +151,13 @@
                             android:textColor="@color/colorDark"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="32dp"
+                            android:lineSpacingMultiplier="1.25"
+                            android:layout_marginBottom="8dp"
                             />
                     </LinearLayout>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="32dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="12dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="8dp"
-                app:cardUseCompatPadding="false">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="16dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        tools:ignore="UselessParent">
-
-                        <TextView
-                            android:id="@+id/txtV5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:textColor="@color/colorDark"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="16dp"
-                            />
-                        <TextView
-                            android:id="@+id/txtV6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif"
-                            android:textColor="@color/colorDark"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="32dp"
-                            />
-                    </LinearLayout>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -207,8 +166,9 @@
                 android:layout_marginBottom="52dp"
                 android:background="@drawable/bg_next"
                 android:onClick="next"
-                android:src="@drawable/home"
-                android:textColor="@color/color_darkprime"/>
+                android:src="@drawable/next"
+                android:textColor="@color/color_darkprime"
+                tools:ignore="ContentDescription" />
         </LinearLayout>
     </ScrollView>
 

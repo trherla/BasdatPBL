@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 
 public class FourTahapDua extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class FourTahapDua extends AppCompatActivity {
         CbDua = findViewById(R.id.cb_dua);
         CbTiga = findViewById(R.id.cb_tiga);
         CbEmpat = findViewById(R.id.cb_empat);
-        nxt = findViewById(R.id.button_perpus2);
+        nxt = findViewById(R.id.button_toko2);
 
         nxt.setVisibility(View.GONE);
 
@@ -76,6 +77,21 @@ public class FourTahapDua extends AppCompatActivity {
         });
     }
 
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
+
     public void next(View view) {
         if (CbSatu.isChecked() || CbDua.isChecked() || CbTiga.isChecked() || CbEmpat.isChecked()){
             //           Dialog
@@ -88,28 +104,20 @@ public class FourTahapDua extends AppCompatActivity {
                         StringBuilder result = new StringBuilder();
                         StringBuilder unchecked = new StringBuilder();
 
-                        if (CbSatu.isChecked() && CbDua.isChecked()){
-                            true_header.append("Selamat jawaban anda benar");
+                        if (CbSatu.isChecked()){
+                            true_header.append("Selamat ! Jawaban kamu benar");
                             false_header.append("Berikut jawaban yang salah :");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Menghapus Entitas yang tidak relevan dengan database perpustakaan\n");
-                            unchecked.append("> Mengubah beberapa simbol ERD \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbSatu.isChecked() ){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            result.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
-                        }else if (CbDua.isChecked()){
-                            true_header.append("Selamat solusi yang kamu pilih hampir benar");
-                            false_header.append("Berikut solusi yang seharusnya kamu pilih juga");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            result.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            result.append("> Melakukan normalisasi pada tabel buku, sehingga diperoleh tabel dengan struktur yang baik\n");
+                            unchecked.append("> Menghapus beberapa atribut agar tidak menimbulkan redundansi data\n");
+                            unchecked.append("> Memeriksa tipe data yang dimiliki tiap atribut agar tidak membuat error\n");
+                            unchecked.append("> Membuat diagram entitas toko buku untuk mempermudah dalam pembuatan basis data toko buku\n");
                         }else {
-                            true_header.append("Maaf, jawaban kamu belum sesuai");
-                            false_header.append("Berikut solusi yang seharusnya dipilih");
-                            unchecked.append("> Mengganti beberapa Atribut \n");
-                            unchecked.append("> Mencocokkan kembali relasi dan kardinalitas \n");
+                            true_header.append("Jawabanmu Salah di tahap ini, seharusnya kamu hanya memilih solusi ini:");
+                            false_header.append("Berikut solusi yang kurang tepat untuk dipilih");
+                            result.append("> Melakukan normalisasi pada tabel buku, sehingga diperoleh tabel dengan struktur yang baik\n");
+                            unchecked.append("> Menghapus beberapa atribut agar tidak menimbulkan redundansi data\n");
+                            unchecked.append("> Memeriksa tipe data yang dimiliki tiap atribut agar tidak membuat error\n");
+                            unchecked.append("> Membuat diagram entitas toko buku untuk mempermudah dalam pembuatan basis data toko buku\n");
                         }
 
                         String r_dua = result.toString();

@@ -54,7 +54,7 @@ public class KuisNormalisasi extends AppCompatActivity {
     String[] jawaban_benar = new String[]{
             "Mengandung redundansi yang sedikit mungkin",
             "UNF",
-            "Tabel tidak boleh mengandung grub atribut yang berulang",
+            "Tabel tidak mengandung grub atribut yang berulang",
             "Perlu memisahkan tabel menjadi dua, tabel pertama berisi atribut IdKelas, Kelas, Grade sedangkan tabel kedua berisi atribut Kelas dan TarifKelas",
             "3NF",
 

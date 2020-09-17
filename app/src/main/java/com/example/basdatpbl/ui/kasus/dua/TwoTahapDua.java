@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 
 public class TwoTahapDua extends AppCompatActivity {
@@ -77,7 +78,20 @@ public class TwoTahapDua extends AppCompatActivity {
             }
         });
     }
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
 
+    }
 //    @Override
 //    public void onBackPressed() {
 //        if(backPressedTime +2000 > System.currentTimeMillis()){

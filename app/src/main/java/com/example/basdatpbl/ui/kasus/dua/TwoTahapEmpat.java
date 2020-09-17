@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,8 +17,7 @@ import java.util.List;
 
 public class TwoTahapEmpat extends AppCompatActivity {
     TextView textView1, textView2, textView3, textView4, textView5, textView6, theader1, fheader1, theader2, fheader2;
-//    private long backPressedTime;
-//    private Toast backToast;
+
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +28,6 @@ public class TwoTahapEmpat extends AppCompatActivity {
         textView2 = findViewById(R.id.txtV2);
         textView3 = findViewById(R.id.txtV3);
         textView4 = findViewById(R.id.txtV4);
-        textView5 = findViewById(R.id.txtV5);
-        textView6 = findViewById(R.id.txtV6);
         theader1 = findViewById(R.id.theader1);
         fheader1 = findViewById(R.id.fheader1);
         theader2 = findViewById(R.id.theader2);
@@ -59,18 +57,20 @@ public class TwoTahapEmpat extends AppCompatActivity {
         textView4.setText(u_dua);
 
     }
-//    public void onBackPressed() {
-//        if(backPressedTime +2000 > System.currentTimeMillis()){
-//            finish();
-//            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
-//            startActivity(backhome);
-//        }else {
-//            backToast = Toast.makeText(getBaseContext(),"Press back again to menu", Toast.LENGTH_SHORT);
-//            backToast.show();
-//        }
-//        backPressedTime =System.currentTimeMillis();
-//
-//    }
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
+
+    }
     public void next(View view) {
         Intent selesai = new Intent(getApplicationContext(), TwoTahapEmpat_2.class);
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_slider3"
-    tools:context=".ui.kasus.dua.TwoTahapTiga"
+    tools:context=".ui.kasus.tiga.ThreeTahapTiga"
     tools:ignore="ExtraText">
 
     <ScrollView
@@ -29,6 +29,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/penyelesaian_rs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_white"
+                android:elevation="4dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:text="@string/penyelesaian_rs"
+                android:textColor="@color/colorDark"
+                tools:ignore="MissingConstraints" />
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
@@ -41,6 +53,67 @@
                 android:src="@drawable/kasus_tabelrs"
                 app:layout_constraintTop_toBottomOf="@+id/jud_kasus"
                 tools:ignore="ContentDescription" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/ketergantungan_penuh"
+                            android:textColor="@color/color_darkprime"
+                            android:textSize="16sp"/>
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="3">
+
+                            <TableRow
+                                android:padding="3dip">
+                                <Spinner
+                                    android:id="@+id/spinnerA"
+                                    android:layout_weight="2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:spinnerMode="dialog" />
+                                <TextView
+                                    android:text="@string/FULLD"
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    tools:ignore="RtlSymmetry" />
+                                <Spinner
+                                    android:id="@+id/spinnerB"
+                                    android:layout_weight="2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:spinnerMode="dialog" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16sp"
@@ -64,28 +137,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:stretchColumns="3">
-                            <TableRow
-                                android:padding="3dip">
-                                <Spinner
-                                    android:id="@+id/spinnerA"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-                                <TextView
-                                    android:text="@string/FD"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    tools:ignore="RtlSymmetry" />
-                                <Spinner
-                                    android:id="@+id/spinnerB"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/ketergantungan_sepenuhnya"
+                                android:textColor="@color/color_darkprime"
+                                android:textSize="16sp"/>
                             <TableRow
                                 android:padding="3dip">
                                 <Spinner
@@ -101,12 +159,32 @@
                                     android:gravity="center"
                                     tools:ignore="RtlSymmetry" />
                                 <Spinner
+                                    android:id="@+id/spinnerG"
+                                    android:layout_weight="2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:spinnerMode="dialog" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <Spinner
                                     android:id="@+id/spinnerD"
                                     android:layout_weight="2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:spinnerMode="dialog" />
-
+                                <TextView
+                                    android:text=" "
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    tools:ignore="RtlSymmetry" />
+                                <TextView
+                                    android:text=" "
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    tools:ignore="RtlSymmetry" />
                             </TableRow>
                             <TableRow
                                 android:padding="3dip">
@@ -117,150 +195,39 @@
                                     android:layout_height="wrap_content"
                                     android:spinnerMode="dialog" />
                                 <TextView
-                                    android:text="@string/FD"
+                                    android:text=" "
                                     android:textColor="@color/color_darkprime"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     tools:ignore="RtlSymmetry" />
+                                <TextView
+                                    android:text=" "
+                                    android:textColor="@color/color_darkprime"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    tools:ignore="RtlSymmetry" />
+
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
                                 <Spinner
                                     android:id="@+id/spinnerF"
                                     android:layout_weight="2"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <Spinner
-                                    android:id="@+id/spinnerG"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
                                 <TextView
-                                    android:text="@string/FD"
+                                    android:text=" "
                                     android:textColor="@color/color_darkprime"
                                     android:layout_weight="1"
                                     android:gravity="center"
                                     tools:ignore="RtlSymmetry" />
-                                <Spinner
-                                    android:id="@+id/spinnerH"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <Spinner
-                                    android:id="@+id/spinnerI"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
                                 <TextView
-                                    android:text="@string/FD"
+                                    android:text=" "
                                     android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
+                                    android:layout_weight="2"
                                     android:gravity="center"
                                     tools:ignore="RtlSymmetry" />
-                                <Spinner
-                                    android:id="@+id/spinnerJ"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <Spinner
-                                    android:id="@+id/spinnerK"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-                                <TextView
-                                    android:text="@string/FD"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    tools:ignore="RtlSymmetry" />
-                                <Spinner
-                                    android:id="@+id/spinnerL"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <Spinner
-                                    android:id="@+id/spinnerM"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-                                <TextView
-                                    android:text="@string/FD"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    tools:ignore="RtlSymmetry" />
-                                <Spinner
-                                    android:id="@+id/spinnerN"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <Spinner
-                                    android:id="@+id/spinnerO"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-                                <TextView
-                                    android:text="@string/FD"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    tools:ignore="RtlSymmetry" />
-                                <Spinner
-                                    android:id="@+id/spinnerP"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <Spinner
-                                    android:id="@+id/spinnerQ"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-                                <TextView
-                                    android:text="@string/FD"
-                                    android:textColor="@color/color_darkprime"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    tools:ignore="RtlSymmetry" />
-                                <Spinner
-                                    android:id="@+id/spinnerR"
-                                    android:layout_weight="2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:spinnerMode="dialog" />
-
                             </TableRow>
                         </TableLayout>
 

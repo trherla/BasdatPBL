@@ -6,11 +6,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg_slider1"
     tools:context=".ui.info.InfoFragment">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:text="@string/informasi"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28dp" />
+    </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,32 +41,97 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="?android:attr/actionBarSize"
+                android:layout_marginBottom="60dp"
                 android:orientation="vertical"
                 tools:ignore="UselessParent">
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:elevation="2dp"-->
+<!--                    android:background="@drawable/bg_white"-->
+<!--                    android:lineSpacingMultiplier="1.25"-->
+<!--                    android:textSize="24sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/colorDark"-->
+<!--                    android:text="@string/informasi"/>-->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:textAlignment="center"
-                    android:elevation="2dp"
+                    android:layout_marginTop="8dp"
                     android:background="@drawable/bg_white"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorDark"
-                    android:text="@string/basis_data"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:padding="16dp"
-                    android:elevation="2dp"
-                    android:background="@drawable/bg_white"
                     android:lineSpacingMultiplier="1.25"
                     android:textSize="16sp"
                     android:textColor="@color/colorPrimaryDark"
                     android:text="@string/info_des"/>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-16dp"
+                    android:paddingTop="20dp"
+                    android:background="@drawable/bg_white"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:stretchColumns="2">
 
+                    <TableRow
+                        android:padding="3dip">
+                        <TextView
+                            android:text="Versi OS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+                        <TextView
+                            android:text=": 5.0 - 10.0"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+
+                    </TableRow>
+                    <TableRow
+                        android:padding="3dip">
+                        <TextView
+                            android:text="RAM"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+                        <TextView
+                            android:text=": 1GB"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+
+                    </TableRow>
+                    <TableRow
+                        android:padding="3dip">
+                        <TextView
+                            android:text="Penyimpanan"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+                        <TextView
+                            android:text=": 30MB"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+
+                    </TableRow>
+                    <TableRow
+                        android:padding="3dip"
+                        android:layout_marginBottom="16dp">
+                        <TextView
+                            android:text="Koneksi"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+                        <TextView
+                            android:text=": 4G / Wifi"
+                            android:layout_weight="1"
+                            android:gravity="start" />
+
+                    </TableRow>
+
+                </TableLayout>
                 <!--Expendable 1-->
                 <com.github.florent37.expansionpanel.ExpansionHeader
                     android:layout_height="wrap_content"
@@ -99,27 +184,30 @@
                         android:id="@+id/container"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
                         android:orientation="vertical">
 
-                        <TextView
+                        <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-12dp"
-                            android:layout_marginBottom="2dp"
+                            android:layout_marginBottom="8dp"
+                            android:paddingTop="24dp"
+                            android:src="@drawable/info_bar"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:lineSpacingMultiplier="1.25"
-                            android:paddingTop="20dp"
-                            android:paddingStart="8dp"
-                            android:paddingEnd="8dp"
-                            android:paddingBottom="8dp"
+                            android:padding="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/colorPrimaryDark"
-                            android:background="@drawable/bg_white"
-                            android:text="@string/definisiBasisData"/>
+
+                            android:text="@string/info_menu"/>
 
                     </LinearLayout>
 
-                </com.github.florent37.expansionpanel.ExpansionLayout>
+               </com.github.florent37.expansionpanel.ExpansionLayout>
 
 
                 <!--Expendable 2-->
@@ -175,23 +263,91 @@
                         android:id="@+id/container2"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-12dp"
-                            android:layout_marginBottom="2dp"
                             android:lineSpacingMultiplier="1.25"
                             android:paddingTop="20dp"
                             android:paddingStart="8dp"
                             android:paddingEnd="8dp"
-                            android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="@string/info_kasus"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/orientasi_masalah"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.25"
+                            android:padding="8dp"
+                            android:textSize="16sp"
                             android:textColor="@color/colorPrimaryDark"
                             android:background="@drawable/bg_white"
-                            android:text="@string/definisiBasisData"/>
+                            android:text="@string/info_kasus1"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/penentuan_masalah"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.25"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/info_kasus2"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/perencanaan_penyelesaian"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.25"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/info_kasus3"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/pelaksanaan_rencana"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.25"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/info_kasus4"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/evaluasi"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.25"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/bg_white"
+                            android:text="@string/info_kasus5"/>
 
                     </LinearLayout>
 
@@ -250,6 +406,8 @@
                         android:id="@+id/container3"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+                        android:background="@drawable/bg_white"
+                        android:elevation="2dp"
                         android:orientation="vertical">
 
                         <TextView
@@ -263,11 +421,27 @@
                             android:paddingEnd="8dp"
                             android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/colorPrimaryDark"
                             android:background="@drawable/bg_white"
-                            android:text="@string/definisiBasisData"/>
-
+                            android:text="@string/info_kuis"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/contoh_soal"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingMultiplier="1.25"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="@string/info_kuis1"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/jawaban_soal"/>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -335,11 +509,12 @@
                             android:layout_marginBottom="8dp"
                             android:layout_gravity="center"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/machu_pichu"
+                            android:src="@drawable/book_lover"
                             tools:ignore="ContentDescription" />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
                             android:lineSpacingMultiplier="1.25"
                             android:textSize="16sp"
                             android:gravity="center"

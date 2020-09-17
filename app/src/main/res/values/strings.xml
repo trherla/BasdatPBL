@@ -10,23 +10,85 @@
     <string name="kuis">Kuis</string>
     <string name="info">Info</string>
 
+<!--    Section Halaman Awal-->
     <string name="judul_hero">PBL-Basdat</string>
     <string name="des_hero">Media pembelajaran Basis Data bermuatan Problem Based Learning untuk siswa SMK Kelas XI Kompetensi Keahlian Rekayasa Perangkat Lunak.</string>
     <string name="materi_hero">Materi yang dapat dipelajari dalam aplikasi ini</string>
     <string name="tujuan_hero">Tujuan dari pembelajaran melalui aplikasi ini</string>
     <string name="des_tujuan_hero">1. Mempermudah proses pembelajaran\n2. Meningkatkan efisiensi proses pembelajaran\n3. Menarik</string>
+<!-- End Section Halaman Awal-->
 
     <string name="judul_kuis">Kuis</string>
     <string name="des_kuis"> </string>
     <string name="judul_kasus">Kasus</string>
     <string name="des_kasus"> </string>
-    <string name="info_pengembang">Tri Rizki Herlambang\n16 Oktober 1996</string>
 
+<!--    Section Informasi-->
+    <string name="informasi">Informasi</string>
+    <string name="info_pengembang">Tri Rizki Herlambang\nS1 Pendidikan Teknik Informatika\nFakultas Teknik\nUniversitas Negeri Malang</string>
+    <string name="info_des">Aplikasi ini dikembangkan untuk menunjang pembelajaran mata pelajaran Basis Data Kelas XI. Aplikasi ini dapat berjalan dengan baik dengan spesifikasi minimun smartphone sebagai berikut:</string>
+    <string name="info_menu">
+        a. Menu Pendahuluan / <i>Home</i>\n\t\tPada menu Pendahuluan berisi informasi tentang deskripsi mata pelajaran Basis Data, Kompetensi Dasar yang disajikan dalam aplikasi dan tujuan dari pembelajaran melalui aplikasi BasdatPBL.\n\n
+        b. Menu Materi\n\t\tPada menu Materi berisi materi lengkap beserta vide pembelajaran yang disajikan dalam aplikasi, diantaranya:\n(1) Hirarki Basis Data\n(2) <i>Entity Relationship Diagram</i>\n(3) Ketergantungan Fungsional\n(4) Normalisasi Data\n\n
+        c. Menu Kasus\n\t\tPada menu Kasus berisi soal dengan menerapkan model pembelajaran <i>Problem Based Learning</i>.\n\n
+        d. Menu Kuis\n\t\tPada menu Kuis berisi pertanyaan untuk menguji tingkat pemahaman siswa terhadap materi. Tiap Kuis berisi 5 sampai dengan 10 soal.\n\n
+        e. Menu Info\n\t\tPada menu Info berisi informasi tentang persyaratan minimum aplikasi, penjelasan menu, tata cara mengerjakan kasus, cara mengerjakan kuis dan informasi pengembang.
+    </string>
+    <string name="info_kasus">
+        \t\tDalam aplikasi pembelajaran BasdatPBL terdapat menu kasus yang menyajikan soal dengan menggunakan model pembelajaran <i>Problem Based Learning</i>. Cara mengerjakan soal-soal di halaman kasus dengan cara mengikuti 5 tahap yang ada, yaitu\n
+        1) Orientasi Masalah
+    </string>
+    <string name="info_kasus1">
+        \t\tLangkah pertama dalam menyelesaikan kasus adalah mengetahui permasalahan dari sebuah kasus, pengguna pada tahap ini akan diberikan ilustrasi permasalahan dengan contoh gambar.\n\n
+        2) Penentuan Masalah Pokok
+    </string>
+    <string name="info_kasus2">
+        \t\tSetelah membaca ilustrasi dari tahap sebelumnya, pengguna diwajibkan memilih satu atau lebih pilihan masalah sesuai dengan pemahaman yang didapat setelah membaca ilustrasi. Jika masih belum memahami ilustrasi dari tahap sebelumnya, user bisa menekan tombol di kanan atas untuk melihat kembali ilustrasi permasalahan.\n\n
+        3) Perencanaan Penyelesaian Masalah
+    </string>
+    <string name="info_kasus3">
+        \t\tTahap ketiga adalah menentukan cara penyelesaian / solusi untuk menyelesaikan masalah yang sudah dipilih di tahap sebelumnya. Pada tahap ketiga ini, user dapat memilih jawaban lebih dari satu.\n\n
+        4) Pelaksanaan Rencana
+    </string>
+    <string name="info_kasus4">
+        \t\tPada tahap keempat ini, user akan menyampaikan hasil dari penyelesaian permmasalahan yang sebelumnya telah dipilih di awal. Penyampaian hasil pada tahap ini berupa pencocokan kata.\n\n
+        5) Evaluasi
+    </string>
+    <string name="info_kasus5">
+        \t\tTahap ini merupakan tahap terakhir dalam penyelesaian kasus. Pengguna akan mendapatkan evaluasi selama pemecahan kasus, evaluasi akan didapatkan di tahap penentuan masalah, perencanaan penyelesaian masalah, dan pelaksanaan rencana. Evaluasi yang didapatkan pengguna berupa saran tentang letak kesalahan ketika menyelesaikan kasus.
+    </string>
+    <string name="info_kuis">
+        \t\tDalam menu Kuis menyajikan soal dengan model soal pilihan ganda. Terdapat empat pilihan kuis yang sesuai dengan banyaknya materi pokok yang terdapat dalam aplikasi BasdatPBL. Soal yang ditampilkan pada tiap Kuis berisi 5 hingga 10 soal.
+    </string>
+    <string name="info_kuis1">
+        \t\tKetika selesai mengerjakan kuis, maka akan ditampilkan nilai seperti berikut.
+    </string>
 
-    <string name="info_des">Aplikasi ini dikembangkan untuk menunjang pembelajaran mata pelajaran Basis Data Kelas XI. Aplikasi ini dapat berjalan dengan baik dengan spesifikasi minimun smartphone sebagai berikut:\n\nVersi OS : 5.0 JellyBean - 10.0 Android Ten\nRAM : 1GB</string>
+    <string name="basis_data">Basis Data</string>
+    <string name="penjelasan_menu">1. Penjelasan Menu</string>
+    <string name="cara_mengerjakan_kasus">2. Cara Mengerjakan Kasus</string>
+    <string name="cara_mengerjakan_kuis">3. Cara Mengerjakan Kuis</string>
+    <string name="informasi_pengembang">4. Informasi Pengembang</string>
+<!--   End Section Informasi-->
 
     <!--Materi Hirarki Basis Data-->
     <string name="definisiBasisData">Basis Data atau Database merupakan kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik dari suatu sistem komputer.</string>
+    <string name="kecepatan"><b>Kecepatan</b>\n\nMudah dan cepat dalam melakukan penyimpanan, perubahan dan menampilkan kembali.</string>
+    <string name="efisiensi"><b>Efisiensi</b>\n\nMampu mengurangi pengulangan atau redundansi data.</string>
+    <string name="ketersediaan"><b>Ketersediaan</b>\n\nData selalu siap dipakai.</string>
+    <string name="keamanan"><b>Keamanan</b>\n\nData lebih aman dengan perbedaan hak akses pengguna.</string>
+    <string name="kebersamaan"><b>Kebersamaan</b>\n\nData yang dikelola oleh sistem mendukung lingkungan banyak pemakai</string>
+    <string name="keakuratan"><b>Keakuratan</b>\n\nData lebih terjaga dan akurat dengan menerapkan aturan dan batasan tertentu</string>
+    <string name="file"><b><i>File</i></b></string>
+    <string name="record"><b><i>Record</i></b></string>
+    <string name="field"><b><i>Field</i></b></string>
+    <string name="apa_itu_arsitektur_basis_data">Apa Itu Arsitektur Basis Data?</string>
+
+    <string name="tujuan_penggunaan_basis_data">Tujuan Penggunaan Basis Data</string>
+    <string name="apa_itu_basis_data">Apa itu Basis Data?</string>
+    <string name="komponen_basis_data">Komponen Basis Data</string>
+    <string name="pengguna_basis_data">Pengguna Basis Data</string>
+
     <string name="komponen">Basis Data dibangun oleh enam komponen pokok, antara lain:\n\n
         <b>1. <i>Hardware</i></b>\nDalam sistem pengolahan basis data digital, perangkat utama sebagai pengolah data adalah komputer.\n\n
         <b>2. <i>Software</i></b>\nPerangkat lunak digunakan untuk mendukung proses pengelolaan basis data dan bersifat opsional. Misal: bahasa pemrograman C, Pascal.\n\n
@@ -66,8 +128,9 @@
     <string name="hm61">Model ini mendefinisikan database sebagai kumpulan objek, atau elemen perangkat lunak yang dapat digunakan kembali, dengan fitur dan metode terkait.\n\nModel database object-oriented adalah model database pasca-relasional yang paling dikenal, karena menggabungkan tabel, tetapi tidak terbatas pada tabel. \n\n Model semacam itu juga dikenal sebagai model basis data hybrid.</string>
     <string name="hm7"><i>5. Entity-relationship model</i></string>
     <string name="hm71">Model ini menangkap hubungan antara entitas dunia nyata seperti model jaringan, namun tidak terkait langsung dengan struktur fisik database.\n\nSering digunakan untuk merancang database secara konseptual.\n\nDi sini, orang-orang, tempat, dan hal-hal tentang titik-titik data yang disimpan disebut sebagai entitas, yang masing-masing memiliki atribut tertentu yang bersama-sama membentuk domain mereka. </string>
+<!--End Materi Hirarki-->
 
-    <!--Materi ERD-->
+<!--Materi ERD-->
     <string name="ed1"><b><i>Entity Relationship Diagram</i> (ERD)</b> merupakan salah satu bentuk pemodelan basis data yang sering digunakan dalam pengembangan sistem informasi.\n\nDiagram hubungan entitas (ERD) menunjukkan hubungan dari <i>entity set</i> yang disimpan dalam <i>database</i>.\n\nEntitas dalam konteks ini adalah komponen data. Dengan kata lain, diagram ER menggambarkan struktur logis dari database.</string>
     <string name="ed3">Pada dasarnya ada tiga komponen yang digunakan di ERD, yaitu:\n1. Entitas\n2. Atribut\n3. Relasi</string>
     <!--    <string name="ed4">Materi</string>-->
@@ -76,7 +139,6 @@
     <string name="ee2">Entitas dapat berupa :\n\n1. Entity yang bersifat fisik yaitu entitas yang secara fisik dapat dilihat.\nContoh: rumah, kendaraan, guru, murid, dan lain-lain.\n\n2. Entity yang bersifat konsep/logic yaitu entitas yang tidak dapat dilihat secara fisik.\nContoh: pekerjaan, mata pelajaran, rencana, dan lain-lain.</string>
     <string name="ee3">Dalam suatu tabel basis data, entitas identik dengan baris</string>
     <string name="ee4">Sekelompok entitas yang sejenis dan berada dalam lingkup yang sama disebut sebagai Entity Sets (Himpunan Entitas)</string>
-
 
     <string name="ea1">Atribut merupakan sifat-sifat atau karakteristik pada suatu entitas.\n\nNama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.\n\nSimbol yang digunakan untuk atribut adalah oval/elipse\n\nMacam-macam atribut dalam ERD:</string>
     <!--    <string name="ea2">Nama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.</string>-->
@@ -117,7 +179,9 @@
     <string name="atribut_kunci">1. Atribut Kunci</string>
     <string name="relasi_berdasarkan_derajatnya">Relasi Berdasarkan Derajatnya</string>
     <string name="kardinalitas">Kardinalitas</string>
-    <!--Definisi ketergantungan-->
+<!--Materi ERD-->
+
+<!--Materi ketergantungan-->
     <string name="kde1">Dependensi merupakan ketergantungan setiap atribut dengan atribut lainnya</string>
     <string name="kde2">Analisis dependensi merupakan konsep <b>penting</b> yang menjadi <b>dasar melakukan normalisasi</b> sehingga diperoleh relasi yang berstruktur baik.\n\nAda beberapa jenis dependensi:\n1. Dependensi Fungsional\n2. Dependensi Sepenuhnya\n3. Dependensi Sebagian\n4. Dependensi Penuh\n5. Dependensi Transitif</string>
 
@@ -131,32 +195,28 @@
     <string name="kf4">Sebuah atribut bisa bergantung pada lebih dari satu atribut\n\n<![CDATA[Notasi : {A,B,…} -> Z]]>\n\nAtribut Z mempunyai dependensi terhadap pasangan A dan B</string>
     <string name="kf41">Pada tabel Guru diatas, memiliki notasi\n\n{NIP, Pendidikan} -> TahunLulus\n\nJadi atribut NIP dan atribut Pendidikan mempengaruhi TahunLulus dari seorang guru </string>
 
-
     <!--    Ketergantungan sepenuhnya-->
     <string name="ksp1">Suatu atribut B dikatakan memiliki dependensi sepenuhnya terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A </string>
     <string name="ksp2">Contoh:\n{NIP, Pendidikan}-> TahunLulus\n\nNotasi berikut merupakan salah satu contoh ketergantungan sepenuhnya, karena TahunLulus bergantung dari dua atribut yaitu NIP dan Pendidikan</string>
     <!--    <string name="ksp3">2. Atribut B tidak memiliki dependensi terhadap bagian dari atribut A</string>-->
 
-
     <!--Ketergantungan sebagian -->
     <string name="ks1">Suatu atribut B dikatakan memiliki dependensi sebagian/parsial terhadap A apabila:\n\n1. Atribut B adalah atribut non-key primer dan atribut A adalah primary key\n2. Atribut B memiliki dependensi terhadap sebagian dari atribut A (tidak terhadap keseluruhan atribut A)</string>
     <string name="ks2"><b>Contoh</b>:\nTabel Guru dikatakan memiliki kunci primer berupa (NIP dan Pendidikan)\n\nJadi ketergantungan parsial yang terdapat pada tabel Guru berupa JenisKelamin karena memiliki ketergantungan terhadap atribut NIP saja (bagian dari kunci primer). Begitu pula dengan atribut NamaGuru.</string>
-
 
     <!--    Ketergantungan penuh-->
     <string name="kpe1">Suatu atribut B dikatakan memiliki dependensi penuh/total terhadap A apabila\n\n1. Atribut B mempunyai dependensi fungsional terhadap atribut A\n2. Atribut A mempunyai dependansi fungsional terhadap atribut B</string>
     <string name="kpe2">Dependensi Total memiliki notasi <![CDATA[A<->B]]>\n\n<b>Contoh</b>:\n1. KodePemasok -> NamaPemasok\n2. NamaPemasok -> KodePemasok\n\nDengan demikian :\nKodePemasok <![CDATA[<->]]> NamaPemasok\nDengan asumsi: tidak ada nama pemasok yang sama\n\n<b>Contoh lain</b>:\nHargaBarang tidak dapat dikatakan dependensi total terhadap KodeBarang dikarenakan terdapat kemungkinan harga yang sama untuk kode barang yang berbeda.\nBegitu juga dengan atribut NamaPemasok tidak dapat dependensi total terhadap KodeBarang, karena pemasok bisa saja menaruh banyak barang ke toko </string>
 
-
     <!--Ketergantungan Transitif    -->
     <string name="kt1">Dependensi Transitif biasanya terjadi pada tabel hasil relasi, atau kondisi dimana terdapat tiga atribut A, B, C.\n\nNotasinya adalah A -> B dan B -> C.\nMaka C dikatakan sebagai dependensi transitif terhadap A melalui B.</string>
     <string name="kt2"><b>Contoh</b>: Tabel Barang\nKodeBarang -> NamaPemasok\n\nKarena, KodeBarang -> KodePemasok dan Kode Pemasok -> NamaPemasok\n\nJadi:\n KodeBarang -> KodePemasok -> NamaPemasok</string>
+<!--Materi ketergantungan-->
 
-    <!--Normalisasi Data    -->
+<!--Normalisasi Data    -->
     <string name="nd1">Normalisasi adalah suatu proses yang digunakan untuk menentukan pengelompokan atribut dalam sebuah relasi sehingga diperoleh relasi berstruktur baik</string>
     <string name="nd2">Syarat relasi berstruktur baik:\n1. Mengandung redundansi yang sedikit mungkin.\n2. Memungkinkan baris-baris dalam relasi disisipkan, dimodifikasi, dan dihapus tanpa menimbulkan kesalahan atau ketidakkonsistenan.</string>
     <string name="nd3">Normalisasi dilakukan melalui setiap bentuk form (1NF sampai dengan 5NF)</string>
-
     <string name="nd4">Normalisasi tidak selalu dimulai dari Bentuk tidak ternormalisasi (UNF), namun bisa saja dimulai dari tahap 1NF maupun 2NF tergantung dari tabel yang anda buat terlebih dahulu.</string>
 
     <string name="np1">Suatu relasi disebut memenuhi bentuk normal pertama (1NF) jika dan hanya jika setiap atribut dari relasi tersebut hanya memiliki <b>nilai tunggal</b> dan <b>tidak ada pengulangan grup atribut dalam baris</b>.\n\nBentuk 1NF tidak boleh mengandung grup atribut yang berulang</string>
@@ -170,39 +230,38 @@
     <string name="nk3">Contoh:\nTerdapat Tabel Workshop dengan atribut NIM, Modul, Biaya, Grade\n\nMemiliki:\nKey\t: NIM + Modul\nFD\t\t: Modul -> Biaya</string>
     <string name="nk4">Tabel diatas sudah normal bentuk pertama (1NF), namun <b>belum dalam bentuk normal bentuk kedua (2NF)</b>, karena dalam tabel ini, Biaya tidak bergantung penuh pada atribut kunci (NIM, Modul).\n\nJadi untuk mendapatkan bentuk normal kedua(2NF) perlu memisahkan tabel seperti gambar dibawah ini. Dengan pemisahan tabel, record bisa menjadi lebih efektif. </string>
 
-
     <string name="nt1">Suatu relasi disebut memenuhi bentuk normal ketiga (3NF) jika dan hanya jika\n1. Memenuhi bentuk normal kedua (2NF)\n2. Setiap atribut yang bukan kunci tidak tergantung secara fungsional terdahap atribut non-key yang lain dalam relasi tersebut (tidak terdapat ketergantungan transitif pada atribut non-key)</string>
     <string name="nt2">Contoh:\nTerdapat Tabel TPS yang memiliki atribut S, Status, City, P, Qty.\n\nMemiliki:\nKey\t: S + P\nFD\t\t: S -> Status\n\t\t\t\t\tS -> City\n\t\t\t\t\tCity -> Status</string>
     <string name="nt3">Untuk membuat normal bentuk ketiga (3NF) Tabel TPS diatas, maka perlu dilakukan normalisasi tahap pertama (1NF) dengan hasil berikut:</string>
     <string name="nt4">Tabel TPS sudah dalam tahap 1NF, namun masih terdapat masalah berupa:\n1. Redundansi\n2. Anomali, berupa penambahan record pada atribut <b>S, Status, City</b> yang harus menyertakan atribut P dan Q. Menghapus satu baris data juga akan merusak keutuhan informasi.\n\nMaka Solusi yang harus diambil adalah dekomposisi tabel menjadi TPS 1–1 dan TPS 1–2.</string>
     <string name="nt5"><![CDATA[Tabel TPS 1–1 dan TPS 1–2 sudah dalam bentuk 2NF, penambahan data kepada atribut S, Status, dan City bisa dilakukan dengan aman.\n\nTetapi masih ada anomaly: karena City –> Status, maka kita tidak bisa input data City baru sebelum Status punya nilai. Selain itu masih terdapat redundansi pada Status dan City.\n\nPada Tabel TPS 1–2 bisa dikatakan sudah dalam 3NF meskipun memiliki redundansi partial namun tidak memiliki potensi anomaly dan tabel TPS 1–2 lebih baik daripada bentuk tabel sebelumnya karena redundansi dapat diminimalisir.]]></string>
     <string name="nt6"><![CDATA[Pada Tabel TPS 1–1 masih dalam bentuk 2NF karena atribut City mempengaruhi Status (City –> Status) bukan S mempengaruhi Status, maka Tabel TPS 1–1 perlu didekomposisi kembali. Menghasilkan Tabel seperti dibawah ini.]]></string>
-
-    <string name="apa_itu_arsitektur_basis_data">Apa Itu Arsitektur Basis Data?</string>
+<!-- End Normalisasi Data    -->
 
     <string name="tahap2pbl">Penentuan Masalah Pokok</string>
     <string name="tahap3pbl">Perencanaan Penyelesaian</string>
     <string name="tahap4pbl">Pelaksanaan Rencana</string>
     <string name="tahap5pbl">Evaluasi</string>
 
-
     <!--Kasus Toko-->
-    <string name="pertanyaan_toko">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
-    <string name="masalah1_toko">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
-    <string name="masalah2_toko">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
-    <string name="masalah3_toko">Tidak ada siswa yang mendaftar di SMP Harapan Bangsa</string>
-    <string name="masalah4_toko">SMP Harapan Bangsa tidak memiliki guru dan tenaga non-pendidik</string>
+    <string name="pertanyaan_toko">Berdasarkan ilustrasi sebelumnya, permasalahan yang dihadapi di dalam toko buku adalah </string>
+    <string name="masalah1_toko">Buku terlalu banyak dan membuat komputer tidak sanggup menyimpan banyak data buku</string>
+    <string name="masalah2_toko">Komputer untuk mendata buku beroperasi sangat lambat dan menyebabkan susahnya mendata buku</string>
+    <string name="masalah3_toko">Toko buku sepi pelanggan</string>
+    <string name="masalah4_toko">Tabel untuk mendata buku dalam komputer masih belum berstruktur baik, sehingga menyebabkan kesusahan dalam mendata buku</string>
 
     <string name="solusi_toko">Pilihlah beberapa solusi yang tepat sesuai dengan permasalahan yang telah dipilih</string>
-    <string name="solusi1_toko">Membuat database sekolah untuk mengatur jadwal pelajaran siswa dengan membuat entitas siswa, guru, dan mata pelajaran</string>
-    <string name="solusi2_toko">Mengoptimalkan sistem manajemen data yang sudah ada di SMP Harapan Bangsa</string>
-    <string name="solusi3_toko">Membuat database sekolah untuk memanajemen data siswa, guru dan tenaga non-pendidik</string>
-    <string name="solusi4_toko">Membuat sistem informasi untuk mendapatkan guru dan tenaga non-pendidik</string>
+    <string name="solusi1_toko">Melakukan normalisasi pada tabel buku, sehingga diperoleh tabel dengan struktur yang baik </string>
+    <string name="solusi2_toko">Menghapus beberapa atribut agar tidak menimbulkan redundansi data</string>
+    <string name="solusi3_toko">Memeriksa tipe data yang dimiliki tiap atribut agar tidak membuat error</string>
+    <string name="solusi4_toko">Membuat diagram entitas toko buku untuk mempermudah dalam pembuatan basis data toko buku</string>
 
-    <string name="penyelesaian_toko">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
+<!--    <string name="penyelesaian_toko">Selesai </string>-->
     <!--End Kasus Toko-->
 
     <!--Kasus Perpustakaan-->
+    <string name="nomor">Nomor</string>
+    <string name="jawaban">Jawaban</string>
     <string name="pertanyaan_perpus">Pilihlah beberapa permasalahan yang sesuai dengan paparan yang telah dijelaskan di awal</string>
     <string name="masalah1_perpus">Banyak Atribut yang tidak sesuai di ERD Perpustakaan</string>
     <string name="masalah2_perpus">Pengelola perpustakaan membutuhkan buku baru untuk perpustakaan</string>
@@ -223,6 +282,23 @@
 
     <!--End Kasus Perpustakaan-->
     <!--Kasus Sekolah-->
+    <string name="atribut_table_kasussekolah">Atribut</string>
+    <string name="tipedata_tabel_kasussekolah">Tipe Data</string>
+    <string name="deskripsi_tabel_kasussekolah">Deskripsi</string>
+    <string name="nis">NIS</string>
+    <string name="nama">Nama</string>
+    <string name="tgl_lahir">Tgl_Lahir</string>
+    <string name="jenis_kelamin">Jenis_Kelamin</string>
+    <string name="kode_mapel">Kode_Mapel</string>
+    <string name="nama_mapel">Nama_Mapel</string>
+    <string name="hari">Hari</string>
+    <string name="jam_mapel">Jam_Mapel</string>
+    <string name="nip">NIP</string>
+    <string name="kelas">Kelas</string>
+    <string name="pendidikan">Pendidikan</string>
+    <string name="alamat">Alamat</string>
+    <string name="nomor_hp">Nomor_HP</string>
+
     <string name="pertanyaan_sekolah">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
     <string name="masalah1_sekolah">SMP Harapan Bangsa sistem manajemen yang kurang optimal </string>
     <string name="masalah2_sekolah">SMP Harapan Bangsa tidak memiliki sistem manajemen untuk sekolah</string>
@@ -242,6 +318,11 @@
     <!--End Kasus Sekolah-->
 
     <!--Kasus Rumah Sakit-->
+    <string name="ketergantungan_penuh">Ketergantungan Penuh</string>
+    <string name="ketergantungan_sepenuhnya">Ketergantungan Sepenuhnya</string>
+    <string name="FD"><![CDATA[->]]></string>
+    <string name="FULLD"><![CDATA[<->]]></string>
+
     <string name="pertanyaan_rs">Berdasarkan ilustrasi sebelumnya, masalah apa saja yang dimiliki Edi?</string>
     <string name="masalah1_rs">Operasi dilaksanakan tiap hari </string>
     <string name="masalah2_rs">Dokter melakukan operasi pada waktu yang sudah ditentukan</string>
@@ -255,61 +336,19 @@
     <string name="solusi4_rs">Menghapus atribut tanggal agar tidak terjadi redundansi dan memudahkan menentukan ketergantungan fungsional tabel operasi</string>
 
     <string name="penyelesaian_rs">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
+ <!--End Rumah Sakit-->
 
-    <!--End Kasus Sekolah-->
-
-    <string name="image">image</string>
-    <string name="file"><b><i>File</i></b></string>
-    <string name="record"><b><i>Record</i></b></string>
-    <string name="field"><b><i>Field</i></b></string>
 
     <string name="quiz_hirarki_basis_data">Quiz Hirarki Basis Data</string>
+
+    <string name="video_pembelajaran_hirarki_basis_data">Video Pembelajaran Hirarki Basis Data</string>
+    <string name="video_pembelajaran_ketergantungan_fungsional">Video Pembelajaran Ketergantungan Fungsional</string>
+    <string name="video_pembelajaran_normalisasi">Video Pembelajaran Normalisasi</string>
+    <string name="video_pembelajaran_erd">Video Pembelajaran ERD</string>
 
     <string name="videoHirarki">ioNng23DkIM</string>
     <string name="videoErd">1kKNJr_5tY8</string>
     <string name="videoKetergantungan">2S24-y0Ij3Y</string>
     <string name="videoNormalisasi">IHNzOHi8sJs</string>
-
-    <string name="kecepatan"><b>Kecepatan</b>\n\nMudah dan cepat dalam melakukan penyimpanan, perubahan dan menampilkan kembali.</string>
-    <string name="efisiensi"><b>Efisiensi</b>\n\nMampu mengurangi pengulangan atau redundansi data.</string>
-    <string name="ketersediaan"><b>Ketersediaan</b>\n\nData selalu siap dipakai.</string>
-    <string name="keamanan"><b>Keamanan</b>\n\nData lebih aman dengan perbedaan hak akses pengguna.</string>
-    <string name="kebersamaan"><b>Kebersamaan</b>\n\nData yang dikelola oleh sistem mendukung lingkungan banyak pemakai</string>
-    <string name="keakuratan"><b>Keakuratan</b>\n\nData lebih terjaga dan akurat dengan menerapkan aturan dan batasan tertentu</string>
-
-    <string name="tujuan_penggunaan_basis_data">Tujuan Penggunaan Basis Data</string>
-    <string name="apa_itu_basis_data">Apa itu Basis Data?</string>
-    <string name="komponen_basis_data">Komponen Basis Data</string>
-    <string name="pengguna_basis_data">Pengguna Basis Data</string>
-    <string name="ulangi_kuis">Ulangi Kuis</string>
-    <string name="halaman_awal">Halaman Awal</string>
-    <string name="basis_data">Basis Data</string>
-    <string name="penjelasan_menu">1. Penjelasan Menu</string>
-    <string name="cara_mengerjakan_kasus">2. Cara Mengerjakan Kasus</string>
-    <string name="cara_mengerjakan_kuis">3. Cara Mengerjakan Kuis</string>
-    <string name="informasi_pengembang">4. Informasi Pengembang</string>
-    <string name="atribut_table_kasussekolah">Atribut</string>
-    <string name="tipedata_tabel_kasussekolah">Tipe Data</string>
-    <string name="deskripsi_tabel_kasussekolah">Deskripsi</string>
-    <string name="nis">NIS</string>
-    <string name="nama">Nama</string>
-    <string name="tgl_lahir">Tgl_Lahir</string>
-    <string name="jenis_kelamin">Jenis_Kelamin</string>
-    <string name="kode_mapel">Kode_Mapel</string>
-    <string name="nama_mapel">Nama_Mapel</string>
-    <string name="hari">Hari</string>
-    <string name="jam_mapel">Jam_Mapel</string>
-    <string name="nip">NIP</string>
-    <string name="kelas">Kelas</string>
-    <string name="pendidikan">Pendidikan</string>
-    <string name="alamat">Alamat</string>
-    <string name="nomor_hp">Nomor_HP</string>
-    <string name="video_pembelajaran_erd">Video Pembelajaran ERD</string>
-    <string name="nomor">Nomor</string>
-    <string name="jawaban">Jawaban</string>
-    <string name="FD"><![CDATA[->]]></string>
-    <string name="video_pembelajaran_hirarki_basis_data">Video Pembelajaran Hirarki Basis Data</string>
-    <string name="video_pembelajaran_ketergantungan_fungsional">Video Pembelajaran Ketergantungan Fungsional</string>
-    <string name="video_pembelajaran_normalisasi">Video Pembelajaran Normalisasi</string>
 
 </resources>

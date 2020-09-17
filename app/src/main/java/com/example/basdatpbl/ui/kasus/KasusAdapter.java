@@ -30,7 +30,6 @@ public class KasusAdapter extends RecyclerView.Adapter<KasusViewModel> {
     @Override
     public void onBindViewHolder(@NonNull KasusViewModel holder, int position) {
         holder.kasus_title.setText(mData.get(position).getTitle());
-        holder.kasus_desc.setText(mData.get(position).getDescription());
         holder.img_thumbnail.setImageResource(mData.get(position).getThumbnail());
     }
 

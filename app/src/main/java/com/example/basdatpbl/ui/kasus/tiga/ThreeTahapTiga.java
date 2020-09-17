@@ -7,10 +7,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.basdatpbl.BottomActivity;
 import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.kasus.satu.OneTahapEmpat;
 
@@ -28,22 +30,10 @@ public class ThreeTahapTiga extends AppCompatActivity implements AdapterView.OnI
         final Spinner spinnerB = findViewById(R.id.spinnerB);
         final Spinner spinnerC = findViewById(R.id.spinnerC);
         final Spinner spinnerD = findViewById(R.id.spinnerD);
-
         final Spinner spinnerE = findViewById(R.id.spinnerE);
         final Spinner spinnerF = findViewById(R.id.spinnerF);
         final Spinner spinnerG = findViewById(R.id.spinnerG);
-        final Spinner spinnerH = findViewById(R.id.spinnerH);
-        final Spinner spinnerI = findViewById(R.id.spinnerI);
-        final Spinner spinnerJ = findViewById(R.id.spinnerJ);
 
-        final Spinner spinnerK = findViewById(R.id.spinnerK);
-        final Spinner spinnerL = findViewById(R.id.spinnerL);
-        final Spinner spinnerM = findViewById(R.id.spinnerM);
-        final Spinner spinnerN = findViewById(R.id.spinnerN);
-        final Spinner spinnerO = findViewById(R.id.spinnerO);
-        final Spinner spinnerP = findViewById(R.id.spinnerP);
-        final Spinner spinnerQ = findViewById(R.id.spinnerQ);
-        final Spinner spinnerR = findViewById(R.id.spinnerR);
 
         ImageButton next = findViewById(R.id.button);
 
@@ -98,71 +88,7 @@ public class ThreeTahapTiga extends AppCompatActivity implements AdapterView.OnI
         spinAdapterG.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerG.setAdapter(spinAdapterG);
 
-//        SPinner 8
-        spinnerH.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterH = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterH.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerH.setAdapter(spinAdapterH);
-
-//      Spinner 9
-        spinnerI.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterI = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterI.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerI.setAdapter(spinAdapterI);
-
-//        Spinner 10
-        spinnerJ.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterJ = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterJ.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerJ.setAdapter(spinAdapterJ);
-
-//        Spinner 11
-        spinnerK.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterK = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterK.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerK.setAdapter(spinAdapterK);
-
-//        SPinner 12
-        spinnerL.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterL = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterL.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerL.setAdapter(spinAdapterL);
-
-//      Spinner 13
-        spinnerM.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterM = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterM.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerM.setAdapter(spinAdapterM);
-
-//        Spinner 14
-        spinnerN.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterN = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterN.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerN.setAdapter(spinAdapterN);
-
-//        Spinner 15
-        spinnerO.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterO = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterO.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerO.setAdapter(spinAdapterO);
-
-//        SPinner 16
-        spinnerP.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterP = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterP.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerP.setAdapter(spinAdapterP);
-
-//      Spinner 17
-        spinnerQ.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterQ = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterQ.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerQ.setAdapter(spinAdapterQ);
-
-//      Spinner 18
-        spinnerR.setOnItemSelectedListener(this);
-        ArrayAdapter<String> spinAdapterR = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tabeloperasi);
-        spinAdapterR.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerR.setAdapter(spinAdapterR);
+//
 
         next.setOnClickListener(v -> {
             AlertDialog.Builder dial = new AlertDialog.Builder(this);
@@ -200,17 +126,6 @@ public class ThreeTahapTiga extends AppCompatActivity implements AdapterView.OnI
                         selesai.putExtra("spinE", String.valueOf(spinnerE.getSelectedItem()));
                         selesai.putExtra("spinF", String.valueOf(spinnerF.getSelectedItem()));
                         selesai.putExtra("spinG", String.valueOf(spinnerG.getSelectedItem()));
-                        selesai.putExtra("spinH", String.valueOf(spinnerH.getSelectedItem()));
-                        selesai.putExtra("spinI", String.valueOf(spinnerI.getSelectedItem()));
-                        selesai.putExtra("spinJ", String.valueOf(spinnerJ.getSelectedItem()));
-                        selesai.putExtra("spinK", String.valueOf(spinnerK.getSelectedItem()));
-                        selesai.putExtra("spinL", String.valueOf(spinnerL.getSelectedItem()));
-                        selesai.putExtra("spinM", String.valueOf(spinnerM.getSelectedItem()));
-                        selesai.putExtra("spinN", String.valueOf(spinnerN.getSelectedItem()));
-                        selesai.putExtra("spinO", String.valueOf(spinnerO.getSelectedItem()));
-                        selesai.putExtra("spinP", String.valueOf(spinnerP.getSelectedItem()));
-                        selesai.putExtra("spinQ", String.valueOf(spinnerQ.getSelectedItem()));
-                        selesai.putExtra("spinR", String.valueOf(spinnerR.getSelectedItem()));
 
 
                         startActivity(selesai);
@@ -220,6 +135,21 @@ public class ThreeTahapTiga extends AppCompatActivity implements AdapterView.OnI
             dial.show();
         });
 
+
+    }
+
+    private long backPressedTime;
+    private Toast backToast;
+    public void onBackPressed() {
+        if(backPressedTime +2000 > System.currentTimeMillis()){
+            finish();
+            Intent backhome  = new Intent(getApplicationContext(), BottomActivity.class);
+            startActivity(backhome);
+        }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to Main Menu", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime =System.currentTimeMillis();
 
     }
 

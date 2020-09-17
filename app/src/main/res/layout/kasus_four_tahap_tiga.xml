@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_slider4"
-    tools:context=".ui.kasus.dua.TwoTahapTiga"
+    android:background="@drawable/bg_slider3"
+    tools:context=".ui.kasus.empat.FourTahapTiga"
     tools:ignore="ExtraText">
 
     <ScrollView
@@ -17,146 +17,111 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="32dp">
-            <TextView
-                android:id="@+id/jud_kasus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_pertanyaan"
-                android:padding="12dp"
-                android:textSize="16sp"
-                android:text="@string/tahap4pbl"
-                android:textColor="@color/mi_icon_color_dark"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/jud_kasus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pertanyaan"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:text="@string/tahap4pbl"
+                    android:textColor="@color/mi_icon_color_dark"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/jud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_pertanyaan"
+                    android:padding="8dp"
+                    android:textColor="@color/mi_icon_color_dark"
+                    android:textSize="18sp" />
+            </RelativeLayout>
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:scaleType="fitCenter"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_white"
-                android:contentDescription="@string/tahap4pbl"
-                android:src="@drawable/atribut_key"
-                app:layout_constraintTop_toBottomOf="@+id/jud_kasus" />
-            <LinearLayout
+                android:id="@+id/tabel_buku"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="2dp"
                 android:background="@drawable/bg_white"
                 android:layout_marginTop="16dp"
-                android:padding="12dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:background="@color/colorDark"
-                    />
-                <Spinner
-                    android:id="@+id/spinnerA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:spinnerMode="dialog" />
-            </LinearLayout>
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:background="@drawable/bg_white"
-               android:layout_marginTop="16dp"
-              android:padding="12dp">
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:layout_marginStart="16dp"
-                   android:paddingStart="10dp"
-                   android:paddingEnd="10dp"
-                   android:background="@color/colorPrimary"/>
-
-               <Spinner
-                   android:id="@+id/spinnerB"
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_marginStart="16dp"
-                   android:spinnerMode="dialog" />
-           </LinearLayout>
-            <LinearLayout
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/penyelesaian_toko"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="-16dp"
                 android:background="@drawable/bg_white"
-                android:layout_marginTop="16dp"
-               android:padding="12dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:background="@color/colorPrimaryDark"/>
-
-                <Spinner
-                    android:id="@+id/spinnerC"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:spinnerMode="dialog" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_white"
-                android:layout_marginTop="16dp"
-                android:padding="12dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:background="@color/red2"/>
-
-                <Spinner
-                    android:id="@+id/spinnerD"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:spinnerMode="dialog" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_white"
-                android:layout_marginTop="16dp"
-                android:padding="12dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:background="@color/colorAccent"/>
-
-                <Spinner
-                    android:id="@+id/spinnerE"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:spinnerMode="dialog" />
-            </LinearLayout>
-            <ImageButton
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="52dp"
                 android:elevation="4dp"
-                android:background="@drawable/bg_next"
-                android:src="@drawable/next"/>
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorDark"
+                tools:ignore="MissingConstraints" />
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/pilihanA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/rb_a_selector"
+                    android:button="@android:color/transparent"
+                    android:lineSpacingMultiplier="1.5"
+                    android:onClick="onRBClicked"
+                    android:checked="false"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/pilihanB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:background="@drawable/rb_b_selector"
+                    android:button="@android:color/transparent"
+                    android:onClick="onRBClicked"
+                    android:checked="false"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
         </LinearLayout>
     </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp"
+        tools:ignore="RtlSymmetry">
+        <ImageButton
+            android:id="@+id/button_toko3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_next"
+            android:elevation="4dp"
+            android:onClick="next"
+            android:src="@drawable/next"
+            android:textColor="@color/color_darkprime"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_slider3"
+    tools:context=".ui.kasus.empat.FourTahapEmpat_2">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="32dp">
+
+            <TextView
+                android:id="@+id/jud_kasus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pertanyaan"
+                android:padding="12dp"
+                android:text="@string/tahap5pbl"
+                android:textColor="@color/mi_icon_color_dark"
+                tools:ignore="MissingConstraints" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="2">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/tipedata_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa1"
+                                    android:layout_weight="1"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa1"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa2"
+                                    android:layout_weight="1"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa2"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa3"
+                                    android:layout_weight="1"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa3"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa4"
+                                    android:layout_weight="1"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:id="@+id/deskripsi_tabelsiswa4"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/bg_next"
+                android:onClick="next"
+                android:src="@drawable/home"
+                android:textColor="@color/color_darkprime"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -20,7 +20,7 @@ import com.example.basdatpbl.ui.materi.TabsNormalisasi;
 
 public class KasusViewModel extends RecyclerView.ViewHolder {
 
-    public TextView materi, kasus_title, kasus_desc;
+    public TextView materi, kasus_title;
     public ImageView img_thumbnail;
     public CardView cardView;
     Context context;
@@ -29,10 +29,9 @@ public class KasusViewModel extends RecyclerView.ViewHolder {
         super(itemView);
         context = itemView.getContext();
 
-        kasus_title = (TextView) itemView.findViewById(R.id.kasus_title);
-        kasus_desc = (TextView) itemView.findViewById(R.id.kasus_desc);
-        img_thumbnail = (ImageView) itemView.findViewById(R.id.kasus_img);
-        cardView = (CardView) itemView.findViewById(R.id.kasus_click);
+        kasus_title = itemView.findViewById(R.id.kasus_title);
+        img_thumbnail = itemView.findViewById(R.id.kasus_img);
+        cardView = itemView.findViewById(R.id.kasus_click);
 
         cardView.setOnClickListener(view -> {
             Intent intent = new Intent();

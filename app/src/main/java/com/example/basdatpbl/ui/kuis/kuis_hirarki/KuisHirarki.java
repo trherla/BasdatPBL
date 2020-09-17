@@ -154,11 +154,14 @@ public class KuisHirarki extends AppCompatActivity {
     public void next(View view){
 
         if (PilA.isChecked() || PilB.isChecked() || PilC.isChecked() || PilD.isChecked()) {
+
             RadioButton jawaban_user = findViewById(rg.getCheckedRadioButtonId());
             String ambil_jawaban_user = jawaban_user.getText().toString();
+
             rg.check(0);
             nxt.setVisibility(View.GONE);
             nxt.animate().translationY(nxt.getHeight());
+
             if (ambil_jawaban_user.equalsIgnoreCase(jawaban_benar[nomor])) benar++;
             else salah++;
             nomor++;
