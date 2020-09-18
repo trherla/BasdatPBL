@@ -49,6 +49,11 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tabel_siswa"
+                            android:textColor="@color/color_darkprime"/>
                         <TableLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -173,10 +178,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         tools:ignore="UselessParent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tabel_mapel"
+                            android:textColor="@color/color_darkprime"/>
                         <TableLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="24dp"
                             android:stretchColumns="3">
                             <TableRow
                                 android:padding="3dip">
@@ -332,11 +341,14 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         tools:ignore="UselessParent">
-
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tabel_guru"
+                            android:textColor="@color/color_darkprime"/>
                         <TableLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="24dp"
                             android:stretchColumns="3">
                             <TableRow
                                 android:padding="3dip">

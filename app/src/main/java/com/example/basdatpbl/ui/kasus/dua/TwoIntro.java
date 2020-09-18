@@ -33,9 +33,9 @@ public class TwoIntro extends IntroActivity {
         setPageScrollInterpolator(android.R.interpolator.fast_out_slow_in);
 
         addSlide(new SimpleSlide.Builder()
-                .title("Kasus Perpustakaan")
+                .title("Kasus di Perpustakaan")
 //                .description("Dapat melatih kemampuan pemecahan masalah")
-                .image(R.drawable.ic_sync_problem_black_24dp)
+//                .image(R.drawable.ic_sync_problem_black_24dp)
                 .background(R.color.red2)
                 .backgroundDark(R.color.white)
                 .canGoBackward(false)

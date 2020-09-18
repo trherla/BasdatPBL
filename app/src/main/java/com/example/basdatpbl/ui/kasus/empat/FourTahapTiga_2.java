@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.basdatpbl.BottomActivity;
@@ -50,8 +51,8 @@ public class FourTahapTiga_2 extends AppCompatActivity {
         imageA.setImageResource(R.drawable.satunfa);
         imageB.setImageResource(R.drawable.satunfb);
         pertanyaan.setText("Manakah dari kedua tabel ini yang sudah memenuhi bentuk normal pertama(1NF)?");
-        PilA.setText("Mengisi field yang kosong");
-        PilB.setText("Menghapus satu baris record ketika ada field yang kosong");
+        PilA.setText("Pilihan 1");
+        PilB.setText("Pilihan 2");
 
     }
 
@@ -72,41 +73,49 @@ public class FourTahapTiga_2 extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     public void next(View view) {
+//           Dialog
+        AlertDialog.Builder dial = new AlertDialog.Builder(this);
+//            dial.setTitle("Yakin?");
+        dial.setMessage("Yakin dengan jawaban anda")
+                .setPositiveButton("Ya", (dialog, which) -> {
+                    RadioButton jawaban_user = findViewById(rg.getCheckedRadioButtonId());
+                    String ambil_jawaban_user = jawaban_user.getText().toString();
 
-        RadioButton jawaban_user = findViewById(rg.getCheckedRadioButtonId());
-        String ambil_jawaban_user = jawaban_user.getText().toString();
-
-        Intent selesai = new Intent(getApplicationContext(), FourTahapTiga_3.class);
+                    Intent selesai = new Intent(getApplicationContext(), FourTahapTiga_3.class);
 //receive value from activity one and two
 
-        Intent i = getIntent();
-        String r_satu = i.getStringExtra("resultSatu");
-        String u_satu = i.getStringExtra("unSatu");
-        String th_satu = i.getStringExtra("thSatu");
-        String fh_satu = i.getStringExtra("fhSatu");
+                    Intent i = getIntent();
+                    String r_satu = i.getStringExtra("resultSatu");
+                    String u_satu = i.getStringExtra("unSatu");
+                    String th_satu = i.getStringExtra("thSatu");
+                    String fh_satu = i.getStringExtra("fhSatu");
 
-        String r_dua = i.getStringExtra("resultDua");
-        String u_dua = i.getStringExtra("unDua");
-        String th_dua = i.getStringExtra("thDua");
-        String fh_dua = i.getStringExtra("fhDua");
+                    String r_dua = i.getStringExtra("resultDua");
+                    String u_dua = i.getStringExtra("unDua");
+                    String th_dua = i.getStringExtra("thDua");
+                    String fh_dua = i.getStringExtra("fhDua");
 
-        String sTiga = i.getStringExtra("sTiga");
+                    String sTiga = i.getStringExtra("sTiga");
 
-        selesai.putExtra("resultSatu", r_satu);
-        selesai.putExtra("unSatu", u_satu);
-        selesai.putExtra("thSatu", th_satu);
-        selesai.putExtra("fhSatu", fh_satu);
+                    selesai.putExtra("resultSatu", r_satu);
+                    selesai.putExtra("unSatu", u_satu);
+                    selesai.putExtra("thSatu", th_satu);
+                    selesai.putExtra("fhSatu", fh_satu);
 
-        selesai.putExtra("resultDua", r_dua);
-        selesai.putExtra("unDua", u_dua);
-        selesai.putExtra("thDua", th_dua);
-        selesai.putExtra("fhDua", fh_dua);
+                    selesai.putExtra("resultDua", r_dua);
+                    selesai.putExtra("unDua", u_dua);
+                    selesai.putExtra("thDua", th_dua);
+                    selesai.putExtra("fhDua", fh_dua);
 
-        selesai.putExtra("sTiga", sTiga);
-        selesai.putExtra("dTiga", ambil_jawaban_user);
+                    selesai.putExtra("sTiga", sTiga);
+                    selesai.putExtra("dTiga", ambil_jawaban_user);
 
 
-        startActivity(selesai);
+                    startActivity(selesai);
+                })
+                .setNegativeButton("Tidak", (dialog, which) -> dialog.cancel());
+        dial.create();
+        dial.show();
     }
 
     public void onRBClicked(View view) {

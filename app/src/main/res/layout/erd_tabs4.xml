@@ -211,6 +211,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
+                            android:padding="4dp"
                             android:src="@drawable/ono"
                             tools:ignore="ContentDescription" />
                         <TextView
@@ -225,6 +226,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
+                            android:padding="4dp"
                             android:src="@drawable/onm"
                             tools:ignore="ContentDescription" />
                         <TextView
@@ -238,6 +240,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
+                            android:padding="4dp"
                             android:src="@drawable/mnm"
                             tools:ignore="ContentDescription" />
                     </LinearLayout>

@@ -24,7 +24,7 @@
             android:text="@string/informasi"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="28dp" />
+            android:textSize="28sp" />
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
@@ -80,12 +80,12 @@
                     <TableRow
                         android:padding="3dip">
                         <TextView
-                            android:text="Versi OS"
+                            android:text="@string/versi_os"
                             android:textColor="@color/colorPrimaryDark"
                             android:layout_weight="1"
                             android:gravity="start" />
                         <TextView
-                            android:text=": 5.0 - 10.0"
+                            android:text="@string/versi_os_os"
                             android:layout_weight="1"
                             android:gravity="start" />
 
@@ -93,12 +93,12 @@
                     <TableRow
                         android:padding="3dip">
                         <TextView
-                            android:text="RAM"
+                            android:text="@string/ram"
                             android:textColor="@color/colorPrimaryDark"
                             android:layout_weight="1"
                             android:gravity="start" />
                         <TextView
-                            android:text=": 1GB"
+                            android:text="@string/ram_1gb"
                             android:layout_weight="1"
                             android:gravity="start" />
 
@@ -106,12 +106,12 @@
                     <TableRow
                         android:padding="3dip">
                         <TextView
-                            android:text="Penyimpanan"
+                            android:text="@string/penyimpanan"
                             android:textColor="@color/colorPrimaryDark"
                             android:layout_weight="1"
                             android:gravity="start" />
                         <TextView
-                            android:text=": 30MB"
+                            android:text="@string/penyimpanan_30"
                             android:layout_weight="1"
                             android:gravity="start" />
 
@@ -120,12 +120,12 @@
                         android:padding="3dip"
                         android:layout_marginBottom="16dp">
                         <TextView
-                            android:text="Koneksi"
+                            android:text="@string/koneksi"
                             android:textColor="@color/colorPrimaryDark"
                             android:layout_weight="1"
                             android:gravity="start" />
                         <TextView
-                            android:text=": 4G / Wifi"
+                            android:text="@string/koneksi_4g_wifi"
                             android:layout_weight="1"
                             android:gravity="start" />
 
@@ -194,7 +194,8 @@
                             android:layout_marginTop="-12dp"
                             android:layout_marginBottom="8dp"
                             android:paddingTop="24dp"
-                            android:src="@drawable/info_bar"/>
+                            android:src="@drawable/info_bar"
+                            tools:ignore="ContentDescription" />
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -236,7 +237,6 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_weight="0.5"
                             android:layout_marginBottom="4dp" />
 
 
@@ -379,7 +379,6 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_weight="0.5"
                             android:layout_marginBottom="4dp" />
 
 
@@ -501,19 +500,17 @@
                         android:layout_width="match_parent"
                         android:background="@drawable/bg_white"
                         android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:layout_marginTop="24dp"
-                            android:layout_marginBottom="8dp"
-                            android:layout_gravity="center"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/book_lover"
-                            tools:ignore="ContentDescription" />
+                            android:src="@drawable/profil"
+                            app:civ_border_color="#28A8EA"
+                            app:civ_border_width="3dp"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
                             android:layout_marginBottom="16dp"
                             android:lineSpacingMultiplier="1.25"
                             android:textSize="16sp"

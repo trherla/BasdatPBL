@@ -101,7 +101,7 @@
         <b>1. <i>Database Administrator</i></b>\nSeseorang yang mengorganisasi seluruh sistem basis data. Database administrator imemiliki tanggung jawab penuh dalam manajemen database meliputi: pengaturan hak akses, koordinasi dan monitoring serta bertanggung jawab terhadap kebutuhan hardware dan software. Dalam pekerjaannya biasanya dibantu oleh staf Admin.\n\n
         <b>2. <i>Database Designer</i></b>\nSeseorang yang bertugas merancang dan mengembangkan database. database designer bertanggung jawab dalam identifikasi data yang tersimpan dalam database, menentukan struktur data yang tepat untuk disimpan dalam database. Database designer memerlukan koordinasi akan kebutuhan user database.\n\n
         <b>3. <i>Application Programmer</i></b>\nPenggunaa yang berinteraksi dengan basis data melalui Data Manipulation Language (DML). DML meliputi program yang ditulis dalam bahasa pemrograman induk yang dipakai.\n\n
-        <b>4. <i>End user</i></b> (DBMS)\nPengguna yang memanfaatkan atau membutuhkan akses ke database melalui query, manambah, merubah menghapus maupun membuat report database. \n\n
+        <b>4. <i>End user</i> (DBMS)</b>\nPengguna yang memanfaatkan atau membutuhkan akses ke database melalui query, manambah, merubah menghapus maupun membuat report database. \n\n
         <b>5. <i>System Analyst</i></b>\nPengguna yang merencanakan dan menentukan kebutuhan sistem.\n\n
         <b>6. <i>Application Programmers (Software Engineering)</i></b>\nPengguna tanggung jawabnya berhubungan dengan kebutuhan koneksi database.\n\n
         <b>7. <i>Worker Behind The Scene</i></b>\nIalah pengguna yang tidak tertarik pada database, tetapi lebih cenderung pada membangun data base atau kebutuhannya menggunakan alat bantu.\n\n</string>
@@ -137,7 +137,7 @@
 
     <string name="ee1">Entitas merupakan objek yang mewakili sesuatu yang nyata dan dapat dibedakan dari sesuatu yang lain. Setiap entitas memiliki beberapa atribut yang mendeskripsikan karakteristik dari objek tersebut. </string>
     <string name="ee2">Entitas dapat berupa :\n\n1. Entity yang bersifat fisik yaitu entitas yang secara fisik dapat dilihat.\nContoh: rumah, kendaraan, guru, murid, dan lain-lain.\n\n2. Entity yang bersifat konsep/logic yaitu entitas yang tidak dapat dilihat secara fisik.\nContoh: pekerjaan, mata pelajaran, rencana, dan lain-lain.</string>
-    <string name="ee3">Dalam suatu tabel basis data, entitas identik dengan baris</string>
+    <string name="ee3">Dalam suatu tabel basis data, entitas identik dengan tabel</string>
     <string name="ee4">Sekelompok entitas yang sejenis dan berada dalam lingkup yang sama disebut sebagai Entity Sets (Himpunan Entitas)</string>
 
     <string name="ea1">Atribut merupakan sifat-sifat atau karakteristik pada suatu entitas.\n\nNama atribut identik dengan nama kolom atau field pada suatu tabel dalam basis data.\n\nSimbol yang digunakan untuk atribut adalah oval/elipse\n\nMacam-macam atribut dalam ERD:</string>
@@ -256,7 +256,12 @@
     <string name="solusi3_toko">Memeriksa tipe data yang dimiliki tiap atribut agar tidak membuat error</string>
     <string name="solusi4_toko">Membuat diagram entitas toko buku untuk mempermudah dalam pembuatan basis data toko buku</string>
 
-<!--    <string name="penyelesaian_toko">Selesai </string>-->
+    <string name="evalunf">Tabel Buku belum dalam bentuk normal pertama, karena masih terdapat beberapa field yang kosong / null</string>
+    <string name="eval1nf">Untuk mencapai bentuk normal pertama seharusnya mengisi field yang kosong atau null, bukan menghapus record</string>
+    <string name="eval2nf">Terdapat beberapa record yang terhapus, seharusnya record tetap utuh</string>
+    <string name="eval3nf">Terdapat beberapa record yang terhapus, seharusnya record tetap utuh</string>
+
+    <!--    <string name="penyelesaian_toko">Selesai </string>-->
     <!--End Kasus Toko-->
 
     <!--Kasus Perpustakaan-->
@@ -274,7 +279,7 @@
     <string name="solusi3_perpus">Mengganti rasio kardinalitas pada relasi pinjam</string>
     <string name="solusi4_perpus">Menambahkan entitas baru bernama Denda dan relasi bernama membayar yang terhubung ke atribut Siswa</string>
 
-    <string name="penyelesaian_perpus">Setelah dilakukan analisis permasalahan, maka ditambahkan entitas baru bernama Denda yang terhubung dengan entitas siswa dengan relasi bernama bayar.\n\nMaka dari itu, Lengkapi atribut dan rasio kardinalitas dalam ERD perputakaan berikut : </string>
+    <string name="penyelesaian_perpus">Setelah menganalisis permintaan pengelola perpus, maka terbentuklah ERD yang baru.\n\ndalam Entity Relationship Diagram ini ditambahkan entitas Denda dan relasi Bayar, sekarang tugasmu untuk mengisi atribut dan kardinalitas dari relasi yang ada. </string>
     <string name="primary_desc">Primary key merupakan pengidentifikasi suatu atribut yang paling unik dalam himpunan entitas, dan dalam ERD seringkali ditantadi dengan garis bawah</string>
     <string name="denda_desc">Entitas Denda seharusnya memiliki atribut untuk mengetahui biaya denda dan juga berapa lama keterlambatan pengembalian buku</string>
     <string name="bayar_desc">Atribut untuk relasi Bayar seharusnya menjelaskan tentang siapa saja yang perlu membayar denda dan juga berapa total yang harus dibayarkan</string>
@@ -335,8 +340,13 @@
     <string name="solusi3_rs">Menambahkan atribut pengawas sebagai pengamat dokter yang sedang melakukan operasi</string>
     <string name="solusi4_rs">Menghapus atribut tanggal agar tidak terjadi redundansi dan memudahkan menentukan ketergantungan fungsional tabel operasi</string>
 
-    <string name="penyelesaian_rs">Setelah dilakukan analisis kebutuhan untuk menyelesaikan permasalahan di SMP Harapan Bangsa, sudah terdapat beberapa atribut yang akan digunakan, namun belum terisi tipe data dari tiap atribut.\n\nPilihlah tipe data yang sesuai dengan atribut berikut : </string>
- <!--End Rumah Sakit-->
+    <string name="penyelesaian_rs">Setelah dilakukan analisis dan menghasilkan Tabel Operasi, langkah selanjutnya adalah mencari ketergantungan fungsionalitas pada tabel.\n\n Pilihlah atribut yang memiliki ketergantungan penuh dan ketergantungan sepenuhnya pada Tabel Operasi berikut: </string>
+    <string name="evalfull">Atribut yang dipilih tidak memiliki ketergantungan penuh</string>
+    <string name="evalsepenuhnyaR">Atribut yang dipilih tidak memiliki ketergantungan sepenuhnya, seharusnya memilih atribut pasien karena atribut pasien dipengaruhi oleh beberapa atribut</string>
+    <string name="evalsepenuhnyaP">Beberapa atribut yang dipilih tidak mempengaruhi ketergantungan dari atribut pasien</string>
+    <string name="evalmirip">Terdapat beberapa atribut yang dipilih dengan nama yang sama, cermati kembali pilihan anda</string>
+
+    <!--End Rumah Sakit-->
 
 
     <string name="quiz_hirarki_basis_data">Quiz Hirarki Basis Data</string>
@@ -346,9 +356,21 @@
     <string name="video_pembelajaran_normalisasi">Video Pembelajaran Normalisasi</string>
     <string name="video_pembelajaran_erd">Video Pembelajaran ERD</string>
 
-    <string name="videoHirarki">ioNng23DkIM</string>
-    <string name="videoErd">1kKNJr_5tY8</string>
-    <string name="videoKetergantungan">2S24-y0Ij3Y</string>
-    <string name="videoNormalisasi">IHNzOHi8sJs</string>
+    <string name="videoHirarki">1kKNJr_5tY8</string>
+    <string name="videoErd">exbubj9xDV0</string>
+    <string name="videoKetergantungan">7DloY9NVMSQ</string>
+    <string name="videoNormalisasi">Q5STQ1qjuuM</string>
+    <string name="tabel_siswa">Tabel Siswa</string>
+    <string name="tabel_mapel">Tabel Mapel</string>
+    <string name="tabel_guru">Tabel Guru</string>
+    <string name="tabel_operasi">Tabel Operasi</string>
+    <string name="versi_os">Versi OS</string>
+    <string name="versi_os_os">: 5.0 - 10.0</string>
+    <string name="ram">RAM</string>
+    <string name="ram_1gb">: 1GB</string>
+    <string name="penyimpanan">Penyimpanan</string>
+    <string name="penyimpanan_30">: 30MB</string>
+    <string name="koneksi">Koneksi</string>
+    <string name="koneksi_4g_wifi">: 4G / Wifi</string>
 
 </resources>

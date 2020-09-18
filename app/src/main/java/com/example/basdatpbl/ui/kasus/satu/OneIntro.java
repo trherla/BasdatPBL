@@ -34,7 +34,7 @@ public class OneIntro extends IntroActivity {
         }
 
         addSlide(new SimpleSlide.Builder()
-                .title("Kasus Sekolah")
+                .title("Kasus di Sekolah")
 //                .description("Dapat melatih kemampuan pemecahan masalah")
 //                .image(R.drawable.sekolah)
                 .background(R.color.blue3)

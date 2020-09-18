@@ -45,14 +45,14 @@ public class FourIntro extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Sebuah Toko Buku selalu kewalahan tiap kali mendata buku baru yang ada di toko")
-//                .image(R.drawable.slow_working)
+                .image(R.drawable.slow_working)
                 .background(R.color.green3)
                 .backgroundDark(R.color.white)
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Setelah ditelusuri, pendataan buku sudah menggunakan komputer, namun tabel untuk mendata buku meniru dari pembukuan manual")
-//                .image(R.drawable.figure)
+                .image(R.drawable.figure)
                 .background(R.color.green3)
                 .backgroundDark(R.color.white)
                 .build());
@@ -66,7 +66,7 @@ public class FourIntro extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Bagaimana cara agar manajemen data buku berstruktur dengan baik?")
-//                .image(R.drawable.progress_)
+                .image(R.drawable.progress_)
                 .background(R.color.green3)
                 .backgroundDark(R.color.white)
                 .build());

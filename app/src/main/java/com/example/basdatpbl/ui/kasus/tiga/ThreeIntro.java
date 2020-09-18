@@ -32,7 +32,7 @@ public class ThreeIntro extends IntroActivity {
         setPageScrollInterpolator(android.R.interpolator.fast_out_slow_in);
 
         addSlide(new SimpleSlide.Builder()
-                .title("Kasus Tiga")
+                .title("Kasus di Rumah Sakit")
 //                .description("Dapat melatih kemampuan pemecahan masalah")
 //                .image(R.drawable.sekolah)
                 .background(R.color.yellow3)
@@ -43,22 +43,22 @@ public class ThreeIntro extends IntroActivity {
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Kamu adalah siswa jurusan Rekayasa Perangkat Lunak yang sedang magang di bagian IT Rumah Sakit Swasta")
-//                .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.yellow4)
+                .image(R.drawable.focused_working)
+                .background(R.color.yellow3)
                 .backgroundDark(R.color.white)
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Tugas pertama yang diberikan penanggung jawabmu adalah menentukan Ketergantungan Fungsional dari kegiatan operasi yang ada di RS ini")
-//                .image(R.drawable.ic_device_hub_black_24dp)
+                .image(R.drawable.scrum_board)
                 .background(R.color.yellow3)
                 .backgroundDark(R.color.white)
                 .build());
         addSlide(new SimpleSlide.Builder()
 //                .title("Basis Data")
                 .description("Setelah kamu analisa dan mengamati jadwal operasi di RS ini kamu mendapat beberapa informasi")
-//                .image(R.drawable.ic_device_hub_black_24dp)
-                .background(R.color.yellow4)
+                .image(R.drawable.data_analyzing_)
+                .background(R.color.yellow3)
                 .backgroundDark(R.color.white)
                 .build());
 //        addSlide(new SimpleSlide.Builder()
@@ -79,7 +79,7 @@ public class ThreeIntro extends IntroActivity {
 //                .title("Kuis")
                 .description("Hasil pengamatanmu tadi kamu ubah menjadi sebuah tabel, dan menghasilkan tabel seperti ini")
                 .image(R.drawable.kasus_tabelrs)
-                .background(R.color.yellow4)
+                .background(R.color.yellow3)
                 .backgroundDark(R.color.white)
                 .build());
 

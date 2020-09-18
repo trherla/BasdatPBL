@@ -46,7 +46,8 @@
             <ImageView
                 android:id="@+id/tabel_buku"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="240dp"
+                android:scaleType="fitCenter"
                 android:padding="2dp"
                 android:background="@drawable/bg_white"
                 android:layout_marginTop="16dp"
@@ -57,7 +58,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-16dp"
                 android:background="@drawable/bg_white"
-                android:elevation="4dp"
                 android:padding="16dp"
                 android:textSize="16sp"
                 android:textColor="@color/colorDark"
@@ -90,7 +90,8 @@
                     android:scaleType="fitCenter"
                     android:background="@drawable/bg_white"
                     android:padding="8dp"
-                    android:layout_marginBottom="12dp" />
+                    android:layout_marginBottom="12dp"
+                    tools:ignore="ContentDescription" />
 
                 <RadioButton
                     android:id="@+id/pilihanB"
@@ -110,7 +111,8 @@
                     android:scaleType="fitCenter"
                     android:background="@drawable/bg_white"
                     android:padding="8dp"
-                    android:layout_marginBottom="12dp" />
+                    android:layout_marginBottom="12dp"
+                    tools:ignore="ContentDescription" />
 
             </RadioGroup>
 

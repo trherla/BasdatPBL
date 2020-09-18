@@ -49,6 +49,22 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         tools:ignore="UselessParent">
+                        <TextView
+                            android:text="1/4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_pertanyaan"
+                            android:padding="8dp"
+                            android:textColor="@color/mi_icon_color_dark"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:id="@+id/img_unf"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:padding="2dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="ContentDescription" />
                         <TableLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -56,19 +72,18 @@
                             <TableRow
                                 android:padding="3dip">
                                 <TextView
-                                    android:text="@string/tipedata_tabel_kasussekolah"
+                                    android:text="@string/jawaban"
                                     android:layout_weight="1"
                                     android:background="@color/grey1"
                                     android:textColor="@color/white"
                                     android:textStyle="bold"
-                                    android:gravity="start" />
+                                    android:gravity="center_horizontal" />
                                 <TextView
                                     android:text="@string/deskripsi_tabel_kasussekolah"
                                     android:layout_weight="1"
                                     android:background="@color/grey1"
                                     android:textColor="@color/white"
                                     android:textStyle="bold"
-
                                     android:gravity="center_horizontal" />
                             </TableRow>
                             <TableRow
@@ -78,43 +93,7 @@
                                     android:layout_weight="1"
                                     android:gravity="start" />
                                 <TextView
-                                    android:id="@+id/deskripsi_tabelsiswa1"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="120dp"
-                                    android:layout_weight="1" />
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:id="@+id/tipedata_tabelsiswa2"
-                                    android:layout_weight="1"
-                                    android:gravity="start" />
-                                <TextView
-                                    android:id="@+id/deskripsi_tabelsiswa2"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="120dp"
-                                    android:layout_weight="1"/>
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:id="@+id/tipedata_tabelsiswa3"
-                                    android:layout_weight="1"
-                                    android:gravity="start" />
-                                <TextView
-                                    android:id="@+id/deskripsi_tabelsiswa3"
-                                    android:layout_height="wrap_content"
-                                    android:layout_width="120dp"
-                                    android:layout_weight="1" />
-                            </TableRow>
-                            <TableRow
-                                android:padding="3dip">
-                                <TextView
-                                    android:id="@+id/tipedata_tabelsiswa4"
-                                    android:layout_weight="1"
-                                    android:gravity="start" />
-                                <TextView
-                                    android:id="@+id/deskripsi_tabelsiswa4"
+                                    android:id="@+id/evalunf"
                                     android:layout_height="wrap_content"
                                     android:layout_width="120dp"
                                     android:layout_weight="1" />
@@ -126,7 +105,231 @@
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:text="2/4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_pertanyaan"
+                            android:padding="8dp"
+                            android:textColor="@color/mi_icon_color_dark"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:id="@+id/img_1nf"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:padding="2dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="ContentDescription" />
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="2">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/jawaban"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa2"
+                                    android:layout_weight="1"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:id="@+id/eval1nf"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                        </TableLayout>
 
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:text="3/4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_pertanyaan"
+                            android:padding="8dp"
+                            android:textColor="@color/mi_icon_color_dark"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:id="@+id/img_2nf"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:padding="2dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="ContentDescription" />
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="2">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/jawaban"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa3"
+                                    android:layout_weight="1"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:id="@+id/eval2nf"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="false">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+                        <TextView
+                            android:text="4/4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_pertanyaan"
+                            android:padding="8dp"
+                            android:textColor="@color/mi_icon_color_dark"
+                            android:textSize="18sp" />
+                        <ImageView
+                            android:id="@+id/img_3nf"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:scaleType="fitCenter"
+                            android:padding="2dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="ContentDescription" />
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:stretchColumns="2">
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:text="@string/jawaban"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                                <TextView
+                                    android:text="@string/deskripsi_tabel_kasussekolah"
+                                    android:layout_weight="1"
+                                    android:background="@color/grey1"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:gravity="center_horizontal" />
+                            </TableRow>
+                            <TableRow
+                                android:padding="3dip">
+                                <TextView
+                                    android:id="@+id/tipedata_tabelsiswa4"
+                                    android:layout_weight="1"
+                                    android:gravity="start" />
+                                <TextView
+                                    android:id="@+id/eval3nf"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="120dp"
+                                    android:layout_weight="1" />
+                            </TableRow>
+                        </TableLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
