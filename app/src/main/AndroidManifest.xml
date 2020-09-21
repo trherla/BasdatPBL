@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/basdatpbl2_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.herla.basdatpbl.ui.materi.normalisasi.DescriptionNormalisasi"></activity>
+        <activity android:name="com.herla.basdatpbl.ui.materi.normalisasi.DescriptionNormalisasi"
+            tools:ignore="Instantiatable"></activity>
         <activity
             android:name="com.herla.basdatpbl.ui.materi.hirarki.Tabs5Hirarki"
             tools:ignore="Instantiatable" />

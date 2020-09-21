@@ -7,7 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -26,12 +28,20 @@ public class AwalFragment extends Fragment {
     private List<Awal> lstAwal;
     private AwalViewModel awalViewModel;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        super.onCreate(savedInstanceState);
+
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
         View root = inflater.inflate(R.layout.fragment_awal, container, false);
 
+
+//        getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         cv_kasus = root.findViewById(R.id.cv_kasus);
         lstAwal = new ArrayList<>();
         rv = root.findViewById(R.id.rv_idawal);

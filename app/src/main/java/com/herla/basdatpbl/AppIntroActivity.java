@@ -6,6 +6,8 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
 
+import androidx.appcompat.app.AppCompatDelegate;
+
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
 
@@ -13,7 +15,7 @@ public class AppIntroActivity extends IntroActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setButtonBackVisible(true);
         setButtonBackFunction(BUTTON_BACK_FUNCTION_BACK);
         setButtonNextVisible(true);
