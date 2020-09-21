@@ -57,14 +57,28 @@
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/nk3"/>
-                <ImageView
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_white"
-                    android:elevation="4dp"
+                    android:layout_marginTop="8dp"
                     android:padding="8dp"
-                    android:src="@drawable/nf21"
-                    tools:ignore="ContentDescription" />
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tabel 4.5 Modul"
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nf21"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -78,14 +92,28 @@
                     android:textColor="@color/color_darkprime"
                     android:text="@string/nk4"/>
 
-                <ImageView
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_white"
-                    android:elevation="4dp"
+                    android:layout_marginTop="8dp"
                     android:padding="8dp"
-                    android:src="@drawable/nf22"
-                    tools:ignore="ContentDescription" />
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tabel 4.6 Modul dan Biaya"
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nf22"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -90,6 +90,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:elevation="2dp"
                             android:layout_marginTop="-12dp"
                             android:layout_marginBottom="2dp"
                             android:lineSpacingMultiplier="1.5"
@@ -98,19 +100,30 @@
                             android:paddingEnd="8dp"
                             android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/color_darkprime"
-                            android:background="@drawable/bg_white"
                             android:text="@string/hm31"/>
-                        <ImageView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="240dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:padding="8dp"
+                            android:elevation="2dp"
                             android:background="@drawable/bg_white"
-                            android:elevation="4dp"
-                            android:src="@drawable/tabs3hirarki"
-                            tools:ignore="ContentDescription" />
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:src="@drawable/tabs3hirarki"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 1.7 Model Basis Data Hirarki"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -173,6 +186,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:elevation="2dp"
                             android:layout_marginTop="-12dp"
                             android:layout_marginBottom="2dp"
                             android:lineSpacingMultiplier="1.5"
@@ -181,20 +196,30 @@
                             android:paddingEnd="8dp"
                             android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/color_darkprime"
-                            android:background="@drawable/bg_white"
                             android:text="@string/hm41"/>
-                        <ImageView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="240dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
                             android:padding="8dp"
+                            android:elevation="2dp"
                             android:background="@drawable/bg_white"
-                            android:elevation="4dp"
-                            android:src="@drawable/tabs3relational"
-                            tools:ignore="ContentDescription" />
-
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:src="@drawable/tabs3relational"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 1.8 Model Basis Data Relasi"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -256,6 +281,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:elevation="2dp"
                             android:layout_marginTop="-12dp"
                             android:layout_marginBottom="2dp"
                             android:lineSpacingMultiplier="1.25"
@@ -264,19 +291,30 @@
                             android:paddingEnd="8dp"
                             android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/color_darkprime"
-                            android:background="@drawable/bg_white"
                             android:text="@string/hm51"/>
-                        <ImageView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="240dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:background="@drawable/bg_white"
-                            android:elevation="4dp"
                             android:padding="8dp"
-                            android:src="@drawable/tabs3hnetwork"
-                            tools:ignore="ContentDescription" />
+                            android:elevation="2dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:src="@drawable/tabs3hnetwork"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 1.9 Model Basis Data Jaringan"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -333,11 +371,14 @@
                         android:id="@+id/container4"
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
+
                         android:orientation="vertical">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white"
+                            android:elevation="2dp"
                             android:layout_marginTop="-12dp"
                             android:layout_marginBottom="2dp"
                             android:lineSpacingMultiplier="1.25"
@@ -346,19 +387,30 @@
                             android:paddingEnd="8dp"
                             android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/color_darkprime"
-                            android:background="@drawable/bg_white"
                             android:text="@string/hm61"/>
-                        <ImageView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="240dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:background="@drawable/bg_white"
-                            android:elevation="4dp"
                             android:padding="8dp"
-                            android:src="@drawable/tabs3object"
-                            tools:ignore="ContentDescription" />
+                            android:elevation="2dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:src="@drawable/tabs3object"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 1.10 Model Basis Data berbasis Objek"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -422,25 +474,38 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="-12dp"
                             android:layout_marginBottom="2dp"
+                            android:background="@drawable/bg_white"
+                            android:elevation="2dp"
                             android:lineSpacingMultiplier="1.25"
                             android:paddingTop="20dp"
                             android:paddingStart="8dp"
                             android:paddingEnd="8dp"
                             android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/color_darkprime"
-                            android:background="@drawable/bg_white"
                             android:text="@string/hm71"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:elevation="2dp"
+                        android:background="@drawable/bg_white"
+                        android:orientation="vertical">
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="240dp"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/bg_white"
-                            android:elevation="4dp"
-                            android:padding="8dp"
                             android:src="@drawable/tabs3entity"
                             tools:ignore="ContentDescription" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gambar 1.11 Model Basis Data Entitas"
+                            android:textColor="@color/color_darkprime"
+                            android:textAlignment="center"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>

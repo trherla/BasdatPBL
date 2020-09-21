@@ -14,10 +14,7 @@ import com.example.basdatpbl.ui.materi.erd.Tabs1ERD;
 import com.example.basdatpbl.ui.materi.erd.Tabs2ERD;
 import com.example.basdatpbl.ui.materi.erd.Tabs3ERD;
 import com.example.basdatpbl.ui.materi.erd.Tabs4ERD;
-import com.example.basdatpbl.ui.materi.erd.Tabs5ERD;
-import com.example.basdatpbl.ui.materi.hirarki.Tabs1Hirarki;
-import com.example.basdatpbl.ui.materi.hirarki.Tabs2Hirarki;
-import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
+import com.example.basdatpbl.ui.materi.erd.DescriptionErd;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -45,6 +42,7 @@ public class TabsErd extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsErd.ViewPagerAdapter adapter = new TabsErd.ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFrag(new DescriptionErd(), "Deskripsi");
         adapter.addFrag(new Tabs1ERD(), "Definisi");
         adapter.addFrag(new Tabs2ERD(), "Entitas");
         adapter.addFrag(new Tabs3ERD(), "Atribut");

@@ -102,13 +102,29 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/ea31"/>
-                        <ImageView
+
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="240dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
                             android:padding="8dp"
+                            android:elevation="4dp"
                             android:background="@drawable/bg_white"
-                            android:src="@drawable/atribut_key"
-                            tools:ignore="ContentDescription" />
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_key"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.3 Cakupan Atribut Kunci"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>

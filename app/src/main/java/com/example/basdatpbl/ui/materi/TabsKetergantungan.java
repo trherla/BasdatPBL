@@ -13,6 +13,7 @@ import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs1Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs2Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
+import com.example.basdatpbl.ui.materi.ketergantungan.DescriptionKetergantungan;
 import com.example.basdatpbl.ui.materi.ketergantungan.Tabs1Ketergantungan;
 import com.example.basdatpbl.ui.materi.ketergantungan.Tabs2Ketergantungan;
 import com.example.basdatpbl.ui.materi.ketergantungan.Tabs3Ketergantungan;
@@ -46,6 +47,7 @@ public class TabsKetergantungan extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsKetergantungan.ViewPagerAdapter adapter = new TabsKetergantungan.ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFrag(new DescriptionKetergantungan(), "Deskripsi");
         adapter.addFrag(new Tabs1Ketergantungan(), "Definisi");
         adapter.addFrag(new Tabs2Ketergantungan(), "Fungsional");
         adapter.addFrag(new Tabs3Ketergantungan(), "Sepenuhnya");

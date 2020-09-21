@@ -32,6 +32,27 @@
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/np1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tabel 4.1 Siswa "
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nf11"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -44,14 +65,7 @@
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/np2"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_white"
-                    android:elevation="4dp"
-                    android:padding="8dp"
-                    android:src="@drawable/nf11"
-                    tools:ignore="ContentDescription" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -64,16 +78,48 @@
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/np3"/>
-                <ImageView
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_white"
-                    android:elevation="4dp"
+                    android:layout_marginTop="8dp"
                     android:padding="8dp"
-                    android:src="@drawable/nf12"
-                    tools:ignore="ContentDescription" />
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tabel 4.2 Siswa 1NF "
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nf12"
+                        tools:ignore="ContentDescription" />
 
-
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tabel 4.3 Buku "
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nf13"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -86,14 +132,7 @@
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/np4"/>
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_white"
-                    android:elevation="4dp"
-                    android:padding="8dp"
-                    android:src="@drawable/nf13"
-                    tools:ignore="ContentDescription" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -106,14 +145,27 @@
                     android:textSize="16sp"
                     android:textColor="@color/color_darkprime"
                     android:text="@string/np5"/>
-                <ImageView
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/bg_white"
-                    android:elevation="4dp"
+                    android:layout_marginTop="8dp"
                     android:padding="8dp"
-                    android:src="@drawable/nf14"
-                    tools:ignore="ContentDescription" />
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tabel 4.4 Buku 1NF "
+                        android:textColor="@color/color_darkprime"
+                        android:textSize="14sp"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nf14"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

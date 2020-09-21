@@ -60,15 +60,29 @@
                     android:textColor="@color/color_darkprime"
                     android:text="@string/nd3"/>
 
-                <ImageView
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="480dp"
-                    android:background="@drawable/bg_white"
-                    android:scaleType="fitCenter"
-                    android:elevation="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:padding="8dp"
-                    android:src="@drawable/tahapnormalisasi"
-                    tools:ignore="ContentDescription" />
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="480dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tahapnormalisasi"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gambar 4.1 Tahapan Normalisasi"
+                        android:textColor="@color/color_darkprime"
+                        android:textAlignment="center"
+                        android:textSize="14sp"/>
+                </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

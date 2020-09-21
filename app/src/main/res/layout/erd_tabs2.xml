@@ -59,14 +59,28 @@
                     android:textColor="@color/color_darkprime"
                     android:text="@string/ee3"/>
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:padding="8dp"
-                    android:background="@drawable/bg_white"
                     android:elevation="4dp"
-                    android:src="@drawable/entitas1"
-                    tools:ignore="ContentDescription" />
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:src="@drawable/entitas1"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gambar 2.2 Entitas Siswa dan Entitas Pengarang"
+                        android:textColor="@color/color_darkprime"
+                        android:textAlignment="center"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"

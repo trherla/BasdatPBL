@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg_slider1">
     <ScrollView
         android:layout_width="match_parent"
@@ -19,7 +18,25 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 tools:ignore="UselessParent">
-
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@color/white"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/data_cleaning"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:padding="8dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="8dp"
+                    android:lineSpacingMultiplier="1.25"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"
+                    android:text="Normalisasi"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -31,43 +48,20 @@
                     android:textColor="@color/color_darkprime"
                     android:background="@drawable/bg_white"
                     android:elevation="2dp"
-                    android:text="@string/dbms"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:elevation="4dp"
-                    android:background="@drawable/bg_white"
-                    android:orientation="vertical">
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/dbms"
-                        tools:ignore="ContentDescription" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Gambar 1.1 Struktur DBMS"
-                        android:textColor="@color/color_darkprime"
-                        android:textAlignment="center"
-                        android:textSize="14sp"/>
-                </LinearLayout>
-
-
-
+                    android:text="@string/deskripsiNormalisasi"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginEnd="18dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:lineSpacingMultiplier="1.25"
-                    android:textSize="32sp"
-                    android:textColor="@color/color_darkprime"/>
-
+                    android:padding="8dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_darkprime"
+                    android:background="@drawable/bg_white"
+                    android:elevation="2dp"
+                    android:text="@string/prasyaratNormalisasi"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

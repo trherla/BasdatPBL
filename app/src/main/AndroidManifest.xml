@@ -5,17 +5,22 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/basdatpbl_launcher"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/basdatpbl2_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/basdatpbl_launcher_round"
+        android:roundIcon="@mipmap/basdatpbl2_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:fullBackupContent="true">
-        <activity android:name=".ui.materi.hirarki.Tabs5Hirarki"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.materi.normalisasi.DescriptionNormalisasi"></activity>
+        <activity
+            android:name=".ui.materi.hirarki.Tabs5Hirarki"
             tools:ignore="Instantiatable" />
         <activity
             android:name=".ui.materi.hirarki.VideoPlayerHirarki"
             android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.awal.KasusIntro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.materi.erd.VideoPlayerErd"
@@ -28,8 +33,7 @@
         <activity
             android:name=".ui.materi.normalisasi.VideoPlayerNormalisasi"
             android:screenOrientation="landscape"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <!-- Kasus Empat -->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Kasus Empat -->
         <activity
             android:name=".ui.kasus.empat.FourIntro"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -85,7 +89,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.dua.TwoTahapEmpat_2"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.dua.TwoTahapTiga"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -114,8 +118,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.kasus.satu.OneTahapEmpat_2"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <!-- End Kasus Satu -->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Satu -->
         <activity android:name=".ui.kuis.kuis_hirarki.HasilKuisHirarki" />
         <activity android:name=".ui.kuis.kuis_erd.HasilKuisErd" />
         <activity android:name=".ui.kuis.kuis_normalisasi.HasilKuisNormalisasi" />

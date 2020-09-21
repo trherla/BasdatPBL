@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.materi.hirarki.DescriptionHirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs1Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs2Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
@@ -41,6 +42,7 @@ public class TabsHirarki extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsHirarki.ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFrag(new DescriptionHirarki(), "Deskripsi");
         adapter.addFrag(new Tabs4Hirarki(), "Definisi");
         adapter.addFrag(new Tabs5Hirarki(), "DBMS");
         adapter.addFrag(new Tabs1Hirarki(), "Struktur");

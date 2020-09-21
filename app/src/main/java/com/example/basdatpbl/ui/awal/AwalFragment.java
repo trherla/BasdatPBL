@@ -1,5 +1,6 @@
 package com.example.basdatpbl.ui.awal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,11 +9,13 @@ import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.basdatpbl.R;
+import com.example.basdatpbl.ui.kasus.empat.FourIntro;
 import com.example.basdatpbl.ui.kuis.Kuis;
 import com.example.basdatpbl.ui.kuis.KuisAdapter;
 import com.example.basdatpbl.ui.materi.MateriAdapter;
@@ -23,6 +26,7 @@ import java.util.Objects;
 
 public class AwalFragment extends Fragment {
     private RecyclerView rv;
+    public CardView cv_kasus;
     private KuisAdapter adapter;
     private List<Awal> lstAwal;
     private AwalViewModel awalViewModel;
@@ -33,6 +37,7 @@ public class AwalFragment extends Fragment {
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
         View root = inflater.inflate(R.layout.fragment_awal, container, false);
 
+        cv_kasus = root.findViewById(R.id.cv_kasus);
         lstAwal = new ArrayList<>();
         rv = root.findViewById(R.id.rv_idawal);
         rv.setLayoutManager(new GridLayoutManager(getContext(),4));
@@ -44,7 +49,10 @@ public class AwalFragment extends Fragment {
         lstAwal.add(new Awal("Ketergantungan Fungsional",  "Ketergantungan Fungsional", R.drawable.ketergantungan));
         lstAwal.add(new Awal("Normalisasi",  "Normalisasi", R.drawable.normalisasi));
 
-
+        cv_kasus.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), KasusIntro.class);
+            startActivity(intent);
+        });
 
         return root;
     }

@@ -32,15 +32,28 @@
                     android:text="@string/hd1"
                     android:textColor="@color/color_darkprime"
                     android:textSize="16sp" />
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="400dp"
-                    android:padding="8dp"
-                    android:background="@drawable/bg_white"
-                    android:elevation="4dp"
-                    android:src="@drawable/ansi"
-                    tools:ignore="ContentDescription" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:elevation="4dp"
+                    android:background="@drawable/bg_white"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:src="@drawable/ansi"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gambar 1.4 Tiga Level Abstraksi Data"
+                        android:textColor="@color/color_darkprime"
+                        android:textAlignment="center"
+                        android:textSize="14sp"/>
+                </LinearLayout>
                 <!--Expendable 1-->
                 <com.github.florent37.expansionpanel.ExpansionHeader
                     android:layout_height="wrap_content"
@@ -110,36 +123,48 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/hd11"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tabel 1.1 Mahasiswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textSize="14sp"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:src="@drawable/internallevel"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/jenis_jenis_tipe_data_dalam_dbms_oracle"
+                                android:textColor="@color/color_darkprime"
+                                android:lineSpacingMultiplier="1.5"
+                                android:textSize="16sp"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/td1"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            android:layout_marginTop="8dp"
-                            android:padding="8dp"
-                            android:background="@drawable/bg_white"
-                            android:elevation="4dp"
-                            android:src="@drawable/internallevel"
-                            tools:ignore="ContentDescription" />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/bg_white"
-                            android:elevation="2dp"
-                            android:lineSpacingMultiplier="1.5"
-                            android:padding="8dp"
-                            android:text="@string/jenis_jenis_tipe_data_dalam_dbms_oracle"
-                            android:textColor="@color/color_darkprime"
-                            android:textSize="16sp" />
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:padding="8dp"
-                            android:background="@drawable/bg_white"
-                            android:elevation="4dp"
-                            android:src="@drawable/td1"
-                            tools:ignore="ContentDescription" />
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -220,6 +245,8 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:elevation="2dp"
+                            android:background="@drawable/bg_white"
                             android:layout_marginTop="-12dp"
                             android:layout_marginBottom="2dp"
                             android:lineSpacingMultiplier="1.5"
@@ -228,21 +255,32 @@
                             android:paddingEnd="8dp"
                             android:paddingBottom="8dp"
                             android:textSize="16sp"
-                            android:elevation="2dp"
                             android:textColor="@color/color_darkprime"
-                            android:background="@drawable/bg_white"
                             android:text="@string/hd12"/>
-                        <ImageView
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="160dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_height="wrap_content"
                             android:padding="8dp"
+                            android:layout_marginTop="8dp"
+                            android:elevation="2dp"
                             android:background="@drawable/bg_white"
-                            android:elevation="4dp"
-                            android:src="@drawable/conceptuallevel"
-                            tools:ignore="ContentDescription" />
-
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="160dp"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/conceptuallevel"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 1.5 Diagram Relasi basis data Kampus "
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
                     </LinearLayout>
+
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
 
@@ -315,16 +353,30 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/hd13"/>
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            android:layout_marginTop="8dp"
-                            android:background="@drawable/bg_white"
-                            android:padding="8dp"
-                            android:elevation="4dp"
-                            android:src="@drawable/externallevel"
-                            tools:ignore="ContentDescription" />
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="2dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginTop="8dp"
+                                android:elevation="4dp"
+                                android:src="@drawable/externallevel"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 1.6 Tabel Mahasiswa "
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>

@@ -13,6 +13,7 @@ import com.example.basdatpbl.R;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs1Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs2Hirarki;
 import com.example.basdatpbl.ui.materi.hirarki.Tabs3Hirarki;
+import com.example.basdatpbl.ui.materi.normalisasi.DescriptionNormalisasi;
 import com.example.basdatpbl.ui.materi.normalisasi.Tabs1Normalisasi;
 import com.example.basdatpbl.ui.materi.normalisasi.Tabs2Normalisasi;
 import com.example.basdatpbl.ui.materi.normalisasi.Tabs3Normalisasi;
@@ -46,6 +47,7 @@ public class TabsNormalisasi extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         TabsNormalisasi.ViewPagerAdapter adapter = new TabsNormalisasi.ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFrag(new DescriptionNormalisasi(), "Deskripsi");
         adapter.addFrag(new Tabs1Normalisasi(), "Definisi");
 //        adapter.addFrag(new Tabs2Normalisasi(), "Syarat");
         adapter.addFrag(new Tabs3Normalisasi(), "1NF");
