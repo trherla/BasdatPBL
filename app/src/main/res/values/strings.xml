@@ -68,7 +68,6 @@
         \t\tKetika selesai mengerjakan kuis, maka akan ditampilkan nilai seperti berikut.
     </string>
 
-    <string name="basis_data">Basis Data</string>
     <string name="penjelasan_menu">1. Penjelasan Menu</string>
     <string name="cara_mengerjakan_kasus">2. Cara Mengerjakan Kasus</string>
     <string name="cara_mengerjakan_kuis">3. Cara Mengerjakan Kuis</string>
@@ -191,7 +190,6 @@
     <string name="ea39">Atribut Tidak Harus Bernilai (Non-Mandatory Attribute) merupakan atribut yang nilainya boleh kosong (null).</string>
 
     <string name="er1">Relasi menyatakan hubungan antara dua atau beberapa entitas. Setiap relasi mempunyai batasan (<b><i>constraint</i></b>) terhadap kemungkinan kombinasi entitas yang berpartisipasi. Batasan tersebut ditentukan dari situasi yang diwakili relasi tersebut.</string>
-    <string name="er11">Cardinality Ratio Constraint menjelaskan batasan jumlah keterhubungan satu entitas dengan entitas lainnya. Berikut macam-macamnya:</string>
     <string name="er2"><b>One to One (1:1)</b>\nSetiap anggota entitas A hanya boleh berhubungan dengan satu anggota entitas B, begitu pula sebaliknya.</string>
     <string name="er3"><b>One to Many (1:N)</b>\nSetiap anggota entitas A dapat berhubungan dengan lebih dari satu anggota entitas B tetapi tidak sebaliknya.</string>
     <string name="er4"><b>Many to Many (N:N)</b>\nSetiap entitas A dapat berhubungan dengan banyak entitas himpunan entitas B dan demikian pula sebaliknya</string>
@@ -316,7 +314,6 @@
     <string name="solusi3_perpus">Mengganti rasio kardinalitas pada relasi pinjam</string>
     <string name="solusi4_perpus">Menambahkan entitas baru bernama Denda dan relasi bernama membayar yang terhubung ke atribut Siswa</string>
 
-    <string name="penyelesaian_perpus">Setelah menganalisis permintaan pengelola perpus, maka terbentuklah ERD yang baru.\n\ndalam Entity Relationship Diagram ini ditambahkan entitas Denda dan relasi Bayar, sekarang tugasmu untuk mengisi atribut dan kardinalitas dari relasi yang ada. </string>
     <string name="primary_desc">Primary key merupakan pengidentifikasi suatu atribut yang paling unik dalam himpunan entitas, dan dalam ERD seringkali ditantadi dengan garis bawah</string>
     <string name="denda_desc">Entitas Denda seharusnya memiliki atribut untuk mengetahui biaya denda dan juga berapa lama keterlambatan pengembalian buku</string>
     <string name="bayar_desc">Atribut untuk relasi Bayar seharusnya menjelaskan tentang siapa saja yang perlu membayar denda dan juga berapa total yang harus dibayarkan</string>
@@ -385,8 +382,6 @@
 
     <!--End Rumah Sakit-->
 
-
-    <string name="quiz_hirarki_basis_data">Quiz Hirarki Basis Data</string>
 
     <string name="video_pembelajaran_hirarki_basis_data">Video Pembelajaran Hirarki Basis Data</string>
     <string name="video_pembelajaran_ketergantungan_fungsional">Video Pembelajaran Ketergantungan Fungsional</string>

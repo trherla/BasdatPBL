@@ -6,30 +6,30 @@
 
     <fragment
         android:id="@+id/awal"
-        android:name="com.example.basdatpbl.ui.awal.AwalFragment"
+        android:name="com.herla.basdatpbl.ui.awal.AwalFragment"
         android:label="@string/awal"
         tools:layout="@layout/fragment_awal" />
 
     <fragment
         android:id="@+id/materi"
-        android:name="com.example.basdatpbl.ui.materi.MateriFragment"
+        android:name="com.herla.basdatpbl.ui.materi.MateriFragment"
         android:label="@string/materi"
         tools:layout="@layout/fragment_materi" />
 
     <fragment
         android:id="@+id/kuis"
-        android:name="com.example.basdatpbl.ui.kuis.KuisFragment"
+        android:name="com.herla.basdatpbl.ui.kuis.KuisFragment"
         android:label="@string/kuis"
         tools:layout="@layout/fragment_kuis" />
 
     <fragment
         android:id="@+id/kasus"
-        android:name="com.example.basdatpbl.ui.kasus.KasusFragment"
+        android:name="com.herla.basdatpbl.ui.kasus.KasusFragment"
         android:label="@string/kasus"
         tools:layout="@layout/fragment_kasus" />
     <fragment
         android:id="@+id/info"
-        android:name="com.example.basdatpbl.ui.info.InfoFragment"
+        android:name="com.herla.basdatpbl.ui.info.InfoFragment"
         android:label="@string/info"
         tools:layout="@layout/fragment_info" />
 </navigation>

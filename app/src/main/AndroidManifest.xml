@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.basdatpbl">
+    package="com.herla.basdatpbl">
 
     <application
         android:allowBackup="true"
@@ -11,134 +11,134 @@
         android:roundIcon="@mipmap/basdatpbl2_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.materi.normalisasi.DescriptionNormalisasi"></activity>
+        <activity android:name="com.herla.basdatpbl.ui.materi.normalisasi.DescriptionNormalisasi"></activity>
         <activity
-            android:name=".ui.materi.hirarki.Tabs5Hirarki"
+            android:name="com.herla.basdatpbl.ui.materi.hirarki.Tabs5Hirarki"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".ui.materi.hirarki.VideoPlayerHirarki"
+            android:name="com.herla.basdatpbl.ui.materi.hirarki.VideoPlayerHirarki"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.awal.KasusIntro"
+            android:name="com.herla.basdatpbl.ui.awal.KasusIntro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.materi.erd.VideoPlayerErd"
+            android:name="com.herla.basdatpbl.ui.materi.erd.VideoPlayerErd"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.materi.ketergantungan.VideoPlayerKetergantungan"
+            android:name="com.herla.basdatpbl.ui.materi.ketergantungan.VideoPlayerKetergantungan"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.materi.normalisasi.VideoPlayerNormalisasi"
+            android:name="com.herla.basdatpbl.ui.materi.normalisasi.VideoPlayerNormalisasi"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- Kasus Empat -->
         <activity
-            android:name=".ui.kasus.empat.FourIntro"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourIntro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapEmpat"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapEmpat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapEmpat_2"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapEmpat_2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapTiga"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapTiga"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapTiga_2"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapTiga_2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapTiga_3"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapTiga_3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapTiga_4"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapTiga_4"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapDua"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapDua"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.empat.FourTahapSatu"
+            android:name="com.herla.basdatpbl.ui.kasus.empat.FourTahapSatu"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Empat -->
         <!-- Kasus Tiga -->
         <activity
-            android:name=".ui.kasus.tiga.ThreeIntro"
+            android:name="com.herla.basdatpbl.ui.kasus.tiga.ThreeIntro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.tiga.ThreeTahapEmpat"
+            android:name="com.herla.basdatpbl.ui.kasus.tiga.ThreeTahapEmpat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.tiga.ThreeTahapEmpat_2"
+            android:name="com.herla.basdatpbl.ui.kasus.tiga.ThreeTahapEmpat_2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.tiga.ThreeTahapTiga"
+            android:name="com.herla.basdatpbl.ui.kasus.tiga.ThreeTahapTiga"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.tiga.ThreeTahapDua"
+            android:name="com.herla.basdatpbl.ui.kasus.tiga.ThreeTahapDua"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.tiga.ThreeTahapSatu"
+            android:name="com.herla.basdatpbl.ui.kasus.tiga.ThreeTahapSatu"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Tiga -->
         <!-- Kasus Dua -->
         <activity
-            android:name=".ui.kasus.dua.TwoIntro"
+            android:name="com.herla.basdatpbl.ui.kasus.dua.TwoIntro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.dua.TwoTahapEmpat"
+            android:name="com.herla.basdatpbl.ui.kasus.dua.TwoTahapEmpat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.dua.TwoTahapEmpat_2"
+            android:name="com.herla.basdatpbl.ui.kasus.dua.TwoTahapEmpat_2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.dua.TwoTahapTiga"
+            android:name="com.herla.basdatpbl.ui.kasus.dua.TwoTahapTiga"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.dua.TwoTahapDua"
+            android:name="com.herla.basdatpbl.ui.kasus.dua.TwoTahapDua"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.dua.TwoTahapSatu"
+            android:name="com.herla.basdatpbl.ui.kasus.dua.TwoTahapSatu"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Dua -->
         <!-- Kasus Satu -->
         <activity
-            android:name=".ui.kasus.satu.OneIntro"
+            android:name="com.herla.basdatpbl.ui.kasus.satu.OneIntro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.satu.OneTahapSatu"
+            android:name="com.herla.basdatpbl.ui.kasus.satu.OneTahapSatu"
             android:theme="@style/AppTheme.NoActionBar"
             tools:ignore="Instantiatable" />
         <activity
-            android:name=".ui.kasus.satu.OneTahapDua"
+            android:name="com.herla.basdatpbl.ui.kasus.satu.OneTahapDua"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.satu.OneTahapTiga"
+            android:name="com.herla.basdatpbl.ui.kasus.satu.OneTahapTiga"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.satu.OneTahapEmpat"
+            android:name="com.herla.basdatpbl.ui.kasus.satu.OneTahapEmpat"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kasus.satu.OneTahapEmpat_2"
+            android:name="com.herla.basdatpbl.ui.kasus.satu.OneTahapEmpat_2"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- End Kasus Satu -->
-        <activity android:name=".ui.kuis.kuis_hirarki.HasilKuisHirarki" />
-        <activity android:name=".ui.kuis.kuis_erd.HasilKuisErd" />
-        <activity android:name=".ui.kuis.kuis_normalisasi.HasilKuisNormalisasi" />
-        <activity android:name=".ui.kuis.kuis_ketergantungan.HasilKuisKetergantungan" />
+        <activity android:name="com.herla.basdatpbl.ui.kuis.kuis_hirarki.HasilKuisHirarki" />
+        <activity android:name="com.herla.basdatpbl.ui.kuis.kuis_erd.HasilKuisErd" />
+        <activity android:name="com.herla.basdatpbl.ui.kuis.kuis_normalisasi.HasilKuisNormalisasi" />
+        <activity android:name="com.herla.basdatpbl.ui.kuis.kuis_ketergantungan.HasilKuisKetergantungan" />
         <activity
-            android:name=".ui.kuis.kuis_hirarki.KuisHirarki"
+            android:name="com.herla.basdatpbl.ui.kuis.kuis_hirarki.KuisHirarki"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kuis.kuis_ketergantungan.KuisKetergantungan"
+            android:name="com.herla.basdatpbl.ui.kuis.kuis_ketergantungan.KuisKetergantungan"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kuis.kuis_normalisasi.KuisNormalisasi"
+            android:name="com.herla.basdatpbl.ui.kuis.kuis_normalisasi.KuisNormalisasi"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.kuis.kuis_erd.KuisErd"
+            android:name="com.herla.basdatpbl.ui.kuis.kuis_erd.KuisErd"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.materi.hirarki.Tabs1Hirarki"
+            android:name="com.herla.basdatpbl.ui.materi.hirarki.Tabs1Hirarki"
             tools:ignore="Instantiatable" />
-        <activity android:name=".SplashScreen">
+        <activity android:name="com.herla.basdatpbl.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -146,30 +146,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AppIntroActivity"
+            android:name="com.herla.basdatpbl.AppIntroActivity"
             android:theme="@style/Theme.Intro" />
         <activity
-            android:name=".BottomActivity"
+            android:name="com.herla.basdatpbl.BottomActivity"
             android:label="@string/title_activity_bottom" />
         <activity
-            android:name=".ui.materi.TabsHirarki"
+            android:name="com.herla.basdatpbl.ui.materi.TabsHirarki"
             android:label="Hirarki"
-            android:parentActivityName=".ui.materi.TabsHirarki"
+            android:parentActivityName="com.herla.basdatpbl.ui.materi.TabsHirarki"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.materi.TabsErd"
+            android:name="com.herla.basdatpbl.ui.materi.TabsErd"
             android:label="Entity Relationship Diagram"
-            android:parentActivityName=".ui.materi.TabsErd"
+            android:parentActivityName="com.herla.basdatpbl.ui.materi.TabsErd"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.materi.TabsKetergantungan"
+            android:name="com.herla.basdatpbl.ui.materi.TabsKetergantungan"
             android:label="Ketergantungan Fungsional"
-            android:parentActivityName=".ui.materi.TabsKetergantungan"
+            android:parentActivityName="com.herla.basdatpbl.ui.materi.TabsKetergantungan"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ui.materi.TabsNormalisasi"
+            android:name="com.herla.basdatpbl.ui.materi.TabsNormalisasi"
             android:label="Normalisasi"
-            android:parentActivityName=".ui.materi.TabsNormalisasi"
+            android:parentActivityName="com.herla.basdatpbl.ui.materi.TabsNormalisasi"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
