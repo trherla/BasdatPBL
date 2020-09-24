@@ -10,11 +10,12 @@ import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import static android.app.PendingIntent.getActivity;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         Objects.requireNonNull(getSupportActionBar()).hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
@@ -26,9 +27,9 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void run() {
-                finish();
                 Intent homepage = new Intent(SplashScreen.this, BottomActivity.class);
                 startActivity(homepage);
+                finish();
             }
         }, timeout);
     }
