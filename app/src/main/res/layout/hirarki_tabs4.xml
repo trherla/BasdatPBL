@@ -73,7 +73,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -147,7 +148,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -433,7 +435,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView

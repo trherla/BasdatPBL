@@ -30,7 +30,7 @@
                     android:textColor="@color/mi_icon_color_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,RelativeOverlap" />
                 <ImageButton
                     android:id="@+id/back_sekolah1"
                     android:layout_width="32dp"

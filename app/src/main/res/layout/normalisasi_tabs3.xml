@@ -45,7 +45,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tabel 4.1 Siswa "
                         android:textColor="@color/color_darkprime"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -92,7 +93,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tabel 4.2 Siswa 1NF "
                         android:textColor="@color/color_darkprime"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -113,7 +115,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tabel 4.3 Buku "
                         android:textColor="@color/color_darkprime"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -159,7 +162,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tabel 4.4 Buku 1NF "
                         android:textColor="@color/color_darkprime"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

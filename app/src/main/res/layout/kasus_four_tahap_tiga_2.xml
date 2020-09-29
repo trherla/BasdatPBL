@@ -41,7 +41,8 @@
                     android:background="@drawable/bg_pertanyaan"
                     android:padding="8dp"
                     android:textColor="@color/mi_icon_color_dark"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    tools:ignore="RelativeOverlap" />
             </RelativeLayout>
             <ImageView
                 android:id="@+id/tabel_buku"

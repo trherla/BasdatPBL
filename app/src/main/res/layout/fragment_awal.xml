@@ -166,7 +166,8 @@
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
                                     android:text="Cara Mengerjakan Kasus"
-                                    android:textSize="14sp" />
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 

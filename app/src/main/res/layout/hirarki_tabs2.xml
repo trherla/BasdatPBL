@@ -52,7 +52,8 @@
                         android:text="Gambar 1.4 Tiga Level Abstraksi Data"
                         android:textColor="@color/color_darkprime"
                         android:textAlignment="center"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <!--Expendable 1-->
                 <com.github.florent37.expansionpanel.ExpansionHeader
@@ -80,7 +81,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -136,7 +138,8 @@
                                 android:layout_height="wrap_content"
                                 android:text="Tabel 1.1 Mahasiswa"
                                 android:textColor="@color/color_darkprime"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="120dp"
@@ -214,7 +217,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -277,7 +281,8 @@
                                 android:text="Gambar 1.5 Diagram Relasi basis data Kampus "
                                 android:textColor="@color/color_darkprime"
                                 android:textAlignment="center"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -310,7 +315,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -375,7 +381,8 @@
                                 android:text="Gambar 1.6 Tabel Mahasiswa "
                                 android:textColor="@color/color_darkprime"
                                 android:textAlignment="center"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </LinearLayout>
 

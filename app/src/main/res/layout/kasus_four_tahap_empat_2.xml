@@ -56,7 +56,8 @@
                             android:background="@drawable/bg_pertanyaan"
                             android:padding="8dp"
                             android:textColor="@color/mi_icon_color_dark"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
                         <ImageView
                             android:id="@+id/img_unf"
                             android:layout_width="match_parent"
@@ -131,7 +132,8 @@
                             android:background="@drawable/bg_pertanyaan"
                             android:padding="8dp"
                             android:textColor="@color/mi_icon_color_dark"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
                         <ImageView
                             android:id="@+id/img_1nf"
                             android:layout_width="match_parent"
@@ -206,7 +208,8 @@
                             android:background="@drawable/bg_pertanyaan"
                             android:padding="8dp"
                             android:textColor="@color/mi_icon_color_dark"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
                         <ImageView
                             android:id="@+id/img_2nf"
                             android:layout_width="match_parent"
@@ -281,7 +284,8 @@
                             android:background="@drawable/bg_pertanyaan"
                             android:padding="8dp"
                             android:textColor="@color/mi_icon_color_dark"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
                         <ImageView
                             android:id="@+id/img_3nf"
                             android:layout_width="match_parent"

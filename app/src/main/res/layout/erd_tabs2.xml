@@ -78,7 +78,8 @@
                         android:text="Gambar 2.2 Entitas Siswa dan Entitas Pengarang"
                         android:textColor="@color/color_darkprime"
                         android:textAlignment="center"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
 

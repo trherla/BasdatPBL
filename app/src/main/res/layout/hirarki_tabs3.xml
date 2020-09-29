@@ -59,7 +59,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -122,7 +123,8 @@
                                 android:text="Gambar 1.7 Model Basis Data Hirarki"
                                 android:textColor="@color/color_darkprime"
                                 android:textAlignment="center"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -155,7 +157,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -218,7 +221,8 @@
                                 android:text="Gambar 1.8 Model Basis Data Relasi"
                                 android:textColor="@color/color_darkprime"
                                 android:textAlignment="center"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -250,7 +254,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -313,7 +318,8 @@
                                 android:text="Gambar 1.9 Model Basis Data Jaringan"
                                 android:textColor="@color/color_darkprime"
                                 android:textAlignment="center"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -345,7 +351,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -409,7 +416,8 @@
                                 android:text="Gambar 1.10 Model Basis Data berbasis Objek"
                                 android:textColor="@color/color_darkprime"
                                 android:textAlignment="center"
-                                android:textSize="14sp"/>
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -441,7 +449,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -503,7 +512,8 @@
                             android:text="Gambar 1.11 Model Basis Data Entitas"
                             android:textColor="@color/color_darkprime"
                             android:textAlignment="center"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText" />
                     </LinearLayout>
 
                     </LinearLayout>

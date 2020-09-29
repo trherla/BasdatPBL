@@ -43,7 +43,8 @@
         android:onClick="ulangi"
         android:src="@drawable/rewind"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="TODO" />
 
     <ImageButton
         android:layout_width="60dp"
@@ -56,7 +57,8 @@
         android:onClick="kuis"
         android:src="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/imageView5"

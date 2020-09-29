@@ -65,7 +65,8 @@
                         android:text="Gambar 1.2 Arsitektur Basis Data"
                         android:textColor="@color/color_darkprime"
                         android:textAlignment="center"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <!--Expendable 1-->
                 <com.github.florent37.expansionpanel.ExpansionHeader
@@ -93,7 +94,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -168,7 +170,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -242,7 +245,8 @@
                             android:textColor="@color/color_darkprime"
                             android:textSize="16sp"
                             android:elevation="4dp"
-                            android:layout_marginBottom="4dp" />
+                            android:layout_marginBottom="4dp"
+                            tools:ignore="RelativeOverlap" />
 
 
                         <androidx.appcompat.widget.AppCompatImageView
@@ -309,7 +313,8 @@
                         android:text="Gambar 1.3 Struktur Penyimpanan File dan Tabel"
                         android:textColor="@color/color_darkprime"
                         android:textAlignment="center"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <TextView

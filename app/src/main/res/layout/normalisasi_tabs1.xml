@@ -81,7 +81,8 @@
                         android:text="Gambar 4.1 Tahapan Normalisasi"
                         android:textColor="@color/color_darkprime"
                         android:textAlignment="center"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"

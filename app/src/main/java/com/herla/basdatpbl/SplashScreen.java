@@ -1,7 +1,6 @@
 package com.herla.basdatpbl;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +8,6 @@ import android.os.Bundle;
 import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
-
-import static android.app.PendingIntent.getActivity;
 
 public class SplashScreen extends AppCompatActivity {
 

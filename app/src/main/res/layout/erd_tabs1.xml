@@ -50,7 +50,8 @@
                         android:text="Gambar 2.1 Simbol E-R Diagram"
                         android:textColor="@color/color_darkprime"
                         android:textAlignment="center"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <TextView

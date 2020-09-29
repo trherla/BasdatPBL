@@ -25,7 +25,8 @@
             android:text="Materi Database"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="32sp" />
+            android:textSize="32sp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

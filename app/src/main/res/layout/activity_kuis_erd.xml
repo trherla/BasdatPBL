@@ -27,7 +27,8 @@
                     android:background="@drawable/bg_pertanyaan"
                     android:padding="8dp"
                     android:textColor="@color/mi_icon_color_dark"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
                 <TextView
                     android:id="@+id/jud"
                     android:layout_width="wrap_content"
@@ -36,7 +37,8 @@
                     android:background="@drawable/bg_pertanyaan"
                     android:padding="8dp"
                     android:textColor="@color/mi_icon_color_dark"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    tools:ignore="RelativeOverlap" />
             </RelativeLayout>
 
             <TextView

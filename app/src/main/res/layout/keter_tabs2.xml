@@ -59,7 +59,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tabel 3.1 Barang"
                         android:textColor="@color/color_darkprime"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -131,7 +132,8 @@
                         android:layout_height="wrap_content"
                         android:text="Tabel 3.2 Guru"
                         android:textColor="@color/color_darkprime"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
