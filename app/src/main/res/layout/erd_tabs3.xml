@@ -127,6 +127,29 @@
                                 android:textSize="14sp"
                                 tools:ignore="HardcodedText" />
                         </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/tabel_atribut"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.4 Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -202,8 +225,31 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/ea32"/>
-
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_deskriptif"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.5 Atribut Deskriptif di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
+
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
 
@@ -277,7 +323,29 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/ea33"/>
-
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_sederhana"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.6 Atribut Sederhana di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -352,6 +420,29 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/ea34"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_komposit"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.7 Atribut Komposit di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </com.github.florent37.expansionpanel.ExpansionLayout>
@@ -426,8 +517,30 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/ea35"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_bernilai_banyak"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.8 Atribut Bernilai Banyak di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
-
                 </com.github.florent37.expansionpanel.ExpansionLayout>
 
                 <!--Expendable 6-->
@@ -500,8 +613,30 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/ea36"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_bernilai_tunggal"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.9 Atribut Bernilai Tunggal di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
-
                 </com.github.florent37.expansionpanel.ExpansionLayout>
 
 
@@ -576,8 +711,30 @@
                             android:background="@drawable/bg_white"
                             android:text="@string/ea37"/>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_turunan"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.10 Atribut Turunan di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
-
                 </com.github.florent37.expansionpanel.ExpansionLayout>
 
                 <!--Expendable 8-->
@@ -651,8 +808,30 @@
                             android:background="@drawable/bg_white"
                             android:text="@string/ea38"/>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_mandatory"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.11 Atribut Bernilai di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
-
                 </com.github.florent37.expansionpanel.ExpansionLayout>
 
                 <!--Expendable 9-->
@@ -725,8 +904,30 @@
                             android:textColor="@color/color_darkprime"
                             android:background="@drawable/bg_white"
                             android:text="@string/ea39"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/bg_white"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="240dp"
+                                android:background="@drawable/bg_white"
+                                android:src="@drawable/atribut_tidak_harus_bernilai"
+                                tools:ignore="ContentDescription" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gambar 2.12 Atribut Tidak Harus Bernilai di Tabel Siswa"
+                                android:textColor="@color/color_darkprime"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
                     </LinearLayout>
-
                 </com.github.florent37.expansionpanel.ExpansionLayout>
 
 
